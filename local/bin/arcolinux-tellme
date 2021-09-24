@@ -1,0 +1,5 @@
+#!/bin/sh
+
+COWS=(/usr/share/cows/*)
+RAND_COW=$(($RANDOM % $( ls /usr/share/cows/*.cow | wc -l )))
+cowsay -f ${COWS[$RAND_COW]} $(fortune)
