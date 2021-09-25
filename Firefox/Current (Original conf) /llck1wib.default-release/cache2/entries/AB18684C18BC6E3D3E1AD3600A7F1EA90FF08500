@@ -1,0 +1,5392 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+  <HEAD>
+     <title>The amd-gfx October 2020 Archive by date</title>
+     <META NAME="robots" CONTENT="noindex,follow">
+     <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  </HEAD>
+  <BODY BGCOLOR="#ffffff">
+      <a name="start"></A>
+      <h1>October 2020 Archives by date</h1>
+      <ul>
+         <li> <b>Messages sorted by:</b>
+	        <a href="thread.html#start">[ thread ]</a>
+		<a href="subject.html#start">[ subject ]</a>
+		<a href="author.html#start">[ author ]</a>
+		
+
+	     <li><b><a href="https://lists.freedesktop.org/mailman/listinfo/amd-gfx">More info on this list...
+                    </a></b></li>
+      </ul>
+      <p><b>Starting:</b> <i>Thu Oct  1 05:08:49 UTC 2020</i><br>
+         <b>Ending:</b> <i>Sat Oct 31 12:01:08 UTC 2020</i><br>
+         <b>Messages:</b> 1065<p>
+     <ul>
+
+<LI><A HREF="054404.html">[PATCH] drm/amdgpu/swsmu: clean up a bunch of stale interfaces
+</A><A NAME="54404">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054405.html">[PATCH RFC 0/1] drm/ttm: Allocate transparent huge pages without clearing __GFP_COMP
+</A><A NAME="54405">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054406.html">[PATCH] drm/amd/display: Fix external display detection with overlay
+</A><A NAME="54406">&nbsp;</A>
+<I>Pratik Vishwakarma
+</I>
+
+<LI><A HREF="054407.html">[PATCH] drm/amd/display: Fix external display detection with overlay
+</A><A NAME="54407">&nbsp;</A>
+<I>Kazlauskas, Nicholas
+</I>
+
+<LI><A HREF="054408.html">[PATCH 1/2] drm/amdgpu/swsmu: add interrupt work function
+</A><A NAME="54408">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054409.html">[PATCH 2/2] drm/amdgpu/swsmu: add interrupt work handler for smu11 parts
+</A><A NAME="54409">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054411.html">[PATCH] drm/amdgpu: Avoid null pointer dereference in soc15_reg_base_init()
+</A><A NAME="54411">&nbsp;</A>
+<I>Markus Elfring
+</I>
+
+<LI><A HREF="054410.html">[PATCH 2/2] drm/amdgpu/swsmu: add interrupt work handler for smu11 parts
+</A><A NAME="54410">&nbsp;</A>
+<I>Zhang, Hawking
+</I>
+
+<LI><A HREF="054412.html">[PATCH] drm/amd/display: Fix external display detection with overlay
+</A><A NAME="54412">&nbsp;</A>
+<I>Harry Wentland
+</I>
+
+<LI><A HREF="054413.html">[PATCH 2/2] drm/amdgpu/swsmu: add interrupt work handler for smu11 parts
+</A><A NAME="54413">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054414.html">BUG: amdgpu: NULL pointer dereference introduced in 5.9-rc1
+</A><A NAME="54414">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054415.html">[PATCH 1/4] drm/amdkfd: Remove legacy code from trap handler
+</A><A NAME="54415">&nbsp;</A>
+<I>Jay Cornwall
+</I>
+
+<LI><A HREF="054416.html">[PATCH 2/4] drm/amdkfd: Remove duplicated code from trap handler
+</A><A NAME="54416">&nbsp;</A>
+<I>Jay Cornwall
+</I>
+
+<LI><A HREF="054418.html">[PATCH 3/4] drm/amdkfd: Move first_wave bit in gfx10 trap handler
+</A><A NAME="54418">&nbsp;</A>
+<I>Jay Cornwall
+</I>
+
+<LI><A HREF="054417.html">[PATCH 4/4] drm/amdkfd: Save TTMPs on all ASICs in gfx10 trap handler
+</A><A NAME="54417">&nbsp;</A>
+<I>Jay Cornwall
+</I>
+
+<LI><A HREF="054419.html">[PATCH 1/4] drm/amdkfd: Remove legacy code from trap handler
+</A><A NAME="54419">&nbsp;</A>
+<I>Felix Kuehling
+</I>
+
+<LI><A HREF="054420.html">[PATCH RFC 0/1] drm/ttm: Allocate transparent huge pages without clearing __GFP_COMP
+</A><A NAME="54420">&nbsp;</A>
+<I>Alex Goins
+</I>
+
+<LI><A HREF="054421.html">[PATCH 1/4] drm/amdkfd: Remove legacy code from trap handler
+</A><A NAME="54421">&nbsp;</A>
+<I>Morichetti, Laurent
+</I>
+
+<LI><A HREF="054422.html">[PATCH 0/1] drm/amdgpu: fix NULL pointer dereference for Renoir
+</A><A NAME="54422">&nbsp;</A>
+<I>Dirk Gouders
+</I>
+
+<LI><A HREF="054423.html">[PATCH 1/1] drm/amdgpu: fix NULL pointer dereference for Renoir
+</A><A NAME="54423">&nbsp;</A>
+<I>Dirk Gouders
+</I>
+
+<LI><A HREF="054424.html">[PATCH 1/1] drm/amdgpu: fix NULL pointer dereference for Renoir
+</A><A NAME="54424">&nbsp;</A>
+<I>Dirk Gouders
+</I>
+
+<LI><A HREF="054425.html">[PATCH 1/1] drm/amdgpu: fix NULL pointer dereference for Renoir
+</A><A NAME="54425">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054426.html">[PATCH] PCI/ACPI: Whitelist hotplug ports for D3 if power managed by ACPI
+</A><A NAME="54426">&nbsp;</A>
+<I>Lukas Wunner
+</I>
+
+<LI><A HREF="054427.html">[PATCH RFC 0/1] drm/ttm: Allocate transparent huge pages without clearing __GFP_COMP
+</A><A NAME="54427">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054428.html">[PATCH RFC 0/1] drm/ttm: Allocate transparent huge pages without clearing __GFP_COMP
+</A><A NAME="54428">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="054429.html">[PATCH v3 1/7] drm/vram-helper: Remove invariant parameters from internal kmap function
+</A><A NAME="54429">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="054430.html">[PATCH v3 2/7] drm/ttm: Add ttm_kmap_obj_to_dma_buf_map() for type conversion
+</A><A NAME="54430">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="054431.html">[PATCH v3 2/7] drm/ttm: Add ttm_kmap_obj_to_dma_buf_map() for type conversion
+</A><A NAME="54431">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054432.html">[PATCH v3 2/7] drm/ttm: Add ttm_kmap_obj_to_dma_buf_map() for type conversion
+</A><A NAME="54432">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="054433.html">[PATCH v3 3/7] drm/gem: Use struct dma_buf_map in GEM vmap ops and convert GEM backends
+</A><A NAME="54433">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="054434.html">[PATCH v3 4/7] drm/gem: Update internal GEM vmap/vunmap interfaces to use struct dma_buf_map
+</A><A NAME="54434">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="054435.html">[PATCH v3 5/7] drm/gem: Store client buffer mappings as struct dma_buf_map
+</A><A NAME="54435">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="054436.html">[PATCH] PCI/ACPI: Whitelist hotplug ports for D3 if power managed by ACPI
+</A><A NAME="54436">&nbsp;</A>
+<I>Deucher, Alexander
+</I>
+
+<LI><A HREF="054437.html">[PATCH] PCI/ACPI: Whitelist hotplug ports for D3 if power managed by ACPI
+</A><A NAME="54437">&nbsp;</A>
+<I>Rafael J. Wysocki
+</I>
+
+<LI><A HREF="054438.html">[PATCH] PCI/ACPI: Whitelist hotplug ports for D3 if power managed by ACPI
+</A><A NAME="54438">&nbsp;</A>
+<I>Deucher, Alexander
+</I>
+
+<LI><A HREF="054439.html">[PATCH] PCI/ACPI: Whitelist hotplug ports for D3 if power managed by ACPI
+</A><A NAME="54439">&nbsp;</A>
+<I>Rafael J. Wysocki
+</I>
+
+<LI><A HREF="054440.html">[PATCH] PCI/ACPI: Whitelist hotplug ports for D3 if power managed by ACPI
+</A><A NAME="54440">&nbsp;</A>
+<I>Deucher, Alexander
+</I>
+
+<LI><A HREF="054441.html">[PATCH 1/7] drm/amdgpu: add Green_Sardine APU flag
+</A><A NAME="54441">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054442.html">[PATCH 2/7] drm/amdgpu: add green_sardine support for gpu_info and ip block setting (v2)
+</A><A NAME="54442">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054443.html">[PATCH 3/7] drm/amdgpu: add soc15 common ip block support for green_sardine (v3)
+</A><A NAME="54443">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054444.html">[PATCH 4/7] drm/amdgpu: add gfx support for green_sardine (v2)
+</A><A NAME="54444">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054445.html">[PATCH 5/7] drm/amdgpu/sdma: add sdma engine support for green_sardine (v2)
+</A><A NAME="54445">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054446.html">[PATCH 6/7] drm/amdgpu: enable green_sardine_asd.bin loading (v2)
+</A><A NAME="54446">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054447.html">[PATCH 7/7] drm/amdgpu: enable vcn support for green_sardine (v2)
+</A><A NAME="54447">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054448.html">[PATCH v3 6/7] drm/fb_helper: Support framebuffers in I/O memory
+</A><A NAME="54448">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="054449.html">[PATCH v3 6/7] drm/fb_helper: Support framebuffers in I/O memory
+</A><A NAME="54449">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="054450.html">[PATCH v3 7/7] drm/todo: Update entries around struct dma_buf_map
+</A><A NAME="54450">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="054451.html">[PATCH] PCI/ACPI: Whitelist hotplug ports for D3 if power managed by ACPI
+</A><A NAME="54451">&nbsp;</A>
+<I>Michal Rostecki
+</I>
+
+<LI><A HREF="054452.html">[PATCH 1/3] drm/amdgpu: fix xgmi perfmon a-b-a problem
+</A><A NAME="54452">&nbsp;</A>
+<I>Jonathan Kim
+</I>
+
+<LI><A HREF="054453.html">[PATCH 2/3] drm/amdgpu: add per device user friendly xgmi events for vega20
+</A><A NAME="54453">&nbsp;</A>
+<I>Jonathan Kim
+</I>
+
+<LI><A HREF="054454.html">[PATCH 3/3] drm/amdgpu: add xgmi perfmons for arcturus
+</A><A NAME="54454">&nbsp;</A>
+<I>Jonathan Kim
+</I>
+
+<LI><A HREF="054455.html">[PATCH 3/3] drm/amdgpu: add xgmi perfmons for arcturus
+</A><A NAME="54455">&nbsp;</A>
+<I>Kasiviswanathan, Harish
+</I>
+
+<LI><A HREF="054456.html">[PATCH] drm/amd/display: [FIX] Compilation error
+</A><A NAME="54456">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="054457.html">[PATCH] drm/amd/display: [FIX] Compilation error
+</A><A NAME="54457">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="054459.html">[PATCH] drm/amd/display: [FIX] Compilation error
+</A><A NAME="54459">&nbsp;</A>
+<I>Stephen Rothwell
+</I>
+
+<LI><A HREF="054458.html">WARNING in ieee80211_bss_info_change_notify
+</A><A NAME="54458">&nbsp;</A>
+<I>syzbot
+</I>
+
+<LI><A HREF="054479.html">[PATCH] drm/amdgpu: remove unintended executable mode
+</A><A NAME="54479">&nbsp;</A>
+<I>Lukas Bulwahn
+</I>
+
+<LI><A HREF="054460.html">[PATCH 00/18] DC Patches October 5, 2020
+</A><A NAME="54460">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054461.html">[PATCH 01/18] drm/amd/display: 3.2.105
+</A><A NAME="54461">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054462.html">[PATCH 02/18] drm/amd/display: Don't allow pstate if no support in blank
+</A><A NAME="54462">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054463.html">[PATCH 03/18] drm/amd/display: Check for flip pending before locking pipes
+</A><A NAME="54463">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054464.html">[PATCH 04/18] drm/amd/display: Change to correct unit on audio rate
+</A><A NAME="54464">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054465.html">[PATCH 05/18] drm/amd/display: Fixed comments (uniform style)
+</A><A NAME="54465">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054466.html">[PATCH 06/18] drm/amd/display: Force enable pstate on driver unload
+</A><A NAME="54466">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054467.html">[PATCH 07/18] drm/amd/display: Copy WM values from set A to other sets in hw_init
+</A><A NAME="54467">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054468.html">[PATCH 08/18] drm/amd/display: Block ABM in case of eDP ODM
+</A><A NAME="54468">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054469.html">[PATCH 09/18] drm/amd/display: Add i2c speed arbitration for dc_i2c and hdcp_i2c
+</A><A NAME="54469">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054470.html">[PATCH 10/18] drm/amd/display: HDMI remote sink need mode validation for Linux
+</A><A NAME="54470">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054471.html">[PATCH 11/18] drm/amd/display: Fix OPTC_DATA_FORMAT programming
+</A><A NAME="54471">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054472.html">[PATCH 12/18] drm/amd/display: FreeSync not active near lower bound of non-LFC monitor range
+</A><A NAME="54472">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054473.html">[PATCH 13/18] drm/amd/display: Hardcode 45W Bounding Box for DCN2.1 Diags
+</A><A NAME="54473">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054474.html">[PATCH 14/18] drm/amd/display: Program meta addresses correctly
+</A><A NAME="54474">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054475.html">[PATCH 15/18] drm/amd/display: Only flush inst_fb if backdoor loading
+</A><A NAME="54475">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054476.html">[PATCH 16/18] drm/amd/display: [FW Promotion] Release 0.0.36
+</A><A NAME="54476">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054477.html">[PATCH 17/18] drm/amd/display: 3.2.106
+</A><A NAME="54477">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054478.html">[PATCH 18/18] drm/amd/display: Avoid set zero in the requested clk
+</A><A NAME="54478">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054480.html">[PATCH] drm/amdgpu: align frag_end to covered address space
+</A><A NAME="54480">&nbsp;</A>
+<I>Alex Sierra
+</I>
+
+<LI><A HREF="054481.html">[PATCH] drm/amdgpu: align frag_end to covered address space
+</A><A NAME="54481">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054482.html">[PATCH AUTOSEL 5.8 04/12] drm/amdgpu: prevent double kfree ttm-&gt;sg
+</A><A NAME="54482">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="054483.html">[PATCH AUTOSEL 5.8 08/12] drm/amd/pm: Removed fixed clock in auto mode DPM
+</A><A NAME="54483">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="054484.html">[PATCH AUTOSEL 5.8 09/12] drm/amd/display: fix return value check for hdcp_work
+</A><A NAME="54484">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="054485.html">[PATCH AUTOSEL 5.4 2/4] drm/amdgpu: prevent double kfree ttm-&gt;sg
+</A><A NAME="54485">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="054486.html">[PATCH AUTOSEL 4.19 2/2] drm/amdgpu: prevent double kfree ttm-&gt;sg
+</A><A NAME="54486">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="054487.html">[PATCH AUTOSEL 4.14 2/2] drm/amdgpu: prevent double kfree ttm-&gt;sg
+</A><A NAME="54487">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="054488.html">[PATCH AUTOSEL 4.9 2/2] drm/amdgpu: prevent double kfree ttm-&gt;sg
+</A><A NAME="54488">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="054489.html">[PATCH] drm/amd/display: [FIX] Compilation error
+</A><A NAME="54489">&nbsp;</A>
+<I>Rodrigo Siqueira
+</I>
+
+<LI><A HREF="054490.html">[PATCH 3/3] drm/amdgpu: add xgmi perfmons for arcturus
+</A><A NAME="54490">&nbsp;</A>
+<I>Kasiviswanathan, Harish
+</I>
+
+<LI><A HREF="054491.html">[PATCH] drm/amd/display: Add missing function pointers for dcn3
+</A><A NAME="54491">&nbsp;</A>
+<I>Bhawanpreet Lakha
+</I>
+
+<LI><A HREF="054492.html">[PATCH] drm/amd/display: Add missing function pointers for dcn3
+</A><A NAME="54492">&nbsp;</A>
+<I>Kazlauskas, Nicholas
+</I>
+
+<LI><A HREF="054493.html">[PATCH] drm/amd/display: Add missing function pointers for dcn3
+</A><A NAME="54493">&nbsp;</A>
+<I>Lakha, Bhawanpreet
+</I>
+
+<LI><A HREF="054494.html">[PATCH] drm/amdgpu: remove unintended executable mode
+</A><A NAME="54494">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054496.html">[RFC PATCH] DRM: amd: powerplay: don't undef pr_warn() {causes ARC build errors}
+</A><A NAME="54496">&nbsp;</A>
+<I>Randy Dunlap
+</I>
+
+<LI><A HREF="054497.html">[RFC PATCH] DRM: amd: powerplay: don't undef pr_warn() {causes ARC build errors}
+</A><A NAME="54497">&nbsp;</A>
+<I>Joe Perches
+</I>
+
+<LI><A HREF="054495.html">[PATCH] drm/amdgpu: Add error message for DAC setup failure
+</A><A NAME="54495">&nbsp;</A>
+<I>Shashank Sharma
+</I>
+
+<LI><A HREF="054498.html">[Freedreno] [RESEND] Requests For Proposals for hosting XDC2021 are now open
+</A><A NAME="54498">&nbsp;</A>
+<I>Samuel Iglesias Gons&#225;lvez
+</I>
+
+<LI><A HREF="054499.html">[PATCH] drm/amdgpu: prevent spurious warning
+</A><A NAME="54499">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054500.html">[PATCH] drm/amdgpu/swsmu: fix ARC build errors
+</A><A NAME="54500">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054501.html">[PATCH] drm/amdgpu/swsmu: fix ARC build errors
+</A><A NAME="54501">&nbsp;</A>
+<I>Randy Dunlap
+</I>
+
+<LI><A HREF="054502.html">[PATCH] drm/amdgpu: Add error message for DAC setup failure
+</A><A NAME="54502">&nbsp;</A>
+<I>Nirmoy
+</I>
+
+<LI><A HREF="054503.html">[PATCH 00/12] DC Patches 2020 October 12
+</A><A NAME="54503">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="054506.html">[PATCH 01/12] drm/amd/display: Fix black screen after DP/HDMI hot-plug
+</A><A NAME="54506">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="054504.html">[PATCH 02/12] drm/amd/display: Add Bounding Box State for Low DF PState but High Voltage State
+</A><A NAME="54504">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="054505.html">[PATCH 03/12] drm/amd/display: add dcn21 bw validation
+</A><A NAME="54505">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="054507.html">[PATCH 04/12] drm/amd/display: enable odm + full screen mpo on dcn21
+</A><A NAME="54507">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="054508.html">[PATCH 05/12] drm/amd/display: Source minimum HBlank support
+</A><A NAME="54508">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="054509.html">[PATCH 06/12] drm/amd/display: Reverting &quot;Add connector to the state if DSC debugfs is set&quot;
+</A><A NAME="54509">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="054510.html">[PATCH 07/12] drm/amd/display: Set WM set A to 0 if full pstate not supported
+</A><A NAME="54510">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="054514.html">[PATCH 08/12] drm/amd/display: Raise DPG height during timing synchronization
+</A><A NAME="54514">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="054513.html">[PATCH 09/12] drm/amd/display: Define PSR ERROR Status bit VSC_SDP
+</A><A NAME="54513">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="054511.html">[PATCH 10/12] drm/amd/display: [FW Promotion] Release 0.0.37
+</A><A NAME="54511">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="054515.html">[PATCH 11/12] drm/amd/display: Add an option to limit max DSC target bpp per sink
+</A><A NAME="54515">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="054512.html">[PATCH 12/12] drm/amd/display: 3.2.107
+</A><A NAME="54512">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="054516.html">[PATCH v3 2/7] drm/ttm: Add ttm_kmap_obj_to_dma_buf_map() for type conversion
+</A><A NAME="54516">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054517.html">[PATCH v3 2/7] drm/ttm: Add ttm_kmap_obj_to_dma_buf_map() for type conversion
+</A><A NAME="54517">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="054518.html">[PATCH v3 2/7] drm/ttm: Add ttm_kmap_obj_to_dma_buf_map() for type conversion
+</A><A NAME="54518">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054519.html">[PATCH v3 2/7] drm/ttm: Add ttm_kmap_obj_to_dma_buf_map() for type conversion
+</A><A NAME="54519">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054520.html">[PATCH v3 2/7] drm/ttm: Add ttm_kmap_obj_to_dma_buf_map() for type conversion
+</A><A NAME="54520">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="054521.html">[PATCH] drm/amdgpu: prevent spurious warning
+</A><A NAME="54521">&nbsp;</A>
+<I>Russell, Kent
+</I>
+
+<LI><A HREF="054522.html">[RFC] Add BPF_PROG_TYPE_CGROUP_IOCTL
+</A><A NAME="54522">&nbsp;</A>
+<I>Kenny Ho
+</I>
+
+<LI><A HREF="054523.html">[PATCH 00/14] drm/amd/pm: Replace one-element arrays with flexible-array members
+</A><A NAME="54523">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054524.html">[PATCH 01/14] drm/amd/pm: Replace one-element array with flexible-array member
+</A><A NAME="54524">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054525.html">[PATCH 02/14] drm/amd/pm: Replace one-element array with flexible-array member in struct vi_dpm_table
+</A><A NAME="54525">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054526.html">[PATCH 03/14] drm/amd/pm: Replace one-element array with flexible-array in struct phm_clock_array
+</A><A NAME="54526">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054527.html">[PATCH 04/14] drm/amd/pm: Replace one-element array with flexible-array in struct phm_uvd_clock_voltage_dependency_table
+</A><A NAME="54527">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054528.html">[PATCH 05/14] drm/amd/pm: Replace one-element array with flexible-array in struct phm_acp_clock_voltage_dependency_table
+</A><A NAME="54528">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054529.html">[PATCH 06/14] drm/amd/pm: Replace one-element array with flexible-array in struct phm_phase_shedding_limits_table
+</A><A NAME="54529">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054530.html">[PATCH 07/14] drm/amd/pm: Replace one-element array with flexible-array in struct phm_vce_clock_voltage_dependency_table
+</A><A NAME="54530">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054531.html">[PATCH 08/14] drm/amd/pm: Replace one-element array with flexible-array in struct phm_cac_leakage_table
+</A><A NAME="54531">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054532.html">[PATCH 09/14] drm/amd/pm: Replace one-element array with flexible-array in struct phm_samu_clock_voltage_dependency_table
+</A><A NAME="54532">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054533.html">[PATCH 10/14] drm/amd/pm: Replace one-element array with flexible-array in struct phm_ppt_v1_clock_voltage_dependency_table
+</A><A NAME="54533">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054534.html">[PATCH 11/14] drm/amd/pm: Replace one-element array with flexible-array in struct phm_ppt_v1_mm_clock_voltage_dependency_table
+</A><A NAME="54534">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054535.html">[PATCH 12/14] drm/amd/pm: Replace one-element array with flexible-array in struct phm_ppt_v1_voltage_lookup_table
+</A><A NAME="54535">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054536.html">[PATCH 13/14] drm/amd/pm: Replace one-element array with flexible-array in struct phm_ppt_v1_pcie_table
+</A><A NAME="54536">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054537.html">[PATCH 14/14] drm/amd/pm: Replace one-element array with flexible-array in struct ATOM_Vega10_GFXCLK_Dependency_Table
+</A><A NAME="54537">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054538.html">[PATCH 00/50] Add support for Dimgrey Cavefish
+</A><A NAME="54538">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054539.html">[PATCH 01/50] drm/amdgpu: add dimgrey_cavefish asic type
+</A><A NAME="54539">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054540.html">[PATCH 02/50] drm/amdgpu: add dimgrey_cavefish gpu info firmware
+</A><A NAME="54540">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054541.html">[PATCH 03/50] drm/amdgpu: set fw load type for dimgrey_cavefish
+</A><A NAME="54541">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054542.html">[PATCH 04/50] drm/amdgpu: set asic family and ip blocks for dimgrey_cavefish
+</A><A NAME="54542">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054543.html">[PATCH 05/50] drm/amdgpu: add support for dimgrey_cavefish firmware
+</A><A NAME="54543">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054544.html">[PATCH 06/50] drm/amdgpu: add gmc support for dimgrey_cavefish
+</A><A NAME="54544">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054545.html">[PATCH 07/50] drm/amdgpu: add gfx clock gating support for dimgrey_cavefish
+</A><A NAME="54545">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054546.html">[PATCH 08/50] drm/amdgpu: add common support for dimgrey_cavefish
+</A><A NAME="54546">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054547.html">[PATCH 09/50] drm/amdgpu: initialize IP offset for dimgrey_cavefish
+</A><A NAME="54547">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054548.html">[PATCH 10/50] drm/amdgpu: add mmhub support for dimgrey_cavefish
+</A><A NAME="54548">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054549.html">[PATCH 11/50] drm/amdgpu: add common ip block for dimgrey_cavefish
+</A><A NAME="54549">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054550.html">[PATCH 12/50] drm/amdgpu: add gmc ip block for dimgrey_cavefish
+</A><A NAME="54550">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054551.html">[PATCH 13/50] drm/amdgpu: add ih ip block for dimgrey_cavefish
+</A><A NAME="54551">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054552.html">[PATCH 14/50] drm/amdgpu: add gfx ip block for dimgrey_cavefish
+</A><A NAME="54552">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054553.html">[PATCH 15/50] drm/amdgpu: add sdma ip block for dimgrey_cavefish
+</A><A NAME="54553">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054554.html">[PATCH 16/50] drm/amdgpu: configure dimgrey_cavefish gfx according to gfx 10.3's definition
+</A><A NAME="54554">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054555.html">[PATCH 17/50] drm/amdgpu: add virtual display support for dimgrey_cavefish
+</A><A NAME="54555">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054556.html">[PATCH 18/50] drm/amdgpu: force pa_sc_tile_steering_override to 0 for dimgrey_cavefish
+</A><A NAME="54556">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054557.html">[PATCH 19/50] drm/amdgpu/vcn: add firmware support for dimgrey_cavefish
+</A><A NAME="54557">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054558.html">[PATCH 20/50] drm/amdgpu/vcn: enable VCN DPG mode for dimgrey_cavefish
+</A><A NAME="54558">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054559.html">[PATCH 21/50] drm/amdgpu: add gmc cg support for dimgrey_cavefish
+</A><A NAME="54559">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054560.html">[PATCH 22/50] drm/amdgpu/swsmu: increase size for smu fw_name string
+</A><A NAME="54560">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054561.html">[PATCH 23/50] drm/amdgpu/swsmu: add smu support for dimgrey_cavefish(v2)
+</A><A NAME="54561">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054562.html">[PATCH 24/50] drm/amdgpu: increase size of psp fw_name string(v2)
+</A><A NAME="54562">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054563.html">[PATCH 25/50] drm/amdgpu: add psp support for dimgrey_cavefish(v2)
+</A><A NAME="54563">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054564.html">[PATCH 26/50] drm/amdgpu: skip reroute ih for some ASICs
+</A><A NAME="54564">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054565.html">[PATCH 27/50] drm/amdgpu: support cp_fw_write_wait for dimgrey_cavefish
+</A><A NAME="54565">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054566.html">[PATCH 28/50] drm/amdgpu: add gc golden setting for dimgrey_cavefish
+</A><A NAME="54566">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054567.html">[PATCH 29/50] drm/amdkfd: Support dimgrey_cavefish KFD (v2)
+</A><A NAME="54567">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054568.html">[PATCH 30/50] drm/amdkfd: Add kfd2kgd_funcs for dimgrey_cavefish kfd support
+</A><A NAME="54568">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054569.html">[PATCH 31/50] drm/amdgpu: enable VCN3.0 PG and CG for dimgrey_cavefish
+</A><A NAME="54569">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054570.html">[PATCH 32/50] drm/amdgpu: enable jpeg3.0 PG and CG for dimgrey_cavefish
+</A><A NAME="54570">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054571.html">[PATCH 33/50] drm/amdgpu: enable front door loading for dimgrey_cavefish
+</A><A NAME="54571">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054572.html">[PATCH 34/50] drm/amdgpu: support athub cg setting for dimgrey_cavefish
+</A><A NAME="54572">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054573.html">[PATCH 35/50] drm/amdgpu/swsmu: update driver if version for dimgrey_cavefish
+</A><A NAME="54573">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054574.html">[PATCH 36/50] drm/amdgpu: enable GFX clock gating for dimgrey_cavefish
+</A><A NAME="54574">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054575.html">[PATCH 37/50] drm/amdgpu: enable mc CG and LS for dimgrey_cavefish
+</A><A NAME="54575">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054576.html">[PATCH 38/50] drm/amdgpu: enable athub/mmhub PG for dimgrey_cavefish
+</A><A NAME="54576">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054577.html">[PATCH 39/50] drm/amdgpu/swsmu: update driver if version for dimgrey_cavefish
+</A><A NAME="54577">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054578.html">[PATCH 40/50] drm/amdgpu: enable vcn3.0 for dimgrey_cavefis
+</A><A NAME="54578">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054579.html">[PATCH 41/50] drm/amdgpu: enable jpeg3.0 for dimgrey_cavefish
+</A><A NAME="54579">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054580.html">[PATCH 42/50] drm/amdgpu/swsmu: update driver if version for dimgrey_cavefish
+</A><A NAME="54580">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054581.html">[PATCH 43/50] drm/amdgpu/swsmu: update driver if version for dimgrey_cavefish(v2)
+</A><A NAME="54581">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054582.html">[PATCH 44/50] drm/amdgpu: add psp and smu block for dimgrey_cavefish
+</A><A NAME="54582">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054583.html">[PATCH 45/50] drm/amdgpu: enable hdp CG and LS for dimgrey_cavefish
+</A><A NAME="54583">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054584.html">[PATCH 46/50] drm/amdgpu: enable ih CG for dimgrey_cavefish
+</A><A NAME="54584">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054585.html">[PATCH 47/50] drm/amdgpu: remove gpu_info fw support for dimgrey_cavefish
+</A><A NAME="54585">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054586.html">[PATCH 48/50] drm/amdgpu/swsmu: update driver if version for dimgrey_cavefish
+</A><A NAME="54586">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054588.html">[PATCH 49/50] drm/amd/display: Add support for DCN302 (v2)
+</A><A NAME="54588">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054587.html">[PATCH 50/50] drm/amd/display: Add DCN302 support in amdgpu_dm (v2)
+</A><A NAME="54587">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054589.html">[PATCH] drm/amdgpu: Remove warning for virtual_display
+</A><A NAME="54589">&nbsp;</A>
+<I>Emily.Deng
+</I>
+
+<LI><A HREF="054590.html">[PATCH] drm/amdgpu: Remove warning for virtual_display
+</A><A NAME="54590">&nbsp;</A>
+<I>Grodzovsky, Andrey
+</I>
+
+<LI><A HREF="054591.html">[PATCH 00/14] drm/amd/pm: Replace one-element arrays with flexible-array members
+</A><A NAME="54591">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054592.html">[PATCH v3 2/7] drm/ttm: Add ttm_kmap_obj_to_dma_buf_map() for type conversion
+</A><A NAME="54592">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054593.html">[PATCH v3 6/7] drm/fb_helper: Support framebuffers in I/O memory
+</A><A NAME="54593">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054594.html">[PATCH v3 6/7] drm/fb_helper: Support framebuffers in I/O memory
+</A><A NAME="54594">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="054595.html">[PATCH] drm/amdgpu: Add debugfs entry for printing VM info
+</A><A NAME="54595">&nbsp;</A>
+<I>Mihir Patel
+</I>
+
+<LI><A HREF="054596.html">[PATCH] drm/amdgpu: Add debugfs entry for printing VM info
+</A><A NAME="54596">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054597.html">[PATCH 00/14] drm/amd/pm: Replace one-element arrays with flexible-array members
+</A><A NAME="54597">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054598.html">[PATCH][next] drm/amdgpu: Use struct_size() helper in kmalloc()
+</A><A NAME="54598">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054599.html">[PATCH][next] amd/amdgpu_ctx: Use struct_size() helper and kmalloc()
+</A><A NAME="54599">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054600.html">[PATCH 14/14] drm/amd/pm: Replace one-element array with flexible-array in struct ATOM_Vega10_GFXCLK_Dependency_Table
+</A><A NAME="54600">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054601.html">[PATCH 00/14] drm/amd/pm: Replace one-element arrays with flexible-array members
+</A><A NAME="54601">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054602.html">[PATCH] drm/amdgpu: Change the way to determine framebuffer type
+</A><A NAME="54602">&nbsp;</A>
+<I>Gang Ba
+</I>
+
+<LI><A HREF="054603.html">[PATCH][next] amd/amdgpu_ctx: Use struct_size() helper and kmalloc()
+</A><A NAME="54603">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054604.html">[PATCH][next] drm/amdgpu: Use struct_size() helper in kmalloc()
+</A><A NAME="54604">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054605.html">[PATCH] drm/amdgpu: mark Sienna Cichlid as experimental in 5.9
+</A><A NAME="54605">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054606.html">[RFC PATCH radeon-alex] drm/amdgpu: kfd_initialized can be static
+</A><A NAME="54606">&nbsp;</A>
+<I>Felix Kuehling
+</I>
+
+<LI><A HREF="054607.html">[PATCH] drm/amdgpu: Remove warning for virtual_display
+</A><A NAME="54607">&nbsp;</A>
+<I>Emily.Deng
+</I>
+
+<LI><A HREF="054608.html">[PATCH] drm/amdgpu: Remove warning for virtual_display
+</A><A NAME="54608">&nbsp;</A>
+<I>Andrey Grodzovsky
+</I>
+
+<LI><A HREF="054609.html">[pull] amdgpu drm-fixes-5.9
+</A><A NAME="54609">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054610.html">[PATCH] drm/amdgpu: mark Sienna Cichlid as experimental in 5.9
+</A><A NAME="54610">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054611.html">[PATCH] drm/amdgpu: modify cp_flags to pg_flags in gfx_v10_cntl_power_gating
+</A><A NAME="54611">&nbsp;</A>
+<I>Changfeng
+</I>
+
+<LI><A HREF="054612.html">[PATCH] drm/amdgpu: modify cp_flags to pg_flags in gfx_v10_cntl_power_gating
+</A><A NAME="54612">&nbsp;</A>
+<I>Huang Rui
+</I>
+
+<LI><A HREF="054613.html">[PATCH] Revert &quot;drm/scheduler: improve job distribution with multiple queues&quot;
+</A><A NAME="54613">&nbsp;</A>
+<I>Changfeng
+</I>
+
+<LI><A HREF="054614.html">[PATCH][next] drm/amdgpu: Use struct_size() helper in kmalloc()
+</A><A NAME="54614">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054615.html">[PATCH][next] amd/amdgpu_ctx: Use struct_size() helper and kmalloc()
+</A><A NAME="54615">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054624.html">[PATCH] drm/amdgpu: Fix invalid number of character '{' in amdgpu_acpi_init
+</A><A NAME="54624">&nbsp;</A>
+<I>Ye Bin
+</I>
+
+<LI><A HREF="054616.html">[PATCH] Revert &quot;drm/scheduler: improve job distribution with multiple queues&quot;
+</A><A NAME="54616">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054625.html">[PATCH] drm/amdgpu: Fix inconsistent of format with argument type in amdgpu_xgmi.c
+</A><A NAME="54625">&nbsp;</A>
+<I>Ye Bin
+</I>
+
+<LI><A HREF="054617.html">[PATCH] Revert &quot;drm/scheduler: improve job distribution with multiple queues&quot;
+</A><A NAME="54617">&nbsp;</A>
+<I>Liu, Aaron
+</I>
+
+<LI><A HREF="054618.html">[PATCH] Revert &quot;drm/scheduler: improve job distribution with multiple queues&quot;
+</A><A NAME="54618">&nbsp;</A>
+<I>Nirmoy
+</I>
+
+<LI><A HREF="054619.html">[PATCH] drm/amdgpu/swsmu: clean up a bunch of stale interfaces
+</A><A NAME="54619">&nbsp;</A>
+<I>Quan, Evan
+</I>
+
+<LI><A HREF="054620.html">[PATCH] drm/amdgpu: modify kmalloc to kzalloc in amdgpu_ctx_init_entity
+</A><A NAME="54620">&nbsp;</A>
+<I>Changfeng
+</I>
+
+<LI><A HREF="054621.html">[PATCH] drm/amdgpu: modify kmalloc to kzalloc in amdgpu_ctx_init_entity
+</A><A NAME="54621">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054622.html">[PATCH v2] drm/amdgpu: Add debugfs entry for printing VM info
+</A><A NAME="54622">&nbsp;</A>
+<I>Mihir Patel
+</I>
+
+<LI><A HREF="054623.html">[PATCH v2] drm/amdgpu: Add debugfs entry for printing VM info
+</A><A NAME="54623">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054626.html">[PATCH][next] amd/amdgpu_ctx: Use struct_size() helper and kmalloc()
+</A><A NAME="54626">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054627.html">[PATCH] drm/amdgpu: vcn and jpeg ring synchronization
+</A><A NAME="54627">&nbsp;</A>
+<I>vegopala at amd.com
+</I>
+
+<LI><A HREF="054628.html">[PATCH][next] amd/amdgpu_ctx: Use struct_size() helper and kmalloc()
+</A><A NAME="54628">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054629.html">[PATCH] drm/amdgpu: vcn and jpeg ring synchronization
+</A><A NAME="54629">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054630.html">[PATCH][next] amd/amdgpu_ctx: Use struct_size() helper and kmalloc()
+</A><A NAME="54630">&nbsp;</A>
+<I>Gustavo A. R. Silva
+</I>
+
+<LI><A HREF="054631.html">[PATCH] drm/amdgpu: Fix invalid number of character '{' in amdgpu_acpi_init
+</A><A NAME="54631">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054632.html">[PATCH] drm/amdgpu: Fix inconsistent of format with argument type in amdgpu_xgmi.c
+</A><A NAME="54632">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054665.html">[PATCH RFC PKS/PMEM 00/58] PMEM: Introduce stray write protection for PMEM
+</A><A NAME="54665">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054633.html">[PATCH RFC PKS/PMEM 01/58] x86/pks: Add a global pkrs option
+</A><A NAME="54633">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054666.html">[PATCH RFC PKS/PMEM 02/58] x86/pks/test: Add testing for global option
+</A><A NAME="54666">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054681.html">[PATCH RFC PKS/PMEM 03/58] memremap: Add zone device access protection
+</A><A NAME="54681">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054667.html">[PATCH RFC PKS/PMEM 04/58] kmap: Add stray access protection for device pages
+</A><A NAME="54667">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054634.html">[PATCH RFC PKS/PMEM 05/58] kmap: Introduce k[un]map_thread
+</A><A NAME="54634">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054648.html">[PATCH RFC PKS/PMEM 06/58] kmap: Introduce k[un]map_thread debugging
+</A><A NAME="54648">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054635.html">[PATCH RFC PKS/PMEM 07/58] drivers/drbd: Utilize new kmap_thread()
+</A><A NAME="54635">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054682.html">[PATCH RFC PKS/PMEM 08/58] drivers/firmware_loader: Utilize new kmap_thread()
+</A><A NAME="54682">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054636.html">[PATCH RFC PKS/PMEM 09/58] drivers/gpu: Utilize new kmap_thread()
+</A><A NAME="54636">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054668.html">[PATCH RFC PKS/PMEM 10/58] drivers/rdma: Utilize new kmap_thread()
+</A><A NAME="54668">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054676.html">[PATCH RFC PKS/PMEM 11/58] drivers/net: Utilize new kmap_thread()
+</A><A NAME="54676">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054637.html">[PATCH RFC PKS/PMEM 12/58] fs/afs: Utilize new kmap_thread()
+</A><A NAME="54637">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054683.html">[PATCH RFC PKS/PMEM 13/58] fs/btrfs: Utilize new kmap_thread()
+</A><A NAME="54683">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054669.html">[PATCH RFC PKS/PMEM 14/58] fs/cifs: Utilize new kmap_thread()
+</A><A NAME="54669">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054649.html">[PATCH RFC PKS/PMEM 15/58] fs/ecryptfs: Utilize new kmap_thread()
+</A><A NAME="54649">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054638.html">[PATCH RFC PKS/PMEM 16/58] fs/gfs2: Utilize new kmap_thread()
+</A><A NAME="54638">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054639.html">[PATCH RFC PKS/PMEM 17/58] fs/nilfs2: Utilize new kmap_thread()
+</A><A NAME="54639">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054670.html">[PATCH RFC PKS/PMEM 18/58] fs/hfs: Utilize new kmap_thread()
+</A><A NAME="54670">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054650.html">[PATCH RFC PKS/PMEM 19/58] fs/hfsplus: Utilize new kmap_thread()
+</A><A NAME="54650">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054640.html">[PATCH RFC PKS/PMEM 20/58] fs/jffs2: Utilize new kmap_thread()
+</A><A NAME="54640">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054685.html">[PATCH RFC PKS/PMEM 21/58] fs/nfs: Utilize new kmap_thread()
+</A><A NAME="54685">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054651.html">[PATCH RFC PKS/PMEM 22/58] fs/f2fs: Utilize new kmap_thread()
+</A><A NAME="54651">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054684.html">[PATCH RFC PKS/PMEM 23/58] fs/fuse: Utilize new kmap_thread()
+</A><A NAME="54684">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054686.html">[PATCH RFC PKS/PMEM 24/58] fs/freevxfs: Utilize new kmap_thread()
+</A><A NAME="54686">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054652.html">[PATCH RFC PKS/PMEM 25/58] fs/reiserfs: Utilize new kmap_thread()
+</A><A NAME="54652">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054641.html">[PATCH RFC PKS/PMEM 26/58] fs/zonefs: Utilize new kmap_thread()
+</A><A NAME="54641">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054653.html">[PATCH RFC PKS/PMEM 27/58] fs/ubifs: Utilize new kmap_thread()
+</A><A NAME="54653">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054654.html">[PATCH RFC PKS/PMEM 28/58] fs/cachefiles: Utilize new kmap_thread()
+</A><A NAME="54654">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054655.html">[PATCH RFC PKS/PMEM 29/58] fs/ntfs: Utilize new kmap_thread()
+</A><A NAME="54655">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054642.html">[PATCH RFC PKS/PMEM 30/58] fs/romfs: Utilize new kmap_thread()
+</A><A NAME="54642">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054643.html">[PATCH RFC PKS/PMEM 31/58] fs/vboxsf: Utilize new kmap_thread()
+</A><A NAME="54643">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054671.html">[PATCH RFC PKS/PMEM 32/58] fs/hostfs: Utilize new kmap_thread()
+</A><A NAME="54671">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054656.html">[PATCH RFC PKS/PMEM 33/58] fs/cramfs: Utilize new kmap_thread()
+</A><A NAME="54656">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054672.html">[PATCH RFC PKS/PMEM 34/58] fs/erofs: Utilize new kmap_thread()
+</A><A NAME="54672">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054644.html">[PATCH RFC PKS/PMEM 35/58] fs: Utilize new kmap_thread()
+</A><A NAME="54644">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054677.html">[PATCH RFC PKS/PMEM 36/58] fs/ext2: Use ext2_put_page
+</A><A NAME="54677">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054645.html">[PATCH RFC PKS/PMEM 37/58] fs/ext2: Utilize new kmap_thread()
+</A><A NAME="54645">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054687.html">[PATCH RFC PKS/PMEM 38/58] fs/isofs: Utilize new kmap_thread()
+</A><A NAME="54687">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054657.html">[PATCH RFC PKS/PMEM 39/58] fs/jffs2: Utilize new kmap_thread()
+</A><A NAME="54657">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054658.html">[PATCH RFC PKS/PMEM 40/58] net: Utilize new kmap_thread()
+</A><A NAME="54658">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054678.html">[PATCH RFC PKS/PMEM 41/58] drivers/target: Utilize new kmap_thread()
+</A><A NAME="54678">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054688.html">[PATCH RFC PKS/PMEM 42/58] drivers/scsi: Utilize new kmap_thread()
+</A><A NAME="54688">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054689.html">[PATCH RFC PKS/PMEM 43/58] drivers/mmc: Utilize new kmap_thread()
+</A><A NAME="54689">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054673.html">[PATCH RFC PKS/PMEM 44/58] drivers/xen: Utilize new kmap_thread()
+</A><A NAME="54673">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054659.html">[PATCH RFC PKS/PMEM 45/58] drivers/firmware: Utilize new kmap_thread()
+</A><A NAME="54659">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054690.html">[PATCH RFC PKS/PMEM 46/58] drives/staging: Utilize new kmap_thread()
+</A><A NAME="54690">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054646.html">[PATCH RFC PKS/PMEM 47/58] drivers/mtd: Utilize new kmap_thread()
+</A><A NAME="54646">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054679.html">[PATCH RFC PKS/PMEM 48/58] drivers/md: Utilize new kmap_thread()
+</A><A NAME="54679">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054660.html">[PATCH RFC PKS/PMEM 49/58] drivers/misc: Utilize new kmap_thread()
+</A><A NAME="54660">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054661.html">[PATCH RFC PKS/PMEM 50/58] drivers/android: Utilize new kmap_thread()
+</A><A NAME="54661">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054691.html">[PATCH RFC PKS/PMEM 51/58] kernel: Utilize new kmap_thread()
+</A><A NAME="54691">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054674.html">[PATCH RFC PKS/PMEM 52/58] mm: Utilize new kmap_thread()
+</A><A NAME="54674">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054680.html">[PATCH RFC PKS/PMEM 53/58] lib: Utilize new kmap_thread()
+</A><A NAME="54680">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054662.html">[PATCH RFC PKS/PMEM 54/58] powerpc: Utilize new kmap_thread()
+</A><A NAME="54662">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054675.html">[PATCH RFC PKS/PMEM 55/58] samples: Utilize new kmap_thread()
+</A><A NAME="54675">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054663.html">[PATCH RFC PKS/PMEM 56/58] dax: Stray access protection for dax_direct_access()
+</A><A NAME="54663">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054664.html">[PATCH RFC PKS/PMEM 57/58] nvdimm/pmem: Stray access protection for pmem-&gt;virt_addr
+</A><A NAME="54664">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054647.html">[PATCH RFC PKS/PMEM 58/58] [dax|pmem]: Enable stray access protection
+</A><A NAME="54647">&nbsp;</A>
+<I>ira.weiny at intel.com
+</I>
+
+<LI><A HREF="054692.html">[PATCH RFC PKS/PMEM 22/58] fs/f2fs: Utilize new kmap_thread()
+</A><A NAME="54692">&nbsp;</A>
+<I>Eric Biggers
+</I>
+
+<LI><A HREF="054693.html">[PATCH RFC PKS/PMEM 09/58] drivers/gpu: Utilize new kmap_thread()
+</A><A NAME="54693">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="054694.html">[pull] amdgpu drm-fixes-5.10
+</A><A NAME="54694">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054696.html">[PATCH 1/2] drm/amd/display: Add green_sardine support to DC
+</A><A NAME="54696">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054695.html">[PATCH 2/2] drm/amd/display: Add green_sardine support to DM
+</A><A NAME="54695">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054702.html">[PATCH RFC PKS/PMEM 22/58] fs/f2fs: Utilize new kmap_thread()
+</A><A NAME="54702">&nbsp;</A>
+<I>Matthew Wilcox
+</I>
+
+<LI><A HREF="054697.html">[PATCH RFC PKS/PMEM 22/58] fs/f2fs: Utilize new kmap_thread()
+</A><A NAME="54697">&nbsp;</A>
+<I>Eric Biggers
+</I>
+
+<LI><A HREF="054704.html">[PATCH] drm/amd/display: remove no need return value
+</A><A NAME="54704">&nbsp;</A>
+<I>Bernard Zhao
+</I>
+
+<LI><A HREF="054701.html">[PATCH RFC PKS/PMEM 48/58] drivers/md: Utilize new kmap_thread()
+</A><A NAME="54701">&nbsp;</A>
+<I>Coly Li
+</I>
+
+<LI><A HREF="054700.html">[PATCH RFC PKS/PMEM 22/58] fs/f2fs: Utilize new kmap_thread()
+</A><A NAME="54700">&nbsp;</A>
+<I>James Bottomley
+</I>
+
+<LI><A HREF="054703.html">[PATCH RFC PKS/PMEM 57/58] nvdimm/pmem: Stray access protection for pmem-&gt;virt_addr
+</A><A NAME="54703">&nbsp;</A>
+<I>John Hubbard
+</I>
+
+<LI><A HREF="054705.html">[PATCH RFC PKS/PMEM 51/58] kernel: Utilize new kmap_thread()
+</A><A NAME="54705">&nbsp;</A>
+<I>Eric W. Biederman
+</I>
+
+<LI><A HREF="054698.html">[PATCH 1/2] drm/amdgpu: remove ASD ucode init for dimgrey_cavefish
+</A><A NAME="54698">&nbsp;</A>
+<I>Tao Zhou
+</I>
+
+<LI><A HREF="054699.html">[PATCH 2/2] drm/amdgpu: add DM block for dimgrey_cavefish
+</A><A NAME="54699">&nbsp;</A>
+<I>Tao Zhou
+</I>
+
+<LI><A HREF="054706.html">[PATCH 2/2] drm/amdgpu: add DM block for dimgrey_cavefish
+</A><A NAME="54706">&nbsp;</A>
+<I>Gui, Jack
+</I>
+
+<LI><A HREF="054710.html">[PATCH RFC PKS/PMEM 10/58] drivers/rdma: Utilize new kmap_thread()
+</A><A NAME="54710">&nbsp;</A>
+<I>Bernard Metzler
+</I>
+
+<LI><A HREF="054709.html">[PATCH RFC PKS/PMEM 09/58] drivers/gpu: Utilize new kmap_thread()
+</A><A NAME="54709">&nbsp;</A>
+<I>Ira Weiny
+</I>
+
+<LI><A HREF="054714.html">[PATCH RFC PKS/PMEM 26/58] fs/zonefs: Utilize new kmap_thread()
+</A><A NAME="54714">&nbsp;</A>
+<I>Damien Le Moal
+</I>
+
+<LI><A HREF="054715.html">[PATCH RFC PKS/PMEM 48/58] drivers/md: Utilize new kmap_thread()
+</A><A NAME="54715">&nbsp;</A>
+<I>Ira Weiny
+</I>
+
+<LI><A HREF="054711.html">[PATCH RFC PKS/PMEM 57/58] nvdimm/pmem: Stray access protection for pmem-&gt;virt_addr
+</A><A NAME="54711">&nbsp;</A>
+<I>Ira Weiny
+</I>
+
+<LI><A HREF="054707.html">[PATCH v3] amd/amdgpu: Fix resv shared fence overflow
+</A><A NAME="54707">&nbsp;</A>
+<I>xinhui pan
+</I>
+
+<LI><A HREF="054708.html">[PATCH v3] amd/amdgpu: Fix resv shared fence overflow
+</A><A NAME="54708">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054712.html">[PATCH RFC PKS/PMEM 22/58] fs/f2fs: Utilize new kmap_thread()
+</A><A NAME="54712">&nbsp;</A>
+<I>Ira Weiny
+</I>
+
+<LI><A HREF="054713.html">[PATCH RFC PKS/PMEM 48/58] drivers/md: Utilize new kmap_thread()
+</A><A NAME="54713">&nbsp;</A>
+<I>Coly Li
+</I>
+
+<LI><A HREF="054716.html">[PATCH v3] drm/amdgpu: Add debugfs entry for printing VM info
+</A><A NAME="54716">&nbsp;</A>
+<I>Mihir Patel
+</I>
+
+<LI><A HREF="054717.html">[PATCH v3] drm/amdgpu: Add debugfs entry for printing VM info
+</A><A NAME="54717">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054718.html">[PATCH v3] drm/amdgpu: Add debugfs entry for printing VM info
+</A><A NAME="54718">&nbsp;</A>
+<I>Patel, Mihir
+</I>
+
+<LI><A HREF="054719.html">[PATCH v3] drm/amdgpu: Add debugfs entry for printing VM info
+</A><A NAME="54719">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054720.html">[PATCH v3] drm/amdgpu: Add debugfs entry for printing VM info
+</A><A NAME="54720">&nbsp;</A>
+<I>Patel, Mihir
+</I>
+
+<LI><A HREF="054721.html">[PATCH v3] drm/amdgpu: Add debugfs entry for printing VM info
+</A><A NAME="54721">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054722.html">[PATCH v3] drm/amdgpu: Add debugfs entry for printing VM info
+</A><A NAME="54722">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054726.html">[PATCH] drm/amd/display: remove no need return value
+</A><A NAME="54726">&nbsp;</A>
+<I>Bernard Zhao
+</I>
+
+<LI><A HREF="054723.html">[PATCH v4] drm/amdgpu: Add debugfs entry for printing VM info
+</A><A NAME="54723">&nbsp;</A>
+<I>Mihir Patel
+</I>
+
+<LI><A HREF="054724.html">[PATCH v4] drm/amdgpu: Add debugfs entry for printing VM info
+</A><A NAME="54724">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054725.html">[PATCH v3] drm/amdgpu: Add debugfs entry for printing VM info
+</A><A NAME="54725">&nbsp;</A>
+<I>Patel, Mihir
+</I>
+
+<LI><A HREF="054727.html">[PATCH RFC PKS/PMEM 22/58] fs/f2fs: Utilize new kmap_thread()
+</A><A NAME="54727">&nbsp;</A>
+<I>Eric Biggers
+</I>
+
+<LI><A HREF="054728.html">[PATCH RFC PKS/PMEM 22/58] fs/f2fs: Utilize new kmap_thread()
+</A><A NAME="54728">&nbsp;</A>
+<I>Dave Hansen
+</I>
+
+<LI><A HREF="054729.html">[PATCH RFC PKS/PMEM 22/58] fs/f2fs: Utilize new kmap_thread()
+</A><A NAME="54729">&nbsp;</A>
+<I>Matthew Wilcox
+</I>
+
+<LI><A HREF="054731.html">[PATCH RFC PKS/PMEM 22/58] fs/f2fs: Utilize new kmap_thread()
+</A><A NAME="54731">&nbsp;</A>
+<I>Ira Weiny
+</I>
+
+<LI><A HREF="054732.html">[PATCH RFC PKS/PMEM 22/58] fs/f2fs: Utilize new kmap_thread()
+</A><A NAME="54732">&nbsp;</A>
+<I>Matthew Wilcox
+</I>
+
+<LI><A HREF="054733.html">[PATCH RFC PKS/PMEM 22/58] fs/f2fs: Utilize new kmap_thread()
+</A><A NAME="54733">&nbsp;</A>
+<I>Ira Weiny
+</I>
+
+<LI><A HREF="054730.html">[PATCH] drm/amd/pm: increase mclk switch threshold to 200 us
+</A><A NAME="54730">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054734.html">[PATCH] drm/amd/amdgpu: set the default value of noretry to 1 for some dGPUs
+</A><A NAME="54734">&nbsp;</A>
+<I>Chen, Guchun
+</I>
+
+<LI><A HREF="054735.html">[PATCH] drm/amd/amdgpu: set the default value of noretry to 1 for some dGPUs
+</A><A NAME="54735">&nbsp;</A>
+<I>Gui, Jack
+</I>
+
+<LI><A HREF="054736.html">[PATCH umr] Fix build to use LLVM_INCLUDE_DIRS
+</A><A NAME="54736">&nbsp;</A>
+<I>Carl Ritson
+</I>
+
+<LI><A HREF="054743.html">[PATCH RFC PKS/PMEM 24/58] fs/freevxfs: Utilize new kmap_thread()
+</A><A NAME="54743">&nbsp;</A>
+<I>Christoph Hellwig
+</I>
+
+<LI><A HREF="054737.html">[PATCH] drm/amdgpu: fix the issue that apu has no smu firmware binary
+</A><A NAME="54737">&nbsp;</A>
+<I>Huang Rui
+</I>
+
+<LI><A HREF="054738.html">[PATCH] drm/amdgpu: fix the issue that apu has no smu firmware binary
+</A><A NAME="54738">&nbsp;</A>
+<I>Wang, Kevin(Yang)
+</I>
+
+<LI><A HREF="054739.html">[PATCH v6 72/80] drm/amd/display: kernel-doc: document force_timing_sync
+</A><A NAME="54739">&nbsp;</A>
+<I>Mauro Carvalho Chehab
+</I>
+
+<LI><A HREF="054740.html">[PATCH v2 07/24] drm: amdgpu: kernel-doc: update some adev parameters
+</A><A NAME="54740">&nbsp;</A>
+<I>Mauro Carvalho Chehab
+</I>
+
+<LI><A HREF="054741.html">[PATCH] drm/amdgpu/swsmu: init the baco mutex in early_init
+</A><A NAME="54741">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054742.html">[PATCH v3] drm/amdgpu: Add debugfs entry for printing VM info
+</A><A NAME="54742">&nbsp;</A>
+<I>Chauhan, Madhav
+</I>
+
+<LI><A HREF="054744.html">[PATCH] drm/amd/pm: increase mclk switch threshold to 200 us
+</A><A NAME="54744">&nbsp;</A>
+<I>Deucher, Alexander
+</I>
+
+<LI><A HREF="054745.html">[PATCH] drm/amdgpu/swsmu: init the baco mutex in early_init
+</A><A NAME="54745">&nbsp;</A>
+<I>Wang, Kevin(Yang)
+</I>
+
+<LI><A HREF="054746.html">[PATCH v2 07/24] drm: amdgpu: kernel-doc: update some adev parameters
+</A><A NAME="54746">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054747.html">[PATCH] drm/amd/display: remove no need return value
+</A><A NAME="54747">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054748.html">[PATCH v6 72/80] drm/amd/display: kernel-doc: document force_timing_sync
+</A><A NAME="54748">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054749.html">[PATCH] drm/amdgpu: fix the issue that apu has no smu firmware binary
+</A><A NAME="54749">&nbsp;</A>
+<I>Chauhan, Madhav
+</I>
+
+<LI><A HREF="054750.html">[PATCH v2] drm/amd/amdgpu: set the default value of noretry to 1 for some dGPUs
+</A><A NAME="54750">&nbsp;</A>
+<I>Felix Kuehling
+</I>
+
+<LI><A HREF="054751.html">[PATCH v3] drm/amdgpu: Add debugfs entry for printing VM info
+</A><A NAME="54751">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054752.html">[PATCH 1/2] drm/amdgpu: increase the reserved VM size to 2MB
+</A><A NAME="54752">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054753.html">[PATCH 2/2] drm/amdgpu: nuke amdgpu_vm_bo_split_mapping
+</A><A NAME="54753">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054754.html">[PATCH RFC PKS/PMEM 33/58] fs/cramfs: Utilize new kmap_thread()
+</A><A NAME="54754">&nbsp;</A>
+<I>Nicolas Pitre
+</I>
+
+<LI><A HREF="054755.html">[PATCH RFC PKS/PMEM 33/58] fs/cramfs: Utilize new kmap_thread()
+</A><A NAME="54755">&nbsp;</A>
+<I>Dan Williams
+</I>
+
+<LI><A HREF="054756.html">linux-next: Tree for Oct 13 (drivers/gpu/drm/amd/amdgpu/../display/dc/dcn302/dcn302_resource.c)
+</A><A NAME="54756">&nbsp;</A>
+<I>Randy Dunlap
+</I>
+
+<LI><A HREF="054759.html">[PATCH RFC PKS/PMEM 33/58] fs/cramfs: Utilize new kmap_thread()
+</A><A NAME="54759">&nbsp;</A>
+<I>Matthew Wilcox
+</I>
+
+<LI><A HREF="054757.html">[PATCH RFC PKS/PMEM 33/58] fs/cramfs: Utilize new kmap_thread()
+</A><A NAME="54757">&nbsp;</A>
+<I>Dan Williams
+</I>
+
+<LI><A HREF="054758.html">[PATCH RFC PKS/PMEM 33/58] fs/cramfs: Utilize new kmap_thread()
+</A><A NAME="54758">&nbsp;</A>
+<I>Al Viro
+</I>
+
+<LI><A HREF="054760.html">[PATCH RFC PKS/PMEM 33/58] fs/cramfs: Utilize new kmap_thread()
+</A><A NAME="54760">&nbsp;</A>
+<I>Ira Weiny
+</I>
+
+<LI><A HREF="054761.html">[PATCH RFC PKS/PMEM 33/58] fs/cramfs: Utilize new kmap_thread()
+</A><A NAME="54761">&nbsp;</A>
+<I>Ira Weiny
+</I>
+
+<LI><A HREF="054762.html">[PATCH RFC PKS/PMEM 24/58] fs/freevxfs: Utilize new kmap_thread()
+</A><A NAME="54762">&nbsp;</A>
+<I>Ira Weiny
+</I>
+
+<LI><A HREF="054763.html">[PATCH 1/2] drm/amd/pm: populate the bootup LCLK frequency
+</A><A NAME="54763">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054764.html">[PATCH 2/2] drm/amd/pm: populate Arcturus PCIE link state
+</A><A NAME="54764">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054765.html">[PATCH 1/2] drm/amd/display: setup system context in dm_init
+</A><A NAME="54765">&nbsp;</A>
+<I>Yifan Zhang
+</I>
+
+<LI><A HREF="054766.html">[PATCH 2/2] drm/amd/display: add S/G support for Renoir
+</A><A NAME="54766">&nbsp;</A>
+<I>Yifan Zhang
+</I>
+
+<LI><A HREF="054767.html">[PATCH 1/5] drm/amd/pm: correct gfx and pcie settings on umd pstate switching(V2)
+</A><A NAME="54767">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054768.html">[PATCH 2/5] drm/amdgpu: add interface for setting ASPM
+</A><A NAME="54768">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054769.html">[PATCH 3/5] drm/amdgpu: add interface for setting MGCG perfmon
+</A><A NAME="54769">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054770.html">[PATCH 4/5] drm/amdgpu: fulfill Navi gfx and pcie settings on umd pstate switching(V2)
+</A><A NAME="54770">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054771.html">[PATCH 5/5] drm/amd/pm: properly setting GPO feature on UMD pstate entering/exiting
+</A><A NAME="54771">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054772.html">[PATCH 1/2] drm/amdgpu: increase the reserved VM size to 2MB
+</A><A NAME="54772">&nbsp;</A>
+<I>Chauhan, Madhav
+</I>
+
+<LI><A HREF="054773.html">[PATCH 1/2] drm/amdgpu: increase the reserved VM size to 2MB
+</A><A NAME="54773">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054774.html">[PATCH] drm/amdgpu: protect eeprom update from GPU reset
+</A><A NAME="54774">&nbsp;</A>
+<I>Dennis Li
+</I>
+
+<LI><A HREF="054775.html">[PATCH] drm/amdgpu: protect eeprom update from GPU reset
+</A><A NAME="54775">&nbsp;</A>
+<I>Zhang, Hawking
+</I>
+
+<LI><A HREF="054776.html">[PATCH] drm/amdgpu: protect eeprom update from GPU reset
+</A><A NAME="54776">&nbsp;</A>
+<I>Li, Dennis
+</I>
+
+<LI><A HREF="054777.html">[PATCH] drm/amdgpu: protect eeprom update from GPU reset
+</A><A NAME="54777">&nbsp;</A>
+<I>Zhang, Hawking
+</I>
+
+<LI><A HREF="054778.html">[PATCH] drm/amdkfd: Use kvfree in destroy_crat_image
+</A><A NAME="54778">&nbsp;</A>
+<I>Kent Russell
+</I>
+
+<LI><A HREF="054779.html">[PATCH 2/2] drm/amd/pm: populate Arcturus PCIE link state
+</A><A NAME="54779">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054780.html">[PATCH 1/2] drm/amd/pm: populate the bootup LCLK frequency
+</A><A NAME="54780">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054781.html">[PATCH 1/2] drm/amd/display: setup system context in dm_init
+</A><A NAME="54781">&nbsp;</A>
+<I>Kazlauskas, Nicholas
+</I>
+
+<LI><A HREF="054782.html">[PATCH 1/2] drm/amd/display: setup system context in dm_init
+</A><A NAME="54782">&nbsp;</A>
+<I>Kazlauskas, Nicholas
+</I>
+
+<LI><A HREF="054783.html">[PATCH 1/2] drm:amdgpu: check before setting hw priority
+</A><A NAME="54783">&nbsp;</A>
+<I>Nirmoy Das
+</I>
+
+<LI><A HREF="054784.html">[PATCH 2/2] drm/amdgpu: enable only one compute queue for raven
+</A><A NAME="54784">&nbsp;</A>
+<I>Nirmoy Das
+</I>
+
+<LI><A HREF="054785.html">[PATCH] drm/amdkfd: Use kvfree in destroy_crat_image
+</A><A NAME="54785">&nbsp;</A>
+<I>Deucher, Alexander
+</I>
+
+<LI><A HREF="054786.html">[PATCH 1/2] drm/amdgpu: increase the reserved VM size to 2MB
+</A><A NAME="54786">&nbsp;</A>
+<I>Chauhan, Madhav
+</I>
+
+<LI><A HREF="054787.html">[PATCH 1/2] drm/amdgpu: increase the reserved VM size to 2MB
+</A><A NAME="54787">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054788.html">[PATCH 2/2] drm/amdgpu: enable only one compute queue for raven
+</A><A NAME="54788">&nbsp;</A>
+<I>Nirmoy
+</I>
+
+<LI><A HREF="054790.html">[PATCH 1/2] drm/amd/display: Revert &quot;drm/amd/display: Fix a list corruption&quot;
+</A><A NAME="54790">&nbsp;</A>
+<I>Andrey Grodzovsky
+</I>
+
+<LI><A HREF="054789.html">[PATCH 2/2] drm/amd/display: Avoid MST manager resource leak.
+</A><A NAME="54789">&nbsp;</A>
+<I>Andrey Grodzovsky
+</I>
+
+<LI><A HREF="054791.html">[PATCH] drm/amdgpu/display: DRM_AMD_DC_DCN3_02 depends on DRM_AMD_DC_DCN3_01
+</A><A NAME="54791">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054792.html">[PATCH] drm/amdgpu/display: DRM_AMD_DC_DCN3_02 depends on DRM_AMD_DC_DCN3_01
+</A><A NAME="54792">&nbsp;</A>
+<I>Nirmoy
+</I>
+
+<LI><A HREF="054793.html">[PATCH] drm/amdgpu/display: DRM_AMD_DC_DCN3_02 depends on DRM_AMD_DC_DCN3_01
+</A><A NAME="54793">&nbsp;</A>
+<I>Randy Dunlap
+</I>
+
+<LI><A HREF="054794.html">[pull] amdgpu, amdkfd drm-fixes-5.10
+</A><A NAME="54794">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054795.html">[PATCH 5/5] drm/amd/pm: properly setting GPO feature on UMD pstate entering/exiting
+</A><A NAME="54795">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054796.html">[PATCH 2/2] drm/amdgpu: nuke amdgpu_vm_bo_split_mapping
+</A><A NAME="54796">&nbsp;</A>
+<I>Luben Tuikov
+</I>
+
+<LI><A HREF="054797.html">[PATCH] drm/amdgpu: add missing newline at eof
+</A><A NAME="54797">&nbsp;</A>
+<I>trix at redhat.com
+</I>
+
+<LI><A HREF="054798.html">[PATCH] drm/amdgpu: disable gpa mode for direct loading
+</A><A NAME="54798">&nbsp;</A>
+<I>Huang Rui
+</I>
+
+<LI><A HREF="054799.html">[PATCH 2/2] drm/amd/pm: populate Arcturus PCIE link state
+</A><A NAME="54799">&nbsp;</A>
+<I>Quan, Evan
+</I>
+
+<LI><A HREF="054800.html">[PATCH 2/2] drm/amd/pm: populate Arcturus PCIE link state
+</A><A NAME="54800">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054801.html">[PATCH] drm/amdgpu: disable gpa mode for direct loading
+</A><A NAME="54801">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054802.html">[PATCH] drm/amdgpu: add missing newline at eof
+</A><A NAME="54802">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054804.html">[PATCH] drm/amd: remove unnecessary conversion from bool value to bool
+</A><A NAME="54804">&nbsp;</A>
+<I>Bernard Zhao
+</I>
+
+<LI><A HREF="054803.html">[PATCH] Revert &quot;drm/amdgpu: disable gfxoff temporarily for navy_flounder&quot;
+</A><A NAME="54803">&nbsp;</A>
+<I>Jiansong Chen
+</I>
+
+<LI><A HREF="054805.html">[PATCH] Revert &quot;drm/amdgpu: disable gfxoff temporarily for navy_flounder&quot;
+</A><A NAME="54805">&nbsp;</A>
+<I>Deucher, Alexander
+</I>
+
+<LI><A HREF="054806.html">[PATCH] drm/amdgpu: update golden setting for sienna_cichlid
+</A><A NAME="54806">&nbsp;</A>
+<I>Likun Gao
+</I>
+
+<LI><A HREF="054807.html">[PATCH] drm/amdgpu: remove gfxhub_v1_1_funcs set
+</A><A NAME="54807">&nbsp;</A>
+<I>Kevin Wang
+</I>
+
+<LI><A HREF="054808.html">[PATCH] drm/amdgpu: add function to program pbb mode for sienna cichlid
+</A><A NAME="54808">&nbsp;</A>
+<I>Likun Gao
+</I>
+
+<LI><A HREF="054809.html">[PATCH] drm/amdgpu: add function to program pbb mode for sienna cichlid
+</A><A NAME="54809">&nbsp;</A>
+<I>Wang, Kevin(Yang)
+</I>
+
+<LI><A HREF="054810.html">[PATCH] drm/amdgpu: protect eeprom update from GPU reset
+</A><A NAME="54810">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054811.html">[PATCH] drm/amdgpu: correct the gpu reset handling for job != NULL case
+</A><A NAME="54811">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054812.html">[PATCH 2/2] drm/amdgpu: nuke amdgpu_vm_bo_split_mapping
+</A><A NAME="54812">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054837.html">Renoir: visual artifacts associated with scrolling
+</A><A NAME="54837">&nbsp;</A>
+<I>Dirk Gouders
+</I>
+
+<LI><A HREF="054813.html">[PATCH 1/2] drm/amdgpu/display: fix the NULL pointer reference on dmucb on dcn301
+</A><A NAME="54813">&nbsp;</A>
+<I>Huang Rui
+</I>
+
+<LI><A HREF="054814.html">[PATCH 2/2] drm/amdgpu/display: enable display ip block for vangogh
+</A><A NAME="54814">&nbsp;</A>
+<I>Huang Rui
+</I>
+
+<LI><A HREF="054815.html">[PATCH] drm/amdgpu: correct the gpu reset handling for job != NULL case
+</A><A NAME="54815">&nbsp;</A>
+<I>Jian, Jane
+</I>
+
+<LI><A HREF="054816.html">[PATCH v4 00/10] Support GEM object mappings from I/O memory
+</A><A NAME="54816">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054817.html">[PATCH v4 01/10] drm/vram-helper: Remove invariant parameters from internal kmap function
+</A><A NAME="54817">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054819.html">[PATCH v4 02/10] drm/cma-helper: Remove empty drm_gem_cma_prime_vunmap()
+</A><A NAME="54819">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054818.html">[PATCH v4 03/10] drm/etnaviv: Remove empty etnaviv_gem_prime_vunmap()
+</A><A NAME="54818">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054820.html">[PATCH v4 04/10] drm/exynos: Remove empty exynos_drm_gem_prime_{vmap, vunmap}()
+</A><A NAME="54820">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054821.html">[PATCH v4 05/10] drm/ttm: Add vmap/vunmap to TTM and TTM GEM helpers
+</A><A NAME="54821">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054822.html">[PATCH v4 06/10] drm/gem: Use struct dma_buf_map in GEM vmap ops and convert GEM backends
+</A><A NAME="54822">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054823.html">[PATCH v4 07/10] drm/gem: Update internal GEM vmap/vunmap interfaces to use struct dma_buf_map
+</A><A NAME="54823">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054824.html">[PATCH v4 08/10] drm/gem: Store client buffer mappings as struct dma_buf_map
+</A><A NAME="54824">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054825.html">[PATCH v4 09/10] dma-buf-map: Add memcpy and pointer-increment interfaces
+</A><A NAME="54825">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054826.html">[PATCH v4 10/10] drm/fb_helper: Support framebuffers in I/O memory
+</A><A NAME="54826">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054827.html">[PATCH] drm/amdgpu: update golden setting for sienna_cichlid
+</A><A NAME="54827">&nbsp;</A>
+<I>Deucher, Alexander
+</I>
+
+<LI><A HREF="054828.html">[PATCH] drm/amdgpu: remove gfxhub_v1_1_funcs set
+</A><A NAME="54828">&nbsp;</A>
+<I>Zhang, Hawking
+</I>
+
+<LI><A HREF="054829.html">[PATCH 2/2] drm/amdgpu/display: enable display ip block for vangogh
+</A><A NAME="54829">&nbsp;</A>
+<I>Deucher, Alexander
+</I>
+
+<LI><A HREF="054830.html">[PATCH v4 01/10] drm/vram-helper: Remove invariant parameters from internal kmap function
+</A><A NAME="54830">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054831.html">[PATCH v4 02/10] drm/cma-helper: Remove empty drm_gem_cma_prime_vunmap()
+</A><A NAME="54831">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054832.html">[PATCH v4 03/10] drm/etnaviv: Remove empty etnaviv_gem_prime_vunmap()
+</A><A NAME="54832">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054833.html">[PATCH v4 04/10] drm/exynos: Remove empty exynos_drm_gem_prime_{vmap,vunmap}()
+</A><A NAME="54833">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054834.html">[PATCH v4 05/10] drm/ttm: Add vmap/vunmap to TTM and TTM GEM helpers
+</A><A NAME="54834">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054835.html">[PATCH v4 06/10] drm/gem: Use struct dma_buf_map in GEM vmap ops and convert GEM backends
+</A><A NAME="54835">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054836.html">[PATCH v3] drm/amd/amdgpu: set the default value of noretry to 1 for some dGPUs
+</A><A NAME="54836">&nbsp;</A>
+<I>Felix Kuehling
+</I>
+
+<LI><A HREF="054838.html">[PATCH 2/2] drm/amdgpu: introduce a new parameter to configure how many KCQ we want(v5)
+</A><A NAME="54838">&nbsp;</A>
+<I>Marek Ol&#353;&#225;k
+</I>
+
+<LI><A HREF="054839.html">[PATCH v4 05/10] drm/ttm: Add vmap/vunmap to TTM and TTM GEM helpers
+</A><A NAME="54839">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="054840.html">[PATCH v4 05/10] drm/ttm: Add vmap/vunmap to TTM and TTM GEM helpers
+</A><A NAME="54840">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054841.html">[PATCH v4 05/10] drm/ttm: Add vmap/vunmap to TTM and TTM GEM helpers
+</A><A NAME="54841">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054842.html">[PATCH 2/2] drm/amdgpu: nuke amdgpu_vm_bo_split_mapping
+</A><A NAME="54842">&nbsp;</A>
+<I>Luben Tuikov
+</I>
+
+<LI><A HREF="054843.html">[PATCH 1/2] drm/amd/display: Use amdgpu_socbb.h instead of redefining structs
+</A><A NAME="54843">&nbsp;</A>
+<I>Bhawanpreet Lakha
+</I>
+
+<LI><A HREF="054844.html">[PATCH 2/2] drm/amd/display: Fix DCN302 makefile
+</A><A NAME="54844">&nbsp;</A>
+<I>Bhawanpreet Lakha
+</I>
+
+<LI><A HREF="054845.html">[PATCH 2/2] drm/amd/display: Fix DCN302 makefile
+</A><A NAME="54845">&nbsp;</A>
+<I>Deucher, Alexander
+</I>
+
+<LI><A HREF="054846.html">[PATCH] drm/amd/display: Fix incorrect dsc force enable logic
+</A><A NAME="54846">&nbsp;</A>
+<I>Eryk Brol
+</I>
+
+<LI><A HREF="054847.html">[PATCH] drm/amd/display: Fix incorrect dsc force enable logic
+</A><A NAME="54847">&nbsp;</A>
+<I>Harry Wentland
+</I>
+
+<LI><A HREF="054848.html">[PATCH 2/2] drm/amd/display: Avoid MST manager resource leak.
+</A><A NAME="54848">&nbsp;</A>
+<I>Grodzovsky, Andrey
+</I>
+
+<LI><A HREF="054849.html">[PATCH 1/2] drm:amdgpu: check before setting hw priority
+</A><A NAME="54849">&nbsp;</A>
+<I>Liu, Aaron
+</I>
+
+<LI><A HREF="054850.html">[PATCH 2/2] drm/amd/display: Avoid MST manager resource leak.
+</A><A NAME="54850">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054851.html">[PATCH] drm/amd/swsmu: Add missing feature map for sienna_cichlid
+</A><A NAME="54851">&nbsp;</A>
+<I>Kevin Wang
+</I>
+
+<LI><A HREF="054852.html">[PATCH 00/40] Various Polaris fixes and optimizations
+</A><A NAME="54852">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054853.html">[PATCH 01/40] drm/amd/pm: correct the checks for polaris kickers
+</A><A NAME="54853">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054854.html">[PATCH 02/40] drm/amd/pm: populate smc vddc table
+</A><A NAME="54854">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054855.html">[PATCH 03/40] drm/amd/pm: populate smc samu table
+</A><A NAME="54855">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054856.html">[PATCH 04/40] drm/amd/pm: correct vddci table setup
+</A><A NAME="54856">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054857.html">[PATCH 05/40] drm/amd/pm: correct sclk table setup
+</A><A NAME="54857">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054858.html">[PATCH 06/40] drm/amd/pm: correct mclk table setup
+</A><A NAME="54858">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054859.html">[PATCH 07/40] drm/amd/pm: correct the ACPI table setup V2
+</A><A NAME="54859">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054860.html">[PATCH 08/40] drm/amd/pm: correct the BootLinkLevel setup
+</A><A NAME="54860">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054861.html">[PATCH 09/40] drm/amd/pm: add pptable VRHotLevel setting
+</A><A NAME="54861">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054862.html">[PATCH 10/40] drm/amd/pm: drop arb table first byte workaround
+</A><A NAME="54862">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054863.html">[PATCH 11/40] drm/amdgpu: correct CG_ACLK_CNTL setting
+</A><A NAME="54863">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054864.html">[PATCH 12/40] drm/amd/pm: add PWR_CKS_CNTL setting
+</A><A NAME="54864">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054865.html">[PATCH 13/40] drm/amd/powerplay: separate Polaris fan table setup from Tonga
+</A><A NAME="54865">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054866.html">[PATCH 14/40] drm/amd/pm: optimize AC timing programming
+</A><A NAME="54866">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054867.html">[PATCH 15/40] drm/amd/pm: drop redundant efuse mask calculations
+</A><A NAME="54867">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054868.html">[PATCH 16/40] drm/amd/pm: correct the settings for ro range minimum and maximum
+</A><A NAME="54868">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054869.html">[PATCH 17/40] drm/amd/pm: correct polaris10 clock stretcher data table setting
+</A><A NAME="54869">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054870.html">[PATCH 18/40] drm/amd/pm: setup zero rpm parameters for polaris10
+</A><A NAME="54870">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054871.html">[PATCH 19/40] drm/amd/pm: add edc leakage controller setting
+</A><A NAME="54871">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054872.html">[PATCH 20/40] drm/amd/pm: add mc register table initialization
+</A><A NAME="54872">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054873.html">[PATCH 21/40] drm/amd/pm: correct VR shared rail info
+</A><A NAME="54873">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054874.html">[PATCH 22/40] drm/amd/pm: correct the checks for sclk/mclk SS support
+</A><A NAME="54874">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054875.html">[PATCH 23/40] drm/amd/pm: correct Polaris powertune table setup
+</A><A NAME="54875">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054876.html">[PATCH 24/40] drm/amd/pm: correct Polaris DIDT configurations
+</A><A NAME="54876">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054877.html">[PATCH 25/40] drm/amd/pm: correct avfs fuse settings
+</A><A NAME="54877">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054878.html">[PATCH 26/40] drm/amd/pm: correct vddc phase control setting
+</A><A NAME="54878">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054879.html">[PATCH 27/40] drm/amd/pm: correct VRconfig setting
+</A><A NAME="54879">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054880.html">[PATCH 28/40] drm/amd/pm: correct platformcaps setup
+</A><A NAME="54880">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054881.html">[PATCH 29/40] drm/amd/pm: correct smc voltage controller setup
+</A><A NAME="54881">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054882.html">[PATCH 30/40] drm/amd/pm: correct sclk/mclk dpm enablement
+</A><A NAME="54882">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054883.html">[PATCH 31/40] drm/amd/pm: correct the way to get the highest vddc
+</A><A NAME="54883">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054884.html">[PATCH 32/40] drm/amd/pm: correct clk/voltage dependence setup
+</A><A NAME="54884">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054885.html">[PATCH 33/40] drm/amd/pm: correct pcie spc cap setup
+</A><A NAME="54885">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054886.html">[PATCH 34/40] drm/amd/pm: correct SMC sclk/mclk boot level setup
+</A><A NAME="54886">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054887.html">[PATCH 35/40] drm/amd/pm: correct vddc_dep_on_dal_pwrl setup
+</A><A NAME="54887">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054888.html">[PATCH 36/40] drm/amd/pm: fulfill the Polaris implementation for get_clock_by_type_with_latency()
+</A><A NAME="54888">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054889.html">[PATCH 37/40] drm/amd/pm: enable Polaris watermark table setting
+</A><A NAME="54889">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054890.html">[PATCH 38/40] drm/amd/pm: correct the mclk switching setting
+</A><A NAME="54890">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054892.html">[PATCH 39/40] drm/amd/pm: reconfigure smc on display vbitimeout setting change
+</A><A NAME="54892">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054891.html">[PATCH 40/40] drm/amd/pm: drop redundant display setting
+</A><A NAME="54891">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="054893.html">[PATCH] drm/amd/swsmu: Add missing feature map for sienna_cichlid
+</A><A NAME="54893">&nbsp;</A>
+<I>Gao, Likun
+</I>
+
+<LI><A HREF="054894.html">[PATCH] drm/amdgpu/sriov: reopen sienna_child smu ip block under sriov
+</A><A NAME="54894">&nbsp;</A>
+<I>Jane Jian
+</I>
+
+<LI><A HREF="054895.html">[PATCH] drm/amd/swsmu: correct wrong feature bit mapping
+</A><A NAME="54895">&nbsp;</A>
+<I>Kevin Wang
+</I>
+
+<LI><A HREF="054896.html">[PATCH 1/4] drm/amdgpu: add s0i3 capacity check for s0i3 routine
+</A><A NAME="54896">&nbsp;</A>
+<I>Prike Liang
+</I>
+
+<LI><A HREF="054897.html">[PATCH 2/4] drm/amdgpu: add amdgpu_gfx_state_change_set() set gfx power change entry
+</A><A NAME="54897">&nbsp;</A>
+<I>Prike Liang
+</I>
+
+<LI><A HREF="054898.html">[PATCH 3/4] drm/amdgpu: update amdgpu device suspend/resume sequence for s0i3 support
+</A><A NAME="54898">&nbsp;</A>
+<I>Prike Liang
+</I>
+
+<LI><A HREF="054899.html">[PATCH 4/4] drm/amdgpu: fix reset support for s0i3 enablement
+</A><A NAME="54899">&nbsp;</A>
+<I>Prike Liang
+</I>
+
+<LI><A HREF="054900.html">[PATCH v4 05/10] drm/ttm: Add vmap/vunmap to TTM and TTM GEM helpers
+</A><A NAME="54900">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054901.html">[PATCH] drm/amd/swsmu: correct wrong feature bit mapping
+</A><A NAME="54901">&nbsp;</A>
+<I>Feng, Kenneth
+</I>
+
+<LI><A HREF="054902.html">[PATCH v4 09/10] dma-buf-map: Add memcpy and pointer-increment interfaces
+</A><A NAME="54902">&nbsp;</A>
+<I>Sam Ravnborg
+</I>
+
+<LI><A HREF="054903.html">[PATCH v4 09/10] dma-buf-map: Add memcpy and pointer-increment interfaces
+</A><A NAME="54903">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054904.html">[PATCH] drm/amdgpu: add a list in VM for BOs in the done state
+</A><A NAME="54904">&nbsp;</A>
+<I>Mihir Patel
+</I>
+
+<LI><A HREF="054905.html">[PATCH v4 10/10] drm/fb_helper: Support framebuffers in I/O memory
+</A><A NAME="54905">&nbsp;</A>
+<I>Sam Ravnborg
+</I>
+
+<LI><A HREF="054906.html">[PATCH] drm/amdgpu: add a list in VM for BOs in the done state
+</A><A NAME="54906">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054907.html">[PATCH v4 09/10] dma-buf-map: Add memcpy and pointer-increment interfaces
+</A><A NAME="54907">&nbsp;</A>
+<I>Sam Ravnborg
+</I>
+
+<LI><A HREF="054908.html">[PATCH v4 10/10] drm/fb_helper: Support framebuffers in I/O memory
+</A><A NAME="54908">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054909.html">[PATCH v4 10/10] drm/fb_helper: Support framebuffers in I/O memory
+</A><A NAME="54909">&nbsp;</A>
+<I>Sam Ravnborg
+</I>
+
+<LI><A HREF="054910.html">[PATCH v4 10/10] drm/fb_helper: Support framebuffers in I/O memory
+</A><A NAME="54910">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054911.html">[PATCH] drm/amdgpu: don't map BO in reserved region
+</A><A NAME="54911">&nbsp;</A>
+<I>Madhav Chauhan
+</I>
+
+<LI><A HREF="054912.html">[PATCH] drm/amdgpu: don't map BO in reserved region
+</A><A NAME="54912">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054913.html">[PATCH v4 10/10] drm/fb_helper: Support framebuffers in I/O memory
+</A><A NAME="54913">&nbsp;</A>
+<I>Sam Ravnborg
+</I>
+
+<LI><A HREF="054914.html">[PATCH] drm/amd/pm: drop navy_flounder hardcode of using soft pptable
+</A><A NAME="54914">&nbsp;</A>
+<I>Jiansong Chen
+</I>
+
+<LI><A HREF="054915.html">[PATCH] drm/amd/pm: drop navy_flounder hardcode of using soft pptable
+</A><A NAME="54915">&nbsp;</A>
+<I>Zhang, Hawking
+</I>
+
+<LI><A HREF="054916.html">[PATCH 2/2] drm/amdgpu: enable only one compute queue for raven
+</A><A NAME="54916">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054917.html">[PATCH] drm/amdgpu: move amdgpu_num_kcq handling to a helper
+</A><A NAME="54917">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054918.html">[PATCH 2/2] drm/amdgpu: enable only one compute queue for raven
+</A><A NAME="54918">&nbsp;</A>
+<I>Nirmoy
+</I>
+
+<LI><A HREF="054919.html">[PATCH] drm/amd/psp: Fix sysfs: cannot create duplicate filename
+</A><A NAME="54919">&nbsp;</A>
+<I>Andrey Grodzovsky
+</I>
+
+<LI><A HREF="054920.html">[PATCH] drm/amdgpu: move amdgpu_num_kcq handling to a helper
+</A><A NAME="54920">&nbsp;</A>
+<I>Nirmoy
+</I>
+
+<LI><A HREF="054921.html">[PATCH] drm/amd/psp: Fix sysfs: cannot create duplicate filename
+</A><A NAME="54921">&nbsp;</A>
+<I>Deucher, Alexander
+</I>
+
+<LI><A HREF="054922.html">[PATCH 1/1] drm/amdgpu: fix compute queue priority if num_kcq is less than 4
+</A><A NAME="54922">&nbsp;</A>
+<I>Nirmoy Das
+</I>
+
+<LI><A HREF="054923.html">[PATCH 1/1] drm/amdgpu: fix compute queue priority if num_kcq is less than 4
+</A><A NAME="54923">&nbsp;</A>
+<I>Felix Kuehling
+</I>
+
+<LI><A HREF="054924.html">[PATCH] drm/amdgpu: move amdgpu_num_kcq handling to a helper
+</A><A NAME="54924">&nbsp;</A>
+<I>Felix Kuehling
+</I>
+
+<LI><A HREF="054925.html">[PATCH 1/4] drm/amdgpu/display: remove DRM_AMD_DC_GREEN_SARDINE
+</A><A NAME="54925">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054926.html">[PATCH 2/4] drm/amdgpu/display: remove dal_cmd_tbl_helper_dcn2_get_table2
+</A><A NAME="54926">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054927.html">[PATCH 3/4] drm/amdgpu: drop CONFIG_DRM_AMD_DC_DCN3_01 from atomfirmware.h
+</A><A NAME="54927">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054928.html">[PATCH 4/4] drm/amdgpu: fold CONFIG_DRM_AMD_DC_DCN3* into CONFIG_DRM_AMD_DC_DCN
+</A><A NAME="54928">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054929.html">[PATCH] drm/amdgpu/gmc10: remove dummy read workaround for newer chips
+</A><A NAME="54929">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054930.html">[PATCH 2/4] drm/amdgpu: add amdgpu_gfx_state_change_set() set gfx power change entry
+</A><A NAME="54930">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054931.html">[PATCH 2/2] drm/amd/display: Avoid MST manager resource leak.
+</A><A NAME="54931">&nbsp;</A>
+<I>Kazlauskas, Nicholas
+</I>
+
+<LI><A HREF="054932.html">[PATCH] drm/amdgpu: enable VCN PG and CG for vangogh
+</A><A NAME="54932">&nbsp;</A>
+<I>Zhang, Boyuan
+</I>
+
+<LI><A HREF="054933.html">[PATCH] drm/amdgpu/gmc10: remove dummy read workaround for newer chips
+</A><A NAME="54933">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054934.html">[PATCH 1/2] drm/amdgpu: increase the reserved VM size to 2MB
+</A><A NAME="54934">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054935.html">[PATCH 2/2] drm/amdgpu: nuke amdgpu_vm_bo_split_mapping v2
+</A><A NAME="54935">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054948.html">[RFC] treewide: cleanup unreachable breaks
+</A><A NAME="54948">&nbsp;</A>
+<I>trix at redhat.com
+</I>
+
+<LI><A HREF="054949.html">[RFC] treewide: cleanup unreachable breaks
+</A><A NAME="54949">&nbsp;</A>
+<I>Joe Perches
+</I>
+
+<LI><A HREF="054954.html">[Cocci] [RFC] treewide: cleanup unreachable breaks
+</A><A NAME="54954">&nbsp;</A>
+<I>Julia Lawall
+</I>
+
+<LI><A HREF="054950.html">[Cocci] [RFC] treewide: cleanup unreachable breaks
+</A><A NAME="54950">&nbsp;</A>
+<I>Joe Perches
+</I>
+
+<LI><A HREF="054955.html">[RFC] treewide: cleanup unreachable breaks
+</A><A NAME="54955">&nbsp;</A>
+<I>Dan Williams
+</I>
+
+<LI><A HREF="054936.html">[bugreport] [5.10] DEBUG_LOCKS_WARN_ON(ww_ctx-&gt;contending_lock != ww) We 'forgot' to unlock everything else first?
+</A><A NAME="54936">&nbsp;</A>
+<I>Mikhail Gavrilov
+</I>
+
+<LI><A HREF="054956.html">[RFC] treewide: cleanup unreachable breaks
+</A><A NAME="54956">&nbsp;</A>
+<I>Greg KH
+</I>
+
+<LI><A HREF="054951.html">[RFC] treewide: cleanup unreachable breaks
+</A><A NAME="54951">&nbsp;</A>
+<I>Hans de Goede
+</I>
+
+<LI><A HREF="054952.html">[RFC] treewide: cleanup unreachable breaks
+</A><A NAME="54952">&nbsp;</A>
+<I>Tom Rix
+</I>
+
+<LI><A HREF="054957.html">[Ocfs2-devel] [RFC] treewide: cleanup unreachable breaks
+</A><A NAME="54957">&nbsp;</A>
+<I>Matthew Wilcox
+</I>
+
+<LI><A HREF="054953.html">[Ocfs2-devel] [RFC] treewide: cleanup unreachable breaks
+</A><A NAME="54953">&nbsp;</A>
+<I>Joe Perches
+</I>
+
+<LI><A HREF="054959.html">[Ocfs2-devel] [RFC] treewide: cleanup unreachable breaks
+</A><A NAME="54959">&nbsp;</A>
+<I>James Bottomley
+</I>
+
+<LI><A HREF="054958.html">[Ocfs2-devel] [RFC] treewide: cleanup unreachable breaks
+</A><A NAME="54958">&nbsp;</A>
+<I>Matthew Wilcox
+</I>
+
+<LI><A HREF="054937.html">[PATCH AUTOSEL 5.9 090/111] drm/amd/display: Fix a list corruption
+</A><A NAME="54937">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="054960.html">[Ocfs2-devel] [RFC] treewide: cleanup unreachable breaks
+</A><A NAME="54960">&nbsp;</A>
+<I>James Bottomley
+</I>
+
+<LI><A HREF="054938.html">[PATCH AUTOSEL 5.9 105/111] drm/amd/display: Screen corruption on dual displays (DP+USB-C)
+</A><A NAME="54938">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="054939.html">[PATCH AUTOSEL 5.9 109/111] drm/amd/display: Disconnect pipe separetely when disable pipe split
+</A><A NAME="54939">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="054940.html">[PATCH AUTOSEL 5.8 084/101] drm/amd/display: Fix a list corruption
+</A><A NAME="54940">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="054941.html">[PATCH AUTOSEL 5.8 098/101] drm/amd/display: Screen corruption on dual displays (DP+USB-C)
+</A><A NAME="54941">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="054942.html">[PATCH AUTOSEL 5.4 67/80] drm/amd/display: Fix a list corruption
+</A><A NAME="54942">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="054943.html">[PATCH AUTOSEL 4.19 49/56] drm/amd/display: Fix a list corruption
+</A><A NAME="54943">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="054944.html">[PATCH 2/4] drm/amdgpu: add amdgpu_gfx_state_change_set() set gfx power change entry
+</A><A NAME="54944">&nbsp;</A>
+<I>Liang, Prike
+</I>
+
+<LI><A HREF="054945.html">[PATCH] drm/amdgpu/gmc10: remove dummy read workaround for newer chips
+</A><A NAME="54945">&nbsp;</A>
+<I>Zhang, Hawking
+</I>
+
+<LI><A HREF="054961.html">[PATCH] drm/amd/display: fix a possible NULL pointer dereference in bios_parser_get_src_obj()
+</A><A NAME="54961">&nbsp;</A>
+<I>estherbdf
+</I>
+
+<LI><A HREF="054946.html">[PATCH v4 05/10] drm/ttm: Add vmap/vunmap to TTM and TTM GEM helpers
+</A><A NAME="54946">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054962.html">[PATCH] drm/amd/display: Fix missing declaration of enable_kernel_vsx()
+</A><A NAME="54962">&nbsp;</A>
+<I>Christophe Leroy
+</I>
+
+<LI><A HREF="054947.html">[PATCH v4 05/10] drm/ttm: Add vmap/vunmap to TTM and TTM GEM helpers
+</A><A NAME="54947">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054963.html">BUG: Restoring brightness with systemd-backlight doesn't work on Linux 5.9(.1)
+</A><A NAME="54963">&nbsp;</A>
+<I>Leonidas-Panagiotis Papadakos
+</I>
+
+<LI><A HREF="054964.html">[PATCH AUTOSEL 5.9 090/111] drm/amd/display: Fix a list corruption
+</A><A NAME="54964">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="054965.html">[PATCH] drm/amd/display: Fix missing declaration of enable_kernel_vsx()
+</A><A NAME="54965">&nbsp;</A>
+<I>kernel test robot
+</I>
+
+<LI><A HREF="054966.html">[PATCH] drm/amdgpu: enable VCN PG and CG for vangogh
+</A><A NAME="54966">&nbsp;</A>
+<I>Deucher, Alexander
+</I>
+
+<LI><A HREF="054967.html">[PATCH] drm/amdkfd: Use same SQ prefetch setting as amdgpu
+</A><A NAME="54967">&nbsp;</A>
+<I>Jay Cornwall
+</I>
+
+<LI><A HREF="054968.html">[PATCH] drm/amd/display: Fix missing declaration of enable_kernel_vsx()
+</A><A NAME="54968">&nbsp;</A>
+<I>kernel test robot
+</I>
+
+<LI><A HREF="054970.html">[PATCH] drm/amdgpu: remove unneeded break
+</A><A NAME="54970">&nbsp;</A>
+<I>trix at redhat.com
+</I>
+
+<LI><A HREF="054969.html">[PATCH] drm/amdgpu: remove unneeded break
+</A><A NAME="54969">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="054971.html">[PATCH] drm/amdgpu: remove unneeded break
+</A><A NAME="54971">&nbsp;</A>
+<I>Harry Wentland
+</I>
+
+<LI><A HREF="054974.html">[PATCH] drm/amd/display: Fix missing declaration of enable_kernel_vsx()
+</A><A NAME="54974">&nbsp;</A>
+<I>Christophe Leroy
+</I>
+
+<LI><A HREF="054972.html">[PATCH v4 05/10] drm/ttm: Add vmap/vunmap to TTM and TTM GEM helpers
+</A><A NAME="54972">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="054973.html">[PATCH] drm/amdkfd: Use same SQ prefetch setting as amdgpu
+</A><A NAME="54973">&nbsp;</A>
+<I>Felix Kuehling
+</I>
+
+<LI><A HREF="054975.html">[PATCH 2/2] drm/amdgpu: nuke amdgpu_vm_bo_split_mapping v2
+</A><A NAME="54975">&nbsp;</A>
+<I>Felix Kuehling
+</I>
+
+<LI><A HREF="054976.html">[RFC] treewide: cleanup unreachable breaks
+</A><A NAME="54976">&nbsp;</A>
+<I>Nick Desaulniers
+</I>
+
+<LI><A HREF="054978.html">[RFC] treewide: cleanup unreachable breaks
+</A><A NAME="54978">&nbsp;</A>
+<I>Jason Gunthorpe
+</I>
+
+<LI><A HREF="054977.html">[PATCH 1/2] drm/amd/display: setup system context in dm_init
+</A><A NAME="54977">&nbsp;</A>
+<I>Matt Coffin
+</I>
+
+<LI><A HREF="054979.html">[PATCH] drm/amd/amdgpu: enable noretry for Sienna_Cichlid/Navy_Flounder/Dimgrey_Cavefish
+</A><A NAME="54979">&nbsp;</A>
+<I>Chen, Guchun
+</I>
+
+<LI><A HREF="054980.html">[PATCH] drm/amd/display: Fix the display corruption issue on Navi10
+</A><A NAME="54980">&nbsp;</A>
+<I>Yifan Zhang
+</I>
+
+<LI><A HREF="054999.html">[Ocfs2-devel] [RFC] treewide: cleanup unreachable breaks
+</A><A NAME="54999">&nbsp;</A>
+<I>John Haxby
+</I>
+
+<LI><A HREF="054981.html">[PATCH] drm/amd/pm: fix pcie information for sienna cichlid
+</A><A NAME="54981">&nbsp;</A>
+<I>Likun Gao
+</I>
+
+<LI><A HREF="054982.html">[PATCH] drm/amd/pm: update driver if file for sienna cichlid
+</A><A NAME="54982">&nbsp;</A>
+<I>Likun Gao
+</I>
+
+<LI><A HREF="054983.html">[PATCH] drm/amd/pm: fix pcie information for sienna cichlid
+</A><A NAME="54983">&nbsp;</A>
+<I>Zhang, Hawking
+</I>
+
+<LI><A HREF="054984.html">[PATCH] drm/amd/pm: update driver if file for sienna cichlid
+</A><A NAME="54984">&nbsp;</A>
+<I>Zhang, Hawking
+</I>
+
+<LI><A HREF="054985.html">[PATCH] drm/amd/pm: update driver if version for dimgrey_cavefish
+</A><A NAME="54985">&nbsp;</A>
+<I>Tao Zhou
+</I>
+
+<LI><A HREF="054986.html">[PATCH] drm/amd/pm: update driver if version for dimgrey_cavefish
+</A><A NAME="54986">&nbsp;</A>
+<I>Zhang, Hawking
+</I>
+
+<LI><A HREF="054987.html">[PATCH] drm/amd/pm: fix pcie information for sienna cichlid
+</A><A NAME="54987">&nbsp;</A>
+<I>Feng, Kenneth
+</I>
+
+<LI><A HREF="054990.html">[PATCH v5 00/10] Support GEM object mappings from I/O memory
+</A><A NAME="54990">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054991.html">[PATCH v5 01/10] drm/vram-helper: Remove invariant parameters from internal kmap function
+</A><A NAME="54991">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054989.html">[PATCH v5 02/10] drm/cma-helper: Remove empty drm_gem_cma_prime_vunmap()
+</A><A NAME="54989">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054988.html">[PATCH v5 03/10] drm/etnaviv: Remove empty etnaviv_gem_prime_vunmap()
+</A><A NAME="54988">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054992.html">[PATCH v5 04/10] drm/exynos: Remove empty exynos_drm_gem_prime_{vmap, vunmap}()
+</A><A NAME="54992">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054993.html">[PATCH v5 05/10] drm/ttm: Add vmap/vunmap to TTM and TTM GEM helpers
+</A><A NAME="54993">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054995.html">[PATCH v5 06/10] drm/gem: Use struct dma_buf_map in GEM vmap ops and convert GEM backends
+</A><A NAME="54995">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054994.html">[PATCH v5 07/10] drm/gem: Update internal GEM vmap/vunmap interfaces to use struct dma_buf_map
+</A><A NAME="54994">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054996.html">[PATCH v5 08/10] drm/gem: Store client buffer mappings as struct dma_buf_map
+</A><A NAME="54996">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054997.html">[PATCH v5 09/10] dma-buf-map: Add memcpy and pointer-increment interfaces
+</A><A NAME="54997">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="054998.html">[PATCH v5 10/10] drm/fb_helper: Support framebuffers in I/O memory
+</A><A NAME="54998">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="055000.html">[PATCH] drm/amd/display: Fix the display corruption issue on Navi10
+</A><A NAME="55000">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055001.html">[PATCH v5 05/10] drm/ttm: Add vmap/vunmap to TTM and TTM GEM helpers
+</A><A NAME="55001">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="055002.html">[PATCH] drm/amd/display: Fix the display corruption issue on Navi10
+</A><A NAME="55002">&nbsp;</A>
+<I>Matt Coffin
+</I>
+
+<LI><A HREF="055003.html">[RFC] treewide: cleanup unreachable breaks
+</A><A NAME="55003">&nbsp;</A>
+<I>Tom Rix
+</I>
+
+<LI><A HREF="055004.html">[RFC] treewide: cleanup unreachable breaks
+</A><A NAME="55004">&nbsp;</A>
+<I>Tom Rix
+</I>
+
+<LI><A HREF="055008.html">[RFC] treewide: cleanup unreachable breaks
+</A><A NAME="55008">&nbsp;</A>
+<I>Joe Perches
+</I>
+
+<LI><A HREF="055005.html">[PATCH 1/3] drm/amdgpu: add GC 10.3 NOALLOC registers
+</A><A NAME="55005">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055006.html">[PATCH 2/3] drm/amdgpu: add support to configure MALL for sienna_cichlid (v2)
+</A><A NAME="55006">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055007.html">[PATCH 3/3] drm/amdgpu/display: add MALL support
+</A><A NAME="55007">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055009.html">[PATCH] drm/amd/display: Initialize num_pkrs on VANGOGH.
+</A><A NAME="55009">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055010.html">[PATCH] drm/amd/display: Initialize num_pkrs on VANGOGH.
+</A><A NAME="55010">&nbsp;</A>
+<I>Marek Ol&#353;&#225;k
+</I>
+
+<LI><A HREF="055011.html">[PATCH] drm/amd/display: Initialize num_pkrs on VANGOGH.
+</A><A NAME="55011">&nbsp;</A>
+<I>Huang Rui
+</I>
+
+<LI><A HREF="055012.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55012">&nbsp;</A>
+<I>Kenneth Feng
+</I>
+
+<LI><A HREF="055013.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55013">&nbsp;</A>
+<I>Gao, Likun
+</I>
+
+<LI><A HREF="055014.html">[PATCH] Revert &quot;drm/amdgpu: disable sienna chichlid UMC RAS&quot;
+</A><A NAME="55014">&nbsp;</A>
+<I>Clements, John
+</I>
+
+<LI><A HREF="055015.html">[PATCH] Revert &quot;drm/amdgpu: disable sienna chichlid UMC RAS&quot;
+</A><A NAME="55015">&nbsp;</A>
+<I>Zhang, Hawking
+</I>
+
+<LI><A HREF="055016.html">[PATCH 1/3] drm/amdgpu: add DID for navi10 blockchain SKU
+</A><A NAME="55016">&nbsp;</A>
+<I>Tianci Yin
+</I>
+
+<LI><A HREF="055017.html">[PATCH 2/3] drm/amdgpu: disable DCN for navi10 blockchain SKU
+</A><A NAME="55017">&nbsp;</A>
+<I>Tianci Yin
+</I>
+
+<LI><A HREF="055018.html">[PATCH 3/3] drm/amdgpu: disable VCN for navi10 blockchain SKU
+</A><A NAME="55018">&nbsp;</A>
+<I>Tianci Yin
+</I>
+
+<LI><A HREF="055019.html">[PATCH 1/3] drm/amdgpu: add DID for navi10 blockchain SKU
+</A><A NAME="55019">&nbsp;</A>
+<I>Chen, Guchun
+</I>
+
+<LI><A HREF="055020.html">[PATCH] drm/amd/pm: fix pp_dpm_fclk
+</A><A NAME="55020">&nbsp;</A>
+<I>Kenneth Feng
+</I>
+
+<LI><A HREF="055021.html">[PATCH 1/3] drm/amdgpu: add DID for navi10 blockchain SKU
+</A><A NAME="55021">&nbsp;</A>
+<I>Yin, Tianci (Rico)
+</I>
+
+<LI><A HREF="055022.html">[PATCH] drm/amd/pm: fix pp_dpm_fclk
+</A><A NAME="55022">&nbsp;</A>
+<I>Gao, Likun
+</I>
+
+<LI><A HREF="055023.html">[PATCH] drm/amd/pm: remove the average clock value in sysfs
+</A><A NAME="55023">&nbsp;</A>
+<I>Kenneth Feng
+</I>
+
+<LI><A HREF="055024.html">[PATCH 2/3] drm/amdgpu: add support to configure MALL for sienna_cichlid (v2)
+</A><A NAME="55024">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="055025.html">[PATCH] drm/amd/pm: remove the average clock value in sysfs
+</A><A NAME="55025">&nbsp;</A>
+<I>Gao, Likun
+</I>
+
+<LI><A HREF="055027.html">[PATCH v3 0/6] Documentation build fixes against upstream
+</A><A NAME="55027">&nbsp;</A>
+<I>Mauro Carvalho Chehab
+</I>
+
+<LI><A HREF="055026.html">[PATCH v3 1/6] drm: amdgpu: kernel-doc: update some adev parameters
+</A><A NAME="55026">&nbsp;</A>
+<I>Mauro Carvalho Chehab
+</I>
+
+<LI><A HREF="055028.html">[PATCH 2/3] drm/amdgpu: disable DCN for navi10 blockchain SKU
+</A><A NAME="55028">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055029.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55029">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055030.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55030">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055031.html">[PATCH 00/33] DC Patches - 29 October 2020
+</A><A NAME="55031">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055032.html">[PATCH 01/33] drm/amd/display: Add Bounding Box State for Low DF PState but High Voltage State
+</A><A NAME="55032">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055035.html">[PATCH 02/33] drm/amd/display: add dcn21 bw validation
+</A><A NAME="55035">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055033.html">[PATCH 03/33] drm/amd/display: enable odm + full screen mpo on dcn21
+</A><A NAME="55033">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055034.html">[PATCH 04/33] drm/amd/display: Source minimum HBlank support
+</A><A NAME="55034">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055038.html">[PATCH 05/33] drm/amd/display: Reverting &quot;Add connector to the state if DSC debugfs is set&quot;
+</A><A NAME="55038">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055036.html">[PATCH 06/33] drm/amd/display: Set WM set A to 0 if full pstate not supported
+</A><A NAME="55036">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055037.html">[PATCH 07/33] drm/amd/display: Raise DPG height during timing synchronization
+</A><A NAME="55037">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055040.html">[PATCH 08/33] drm/amd/display: Define PSR ERROR Status bit VSC_SDP
+</A><A NAME="55040">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055039.html">[PATCH 09/33] drm/amd/display: [FW Promotion] Release 0.0.37
+</A><A NAME="55039">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055041.html">[PATCH 10/33] drm/amd/display: Add an option to limit max DSC target bpp per sink
+</A><A NAME="55041">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055043.html">[PATCH 11/33] drm/amd/display: 3.2.107
+</A><A NAME="55043">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055042.html">[PATCH 12/33] drm/amd/display: DCN2.1 Disable 48MHz Powerdown Debug Option
+</A><A NAME="55042">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055046.html">[PATCH 13/33] drm/amd/display: adding reading OEM init_data to dcn3
+</A><A NAME="55046">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055044.html">[PATCH 14/33] drm/amd/display: Refactor ABM_MASK_SH_LIST_DCN301 naming
+</A><A NAME="55044">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055045.html">[PATCH 15/33] drm/amd/display: skip avmute action
+</A><A NAME="55045">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055049.html">[PATCH 16/33] drm/amd/display: Revert check for flip pending before locking pipes
+</A><A NAME="55049">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055047.html">[PATCH 17/33] drm/amd/display: Reduce height of visual confirm on right side.
+</A><A NAME="55047">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055048.html">[PATCH 18/33] drm/amd/display: disable seamless boot for VSC_SDP
+</A><A NAME="55048">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055051.html">[PATCH 19/33] drm/amd/display: Update GSL state if leaving immediate flip
+</A><A NAME="55051">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055050.html">[PATCH 20/33] drm/amd/display: Don't trigger flip twice when ODM combine in use
+</A><A NAME="55050">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055053.html">[PATCH 21/33] drm/amd/display: Fix max brightness pixel accuracy
+</A><A NAME="55053">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055055.html">[PATCH 22/33] drm/amd/display: adding ddc_gpio_vga_reg_list to ddc reg def'ns
+</A><A NAME="55055">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055054.html">[PATCH 23/33] drm/amd/display: [FW Promotion] Release 0.0.38
+</A><A NAME="55054">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055052.html">[PATCH 24/33] drm/amd/display: 3.2.108
+</A><A NAME="55052">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055056.html">[PATCH 25/33] drm/amd/display: Decouple amdgpu_dm_trace from service
+</A><A NAME="55056">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055059.html">[PATCH 26/33] drm/amd/display: Rework registers tracepoint
+</A><A NAME="55059">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055057.html">[PATCH 27/33] drm/amd/display: Add tracepoint for amdgpu_dm
+</A><A NAME="55057">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055058.html">[PATCH 28/33] drm/amd/display: Add pipe_state tracepoint
+</A><A NAME="55058">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055061.html">[PATCH 29/33] drm/amd/display: Add tracepoint for capturing clocks state
+</A><A NAME="55061">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055062.html">[PATCH 30/33] drm/amd/display: prevent null pointer access
+</A><A NAME="55062">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055063.html">[PATCH 31/33] drm/amd/display: Removed unreferenced variables.
+</A><A NAME="55063">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055060.html">[PATCH 32/33] drm/amd/display: Using udelay for specific dongle while edid return defer
+</A><A NAME="55060">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055064.html">[PATCH 33/33] drm/amd/display: combined user regamma and OS GAMMA_CS_TFM_1D
+</A><A NAME="55064">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055065.html">[PATCH] drm/amd/display: Fix the display corruption issue on Navi10
+</A><A NAME="55065">&nbsp;</A>
+<I>Yifan Zhang
+</I>
+
+<LI><A HREF="055066.html">[PATCH] drm/amd/display: Fix the display corruption issue on Navi10
+</A><A NAME="55066">&nbsp;</A>
+<I>Li, Roman
+</I>
+
+<LI><A HREF="055067.html">[PATCH] drm/amd/display: Interpret log_2(0) as 0
+</A><A NAME="55067">&nbsp;</A>
+<I>Harry Wentland
+</I>
+
+<LI><A HREF="055068.html">[PATCH] drm/amd/display: Interpret log_2(0) as 0
+</A><A NAME="55068">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055069.html">[PATCH] drm/amdgpu: correct the cu and rb info for sienna cichlid
+</A><A NAME="55069">&nbsp;</A>
+<I>Likun Gao
+</I>
+
+<LI><A HREF="055070.html">[PATCH 2/3] drm/amdgpu: disable DCN for navi10 blockchain SKU
+</A><A NAME="55070">&nbsp;</A>
+<I>Luben Tuikov
+</I>
+
+<LI><A HREF="055071.html">[PATCH 3/3] drm/amdgpu: disable VCN for navi10 blockchain SKU
+</A><A NAME="55071">&nbsp;</A>
+<I>Luben Tuikov
+</I>
+
+<LI><A HREF="055072.html">[PATCH] drm/amdgpu: correct the cu and rb info for sienna cichlid
+</A><A NAME="55072">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055073.html">[Outreachy kernel][PATCH] gpu: amd: Return boolean types instead of integer values
+</A><A NAME="55073">&nbsp;</A>
+<I>Sumera Priyadarsini
+</I>
+
+<LI><A HREF="055074.html">[Outreachy kernel][PATCH] gpu: amd: Return boolean types instead of integer values
+</A><A NAME="55074">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055075.html">[PATCH v3 1/6] drm: amdgpu: kernel-doc: update some adev parameters
+</A><A NAME="55075">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055076.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55076">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055077.html">[PATCH] drm/amd/display: Interpret log_2(0) as 0
+</A><A NAME="55077">&nbsp;</A>
+<I>Marek Ol&#353;&#225;k
+</I>
+
+<LI><A HREF="055078.html">[PATCH v3 00/11] amd/display: Add GFX9+ modifier support.
+</A><A NAME="55078">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055079.html">[PATCH v3 01/11] drm/amd/display: Do not silently accept DCC for multiplane formats.
+</A><A NAME="55079">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055081.html">[PATCH v3 02/11] drm/amd: Init modifier field of helper fb.
+</A><A NAME="55081">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055080.html">[PATCH v3 03/11] drm/amd/display: Honor the offset for plane 0.
+</A><A NAME="55080">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055082.html">[PATCH v3 04/11] drm/fourcc: Add AMD DRM modifiers.
+</A><A NAME="55082">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055083.html">[PATCH v3 05/11] drm/amd/display: Store tiling_flags in the framebuffer.
+</A><A NAME="55083">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055084.html">[PATCH v3 06/11] drm/amd/display: Convert tiling_flags to modifiers.
+</A><A NAME="55084">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055086.html">[PATCH v3 07/11] drm/amd/display: Refactor surface tiling setup.
+</A><A NAME="55086">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055085.html">[PATCH v3 08/11] drm/amd/display: Set DC options from modifiers.
+</A><A NAME="55085">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055087.html">[PATCH v3 09/11] drm/amd/display: Add formats for DCC with 2/3 planes.
+</A><A NAME="55087">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055088.html">[PATCH v3 10/11] drm/amd/display: Expose modifiers.
+</A><A NAME="55088">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055089.html">[PATCH v3 11/11] drm/amd/display: Clean up GFX9 tiling_flags path.
+</A><A NAME="55089">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055090.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55090">&nbsp;</A>
+<I>Feng, Kenneth
+</I>
+
+<LI><A HREF="055091.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55091">&nbsp;</A>
+<I>Feng, Kenneth
+</I>
+
+<LI><A HREF="055092.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55092">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055093.html">[PATCH] drm/amdgpu: correct the cu and rb info for sienna cichlid
+</A><A NAME="55093">&nbsp;</A>
+<I>Zhang, Hawking
+</I>
+
+<LI><A HREF="055094.html">[PATCH 1/3] drm/amdgpu: add DID for navi10 blockchain SKU
+</A><A NAME="55094">&nbsp;</A>
+<I>Tianci Yin
+</I>
+
+<LI><A HREF="055095.html">[PATCH 2/3] drm/amdgpu: disable DCN for navi10 blockchain SKU
+</A><A NAME="55095">&nbsp;</A>
+<I>Tianci Yin
+</I>
+
+<LI><A HREF="055096.html">[PATCH 3/3] drm/amdgpu: disable VCN for navi10 blockchain SKU
+</A><A NAME="55096">&nbsp;</A>
+<I>Tianci Yin
+</I>
+
+<LI><A HREF="055097.html">[PATCH 2/3] drm/amdgpu: disable DCN for navi10 blockchain SKU
+</A><A NAME="55097">&nbsp;</A>
+<I>Yin, Tianci (Rico)
+</I>
+
+<LI><A HREF="055098.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55098">&nbsp;</A>
+<I>Feng, Kenneth
+</I>
+
+<LI><A HREF="055099.html">[PATCH 2/3] drm/amdgpu: disable DCN for navi10 blockchain SKU
+</A><A NAME="55099">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055100.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55100">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055101.html">[PATCH 2/3] drm/amdgpu: disable DCN for navi10 blockchain SKU
+</A><A NAME="55101">&nbsp;</A>
+<I>Yin, Tianci (Rico)
+</I>
+
+<LI><A HREF="055102.html">[PATCH 1/2] drm/amdgpu: add DID for navi10 blockchain SKU
+</A><A NAME="55102">&nbsp;</A>
+<I>Tianci Yin
+</I>
+
+<LI><A HREF="055103.html">[PATCH 2/2] drm/amdgpu: disable DCN and VCN for navi10 blockchain SKU(v3)
+</A><A NAME="55103">&nbsp;</A>
+<I>Tianci Yin
+</I>
+
+<LI><A HREF="055104.html">[PATCH 2/2] drm/amdgpu: disable DCN and VCN for navi10 blockchain SKU(v3)
+</A><A NAME="55104">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055105.html">[PATCH 2/2] drm/amdgpu: disable DCN and VCN for navi10 blockchain SKU(v3)
+</A><A NAME="55105">&nbsp;</A>
+<I>Yin, Tianci (Rico)
+</I>
+
+<LI><A HREF="055106.html">[pull] amdgpu, amdkfd drm-fixes-5.10
+</A><A NAME="55106">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055107.html">[PATCH] drm/amdgpu: remove unneeded break
+</A><A NAME="55107">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055108.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55108">&nbsp;</A>
+<I>Feng, Kenneth
+</I>
+
+<LI><A HREF="055109.html">[PATCH] drm/amd/display: fix a possible NULL pointer dereference in bios_parser_get_src_obj()
+</A><A NAME="55109">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055110.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55110">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055111.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55111">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055112.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55112">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055113.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55113">&nbsp;</A>
+<I>Feng, Kenneth
+</I>
+
+<LI><A HREF="055114.html">[PATCH 1/4] drm/amdgpu/display: remove DRM_AMD_DC_GREEN_SARDINE
+</A><A NAME="55114">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055115.html">[PATCH v3 10/11] drm/amd/display: Expose modifiers.
+</A><A NAME="55115">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055116.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55116">&nbsp;</A>
+<I>Feng, Kenneth
+</I>
+
+<LI><A HREF="055117.html">[PATCH v5 10/10] drm/fb_helper: Support framebuffers in I/O memory
+</A><A NAME="55117">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055118.html">[PATCH v5 10/10] drm/fb_helper: Support framebuffers in I/O memory
+</A><A NAME="55118">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="055119.html">[PATCH v5 08/10] drm/gem: Store client buffer mappings as struct dma_buf_map
+</A><A NAME="55119">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055120.html">[PATCH v5 10/10] drm/fb_helper: Support framebuffers in I/O memory
+</A><A NAME="55120">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055121.html">kgdb_breakpoint() usage leads to kernel panic
+</A><A NAME="55121">&nbsp;</A>
+<I>Takashi Iwai
+</I>
+
+<LI><A HREF="055122.html">[PATCH v5 08/10] drm/gem: Store client buffer mappings as struct dma_buf_map
+</A><A NAME="55122">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="055123.html">[PATCH v5 08/10] drm/gem: Store client buffer mappings as struct dma_buf_map
+</A><A NAME="55123">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055124.html">[PATCH v3 10/11] drm/amd/display: Expose modifiers.
+</A><A NAME="55124">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055125.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55125">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055126.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55126">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055127.html">[PATCH] drm/amd/pm: fix the wrong fan speed in fan1_input
+</A><A NAME="55127">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055128.html">[Outreachy kernel][PATCH 0/5] drm/amdgpu: Replace snprintf() with sysfs_emit
+</A><A NAME="55128">&nbsp;</A>
+<I>Sumera Priyadarsini
+</I>
+
+<LI><A HREF="055134.html">[PATCH 1/5] gpu: drm: amdgpu: Replace snprintf() with sysfs_emit()
+</A><A NAME="55134">&nbsp;</A>
+<I>Sumera Priyadarsini
+</I>
+
+<LI><A HREF="055129.html">[PATCH 2/5] gpu: drm: amdgpu: Replace snprintf() with sysfs_emit()
+</A><A NAME="55129">&nbsp;</A>
+<I>Sumera Priyadarsini
+</I>
+
+<LI><A HREF="055130.html">[PATCH 3/5] gpu: drm: amdgpu: Replace snprintf() with sysfs_emit()
+</A><A NAME="55130">&nbsp;</A>
+<I>Sumera Priyadarsini
+</I>
+
+<LI><A HREF="055131.html">[PATCH 4/5] gpu: drm: amdgpu: Replace snprintf() with sysfs_emit()
+</A><A NAME="55131">&nbsp;</A>
+<I>Sumera Priyadarsini
+</I>
+
+<LI><A HREF="055132.html">[PATCH 5/5] gpu: drm: amdgpu: Replace snprintf() with sysfs_emit()
+</A><A NAME="55132">&nbsp;</A>
+<I>Sumera Priyadarsini
+</I>
+
+<LI><A HREF="055133.html">[Outreachy kernel] [PATCH 4/5] gpu: drm: amdgpu: Replace snprintf() with sysfs_emit()
+</A><A NAME="55133">&nbsp;</A>
+<I>Greg KH
+</I>
+
+<LI><A HREF="055135.html">[Outreachy kernel][PATCH 0/5] drm/amdgpu: Replace snprintf() with sysfs_emit
+</A><A NAME="55135">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055136.html">[PATCH v3 03/11] drm/amd/display: Honor the offset for plane 0.
+</A><A NAME="55136">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055137.html">[PATCH v3 04/11] drm/fourcc: Add AMD DRM modifiers.
+</A><A NAME="55137">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055139.html">[PATCH v3 03/11] drm/amd/display: Honor the offset for plane 0.
+</A><A NAME="55139">&nbsp;</A>
+<I>Greg KH
+</I>
+
+<LI><A HREF="055138.html">[PATCH v3 04/11] drm/fourcc: Add AMD DRM modifiers.
+</A><A NAME="55138">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055140.html">[PATCH v3 00/11] amd/display: Add GFX9+ modifier support.
+</A><A NAME="55140">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055141.html">[PATCH] drm/amdgpu: During compute disable GFXOFF for Sienna_Cichlid
+</A><A NAME="55141">&nbsp;</A>
+<I>Harish Kasiviswanathan
+</I>
+
+<LI><A HREF="055142.html">[PATCH] drm/amdgpu: During compute disable GFXOFF for Sienna_Cichlid
+</A><A NAME="55142">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055143.html">[PATCH] drm/amdgpu/display: fix 64 bit division in dcn30_hwseq.c
+</A><A NAME="55143">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055148.html">[Outreachy kernel] [PATCH 4/5] gpu: drm: amdgpu: Replace snprintf() with sysfs_emit()
+</A><A NAME="55148">&nbsp;</A>
+<I>Sumera Priyadarsini
+</I>
+
+<LI><A HREF="055144.html">[PATCH] drm/amdgpu: During compute disable GFXOFF for Sienna_Cichlid
+</A><A NAME="55144">&nbsp;</A>
+<I>Quan, Evan
+</I>
+
+<LI><A HREF="055145.html">DROP: Re: [PATCH] drm/amd/amdgpu: Add checksun check for pf2vf message
+</A><A NAME="55145">&nbsp;</A>
+<I>Li, Xin (Justin)
+</I>
+
+<LI><A HREF="055147.html">[PATCH] Fix bug to get average GPU power
+</A><A NAME="55147">&nbsp;</A>
+<I>Lei Guo
+</I>
+
+<LI><A HREF="055146.html">[PATCH 2/2] drm/amdgpu: disable DCN and VCN for navi10 blockchain SKU(v3)
+</A><A NAME="55146">&nbsp;</A>
+<I>Luben Tuikov
+</I>
+
+<LI><A HREF="055149.html">[PATCH] drm/amdgpu: Fix size calculation when init onchip memory
+</A><A NAME="55149">&nbsp;</A>
+<I>xinhui pan
+</I>
+
+<LI><A HREF="055150.html">[PATCH] drm/amdgpu: Fix size calculation when init onchip memory
+</A><A NAME="55150">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="055151.html">kgdb_breakpoint() usage leads to kernel panic
+</A><A NAME="55151">&nbsp;</A>
+<I>Takashi Iwai
+</I>
+
+<LI><A HREF="055152.html">[PATCH 0/3] drm/amd/display: Fix kernel panic by breakpoint
+</A><A NAME="55152">&nbsp;</A>
+<I>Takashi Iwai
+</I>
+
+<LI><A HREF="055153.html">[PATCH 1/3] drm/amd/display: Fix kernel panic by dal_gpio_open() error
+</A><A NAME="55153">&nbsp;</A>
+<I>Takashi Iwai
+</I>
+
+<LI><A HREF="055154.html">[PATCH 2/3] drm/amd/display: Don't invoke kgdb_breakpoint() unconditionally
+</A><A NAME="55154">&nbsp;</A>
+<I>Takashi Iwai
+</I>
+
+<LI><A HREF="055155.html">[PATCH 3/3] drm/amd/display: Clean up debug macros
+</A><A NAME="55155">&nbsp;</A>
+<I>Takashi Iwai
+</I>
+
+<LI><A HREF="055156.html">[PATCH] Revert &quot;drm/amdgpu: IP discovery table is not ready yet for VG&quot;
+</A><A NAME="55156">&nbsp;</A>
+<I>Xiaomeng Hou
+</I>
+
+<LI><A HREF="055157.html">[PATCH] Revert &quot;drm/amdgpu: IP discovery table is not ready yet for VG&quot;
+</A><A NAME="55157">&nbsp;</A>
+<I>Huang Rui
+</I>
+
+<LI><A HREF="055161.html">[PATCH 05/65] drm/atomic-helper: Add dma-fence annotations
+</A><A NAME="55161">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055160.html">[PATCH 06/65] drm/vkms: Annotate vblank timer
+</A><A NAME="55160">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055158.html">[PATCH 07/65] drm/vblank: Annotate with dma-fence signalling section
+</A><A NAME="55158">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055159.html">[PATCH 08/65] drm/amdgpu: add dma-fence annotations to atomic commit path
+</A><A NAME="55159">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055162.html">[PATCH 17/65] drm/scheduler: use dma-fence annotations in main thread
+</A><A NAME="55162">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055163.html">[PATCH 18/65] drm/amdgpu: use dma-fence annotations in cs_submit()
+</A><A NAME="55163">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055164.html">[PATCH 19/65] drm/amdgpu: s/GFP_KERNEL/GFP_ATOMIC in scheduler code
+</A><A NAME="55164">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055165.html">[PATCH 20/65] drm/scheduler: use dma-fence annotations in tdr work
+</A><A NAME="55165">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055166.html">[PATCH 21/65] drm/amdgpu: use dma-fence annotations for gpu reset code
+</A><A NAME="55166">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055167.html">[PATCH 22/65] Revert &quot;drm/amdgpu: add fbdev suspend/resume on gpu reset&quot;
+</A><A NAME="55167">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055168.html">[PATCH 23/65] drm/i915: Annotate dma_fence_work
+</A><A NAME="55168">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055169.html">[PATCH 1/5] drm/radeon: Stop changing the drm_driver struct
+</A><A NAME="55169">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055170.html">[PATCH] drm/amdgpu: always reset asic when going into suspend
+</A><A NAME="55170">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055171.html">[PATCH 1/3] drm/amdgpu: add mode2 reset support for vangogh
+</A><A NAME="55171">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055172.html">[PATCH 2/3] drm/amdgpu/nv: add mode2 reset handling
+</A><A NAME="55172">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055173.html">[PATCH 3/3] drm/amdgpu: Enable GPU reset for vangogh
+</A><A NAME="55173">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055174.html">[PATCH v3 02/56] drm: amdgpu_dm: fix a typo
+</A><A NAME="55174">&nbsp;</A>
+<I>Mauro Carvalho Chehab
+</I>
+
+<LI><A HREF="055176.html">[PATCH v3 03/56] amdgpu: fix a few kernel-doc markup issues
+</A><A NAME="55176">&nbsp;</A>
+<I>Mauro Carvalho Chehab
+</I>
+
+<LI><A HREF="055175.html">[PATCH v3 11/56] drm/amdgpu: fix some kernel-doc markups
+</A><A NAME="55175">&nbsp;</A>
+<I>Mauro Carvalho Chehab
+</I>
+
+<LI><A HREF="055177.html">[PATCH v3 03/56] amdgpu: fix a few kernel-doc markup issues
+</A><A NAME="55177">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="055178.html">[PATCH v3 11/56] drm/amdgpu: fix some kernel-doc markups
+</A><A NAME="55178">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="055179.html">[PATCH] drm/amd/display: Fixed panic during seamless boot.
+</A><A NAME="55179">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055180.html">[PATCH v3 03/56] amdgpu: fix a few kernel-doc markup issues
+</A><A NAME="55180">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055181.html">[PATCH v3 11/56] drm/amdgpu: fix some kernel-doc markups
+</A><A NAME="55181">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055182.html">[PATCH v3 02/56] drm: amdgpu_dm: fix a typo
+</A><A NAME="55182">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055183.html">[PATCH] drm/amd/display: Fixed panic during seamless boot.
+</A><A NAME="55183">&nbsp;</A>
+<I>Lakha, Bhawanpreet
+</I>
+
+<LI><A HREF="055184.html">[PATCH] drm/amd/display: Fixed panic during seamless boot.
+</A><A NAME="55184">&nbsp;</A>
+<I>Aurabindo Pillai
+</I>
+
+<LI><A HREF="055185.html">[PATCH 0/3] drm/amd/display: Fix kernel panic by breakpoint
+</A><A NAME="55185">&nbsp;</A>
+<I>Luben Tuikov
+</I>
+
+<LI><A HREF="055186.html">[PATCH] drm/amdgpu: Fix size calculation when init onchip memory
+</A><A NAME="55186">&nbsp;</A>
+<I>Luben Tuikov
+</I>
+
+<LI><A HREF="055191.html">[PATCH] drm/ttm: add __user annotation in radeon_ttm_vram_read
+</A><A NAME="55191">&nbsp;</A>
+<I>Rasmus Villemoes
+</I>
+
+<LI><A HREF="055187.html">[PATCH v5 10/10] drm/fb_helper: Support framebuffers in I/O memory
+</A><A NAME="55187">&nbsp;</A>
+<I>Sam Ravnborg
+</I>
+
+<LI><A HREF="055188.html">[PATCH AUTOSEL 5.9 090/111] drm/amd/display: Fix a list corruption
+</A><A NAME="55188">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="055192.html">amdgpu crashes on OOM
+</A><A NAME="55192">&nbsp;</A>
+<I>Alex Xu (Hello71)
+</I>
+
+<LI><A HREF="055189.html">[PATCH] drm/amdgpu: Fix size calculation when init onchip memory
+</A><A NAME="55189">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="055190.html">[PATCH v5 10/10] drm/fb_helper: Support framebuffers in I/O memory
+</A><A NAME="55190">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="055193.html">[PATCH v3 00/11] amd/display: Add GFX9+ modifier support.
+</A><A NAME="55193">&nbsp;</A>
+<I>Pierre-Eric Pelloux-Prayer
+</I>
+
+<LI><A HREF="055194.html">[PATCH] drm/amdgpu: drop mem_global_referenced
+</A><A NAME="55194">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="055195.html">amdgpu crashes on OOM
+</A><A NAME="55195">&nbsp;</A>
+<I>Michel D&#228;nzer
+</I>
+
+<LI><A HREF="055208.html">[PATCH -next] drm/amdgpu: Discard unnecessary breaks
+</A><A NAME="55208">&nbsp;</A>
+<I>Zhang Qilong
+</I>
+
+<LI><A HREF="055196.html">[PATCH] drm/amdgpu: add vangogh apu flag
+</A><A NAME="55196">&nbsp;</A>
+<I>Huang Rui
+</I>
+
+<LI><A HREF="055197.html">[PATCH v3 01/11] drm/amd/display: Do not silently accept DCC for multiplane formats.
+</A><A NAME="55197">&nbsp;</A>
+<I>Kazlauskas, Nicholas
+</I>
+
+<LI><A HREF="055198.html">[PATCH v3 02/11] drm/amd: Init modifier field of helper fb.
+</A><A NAME="55198">&nbsp;</A>
+<I>Kazlauskas, Nicholas
+</I>
+
+<LI><A HREF="055199.html">[PATCH v3 03/11] drm/amd/display: Honor the offset for plane 0.
+</A><A NAME="55199">&nbsp;</A>
+<I>Kazlauskas, Nicholas
+</I>
+
+<LI><A HREF="055200.html">[PATCH v3 05/11] drm/amd/display: Store tiling_flags in the framebuffer.
+</A><A NAME="55200">&nbsp;</A>
+<I>Kazlauskas, Nicholas
+</I>
+
+<LI><A HREF="055201.html">[PATCH v3 07/11] drm/amd/display: Refactor surface tiling setup.
+</A><A NAME="55201">&nbsp;</A>
+<I>Kazlauskas, Nicholas
+</I>
+
+<LI><A HREF="055202.html">[PATCH] drm/amdgpu: drop mem_global_referenced
+</A><A NAME="55202">&nbsp;</A>
+<I>Deucher, Alexander
+</I>
+
+<LI><A HREF="055203.html">[PATCH] drm/amdgpu/display: use kvzalloc again in dc_create_state
+</A><A NAME="55203">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055204.html">amdgpu crashes on OOM
+</A><A NAME="55204">&nbsp;</A>
+<I>Deucher, Alexander
+</I>
+
+<LI><A HREF="055205.html">[PATCH] drm/amdgpu: add vangogh apu flag
+</A><A NAME="55205">&nbsp;</A>
+<I>Deucher, Alexander
+</I>
+
+<LI><A HREF="055209.html">amdgpu crashes on OOM
+</A><A NAME="55209">&nbsp;</A>
+<I>Alex Xu (Hello71)
+</I>
+
+<LI><A HREF="055206.html">[PATCH] drm/amdgpu: add vangogh apu flag
+</A><A NAME="55206">&nbsp;</A>
+<I>Chauhan, Madhav
+</I>
+
+<LI><A HREF="055207.html">[PATCH] drm/amdgpu/display: use kvzalloc again in dc_create_state
+</A><A NAME="55207">&nbsp;</A>
+<I>Kazlauskas, Nicholas
+</I>
+
+<LI><A HREF="055210.html">[PATCH 3/3] drm/amdgpu/display: add MALL support
+</A><A NAME="55210">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055211.html">[PATCH 1/2] drm/amdgpu/display: fix abm shift and mask lists for DCN3.01/3.02
+</A><A NAME="55211">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055212.html">[PATCH 2/2] drm/amdgpu/display: drop disconnect_pipes callback for DCN3.01
+</A><A NAME="55212">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055213.html">[PATCH 1/2] drm/amdgpu/display: fix abm shift and mask lists for DCN3.01/3.02
+</A><A NAME="55213">&nbsp;</A>
+<I>Abramov, Slava
+</I>
+
+<LI><A HREF="055214.html">[PATCH 2/2] drm/amdgpu/display: drop disconnect_pipes callback for DCN3.01
+</A><A NAME="55214">&nbsp;</A>
+<I>Abramov, Slava
+</I>
+
+<LI><A HREF="055215.html">[PATCH] drm/amdgpu/display: re-add surface size calculation in dcn30_hwseq.c
+</A><A NAME="55215">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055216.html">[PATCH 3/3] drm/amdgpu/display: add MALL support
+</A><A NAME="55216">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055217.html">[PATCH -next] drm/amdgpu: Discard unnecessary breaks
+</A><A NAME="55217">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055218.html">[PATCH 1/4] drm/amdgpu/display: remove DRM_AMD_DC_GREEN_SARDINE
+</A><A NAME="55218">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055219.html">[PATCH] drm/amdgpu/display: use kvzalloc again in dc_create_state
+</A><A NAME="55219">&nbsp;</A>
+<I>Alex Xu (Hello71)
+</I>
+
+<LI><A HREF="055220.html">[PATCH] drm/amdgpu/display: use kvzalloc again in dc_create_state
+</A><A NAME="55220">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055221.html">[PATCH] drm/amdgpu/display: fix indentation in defer_delay_converter_wa()
+</A><A NAME="55221">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055222.html">[Outreachy][PATCH] drm/amdgpu: use true and false for bool initialisations
+</A><A NAME="55222">&nbsp;</A>
+<I>Sumera Priyadarsini
+</I>
+
+<LI><A HREF="055223.html">[PATCH 0/3] drm/amd/display: Fix kernel panic by breakpoint
+</A><A NAME="55223">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055224.html">[PATCH 0/3] drm/amd/display: Fix kernel panic by breakpoint
+</A><A NAME="55224">&nbsp;</A>
+<I>Kazlauskas, Nicholas
+</I>
+
+<LI><A HREF="055225.html">[BISECTED] New kernel warning on v5.10-rc1
+</A><A NAME="55225">&nbsp;</A>
+<I>Tom Seewald
+</I>
+
+<LI><A HREF="055226.html">[Outreachy][PATCH] drm/amdgpu: use true and false for bool initialisations
+</A><A NAME="55226">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055227.html">[PATCH 0/3] drm/amd/display: Fix kernel panic by breakpoint
+</A><A NAME="55227">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055228.html">[PATCH 1/5] drm/amdgpu: fix enum mismatches
+</A><A NAME="55228">&nbsp;</A>
+<I>Arnd Bergmann
+</I>
+
+<LI><A HREF="055229.html">[PATCH 2/5] drm/amdgpu: fix incorrect enum type
+</A><A NAME="55229">&nbsp;</A>
+<I>Arnd Bergmann
+</I>
+
+<LI><A HREF="055230.html">[PATCH 3/5] drm/amdgpu: fix enum odm_combine_mode mismatch
+</A><A NAME="55230">&nbsp;</A>
+<I>Arnd Bergmann
+</I>
+
+<LI><A HREF="055231.html">[PATCH 4/5] drm/amdgpu: fix build_coefficients() argument
+</A><A NAME="55231">&nbsp;</A>
+<I>Arnd Bergmann
+</I>
+
+<LI><A HREF="055232.html">[PATCH 5/5] drm/amdgpu: disable -Woverride-init warning
+</A><A NAME="55232">&nbsp;</A>
+<I>Arnd Bergmann
+</I>
+
+<LI><A HREF="055233.html">[PATCH] drm/amdgpu/swsmu: drop smu i2c bus on navi1x
+</A><A NAME="55233">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055234.html">[PATCH] drm/amdgpu/pm: fix the fan speed in fan1_input in manual mode for navi1x
+</A><A NAME="55234">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055235.html">[PATCH 1/4] drm/amdgpu/display: remove DRM_AMD_DC_GREEN_SARDINE
+</A><A NAME="55235">&nbsp;</A>
+<I>Luben Tuikov
+</I>
+
+<LI><A HREF="055236.html">[PATCH 2/3] drm/amdgpu: add support to configure MALL for sienna_cichlid (v2)
+</A><A NAME="55236">&nbsp;</A>
+<I>Luben Tuikov
+</I>
+
+<LI><A HREF="055237.html">[PATCH AUTOSEL 5.9 033/147] drm/amdgpu: restore ras flags when user resets eeprom(v2)
+</A><A NAME="55237">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="055238.html">[PATCH AUTOSEL 5.9 037/147] drm/scheduler: Scheduler priority fixes (v2)
+</A><A NAME="55238">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="055239.html">[PATCH AUTOSEL 5.9 070/147] drm/amd/display: Check clock table return
+</A><A NAME="55239">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="055240.html">[PATCH AUTOSEL 5.9 076/147] drm/amdgpu: No sysfs, not an error condition
+</A><A NAME="55240">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="055241.html">[PATCH AUTOSEL 5.9 100/147] drm/amd/display: HDMI remote sink need mode validation for Linux
+</A><A NAME="55241">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="055242.html">[PATCH AUTOSEL 5.9 101/147] drm/amd/display: Avoid set zero in the requested clk
+</A><A NAME="55242">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="055243.html">[PATCH AUTOSEL 5.8 029/132] drm/amdgpu: restore ras flags when user resets eeprom(v2)
+</A><A NAME="55243">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="055244.html">[PATCH AUTOSEL 5.8 033/132] drm/scheduler: Scheduler priority fixes (v2)
+</A><A NAME="55244">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="055245.html">[PATCH AUTOSEL 5.8 062/132] drm/amd/display: Check clock table return
+</A><A NAME="55245">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="055246.html">[PATCH AUTOSEL 5.8 068/132] drm/amdgpu: No sysfs, not an error condition
+</A><A NAME="55246">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="055247.html">[PATCH AUTOSEL 5.8 092/132] drm/amd/display: HDMI remote sink need mode validation for Linux
+</A><A NAME="55247">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="055248.html">[PATCH AUTOSEL 5.8 093/132] drm/amd/display: Avoid set zero in the requested clk
+</A><A NAME="55248">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="055249.html">[PATCH AUTOSEL 5.4 54/80] drm/amd/display: HDMI remote sink need mode validation for Linux
+</A><A NAME="55249">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="055250.html">[PATCH AUTOSEL 4.19 41/60] drm/amd/display: HDMI remote sink need mode validation for Linux
+</A><A NAME="55250">&nbsp;</A>
+<I>Sasha Levin
+</I>
+
+<LI><A HREF="055252.html">[PATCH 1/2] drm/amd/pm: enable baco reset for Hawaii
+</A><A NAME="55252">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="055251.html">[PATCH 2/2] drm/amd/pm: do not use ixFEATURE_STATUS for checking smc running
+</A><A NAME="55251">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="055253.html">[PATCH] drm/amdgpu/pm: fix the fan speed in fan1_input in manual mode for navi1x
+</A><A NAME="55253">&nbsp;</A>
+<I>Quan, Evan
+</I>
+
+<LI><A HREF="055254.html">[PATCH] drm/amdgpu/swsmu: drop smu i2c bus on navi1x
+</A><A NAME="55254">&nbsp;</A>
+<I>Quan, Evan
+</I>
+
+<LI><A HREF="055255.html">[PATCH] Fix bug to get average GPU power
+</A><A NAME="55255">&nbsp;</A>
+<I>Quan, Evan
+</I>
+
+<LI><A HREF="055256.html">[PATCH] drm/amd/amdgpu: Add checksun check for pf2vf message
+</A><A NAME="55256">&nbsp;</A>
+<I>Li, Xin (Justin)
+</I>
+
+<LI><A HREF="055257.html">[PATCH] drm/amd/pm: Activate a more aggressive DPM policy while there's heavy load.
+</A><A NAME="55257">&nbsp;</A>
+<I>Li, Xin (Justin)
+</I>
+
+<LI><A HREF="055258.html">[PATCH 0/3] Refine the codes about reseving bad pages.
+</A><A NAME="55258">&nbsp;</A>
+<I>Dennis Li
+</I>
+
+<LI><A HREF="055259.html">[PATCH 1/3] drm/amdgpu: change to save bad pages in UMC error interrupt callback
+</A><A NAME="55259">&nbsp;</A>
+<I>Dennis Li
+</I>
+
+<LI><A HREF="055260.html">[PATCH 2/3] drm/amdgpu: remove redundant GPU reset
+</A><A NAME="55260">&nbsp;</A>
+<I>Dennis Li
+</I>
+
+<LI><A HREF="055261.html">[PATCH 3/3] drm/amdgpu: fix the issue of reserving bad pages failed
+</A><A NAME="55261">&nbsp;</A>
+<I>Dennis Li
+</I>
+
+<LI><A HREF="055262.html">[PATCH 01/10] drm/amd/pm: update the smu v11.5 smc header for vangogh
+</A><A NAME="55262">&nbsp;</A>
+<I>Xiaojian Du
+</I>
+
+<LI><A HREF="055263.html">[PATCH 02/10] drm/amd/pm: update the smu v11.5 firmware header for vangogh
+</A><A NAME="55263">&nbsp;</A>
+<I>Xiaojian Du
+</I>
+
+<LI><A HREF="055264.html">[PATCH 03/10] drm/amd/pm: add new smc message mapping for vangogh
+</A><A NAME="55264">&nbsp;</A>
+<I>Xiaojian Du
+</I>
+
+<LI><A HREF="055265.html">[PATCH 04/10] drm/amd/pm: add UMD Pstate Msg Parameters for vangogh temporarily
+</A><A NAME="55265">&nbsp;</A>
+<I>Xiaojian Du
+</I>
+
+<LI><A HREF="055266.html">[PATCH 05/10] drm/amd/pm: update the smu v11.5 driver interface header for vangogh
+</A><A NAME="55266">&nbsp;</A>
+<I>Xiaojian Du
+</I>
+
+<LI><A HREF="055267.html">[PATCH 06/10] drm/amd/pm: set the initial value of pm info to zero
+</A><A NAME="55267">&nbsp;</A>
+<I>Xiaojian Du
+</I>
+
+<LI><A HREF="055268.html">[PATCH 07/10] drm/amd/pm: remove some redundant smu message mapping for vangogh
+</A><A NAME="55268">&nbsp;</A>
+<I>Xiaojian Du
+</I>
+
+<LI><A HREF="055269.html">[PATCH 08/10] drm/amd/pm: add one new function to get 32 bit feature mask for vangogh
+</A><A NAME="55269">&nbsp;</A>
+<I>Xiaojian Du
+</I>
+
+<LI><A HREF="055270.html">[PATCH 09/10] drm/amd/pm: add some swSMU functions for vangogh.
+</A><A NAME="55270">&nbsp;</A>
+<I>Xiaojian Du
+</I>
+
+<LI><A HREF="055271.html">[PATCH 10/10] drm/amd/pm: enable the rest functions of swSMU for vangogh.
+</A><A NAME="55271">&nbsp;</A>
+<I>Xiaojian Du
+</I>
+
+<LI><A HREF="055272.html">[PATCH 3/3] drm/amdgpu: fix the issue of reserving bad pages failed
+</A><A NAME="55272">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="055274.html">[PATCH v3 22/32] drm: amdgpu: kernel-doc: update some adev parameters
+</A><A NAME="55274">&nbsp;</A>
+<I>Mauro Carvalho Chehab
+</I>
+
+<LI><A HREF="055275.html">[PATCH v3 28/32] drm: amdgpu_dm: fix a typo
+</A><A NAME="55275">&nbsp;</A>
+<I>Mauro Carvalho Chehab
+</I>
+
+<LI><A HREF="055273.html">[PATCH v3 30/32] amdgpu: fix a few kernel-doc markup issues
+</A><A NAME="55273">&nbsp;</A>
+<I>Mauro Carvalho Chehab
+</I>
+
+<LI><A HREF="055276.html">[PATCH 1/2] drm/amd/pm: enable baco reset for Hawaii
+</A><A NAME="55276">&nbsp;</A>
+<I>Sandeep
+</I>
+
+<LI><A HREF="055277.html">[PATCH 1/2] drm/amd/pm: enable baco reset for Hawaii
+</A><A NAME="55277">&nbsp;</A>
+<I>Sandeep
+</I>
+
+<LI><A HREF="055278.html">[PATCH] drm/amd/pm: Activate a more aggressive DPM policy while there's heavy load.
+</A><A NAME="55278">&nbsp;</A>
+<I>Ernst Sj&#246;strand
+</I>
+
+<LI><A HREF="055279.html">[PATCH 0/3] Refine the codes about reseving bad pages.
+</A><A NAME="55279">&nbsp;</A>
+<I>Zhang, Hawking
+</I>
+
+<LI><A HREF="055280.html">[PATCH 1/2] drm/amd/pm: enable baco reset for Hawaii
+</A><A NAME="55280">&nbsp;</A>
+<I>Sandeep
+</I>
+
+<LI><A HREF="055281.html">[PATCH 1/2] drm/amd/pm: enable baco reset for Hawaii
+</A><A NAME="55281">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055282.html">[PATCH] drm/amdgpu/display: fix warnings when CONFIG_DRM_AMD_DC_DCN is not set
+</A><A NAME="55282">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055283.html">[PATCH 1/4] drm/amdgpu/display: remove DRM_AMD_DC_GREEN_SARDINE
+</A><A NAME="55283">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055284.html">[PATCH] drm/amdgpu/display: fix indentation in defer_delay_converter_wa()
+</A><A NAME="55284">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055285.html">[PATCH] drm/amdgpu/display: re-add surface size calculation in dcn30_hwseq.c
+</A><A NAME="55285">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055286.html">[PATCH] drm/amdgpu/display: re-add surface size calculation in dcn30_hwseq.c
+</A><A NAME="55286">&nbsp;</A>
+<I>Abramov, Slava
+</I>
+
+<LI><A HREF="055287.html">Subject: [RFC] clang tooling cleanups
+</A><A NAME="55287">&nbsp;</A>
+<I>trix at redhat.com
+</I>
+
+<LI><A HREF="055288.html">[PATCH] drm/amdgpu: remove unneeded semicolon
+</A><A NAME="55288">&nbsp;</A>
+<I>trix at redhat.com
+</I>
+
+<LI><A HREF="055289.html">[PATCH] drm/amd/display: remove unneeded semicolon
+</A><A NAME="55289">&nbsp;</A>
+<I>trix at redhat.com
+</I>
+
+<LI><A HREF="055290.html">[PATCH 00/25] DC Patches Nov 2nd, 2020
+</A><A NAME="55290">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055291.html">[PATCH 01/25] drm/amd/display: Fix compilation error
+</A><A NAME="55291">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055292.html">[PATCH 02/25] drm/amd/display: Add MPC memory shutdown support for DCN3
+</A><A NAME="55292">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055293.html">[PATCH 03/25] drm/amd/display: only check available pipe to disable vbios mode.
+</A><A NAME="55293">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055294.html">[PATCH 04/25] drm/amd/display: Force prefetch mode to 0
+</A><A NAME="55294">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055299.html">[PATCH 05/25] drm/amd/display: Keep GSL for full updates with planes that flip VSYNC
+</A><A NAME="55299">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055297.html">[PATCH 06/25] drm/amd/display: [FW Promotion] Release 0.0.39
+</A><A NAME="55297">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055295.html">[PATCH 07/25] drm/amd/display: stop top_mgr when type change to non-MST during s3
+</A><A NAME="55295">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055296.html">[PATCH 08/25] drm/amd/display: Blank HUBP during pixel data blank for DCN30
+</A><A NAME="55296">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055300.html">[PATCH 09/25] drm/amd/display: 3.2.109
+</A><A NAME="55300">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055301.html">[PATCH 10/25] drm/amd/display: fail instead of div by zero/bugcheck
+</A><A NAME="55301">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055302.html">[PATCH 11/25] drm/amd/display: Update panel register
+</A><A NAME="55302">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055298.html">[PATCH 12/25] drm/amd/display: Add OPTC memory low power support
+</A><A NAME="55298">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055303.html">[PATCH 13/25] drm/amd/display: correct eDP T9 delay
+</A><A NAME="55303">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055306.html">[PATCH 14/25] drm/amd/display: Update connector on DSC property change
+</A><A NAME="55306">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055304.html">[PATCH 15/25] drm/amd/display: Reset flip_immediate to topmost plane
+</A><A NAME="55304">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055305.html">[PATCH 16/25] drm/amd/display: Blank HUBP during pixel data blank for DCN30 v2
+</A><A NAME="55305">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055307.html">[PATCH 17/25] drm/amd/display: Do not warn NULL dc_sink if forcing connector
+</A><A NAME="55307">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055308.html">[PATCH 18/25] drm/amd/display: Calculate CRC on specific frame region
+</A><A NAME="55308">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055312.html">[PATCH 19/25] drm/amd/display: WA to ensure MUX chip gets SUPPORTED_LINK_RATES of eDP
+</A><A NAME="55312">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055309.html">[PATCH 20/25] drm/amd/display: Revert HUBP blank behaviour for now
+</A><A NAME="55309">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055310.html">[PATCH 21/25] drm/amd/display: set hdcp1 wa re-auth delay to 200ms
+</A><A NAME="55310">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055311.html">[PATCH 22/25] drm/amd/display: Add missing pflip irq
+</A><A NAME="55311">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055313.html">[PATCH 23/25] drm/amd/display: [FW Promotion] Release 0.0.40
+</A><A NAME="55313">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055314.html">[PATCH 24/25] drm/amd/display: 3.2.110
+</A><A NAME="55314">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055315.html">[PATCH 25/25] drm/amd/display: fix recout calculation for left side clip
+</A><A NAME="55315">&nbsp;</A>
+<I>Qingqing Zhuo
+</I>
+
+<LI><A HREF="055316.html">[PATCH] drm/amd/amdgpu: Add rev_id workaround logic for SRIOV setup
+</A><A NAME="55316">&nbsp;</A>
+<I>Bokun Zhang
+</I>
+
+<LI><A HREF="055317.html">[PATCH 1/2] drm/amd/pm: enable baco reset for Hawaii
+</A><A NAME="55317">&nbsp;</A>
+<I>Quan, Evan
+</I>
+
+<LI><A HREF="055318.html">[PATCH] drm/amdgpu/display: fix indentation in defer_delay_converter_wa()
+</A><A NAME="55318">&nbsp;</A>
+<I>Quan, Evan
+</I>
+
+<LI><A HREF="055319.html">[PATCH 1/2] drm/amd/pm: fix compile warning about missing prototype for function
+</A><A NAME="55319">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="055320.html">[PATCH 2/2] drm/amd/pm: fix compile warnings about variable used uninitialized
+</A><A NAME="55320">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="055321.html">[PATCH 2/2] drm/amd/pm: fix compile warnings about variable used uninitialized
+</A><A NAME="55321">&nbsp;</A>
+<I>Deucher, Alexander
+</I>
+
+<LI><A HREF="055326.html">[RFC] clang tooling cleanups
+</A><A NAME="55326">&nbsp;</A>
+<I>Finn Thain
+</I>
+
+<LI><A HREF="055322.html">[PATCH 1/2] drm/amdgpu: disable DCN and VCN for Navi14 0x7340/C9 SKU
+</A><A NAME="55322">&nbsp;</A>
+<I>Flora Cui
+</I>
+
+<LI><A HREF="055323.html">[PATCH 2/2] drm/amdgpu: rename nv_is_headless_sku()
+</A><A NAME="55323">&nbsp;</A>
+<I>Flora Cui
+</I>
+
+<LI><A HREF="055324.html">[PATCH 2/2] drm/amdgpu: rename nv_is_headless_sku()
+</A><A NAME="55324">&nbsp;</A>
+<I>Chen, Guchun
+</I>
+
+<LI><A HREF="055325.html">[PATCH 01/10] drm/amd/pm: update the smu v11.5 smc header for vangogh
+</A><A NAME="55325">&nbsp;</A>
+<I>Huang Rui
+</I>
+
+<LI><A HREF="055327.html">[PATCH 1/5] drm/amdgpu: perform srbm soft reset always on SDMA resume
+</A><A NAME="55327">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="055328.html">[PATCH 2/5] drm/amd/pm: correct the baco reset sequence for CI ASICs
+</A><A NAME="55328">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="055329.html">[PATCH 3/5] drm/amd/pm: enable baco reset for Hawaii
+</A><A NAME="55329">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="055330.html">[PATCH 4/5] drm/amd/pm: perform SMC reset on suspend/hibernation
+</A><A NAME="55330">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="055331.html">[PATCH 5/5] drm/amd/pm: do not use ixFEATURE_STATUS for checking smc running
+</A><A NAME="55331">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="055332.html">[PATCH 1/2] drm/amd/pm: enable baco reset for Hawaii
+</A><A NAME="55332">&nbsp;</A>
+<I>Quan, Evan
+</I>
+
+<LI><A HREF="055362.html">[PATCH -next] drm/amd/display: remove useless if/else
+</A><A NAME="55362">&nbsp;</A>
+<I>Zou Wei
+</I>
+
+<LI><A HREF="055333.html">[PATCH] amdgpu: Add GFX MGCG and MGLS for vangogh
+</A><A NAME="55333">&nbsp;</A>
+<I>Jinzhou.Su
+</I>
+
+<LI><A HREF="055334.html">[PATCH] amdgpu:Add flag for updating MGCG on GFX10
+</A><A NAME="55334">&nbsp;</A>
+<I>Jinzhou.Su
+</I>
+
+<LI><A HREF="055335.html">[PATCH] drm/amd/amdgpu:  simplify pa_sc_tile_steering_override check
+</A><A NAME="55335">&nbsp;</A>
+<I>Zhang, Hawking
+</I>
+
+<LI><A HREF="055336.html">[PATCH] amdgpu: Add GFX MGCG and MGLS for vangogh
+</A><A NAME="55336">&nbsp;</A>
+<I>Huang Rui
+</I>
+
+<LI><A HREF="055337.html">[PATCH] amdgpu:Add flag for updating MGCG on GFX10
+</A><A NAME="55337">&nbsp;</A>
+<I>Huang Rui
+</I>
+
+<LI><A HREF="055363.html">[PATCH][next] drm/amd/pm: fix out-of-bound read on pptable-&gt;SkuReserved
+</A><A NAME="55363">&nbsp;</A>
+<I>Colin King
+</I>
+
+<LI><A HREF="055338.html">[PATCH 5/5] drm/amd/pm: do not use ixFEATURE_STATUS for checking smc running
+</A><A NAME="55338">&nbsp;</A>
+<I>Deucher, Alexander
+</I>
+
+<LI><A HREF="055339.html">[PATCH] drm/amdgpu: cleanup gmc_v9_0_process_interrupt
+</A><A NAME="55339">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="055340.html">[PATCH] drm/amdgpu: cleanup gmc_v9_0_process_interrupt
+</A><A NAME="55340">&nbsp;</A>
+<I>Deucher, Alexander
+</I>
+
+<LI><A HREF="055341.html">[PATCH 1/2] drm/amd/pm: enable baco reset for Hawaii
+</A><A NAME="55341">&nbsp;</A>
+<I>Sandeep
+</I>
+
+<LI><A HREF="055342.html">[PATCH 1/4] drm/amdgpu/display: remove DRM_AMD_DC_GREEN_SARDINE
+</A><A NAME="55342">&nbsp;</A>
+<I>Luben Tuikov
+</I>
+
+<LI><A HREF="055343.html">[PATCH 1/4] drm/amdgpu/display: remove DRM_AMD_DC_GREEN_SARDINE
+</A><A NAME="55343">&nbsp;</A>
+<I>Luben Tuikov
+</I>
+
+<LI><A HREF="055344.html">[PATCH] drm/amdgpu: Add kernel parameter to force no xgmi
+</A><A NAME="55344">&nbsp;</A>
+<I>Alex Sierra
+</I>
+
+<LI><A HREF="055345.html">[PATCH] drm/amdgpu: Add kernel parameter to force no xgmi
+</A><A NAME="55345">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="055346.html">[PATCH 1/2] drm/amd/pm: enable baco reset for Hawaii
+</A><A NAME="55346">&nbsp;</A>
+<I>Sandeep
+</I>
+
+<LI><A HREF="055347.html">[PATCH] drm/amdgpu/powerplay: Only apply optimized mclk dpm policy on polaris
+</A><A NAME="55347">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055348.html">[PATCH] drm/amdgpu: Add kernel parameter to force no xgmi
+</A><A NAME="55348">&nbsp;</A>
+<I>Luben Tuikov
+</I>
+
+<LI><A HREF="055349.html">[PATCH 1/2] drm/amdkfd: Fix getting unique_id in topology
+</A><A NAME="55349">&nbsp;</A>
+<I>Kent Russell
+</I>
+
+<LI><A HREF="055350.html">[PATCH 2/2] drm/amdkfd: Change unique_id to print hex format
+</A><A NAME="55350">&nbsp;</A>
+<I>Kent Russell
+</I>
+
+<LI><A HREF="055351.html">[PATCH] drm/amdgpu: Add kernel parameter to force no xgmi
+</A><A NAME="55351">&nbsp;</A>
+<I>Kim, Jonathan
+</I>
+
+<LI><A HREF="055352.html">[PATCH 2/2] drm/amdkfd: Change unique_id to print hex format
+</A><A NAME="55352">&nbsp;</A>
+<I>Felix Kuehling
+</I>
+
+<LI><A HREF="055353.html">[PATCH 2/2] drm/amdkfd: Change unique_id to print hex format
+</A><A NAME="55353">&nbsp;</A>
+<I>Russell, Kent
+</I>
+
+<LI><A HREF="055354.html">[PATCH 2/2] drm/amdkfd: Change unique_id to print hex format
+</A><A NAME="55354">&nbsp;</A>
+<I>Felix Kuehling
+</I>
+
+<LI><A HREF="055355.html">[PATCH 1/2] drm/amdkfd: Fix getting unique_id in topology
+</A><A NAME="55355">&nbsp;</A>
+<I>Felix Kuehling
+</I>
+
+<LI><A HREF="055356.html">[PATCH 1/2] drm/amdkfd: Fix getting unique_id in topology
+</A><A NAME="55356">&nbsp;</A>
+<I>Russell, Kent
+</I>
+
+<LI><A HREF="055357.html">[PATCH 2/2] drm/amdkfd: Change unique_id to print hex format
+</A><A NAME="55357">&nbsp;</A>
+<I>Russell, Kent
+</I>
+
+<LI><A HREF="055358.html">[PATCH] drm/amdkfd: Fix getting unique_id in topology
+</A><A NAME="55358">&nbsp;</A>
+<I>Kent Russell
+</I>
+
+<LI><A HREF="055359.html">[PATCH] drm/amdgpu/powerplay: Only apply optimized mclk dpm policy on polaris
+</A><A NAME="55359">&nbsp;</A>
+<I>Luben Tuikov
+</I>
+
+<LI><A HREF="055364.html">Potential freesync Arithmetic Issue
+</A><A NAME="55364">&nbsp;</A>
+<I>Bryan Angelo
+</I>
+
+<LI><A HREF="055360.html">[PATCH] drm/amdkfd: Fix getting unique_id in topology
+</A><A NAME="55360">&nbsp;</A>
+<I>Felix Kuehling
+</I>
+
+<LI><A HREF="055361.html">[PATCH] drm/amdgpu: Add kernel parameter to force no xgmi
+</A><A NAME="55361">&nbsp;</A>
+<I>Sierra Guiza, Alejandro (Alex)
+</I>
+
+<LI><A HREF="055365.html">[PATCH] drm/amdgpu: Add kernel parameter to force no xgmi
+</A><A NAME="55365">&nbsp;</A>
+<I>Sierra Guiza, Alejandro (Alex)
+</I>
+
+<LI><A HREF="055367.html">[PATCH v6 00/10] Support GEM object mappings from I/O memory
+</A><A NAME="55367">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="055368.html">[PATCH v6 01/10] drm/vram-helper: Remove invariant parameters from internal kmap function
+</A><A NAME="55368">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="055369.html">[PATCH v6 02/10] drm/cma-helper: Remove empty drm_gem_cma_prime_vunmap()
+</A><A NAME="55369">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="055366.html">[PATCH v6 03/10] drm/etnaviv: Remove empty etnaviv_gem_prime_vunmap()
+</A><A NAME="55366">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="055370.html">[PATCH v6 04/10] drm/exynos: Remove empty exynos_drm_gem_prime_{vmap, vunmap}()
+</A><A NAME="55370">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="055371.html">[PATCH v6 05/10] drm/ttm: Add vmap/vunmap to TTM and TTM GEM helpers
+</A><A NAME="55371">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="055372.html">[PATCH v6 06/10] drm/gem: Use struct dma_buf_map in GEM vmap ops and convert GEM backends
+</A><A NAME="55372">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="055373.html">[PATCH v6 07/10] drm/gem: Update internal GEM vmap/vunmap interfaces to use struct dma_buf_map
+</A><A NAME="55373">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="055374.html">[PATCH v6 08/10] drm/gem: Store client buffer mappings as struct dma_buf_map
+</A><A NAME="55374">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="055376.html">[PATCH v6 09/10] dma-buf-map: Add memcpy and pointer-increment interfaces
+</A><A NAME="55376">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="055375.html">[PATCH v6 10/10] drm/fb_helper: Support framebuffers in I/O memory
+</A><A NAME="55375">&nbsp;</A>
+<I>Thomas Zimmermann
+</I>
+
+<LI><A HREF="055377.html">[PATCH] drm/amd/display: allow 18 bit dp output on DCN3
+</A><A NAME="55377">&nbsp;</A>
+<I>Rodrigo Siqueira
+</I>
+
+<LI><A HREF="055378.html">[PATCH] drm/amd/display: allow 18 bit dp output on DCN3
+</A><A NAME="55378">&nbsp;</A>
+<I>Cornij, Nikola
+</I>
+
+<LI><A HREF="055379.html">[PATCH v4 00/11] amd/display: Add GFX9+ modifier support.
+</A><A NAME="55379">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055380.html">[PATCH v4 01/11] drm/amd/display: Do not silently accept DCC for multiplane formats.
+</A><A NAME="55380">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055381.html">[PATCH v4 02/11] drm/amd: Init modifier field of helper fb.
+</A><A NAME="55381">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055382.html">[PATCH v4 03/11] drm/amd/display: Honor the offset for plane 0.
+</A><A NAME="55382">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055383.html">[PATCH v4 04/11] drm/fourcc: Add AMD DRM modifiers.
+</A><A NAME="55383">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055384.html">[PATCH v4 05/11] drm/amd/display: Store tiling_flags in the framebuffer.
+</A><A NAME="55384">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055385.html">[PATCH v4 06/11] drm/amd/display: Convert tiling_flags to modifiers.
+</A><A NAME="55385">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055386.html">[PATCH v4 07/11] drm/amd/display: Refactor surface tiling setup.
+</A><A NAME="55386">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055387.html">[PATCH v4 08/11] drm/amd/display: Set DC options from modifiers.
+</A><A NAME="55387">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055388.html">[PATCH v4 09/11] drm/amd/display: Add formats for DCC with 2/3 planes.
+</A><A NAME="55388">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055389.html">[PATCH v4 10/11] drm/amd/display: Expose modifiers.
+</A><A NAME="55389">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055390.html">[PATCH v4 11/11] drm/amd/display: Clean up GFX9 tiling_flags path.
+</A><A NAME="55390">&nbsp;</A>
+<I>Bas Nieuwenhuizen
+</I>
+
+<LI><A HREF="055391.html">[PATCH] drm/amd/display: Tune min clk values for MPO for RV
+</A><A NAME="55391">&nbsp;</A>
+<I>Pratik Vishwakarma
+</I>
+
+<LI><A HREF="055392.html">[PATCH] drm/amd/amdgpu: Add checksun check for pf2vf message
+</A><A NAME="55392">&nbsp;</A>
+<I>Li, Xin (Justin)
+</I>
+
+<LI><A HREF="055393.html">[pull] amdgpu drm-fixes-5.10
+</A><A NAME="55393">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055396.html">[PATCH] drivers: amdgpu: Correct spelling defalut to default in comment
+</A><A NAME="55396">&nbsp;</A>
+<I>Bhaskar Chowdhury
+</I>
+
+<LI><A HREF="055394.html">[PATCH 37/40] drm/amd/pm: enable Polaris watermark table setting
+</A><A NAME="55394">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="055395.html">[PATCH -next] drm/amdgpu/swsmu: Remove unused static struct 'navi10_i2c_algo'
+</A><A NAME="55395">&nbsp;</A>
+<I>Zou Wei
+</I>
+
+<LI><A HREF="055397.html">[PATCH] drm/amd/display: Tune min clk values for MPO for RV
+</A><A NAME="55397">&nbsp;</A>
+<I>Kazlauskas, Nicholas
+</I>
+
+<LI><A HREF="055398.html">[PATCH 37/40] drm/amd/pm: enable Polaris watermark table setting
+</A><A NAME="55398">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055399.html">[PATCH] drm/amdgpu: Add kernel parameter to force no xgmi
+</A><A NAME="55399">&nbsp;</A>
+<I>Luben Tuikov
+</I>
+
+<LI><A HREF="055400.html">[PATCH] drm/amdgpu: Add kernel parameter to force no xgmi
+</A><A NAME="55400">&nbsp;</A>
+<I>Sierra Guiza, Alejandro (Alex)
+</I>
+
+<LI><A HREF="055401.html">[PATCH] drm/amdgpu: allow TMZ on vangogh
+</A><A NAME="55401">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055402.html">[PATCH -next] drm/amd/display: remove useless if/else
+</A><A NAME="55402">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055403.html">[PATCH][next] drm/amd/pm: fix out-of-bound read on pptable-&gt;SkuReserved
+</A><A NAME="55403">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055411.html">[PATCH 4/4] drm/amdgpu: fold CONFIG_DRM_AMD_DC_DCN3* into CONFIG_DRM_AMD_DC_DCN
+</A><A NAME="55411">&nbsp;</A>
+<I>Nathan Chancellor
+</I>
+
+<LI><A HREF="055404.html">[PATCH] drm/amdgpu: allow TMZ on vangogh
+</A><A NAME="55404">&nbsp;</A>
+<I>Luben Tuikov
+</I>
+
+<LI><A HREF="055405.html">[PATCH] drm/amd/pm: add the reset function of the pp_od_voltage_clk sysfs file for RV/RV2/PCO APU
+</A><A NAME="55405">&nbsp;</A>
+<I>Xiaojian Du
+</I>
+
+<LI><A HREF="055413.html">[PATCH] drm/amdgpu: use DEFINE_DEBUGFS_ATTRIBUTE with debugfs_create_file_unsafe()
+</A><A NAME="55413">&nbsp;</A>
+<I>Deepak R Varma
+</I>
+
+<LI><A HREF="055414.html">[PATCH] drm/amd/pm: use DEFINE_DEBUGFS_ATTRIBUTE with debugfs_create_file_unsafe()
+</A><A NAME="55414">&nbsp;</A>
+<I>Deepak R Varma
+</I>
+
+<LI><A HREF="055406.html">[PATCH] drm/amdgpu: remove unneeded semicolon
+</A><A NAME="55406">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055407.html">[PATCH] drm/amd/display: remove unneeded semicolon
+</A><A NAME="55407">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055408.html">[PATCH 2/5] drm/amdgpu: fix incorrect enum type
+</A><A NAME="55408">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055409.html">[PATCH 4/5] drm/amdgpu: fix build_coefficients() argument
+</A><A NAME="55409">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055410.html">[PATCH] drm/amdgpu/powerplay: Only apply optimized mclk dpm policy on polaris
+</A><A NAME="55410">&nbsp;</A>
+<I>Quan, Evan
+</I>
+
+<LI><A HREF="055412.html">[PATCH v2] drm/amd/pm: replace kmalloc+memcpy by kmemdup
+</A><A NAME="55412">&nbsp;</A>
+<I>Deepak R Varma
+</I>
+
+<LI><A HREF="055415.html">[PATCH] drivers: amdgpu: Correct spelling defalut to default in comment
+</A><A NAME="55415">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055416.html">[PATCH xf86-video-amdgpu] Fix drmmode_crtc_scanout_create logic
+</A><A NAME="55416">&nbsp;</A>
+<I>Likun Gao
+</I>
+
+<LI><A HREF="055417.html">[PATCH] drm/amd/pm: add the reset function of the pp_od_voltage_clk sysfs file for RV/RV2/PCO APU
+</A><A NAME="55417">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055418.html">[PATCH -next] drm/amdgpu/swsmu: Remove unused static struct 'navi10_i2c_algo'
+</A><A NAME="55418">&nbsp;</A>
+<I>Quan, Evan
+</I>
+
+<LI><A HREF="055419.html">[PATCH xf86-video-amdgpu] Fix drmmode_crtc_scanout_create logic
+</A><A NAME="55419">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055421.html">[PATCH] amdgpu: Add mmhub MGCG and MGLS for vangogh
+</A><A NAME="55421">&nbsp;</A>
+<I>Jinzhou.Su
+</I>
+
+<LI><A HREF="055420.html">[PATCH v2] drm/amd/display: Tune min clk values for MPO for RV
+</A><A NAME="55420">&nbsp;</A>
+<I>Pratik Vishwakarma
+</I>
+
+<LI><A HREF="055423.html">[Outreachy kernel] [PATCH] drm/amdgpu: use DEFINE_DEBUGFS_ATTRIBUTE with debugfs_create_file_unsafe()
+</A><A NAME="55423">&nbsp;</A>
+<I>Greg KH
+</I>
+
+<LI><A HREF="055424.html">[Outreachy kernel] [PATCH] drm/amdgpu: use DEFINE_DEBUGFS_ATTRIBUTE with debugfs_create_file_unsafe()
+</A><A NAME="55424">&nbsp;</A>
+<I>Deepak R Varma
+</I>
+
+<LI><A HREF="055422.html">[Outreachy kernel] [PATCH] drm/amdgpu: use DEFINE_DEBUGFS_ATTRIBUTE with debugfs_create_file_unsafe()
+</A><A NAME="55422">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="055425.html">[Outreachy kernel] [PATCH] drm/amdgpu: use DEFINE_DEBUGFS_ATTRIBUTE with debugfs_create_file_unsafe()
+</A><A NAME="55425">&nbsp;</A>
+<I>Greg KH
+</I>
+
+<LI><A HREF="055426.html">[Outreachy kernel] [PATCH] drm/amdgpu: use DEFINE_DEBUGFS_ATTRIBUTE with debugfs_create_file_unsafe()
+</A><A NAME="55426">&nbsp;</A>
+<I>Sumera Priyadarsini
+</I>
+
+<LI><A HREF="055447.html">[Outreachy kernel] [PATCH] drm/amdgpu: use DEFINE_DEBUGFS_ATTRIBUTE with debugfs_create_file_unsafe()
+</A><A NAME="55447">&nbsp;</A>
+<I>Greg KH
+</I>
+
+<LI><A HREF="055448.html">[Outreachy kernel] [PATCH] drm/amdgpu: use DEFINE_DEBUGFS_ATTRIBUTE with debugfs_create_file_unsafe()
+</A><A NAME="55448">&nbsp;</A>
+<I>Greg KH
+</I>
+
+<LI><A HREF="055427.html">[Outreachy kernel] [PATCH] drm/amdgpu: use DEFINE_DEBUGFS_ATTRIBUTE with debugfs_create_file_unsafe()
+</A><A NAME="55427">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055428.html">[Outreachy kernel] [PATCH] drm/amdgpu: use DEFINE_DEBUGFS_ATTRIBUTE with debugfs_create_file_unsafe()
+</A><A NAME="55428">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055429.html">[Outreachy kernel] [PATCH] drm/amdgpu: use DEFINE_DEBUGFS_ATTRIBUTE with debugfs_create_file_unsafe()
+</A><A NAME="55429">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="055430.html">[PATCH 1/5] drm/radeon: Stop changing the drm_driver struct
+</A><A NAME="55430">&nbsp;</A>
+<I>Daniel Vetter
+</I>
+
+<LI><A HREF="055449.html">[Outreachy kernel] [PATCH] drm/amdgpu: use DEFINE_DEBUGFS_ATTRIBUTE with debugfs_create_file_unsafe()
+</A><A NAME="55449">&nbsp;</A>
+<I>Julia Lawall
+</I>
+
+<LI><A HREF="055431.html">[PATCH] drm/amdgpu: apply dm_pp_notify_wm_clock_changes() for Polaris only
+</A><A NAME="55431">&nbsp;</A>
+<I>Evan Quan
+</I>
+
+<LI><A HREF="055432.html">[PATCH] drm/amdgpu: apply dm_pp_notify_wm_clock_changes() for Polaris only
+</A><A NAME="55432">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="055433.html">[PATCH 37/40] drm/amd/pm: enable Polaris watermark table setting
+</A><A NAME="55433">&nbsp;</A>
+<I>Quan, Evan
+</I>
+
+<LI><A HREF="055434.html">[PATCH] drm/amdgpu: apply dm_pp_notify_wm_clock_changes() for Polaris only
+</A><A NAME="55434">&nbsp;</A>
+<I>Quan, Evan
+</I>
+
+<LI><A HREF="055435.html">[PATCH] drm/amdgpu: apply dm_pp_notify_wm_clock_changes() for Polaris only
+</A><A NAME="55435">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="055436.html">[PATCH] drm/amdgpu: fix NULL pointer crash on navi10 headless SKU
+</A><A NAME="55436">&nbsp;</A>
+<I>Tianci Yin
+</I>
+
+<LI><A HREF="055437.html">[PATCH] drm/amdgpu: disable gfxoff if VCN is busy
+</A><A NAME="55437">&nbsp;</A>
+<I>Jiansong Chen
+</I>
+
+<LI><A HREF="055438.html">[PATCH] drm/amdgpu: disable gfxoff if VCN is busy
+</A><A NAME="55438">&nbsp;</A>
+<I>Zhang, Hawking
+</I>
+
+<LI><A HREF="055439.html">[PATCH] drm/amdgpu: fix NULL pointer crash on navi10 headless SKU
+</A><A NAME="55439">&nbsp;</A>
+<I>Zhang, Hawking
+</I>
+
+<LI><A HREF="055440.html">[PATCH] drm/amdgpu: fix NULL pointer crash on navi10 headless SKU
+</A><A NAME="55440">&nbsp;</A>
+<I>Yin, Tianci (Rico)
+</I>
+
+<LI><A HREF="055441.html">[PATCH] drm/amdgpu: fix NULL pointer crash on navi10 headless SKU
+</A><A NAME="55441">&nbsp;</A>
+<I>Zhang, Hawking
+</I>
+
+<LI><A HREF="055442.html">Recall: [PATCH] drm/amdgpu: fix NULL pointer crash on navi10 headless SKU
+</A><A NAME="55442">&nbsp;</A>
+<I>Zhang, Hawking
+</I>
+
+<LI><A HREF="055450.html">[Outreachy kernel] [PATCH] drm/amdgpu: use DEFINE_DEBUGFS_ATTRIBUTE with debugfs_create_file_unsafe()
+</A><A NAME="55450">&nbsp;</A>
+<I>Deepak R Varma
+</I>
+
+<LI><A HREF="055443.html">[PATCH] amdgpu: Add mmhub MGCG and MGLS for vangogh
+</A><A NAME="55443">&nbsp;</A>
+<I>Huang, Ray
+</I>
+
+<LI><A HREF="055444.html">[PATCH] drm/amdgpu: fix NULL pointer crash on navi10 headless SKU
+</A><A NAME="55444">&nbsp;</A>
+<I>Zhang, Hawking
+</I>
+
+<LI><A HREF="055445.html">[PATCH] drm/amdgpu: disable gfxoff if VCN is busy
+</A><A NAME="55445">&nbsp;</A>
+<I>James Zhu
+</I>
+
+<LI><A HREF="055446.html">[PATCH] drm/amdgpu: fix NULL pointer crash on navi10 headless SKU
+</A><A NAME="55446">&nbsp;</A>
+<I>Deucher, Alexander
+</I>
+
+<LI><A HREF="055451.html">[PATCH v2] drm/amdgpu: disable gfxoff if VCN is busy
+</A><A NAME="55451">&nbsp;</A>
+<I>Jiansong Chen
+</I>
+
+<LI><A HREF="055452.html">[PATCH] drm/amdgpu: disable gfxoff if VCN is busy
+</A><A NAME="55452">&nbsp;</A>
+<I>Chen, Jiansong (Simon)
+</I>
+
+<LI><A HREF="055453.html">[PATCH v2] drm/amdgpu: disable gfxoff if VCN is busy
+</A><A NAME="55453">&nbsp;</A>
+<I>Chen, Jiansong (Simon)
+</I>
+
+<LI><A HREF="055454.html">[PATCH v2] drm/amdgpu: disable gfxoff if VCN is busy
+</A><A NAME="55454">&nbsp;</A>
+<I>Jiansong Chen
+</I>
+
+<LI><A HREF="055455.html">[PATCH v2] drm/amdgpu: disable gfxoff if VCN is busy
+</A><A NAME="55455">&nbsp;</A>
+<I>Zhu, James
+</I>
+
+<LI><A HREF="055456.html">Potential freesync Arithmetic Issue
+</A><A NAME="55456">&nbsp;</A>
+<I>Harry Wentland
+</I>
+
+<LI><A HREF="055457.html">[PATCH] drm/amdgpu: apply dm_pp_notify_wm_clock_changes() for Polaris only
+</A><A NAME="55457">&nbsp;</A>
+<I>Christian K&#246;nig
+</I>
+
+<LI><A HREF="055458.html">[PATCH v4 00/11] amd/display: Add GFX9+ modifier support.
+</A><A NAME="55458">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055459.html">[PATCH 4/5] drm/amdgpu: fix build_coefficients() argument
+</A><A NAME="55459">&nbsp;</A>
+<I>Harry Wentland
+</I>
+
+<LI><A HREF="055460.html">[PATCH] amd/amdgpu: Disable VCN DPG mode for Picasso
+</A><A NAME="55460">&nbsp;</A>
+<I>veerabadhran.gopalakrishnan at amd.com
+</I>
+
+<LI><A HREF="055461.html">[PATCH] amd/amdgpu: Disable VCN DPG mode for Picasso
+</A><A NAME="55461">&nbsp;</A>
+<I>Leo Liu
+</I>
+
+<LI><A HREF="055462.html">[PATCH 4/5] drm/amdgpu: fix build_coefficients() argument
+</A><A NAME="55462">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055463.html">[PATCH 1/5] drm/radeon: Stop changing the drm_driver struct
+</A><A NAME="55463">&nbsp;</A>
+<I>Alex Deucher
+</I>
+
+<LI><A HREF="055464.html">[PATCH v2] drm/amd/display: Tune min clk values for MPO for RV
+</A><A NAME="55464">&nbsp;</A>
+<I>Kazlauskas, Nicholas
+</I>
+
+<LI><A HREF="055465.html">[PATCH] drm/amdgpu: replace ih ip block for vega20 and arcturus
+</A><A NAME="55465">&nbsp;</A>
+<I>Alex Sierra
+</I>
+
+<LI><A HREF="055466.html">[PATCH] drm/amdgpu: replace ih ip block for vega20 and arcturus
+</A><A NAME="55466">&nbsp;</A>
+<I>Felix Kuehling
+</I>
+
+<LI><A HREF="055467.html">[Outreachy kernel] [PATCH] drm/amdgpu: use DEFINE_DEBUGFS_ATTRIBUTE with debugfs_create_file_unsafe()
+</A><A NAME="55467">&nbsp;</A>
+<I>Joe Perches
+</I>
+
+<LI><A HREF="055468.html">[Outreachy kernel] [PATCH] drm/amdgpu: use DEFINE_DEBUGFS_ATTRIBUTE with debugfs_create_file_unsafe()
+</A><A NAME="55468">&nbsp;</A>
+<I>Julia Lawall
+</I>
+
+    </ul>
+    <p>
+      <a name="end"><b>Last message date:</b></a> 
+       <i>Sat Oct 31 12:01:08 UTC 2020</i><br>
+    <b>Archived on:</b> <i>Mon Nov  2 01:04:47 UTC 2020</i>
+    <p>
+   <ul>
+         <li> <b>Messages sorted by:</b>
+	        <a href="thread.html#start">[ thread ]</a>
+		<a href="subject.html#start">[ subject ]</a>
+		<a href="author.html#start">[ author ]</a>
+		
+	     <li><b><a href="https://lists.freedesktop.org/mailman/listinfo/amd-gfx">More info on this list...
+                    </a></b></li>
+     </ul>
+     <p>
+     <hr>
+     <i>This archive was generated by
+     Pipermail 0.09 (Mailman edition).</i>
+  </BODY>
+</HTML>
+
+	¨£Òç      aNgÈaNgÈCu$yaW°Ù   y    O^partitionKey=%28https%2Clists.freedesktop.org%29,:https://lists.freedesktop.org/archives/amd-gfx/2020-October/date.html strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAAAAgAAAAAAAAAAAAAAAAAAAAEANgFmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAWCMIIFfjCCBGagAwIBAgISA1/IKk4kPguK3+PjOYPkNmQnMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMTA4MjcyMDM4MDhaFw0yMTExMjUyMDM4MDdaMBsxGTAXBgNVBAMTEGZvdW5kYXRpb24ueC5vcmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCuoBkssBN4/xa0Z2vx7kZKnHTn8HnXNPk2cF6+v6U23qtYWvSm+U3NLa6CxXeJzi2uk4SfmX9RgOThlHdqeLcI6AmX9DUYQQ0N/hcMiNFT1t7uij9s9vz6ypOYmW86DeiFBo4uv3Qcyt4TQ+dKtsCREUYwoay0HUj46+u25lUe6tjMLZGeNrmxFAhk/f/AQbkahVJzHbXdWoDtU2fndOVxuPufP/cKCbUiZaHVBpSQOBs/ctRL90hHfWEEHntaVy3rGcBwCPCrZdQ6kbyDBBFRxiIjRJgOR6AXFGoo1GFriDffWw66Zdm1vSbsKfwlLTkysYHRAkAwmvju3JsZ5q1hAgMBAAGjggKjMIICnzAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFPeJAOca1PGTnG2G5fJX8c6K63bDMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMHMGA1UdEQRsMGqCEGZvdW5kYXRpb24ueC5vcmeCF2xpc3RzLmNhaXJvZ3JhcGhpY3Mub3JnghVsaXN0cy5mcmVlZGVza3RvcC5vcmeCC2xpc3RzLngub3JnghlsaXN0cy54b3JnLWZvdW5kYXRpb24ub3JnMEwGA1UdIARFMEMwCAYGZ4EMAQIBMDcGCysGAQQBgt8TAQEBMCgwJgYIKwYBBQUHAgEWGmh0dHA6Ly9jcHMubGV0c2VuY3J5cHQub3JnMIIBBAYKKwYBBAHWeQIEAgSB9QSB8gDwAHYAXNxDkv7mq0VEsV6a1FbmEDf71fpH3KFzlLJe5vbHDsoAAAF7iYx0GgAABAMARzBFAiEAkZxg0eXsT80dU1d90ZbSOsvFIKXyi9aYne+GGEeaHYYCIETRl3Oxoj7H4hqokWhy3Ki1tHVhnwU2E9vdmtd32Tm5AHYAfT7y+I//iFVoJMLAyp5SiXkrxQ54CX8uapdomX4i8NcAAAF7iYx0TgAABAMARzBFAiEAwpgWdC0rD/aRQo4jgGGOs4lwTcCJMIha3Z3kIg78n88CID5udS66F8TLaWgiNaPlKuxI+LYz9goXg2Uqd+gqrUtUMA0GCSqGSIb3DQEBCwUAA4IBAQAis8RHhAZGGD/ZVykiBxvULjPEVwKiZOqtazjNtGGCjUKgfwGqGBQWG2IubXGtvCZ3Jz7NRxXDn7R8s8urwE03Zh589YsyWjOaeGSkAieGoCKUYvfTiXHZsM5+kRt55xMN+GCaaH9zw4KeICBcbh8Q7GvDDU5NBgN6rJvuudF/oFL0diZub52QnErThwFOaELZr/d8yx9wCY4NmZZN9sIXLjXDfRs0stq5/PHt2nMpYEEsRrPH1lkx9Gq7YsiRU1nstA2mce1o5ZA59NmfUVv6YKNE4UsQOe/8jV2PIPCxcedheFJhuogWukELQ7imruzett6nuUWpzxUj1ogDKusKEwEABAAAAAABAQAAAAAAAAZ4MjU1MTkAAAAOUlNBLVBTUy1TSEEyNTYAA2YKMiaRXE/7uyCJhaYy3wW9w5eaVCJM1YWJaWtuluqDAAAAAAAABYIwggV+MIIEZqADAgECAhIDX8gqTiQ+C4rf4+M5g+Q2ZCcwDQYJKoZIhvcNAQELBQAwMjELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUxldCdzIEVuY3J5cHQxCzAJBgNVBAMTAlIzMB4XDTIxMDgyNzIwMzgwOFoXDTIxMTEyNTIwMzgwN1owGzEZMBcGA1UEAxMQZm91bmRhdGlvbi54Lm9yZzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAK6gGSywE3j/FrRna/HuRkqcdOfwedc0+TZwXr6/pTbeq1ha9Kb5Tc0troLFd4nOLa6ThJ+Zf1GA5OGUd2p4twjoCZf0NRhBDQ3+FwyI0VPW3u6KP2z2/PrKk5iZbzoN6IUGji6/dBzK3hND50q2wJERRjChrLQdSPjr67bmVR7q2MwtkZ42ubEUCGT9/8BBuRqFUnMdtd1agO1TZ+d05XG4+58/9woJtSJlodUGlJA4Gz9y1Ev3SEd9YQQee1pXLesZwHAI8Ktl1DqRvIMEEVHGIiNEmA5HoBcUaijUYWuIN99bDrpl2bW9Juwp/CUtOTKxgdECQDCa+O7cmxnmrWECAwEAAaOCAqMwggKfMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU94kA5xrU8ZOcbYbl8lfxzorrdsMwHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wcwYDVR0RBGwwaoIQZm91bmRhdGlvbi54Lm9yZ4IXbGlzdHMuY2Fpcm9ncmFwaGljcy5vcmeCFWxpc3RzLmZyZWVkZXNrdG9wLm9yZ4ILbGlzdHMueC5vcmeCGWxpc3RzLnhvcmctZm91bmRhdGlvbi5vcmcwTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdgBc3EOS/uarRUSxXprUVuYQN/vV+kfcoXOUsl7m9scOygAAAXuJjHQaAAAEAwBHMEUCIQCRnGDR5exPzR1TV33RltI6y8UgpfKL1pid74YYR5odhgIgRNGXc7GiPsfiGqiRaHLcqLW0dWGfBTYT292a13fZObkAdgB9PvL4j/+IVWgkwsDKnlKJeSvFDngJfy5ql2iZfiLw1wAAAXuJjHROAAAEAwBHMEUCIQDCmBZ0LSsP9pFCjiOAYY6ziXBNwIkwiFrdneQiDvyfzwIgPm51LroXxMtpaCI1o+Uq7Ej4tjP2CheDZSp36CqtS1QwDQYJKoZIhvcNAQELBQADggEBACKzxEeEBkYYP9lXKSIHG9QuM8RXAqJk6q1rOM20YYKNQqB/AaoYFBYbYi5tca28JncnPs1HFcOftHyzy6vATTdmHnz1izJaM5p4ZKQCJ4agIpRi99OJcdmwzn6RG3nnEw34YJpof3PDgp4gIFxuHxDsa8MNTk0GA3qsm+650X+gUvR2Jm5vnZCcStOHAU5oQtmv93zLH3AJjg2Zlk32whcuNcN9GzSy2rn88e3acylgQSxGs8fWWTH0artiyJFTWey0DaZx7WjlkDn02Z9RW/pgo0ThSxA57/yNXY8g8LFx52F4UmG6iBa6QQtDuKau7N623qe5RanPFSPWiAMq6wpmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAARpMIIEZTCCA02gAwIBAgIQQAF1BIMUpMghjISpDBbN3zANBgkqhkiG9w0BAQsFADA/MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMTDkRTVCBSb290IENBIFgzMB4XDTIwMTAwNzE5MjE0MFoXDTIxMDkyOTE5MjE0MFowMjELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUxldCdzIEVuY3J5cHQxCzAJBgNVBAMTAlIzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuwIVKMz2oJTTDxLsjVWSw/iC8ZmmekKIp10mqrUrucVMsa+Oa/l1yKPXD0eUFFU1V4yeqKI5GfWCPEKpTm71O8Mu243AsFzzWTjn7c9p8FoLG77AlCQlh/o3cbMT5xys4Zvv2+Q7RVJFlqnBU840yFLuta7tj95gcOKlVKu2bQ6XpUA0ayvTvGbrZjR8+muLj1cpmfgwF126cm/7gcWt0oZYPRfH5wm78Sv3htzB2nFd1EbjzK0lwYi8YGd1ZrPxGPeiXOZT/zqItkel/xMY6pgJdz+dU/nPAeX1pnAXFK9jpP+Zs5Od3FOnBv5IhR2haa4ldbsTzFID9e1RoYvbFQIDAQABo4IBaDCCAWQwEgYDVR0TAQH/BAgwBgEB/wIBADAOBgNVHQ8BAf8EBAMCAYYwSwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx+tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEBATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQub3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9EU1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjANBgkqhkiG9w0BAQsFAAOCAQEA2UzgyfWEiDcx27sT4rP8i2tiEmxYt0l+PAK3qB8oYevO4C5z70kHejWEHx2taPDY/laBL21/WKZuNTYQHHPD5b1tXgHXbnL7KqC401dk5VvCadTQsvd8S8MXjohyc9z9/G2948kLjmE6Flh9dDYrVYA9x2O+hEPGOaEOa1eePynBgPayvUfLqjBstzLhWVQLGAkXXmNs+5ZnPBxzDJOLxhF2JIbeQAcH5H0tZrUlo5ZYyOqA7s9pO5b85o3AM/OJ+CktFBQtfvBhcJVd9wvlwPsk+uyOy2HI7mNxKKgsBTt375teA2TwUdHkhVNcsAKX1H7GNNLOEADksd86wuoXvmYKMiaRXE/7uyCJhaYy3wW9w5eaVCJM1YWJaWtuluqDAAAAAAAAA04wggNKMIICMqADAgECAhBEr7CA1qMnuokwOYYu+EBrMA0GCSqGSIb3DQEBBQUAMD8xJDAiBgNVBAoTG0RpZ2l0YWwgU2lnbmF0dXJlIFRydXN0IENvLjEXMBUGA1UEAxMORFNUIFJvb3QgQ0EgWDMwHhcNMDAwOTMwMjExMjE5WhcNMjEwOTMwMTQwMTE1WjA/MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMTDkRTVCBSb290IENBIFgzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA36/pl1AIg1e0zGJl9pCC7MfTLGswylvs2cN9x0DBGBSL4Ogzdkkq4z8hSZOsTg6vPkjLZe780yEPZdIq2TKPjOX3d7ASe7WVwImjqbrtcy56DAYyg6J+ihQwzRGg4So4uXkKMf1QvYBl37dRY4PI4ohh6kthgexSa7mi4ksaKJ9Io54M2gmOPhcuHt0g31vGKoqrLr1wrcULGiWQdHLFe2qrNNYwif/laBN7VAvI1q7sWpySHj1ks4zG37/JQXDsFnLVJuw4VTlD0Pz9GFxA8Zfr1ZqbjR262iW5xtjfwRUCOqvabvE+LvVcCJw81oNp5BCbGSq2KVfj5T2bn/ACXQIDAQABo0IwQDAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBBjAdBgNVHQ4EFgQUxKexpHsscfrb4UuQdf/EFWCFiRAwDQYJKoZIhvcNAQEFBQADggEBAKMaLJsXAFypHu4oZjc6v4PHP0vDCaCVIF3j2VlE0j4NPr2KS6B0H84Qgpx0Gh1+mBrdyxNLsyBE5JHpzPx9pdtq5f7m/eBO3bcAOrVwSa/y5esC8dECixnLlDpeSMQYHlgZXx4CWvAM8bGtqdxZhotu6ZH1hsr6uWYzqllbzuKnFnNHyyvMmbA3SM/jVkv1zw8McjKHxvBEu1NybUP1JkiaUme3WKv+Z3ZxeNsNolYUEzkkMYWiqAJaMEfh3VAHvAIJkADrZGNgmxa8iMkS5tJ9kYv5PTKNZbTpfLFXdurFtig5vxVlHMj2d5ZqCo13C9iRCwSOB9sptgrunYI1NRAAAAABAAAACGh0dHAvMS4xAQEA request-method GET response-head HTTP/1.1 200 OK
+Date: Sat, 25 Sep 2021 00:04:05 GMT
+Server: Apache/2.4.38 (Debian)
+Strict-Transport-Security: max-age=15768000
+Last-Modified: Mon, 02 Nov 2020 01:04:47 GMT
+ETag: "26ab5-5b315551eb11d"
+Accept-Ranges: bytes
+Content-Length: 158389
+Content-Type: text/html
+ original-response-headers Date: Sat, 25 Sep 2021 00:04:05 GMT
+Server: Apache/2.4.38 (Debian)
+Strict-Transport-Security: max-age=15768000
+Last-Modified: Mon, 02 Nov 2020 01:04:47 GMT
+ETag: "26ab5-5b315551eb11d"
+Accept-Ranges: bytes
+Content-Length: 158389
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+ ctid 1 uncompressed-len 0 net-response-time-onstart 604 net-response-time-onstop 900  jµ
