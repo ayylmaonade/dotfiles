@@ -12,7 +12,7 @@ export ZSH=/usr/share/oh-my-zsh/
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # if you installed the package oh-my-zsh-powerline-theme-git then you type here "powerline" as zsh theme
-ZSH_THEME="random"
+ZSH_THEME="duellj"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -125,7 +125,7 @@ if [ -d "$HOME/.local/bin" ] ;
 fi
 
 #list
-alias ls='ls --color=auto'
+alias ls='ls -lh'
 alias la='ls -a'
 alias ll='ls -la'
 alias l='ls'
@@ -140,6 +140,9 @@ alias updte='sudo pacman -Syyu'
 alias updqte='sudo pacman -Syyu'
 alias upqll="paru -Syu --noconfirm"
 alias upal="paru -Syu --noconfirm"
+
+## Custom aliases
+alias love="cowsay I love you Lauren"
 
 ## Colorize the grep command output for ease of use (good for log files)##
 alias grep='grep --color=auto'
