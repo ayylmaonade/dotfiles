@@ -143,6 +143,7 @@ alias upal="paru -Syu --noconfirm"
 
 ## Custom aliases
 alias love="cowsay I love you Lauren"
+alias btop="bpytop"
 
 ## Colorize the grep command output for ease of use (good for log files)##
 alias grep='grep --color=auto'
@@ -367,7 +368,7 @@ alias personal='cp -Rf /personal/* ~'
 
 # reporting tools - install when not installed
 # install neofetch
-neofetch
+ufetch
 # install screenfetch
 #screenfetch
 # install ufetch-git
@@ -382,3 +383,7 @@ neofetch
 #hfetch
 # install lolcat
 #sfetch | lolcat
+
+# swag useful echo, delete later
+echo "remember to use tldr! (e.g. tldr git)"
+echo "pacman -Ss to search!"
