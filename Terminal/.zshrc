@@ -109,10 +109,10 @@ setopt GLOB_DOTS
 
 export HISTCONTROL=ignoreboth:erasedups
 
-# Make nano the default editor
+# Make vim the default editor
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='vim'
+export VISUAL='vim'
 
 #PS1='[\u@\h \W]\$ '
 
@@ -140,10 +140,6 @@ alias updte='sudo pacman -Syyu'
 alias updqte='sudo pacman -Syyu'
 alias upqll="paru -Syu --noconfirm"
 alias upal="paru -Syu --noconfirm"
-
-## Custom aliases
-alias love="cowsay I love you Lauren"
-alias btop="bpytop"
 
 ## Colorize the grep command output for ease of use (good for log files)##
 alias grep='grep --color=auto'
@@ -271,7 +267,7 @@ alias rg="rg --sort path"
 #get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
 
-#nano for important configuration files
+#vim for important configuration files
 #know what you do in these files
 alias nlightdm="sudo $EDITOR /etc/lightdm/lightdm.conf"
 alias npacman="sudo $EDITOR /etc/pacman.conf"
@@ -364,26 +360,37 @@ alias personal='cp -Rf /personal/* ~'
 #create a file called .zshrc-personal and put all your personal aliases
 #in there. They will not be overwritten by skel.
 
-[[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
 
-# reporting tools - install when not installed
-# install neofetch
+#    _______. __    __       ___      __    __  .__   __.      _______.
+#   /       ||  |  |  |     /   \    |  |  |  | |  \ |  |     /       |
+#   |   (----`|  |__|  |    /  ^  \   |  |  |  | |   \|  |    |   (----`
+#\   \    |   __   |   /  /_\  \  |  |  |  | |  . `  |     \   \
+#.----)   |   |  |  |  |  /  _____  \ |  `--'  | |  |\   | .----)   |
+#|_______/    |__|  |__| /__/     \__\ \______/  |__| \__| |_______/
+
+#  ______  __    __       _______.___________.  ______   .___  ___.
+# /      ||  |  |  |     /       |           | /  __  \  |   \/   |
+#|  ,----'|  |  |  |    |   (----`---|  |----`|  |  |  | |  \  /  |
+#|  |     |  |  |  |     \   \       |  |     |  |  |  | |  |\/|  |
+#|  `----.|  `--'  | .----)   |      |  |     |  `--'  | |  |  |  |
+# \______| \______/  |_______/       |__|      \______/  |__|  |__|
+
+#  ______   ______   .___  ___. .___  ___.      ___      .__   __.  _______       _______.
+# /      | /  __  \  |   \/   | |   \/   |     /   \     |  \ |  | |       \     /       |
+#|  ,----'|  |  |  | |  \  /  | |  \  /  |    /  ^  \    |   \|  | |  .--.  |   |   (----`
+#|  |     |  |  |  | |  |\/|  | |  |\/|  |   /  /_\  \   |  . `  | |  |  |  |    \   \
+#|  `----.|  `--'  | |  |  |  | |  |  |  |  /  _____  \  |  |\   | |  '--'  |.----)   |
+# \______| \______/  |__|  |__| |__|  |__| /__/     \__\ |__| \__| |_______/ |_______/
+
+
+## Terminal startup exec
 ufetch
-# install screenfetch
-#screenfetch
-# install ufetch-git
-#ufetch
-# install ufetch-arco-git
-#ufetch-arco
-# install arcolinux-paleofetch-git
-#paleofetch
-# install alsi
-#alsi
-# install arcolinux-bin-git - standard on ArcoLinux isos (or sfetch - smaller)
-#hfetch
-# install lolcat
-#sfetch | lolcat
-
-# swag useful echo, delete later
+colorscript exec ghosts
 echo "remember to use tldr! (e.g. tldr git)"
+echo "use doas instead of sudo!"
 echo "pacman -Ss to search!"
+
+## Aliases
+alias love="cowsay I love you Lauren"
+alias btop="bpytop"
+alias pacman="sudo pacman"
