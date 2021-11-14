@@ -1,8 +1,5 @@
-# Remove Mouse Acceleration
-
 [Desktop Entry]
-Type=Application
-Name=DisableMouseAcceleration
+Name=Disable mouse acceleration
 Exec=xset m 3/2 0
+Type=Application
 Hidden=false
-Terminal=true
