@@ -383,5 +383,5 @@ alias aura="sudo aura"
 # Star Wars ASCII
 alias starwars="telnet towel.blinkenlights.nl"
 
-# Refresh mirrors/pacman.conf using strictly https
-alias mirrors="reflector --score 100 --fastest 10 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+# Refresh pacman mirrorlist using HTTPS only, scoring 100 servers and choosing the best based on ping.
+alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
