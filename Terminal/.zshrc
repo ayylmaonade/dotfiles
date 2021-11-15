@@ -7,6 +7,9 @@
 #installation via paru -S oh-my-zsh-git
 export ZSH=/usr/share/oh-my-zsh/
 
+# Set $PATH for rust CLI support
+export PATH="${PATH}:/home/shaun/.cargo/bin"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -276,7 +279,7 @@ alias keyfix="/usr/local/bin/arcolinux-fix-pacman-databases-and-keys"
 
 #maintenance
 alias big="expac -H M '%m\t%n' | sort -h | nl"
-alias downgrada="sudo downgrade --ala-url https://bike.seedhost.eu/arcolinux/"
+alias downgrade="sudo downgrade --ala-url https://bike.seedhost.eu/arcolinux/"
 
 #systeminfo
 alias probe="sudo -E hw-probe -all -upload"
@@ -363,17 +366,22 @@ alias personal='cp -Rf /personal/* ~'
 
 
 ## Terminal startup exec
+#neofetch
 ufetch
 colorscript exec pacman
 echo "remember to use tldr! (e.g. tldr git)"
 echo "use doas instead of sudo!"
-echo "pacman -Ss to search!"
+#echo "pacman -Ss to search!"
+echo "use locate to find files!"
 
-## Aliases
+## Useful aliases
 alias love="cowsay I love you Lauren"
 alias btop="bashtop"
 alias pacman="sudo pacman"
 alias aura="sudo aura"
 
-#refresh mirrors/pacman.conf using strictly https
+# Star Wars ASCII
+alias starwars="telnet towel.blinkenlights.nl"
+
+# Refresh mirrors/pacman.conf using strictly https
 alias mirrors="reflector --score 100 --fastest 10 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
