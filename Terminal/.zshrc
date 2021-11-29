@@ -134,17 +134,7 @@ alias ll='ls -la'
 alias l='ls'
 alias l.="ls -A | egrep '^\.'"
 
-#fix obvious typo's
-alias cd..='cd ..'
-alias pdw="pwd"
-alias udpate='sudo pacman -Syyu'
-alias upate='sudo pacman -Syyu'
-alias updte='sudo pacman -Syyu'
-alias updqte='sudo pacman -Syyu'
-alias upqll="paru -Syu --noconfirm"
-alias upal="paru -Syu --noconfirm"
-
-## Colorize the grep command output for ease of use (good for log files)##
+## Colorize the grep command output for ease of use (good for log files)
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -173,8 +163,7 @@ alias merge="xrdb -merge ~/.Xresources"
 
 # Aliases for software managment
 # pacman or pm
-alias pacman='sudo pacman --color auto'
-alias update='sudo pacman -Syu'
+alias update='doas pacman -Syu'
 
 # yay as aur helper - updates everything
 alias pksyua="paru -Syu --noconfirm"
@@ -235,7 +224,7 @@ alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 
 #Recent Installed Packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
-alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
+alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -5000 | nl"
 
 #iso and version used to install ArcoLinux
 alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
@@ -377,8 +366,9 @@ echo "use locate to find files!"
 ## Useful aliases
 alias love="cowsay I love you Lauren"
 alias btop="bashtop"
-alias pacman="sudo pacman"
-alias aura="sudo aura"
+alias pacman="doas pacman"
+alias cp="cp -iv"
+#alias aura="sudo aura"
 
 # Star Wars ASCII
 alias starwars="telnet towel.blinkenlights.nl"
