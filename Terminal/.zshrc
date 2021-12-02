@@ -128,8 +128,8 @@ if [ -d "$HOME/.local/bin" ] ;
 fi
 
 #list
-alias ls='ls -lh'
-alias la='ls -a'
+alias ls='ls -lh --color=auto'
+alias la='ls -a --color=auto'
 alias ll='ls -la'
 alias l='ls'
 alias l.="ls -A | egrep '^\.'"
@@ -362,12 +362,15 @@ echo "remember to use tldr! (e.g. tldr git)"
 echo "use doas instead of sudo!"
 #echo "pacman -Ss to search!"
 echo "use locate to find files!"
+echo "ctrl + a goes to the beginning of a line!"
 
 ## Useful aliases
 alias love="cowsay I love you Lauren"
 alias btop="bashtop"
 alias pacman="doas pacman"
 alias cp="cp -iv"
+alias rm="rm -i"
+alias mv="mv -i"
 #alias aura="sudo aura"
 
 # Star Wars ASCII
