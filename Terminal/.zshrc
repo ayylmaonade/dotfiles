@@ -369,9 +369,9 @@ echo "ctrl + a goes to the beginning of a line!"
 alias love="cowsay I love you Lauren"
 alias btop="bashtop"
 alias pacman="doas pacman"
-alias cp="cp -iv"
+alias cp="cpg -iv -g" #requires advcpmv, adds a progress bar. change cpg to cp & remove -g otherwise
 alias rm="rm -i"
-alias mv="mv -i"
+alias mv="mvg -i -g" #requires advcpmv, adds a progress bar. change cpg to cp & remove -g otherwise
 alias matrix="cxxmatrix"
 alias fish="asciiquarium"
 #alias aura="sudo aura"
