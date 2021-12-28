@@ -358,9 +358,10 @@ alias personal='cp -Rf /personal/* ~'
 #neofetch
 ufetch
 colorscript exec pacman
+#fortune
 echo "remember to use tldr! (e.g. tldr git)"
 echo "use doas instead of sudo!"
-#echo "pacman -Ss to search!"
+##echo "pacman -Ss to search!"
 echo "use locate to find files!"
 echo "ctrl + a goes to the beginning of a line!"
 
@@ -371,6 +372,8 @@ alias pacman="doas pacman"
 alias cp="cp -iv"
 alias rm="rm -i"
 alias mv="mv -i"
+alias matrix="cxxmatrix"
+alias fish="asciiquarium"
 #alias aura="sudo aura"
 
 # Star Wars ASCII
