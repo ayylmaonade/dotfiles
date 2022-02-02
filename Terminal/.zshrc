@@ -356,7 +356,8 @@ alias personal='cp -Rf /personal/* ~'
 
 ## Terminal startup exec
 #neofetch
-ufetch
+#ufetch
+pfetch
 colorscript exec pacman
 #fortune
 echo "remember to use tldr! (e.g. tldr git)"
@@ -366,6 +367,7 @@ echo "use locate to find files!"
 #echo "ctrl + a goes to the beginning of a line!"
 #echo "revert /etc/lsb-release if pacman breaks!"
 echo "use notflix to stream torrents! it's dope!"
+echo "pacman -Rs to remove file & all dependencies!"
 
 ## Useful aliases
 alias love="cowsay I love you Lauren"
@@ -376,7 +378,8 @@ alias rm="rm -i"
 alias mv="mvg -i -g" #requires advcpmv, adds a progress bar. change mvg to mv & remove -g otherwise
 alias matrix="cxxmatrix"
 alias fish="asciiquarium"
-alias snipebot="python3 ~/Desktop/snipe.py "
+alias snipebot="python3 -m ~/Desktop/snipe.py "
+alias mpv="mpv --profile=swag"
 #alias aura="sudo aura"
 
 # Star Wars ASCII

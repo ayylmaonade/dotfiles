@@ -3,7 +3,7 @@
 # Dependencies - webtorrent, mpv
 
 ### PLACE IN /usr/local/bin ###
-!!! 			    !!!
+##!!! 			  !!!##
 
 mkdir -p $HOME/.cache/notflix
 
@@ -69,9 +69,10 @@ fullURL="${baseurl}${url}/"
 
 # Requesting page for magnet link
 curl -s $fullURL > $cachedir/tmp.html
-magnet=$(grep -Po "magnet:\?xt=urn:btih:[a-zA-Z0-9]*" $cachedir/tmp.html | head -n 1) 
+magnet=$(grep -Po "magnet:\?xt=urn:btih:[a-zA-Z0-9]*" $cachedir/tmp.html | head -n 1)
 
 # Notification
 notify-send "~_~N Starting mpv... ~X~0 " -i "NONE"
 
 webtorrent "$magnet" --mpv
+
