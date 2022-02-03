@@ -363,11 +363,13 @@ colorscript exec pacman
 echo "remember to use tldr! (e.g. tldr git)"
 echo "use doas instead of sudo!"
 ##echo "pacman -Ss to search!"
-echo "use locate to find files!"
+#echo "use locate to find files!"
 #echo "ctrl + a goes to the beginning of a line!"
 #echo "revert /etc/lsb-release if pacman breaks!"
 echo "use notflix to stream torrents! it's dope!"
 echo "pacman -Rs to remove file & all dependencies!"
+#echo "fuck with ufw settings to try fixing notflix!"
+echo "use 'w3m' to view images in the terminal!"
 
 ## Useful aliases
 alias love="cowsay I love you Lauren"
@@ -378,7 +380,7 @@ alias rm="rm -i"
 alias mv="mvg -i -g" #requires advcpmv, adds a progress bar. change mvg to mv & remove -g otherwise
 alias matrix="cxxmatrix"
 alias fish="asciiquarium"
-alias snipebot="python3 -m ~/Desktop/snipe.py "
+alias snipebot="python3 ~/Desktop/snipe.py "
 alias mpv="mpv --profile=swag"
 #alias aura="sudo aura"
 
