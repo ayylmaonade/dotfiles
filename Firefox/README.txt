@@ -1,5 +1,5 @@
 ## Arch Linux Firefox Config ##
-## -GPU Acceleration ##
+## -GPU Acceleration (including videos) ##
 ## -Smooth fonts & anti-aliasing ##
 ## -Smooth scroll settings ##
 
