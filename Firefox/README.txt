@@ -1,7 +1,7 @@
 ## Arch Linux Firefox Config ##
-## -GPU Acceleration ##
-## -Smooth fonts & anti-aliasing ##
-## -Smooth scroll settings ##
+## -Video acceleration with
+      mesa/amdgpu drivers ##
+## -Perfect scroll settings ##
 
 # Installation #
 Type "about:profiles" into your search bar
