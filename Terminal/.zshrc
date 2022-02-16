@@ -114,8 +114,8 @@ export HISTCONTROL=ignoreboth:erasedups
 
 # Make vim the default editor
 
-export EDITOR='vim'
-export VISUAL='vim'
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 #PS1='[\u@\h \W]\$ '
 
@@ -383,9 +383,13 @@ alias fish="asciiquarium"
 alias snipebot="python3 ~/Desktop/snipe.py "
 alias mpv="mpv --profile=swag"
 #alias aura="sudo aura"
+alias vim="nvim" # lol
+alias vi="vim" # fuck you, brian.
 
 # Star Wars ASCII
 alias starwars="telnet towel.blinkenlights.nl"
 
 # Refresh pacman mirrorlist using HTTPS only, scoring 100 servers and choosing the best based on ping.
 alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
