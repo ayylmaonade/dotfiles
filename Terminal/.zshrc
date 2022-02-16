@@ -93,14 +93,14 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
 
-####   ARCOLINUX SETTINGS   ####
+####   CUSTOM SETTINGS   ####
 
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -112,7 +112,7 @@ setopt GLOB_DOTS
 
 export HISTCONTROL=ignoreboth:erasedups
 
-# Make vim the default editor
+# Make neovim the default editor
 
 export EDITOR='nvim'
 export VISUAL='nvim'
@@ -128,11 +128,11 @@ if [ -d "$HOME/.local/bin" ] ;
 fi
 
 #list
-alias ls='ls -lh --color=auto'
-alias la='ls -a --color=auto'
-alias ll='ls -la'
-alias l='ls'
-alias l.="ls -A | egrep '^\.'"
+alias ls='ls -lh --color=auto' # ls with human-readable enabled. doesn't show hidden files.
+alias la='ls -ah --color=auto' # same as above except this shows hidden files.
+alias ll='ls -la' ## No colour output. Here for compatibility and nothing else.
+#alias l='ls'
+#alias l.="ls -A | egrep '^\.'"
 
 ## Colorize the grep command output for ease of use (good for log files)
 alias grep='grep --color=auto'
@@ -142,15 +142,15 @@ alias fgrep='fgrep --color=auto'
 #readable output
 alias df='df -h'
 
-#pacman unlock
+#pacman unlock - don't use this unless you know what you're doing.
 alias unlock="sudo rm /var/lib/pacman/db.lck"
 alias rmpacmanlock="sudo rm /var/lib/pacman/db.lck"
 
 #arcolinux logout unlock
 alias rmlogoutlock="sudo rm /tmp/arcologout.lock"
 
-#free
-alias free="free -mt"
+#shows memory use in readable format & uses MiB.
+alias free="free -mht"
 
 #continue download
 alias wget="wget -c"
@@ -158,7 +158,7 @@ alias wget="wget -c"
 #userlist
 alias userlist="cut -d: -f1 /etc/passwd"
 
-#merge new settings
+#merges new settings for X11
 alias merge="xrdb -merge ~/.Xresources"
 
 # Aliases for software managment
@@ -169,15 +169,15 @@ alias update='doas pacman -Syu'
 alias pksyua="paru -Syu --noconfirm"
 alias upall="paru -Syu --noconfirm"
 
-#ps
+#greps processes. identical to 'ls' except for PIDs.
 alias psa="ps auxf"
 alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
 
 #grub update
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
-#add new fonts
-alias update-fc='sudo fc-cache -fv'
+#add new fonts/rebuild font cache.
+alias update-fc='doas fc-cache -fv'
 
 #copy/paste all content of /etc/skel over to home folder - backup of config created - beware
 alias skel='cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S) && cp -rf /etc/skel/* ~'
@@ -238,8 +238,8 @@ alias rg="rg --sort path"
 #get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
 
-#vim for important configuration files
-#know what you do in these files
+#important system config files. don't touch unless you know
+#what you're doing with them.
 alias nlightdm="sudo $EDITOR /etc/lightdm/lightdm.conf"
 alias npacman="sudo $EDITOR /etc/pacman.conf"
 alias ngrub="sudo $EDITOR /etc/default/grub"
@@ -273,7 +273,7 @@ alias downgrade="sudo downgrade --ala-url https://bike.seedhost.eu/arcolinux/"
 #systeminfo
 alias probe="sudo -E hw-probe -all -upload"
 
-#shutdown or reboot
+#force shutdown/reboot
 alias ssn="sudo shutdown now"
 alias sr="sudo reboot"
 
@@ -392,4 +392,5 @@ alias starwars="telnet towel.blinkenlights.nl"
 # Refresh pacman mirrorlist using HTTPS only, scoring 100 servers and choosing the best based on ping.
 alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 
+#enables fzf, helps more easily look through shell history. ctrl + r
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
