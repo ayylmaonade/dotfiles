@@ -1,6 +1,10 @@
 " Sets the path nvim uses to load important vim settings
  set runtimepath+=/usr/share/vim/vimfiles
 
+" Automatically jump to last position when re-opening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
 
 " Plugins
  call plug#begin('~/.vim/plugged')
@@ -25,8 +29,8 @@
 " Plugin outside ~/.vim/plugged with post-update hook
  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 
-" Unmanaged plugin(s) (manually installed and updated)
-
+" Syntax highlighting for kitty.conf
+ Plug 'fladson/vim-kitty'
 
 " Install _every_ colorscheme from vimawesome
  Plug 'flazz/vim-colorschemes'
