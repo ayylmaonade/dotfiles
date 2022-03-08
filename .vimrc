@@ -9,6 +9,17 @@ endif
 " Set indentation to 8
 set shiftwidth=8
 
+" Shows the line number
+set number
+set relativenumber
+
+" Enables spell-check
+set spell
+
+" Highlights things when searching
+set incsearch
+set hlsearch
+
 " Enable mouse
 set mouse=a
 
