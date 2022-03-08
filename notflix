@@ -19,10 +19,9 @@ fi
 
 query="$(echo $query | sed 's/ /+/g')"
 
-#curl -s https://1337x.to/category-search/$query/Movies/1/ > $cachedir/tmp.html
 curl -s $baseurl/search/$query/1/ > $cachedir/tmp.html
 
-# Get Titles
+# Fetches Torrent Titles
 grep -o '<a href="/torrent/.*</a>' $cachedir/tmp.html |
   sed 's/<[^>]*>//g' > $cachedir/titles.bw
 
@@ -32,7 +31,7 @@ if [ "$result_count" -lt 1 ]; then
   exit 0
 fi
 
-# Seeders and Leechers
+# Displays Seeders and Leechers
 grep -o '<td class="coll-2 seeds.*</td>\|<td class="coll-3 leeches.*</td>' $cachedir/tmp.html |
   sed 's/<[^>]*>//g' | sed 'N;s/\n/ /' > $cachedir/seedleech.bw
 
@@ -46,14 +45,14 @@ grep -E '/torrent/' $cachedir/tmp.html |
   sed -E 's#.*(/torrent/.*)/">.*/#\1#' |
   sed 's/td>//g' > $cachedir/links.bw
 
-# Clearning up some data to display
+# Cleaning up some data to display
 sed 's/\./ /g; s/\-/ /g' $cachedir/titles.bw |
   sed 's/[^A-Za-z0-9 ]//g' | tr -s " " > $cachedir/tmp && mv $cachedir/tmp $cachedir/titles.bw
 
 awk '{print NR " - ["$0"]"}' $cachedir/size.bw > $cachedir/tmp && mv $cachedir/tmp $cachedir/size.bw
 awk '{print "[S:"$1 ", L:"$2"]" }' $cachedir/seedleech.bw > $cachedir/tmp && mv $cachedir/tmp $cachedir/seedleech.bw
 
-# Getting the line number
+# Getting the line number (1-20)
 LINE=$(paste -d\   $cachedir/size.bw $cachedir/seedleech.bw $cachedir/titles.bw |
   $menu |
   cut -d\- -f1 |
