@@ -361,7 +361,7 @@ pfetch
 colorscript exec pacman
 #fortune
 echo "remember to use tldr! (e.g. tldr git)"
-echo "use doas instead of sudo!"
+#echo "use doas instead of sudo!"
 ##echo "pacman -Ss to search!"
 #echo "use locate to find files!"
 #echo "ctrl + a goes to the beginning of a line!"
@@ -371,6 +371,7 @@ echo "pacman -Rs to remove file & all dependencies!"
 #echo "fuck with ufw settings to try fixing notflix!"
 echo "use 'w3m' to view images in the terminal!"
 echo "use sudoedit instead of sudo/doas vim!"
+echo "use 'lax' to display directories in human format!"
 
 ## Useful aliases
 alias love="cowsay I love you Lauren"
@@ -386,6 +387,7 @@ alias mpv="mpv --profile=swag"
 #alias aura="sudo aura"
 alias vim="nvim" # lol
 alias vi="vim" # fuck you, brian.
+alias lax="la -x"
 
 # Star Wars ASCII
 alias starwars="telnet towel.blinkenlights.nl"
