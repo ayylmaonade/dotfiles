@@ -370,7 +370,7 @@ echo "use doas instead of sudo!"
 echo "pacman -Rs to remove file & all dependencies!"
 #echo "fuck with ufw settings to try fixing notflix!"
 echo "use 'w3m' to view images in the terminal!"
-echo "use sedit instead of sudo/doas vim!"
+echo "use sudoedit instead of sudo/doas vim!"
 
 ## Useful aliases
 alias love="cowsay I love you Lauren"
