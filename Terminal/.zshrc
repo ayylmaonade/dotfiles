@@ -15,8 +15,8 @@ export PATH="${PATH}:/home/shaun/.cargo/bin"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # if you installed the package oh-my-zsh-powerline-theme-git then you type here "powerline" as zsh theme
-ZSH_THEME="duellj"
-#ZSH_THEME="half-life"
+#ZSH_THEME="duellj"
+ZSH_THEME="half-life"
 
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -366,10 +366,11 @@ echo "use doas instead of sudo!"
 #echo "use locate to find files!"
 #echo "ctrl + a goes to the beginning of a line!"
 #echo "revert /etc/lsb-release if pacman breaks!"
-echo "use notflix to stream torrents! it's dope!"
+#echo "use notflix to stream torrents! it's dope!"
 echo "pacman -Rs to remove file & all dependencies!"
 #echo "fuck with ufw settings to try fixing notflix!"
 echo "use 'w3m' to view images in the terminal!"
+echo "use sudoedit instead of sudo/doas vim!"
 
 ## Useful aliases
 alias love="cowsay I love you Lauren"
@@ -385,6 +386,7 @@ alias mpv="mpv --profile=swag"
 #alias aura="sudo aura"
 alias vim="nvim" # lol
 alias vi="vim" # fuck you, brian.
+alias sudoedit="sedit" # easier to type, bleh.
 
 # Star Wars ASCII
 alias starwars="telnet towel.blinkenlights.nl"
