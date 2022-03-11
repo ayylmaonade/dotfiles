@@ -386,7 +386,6 @@ alias mpv="mpv --profile=swag"
 #alias aura="sudo aura"
 alias vim="nvim" # lol
 alias vi="vim" # fuck you, brian.
-alias sudoedit="sedit" # easier to type, bleh.
 
 # Star Wars ASCII
 alias starwars="telnet towel.blinkenlights.nl"
