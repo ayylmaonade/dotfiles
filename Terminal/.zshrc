@@ -34,7 +34,7 @@ ZSH_THEME="half-life"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
- DISABLE_AUTO_UPDATE="true"
+# DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
 # DISABLE_UPDATE_PROMPT="true"
@@ -360,9 +360,9 @@ alias personal='cp -Rf /personal/* ~'
 pfetch
 colorscript exec pacman
 #fortune
-echo "remember to use tldr! (e.g. tldr git)"
+#echo "remember to use tldr! (e.g. tldr git)"
 #echo "use doas instead of sudo!"
-##echo "pacman -Ss to search!"
+#echo "pacman -Ss to search!"
 #echo "use locate to find files!"
 #echo "ctrl + a goes to the beginning of a line!"
 #echo "revert /etc/lsb-release if pacman breaks!"
@@ -370,8 +370,12 @@ echo "remember to use tldr! (e.g. tldr git)"
 echo "pacman -Rs to remove file & all dependencies!"
 #echo "fuck with ufw settings to try fixing notflix!"
 echo "use 'w3m' to view images in the terminal!"
-echo "use sudoedit instead of sudo/doas vim!"
+#echo "use 'sudoedit' instead of sudo/doas vim!"
 echo "use 'lax' to display directories in human format!"
+echo "use 'ex' to extract any compressed file/folder!"
+echo "set 'media.rdd-process.enabled' back to true when FF updates!!"
+echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will put it at the start of line"
+echo "vim: :%s/wordhere/newword/g to search and replace all instances of words"
 
 ## Useful aliases
 alias love="cowsay I love you Lauren"
