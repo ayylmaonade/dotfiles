@@ -7,7 +7,7 @@ if has("autocmd")
 endif
 
 " Set indentation to 8
-set shiftwidth=8
+set shiftwidth=4
 
 " Shows the line number
 set number
