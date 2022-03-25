@@ -373,9 +373,10 @@ echo "use 'w3m' to view images in the terminal!"
 #echo "use 'sudoedit' instead of sudo/doas vim!"
 echo "use 'lax' to display directories in human format!"
 echo "use 'ex' to extract any compressed file/folder!"
-echo "set 'media.rdd-process.enabled' back to true when FF updates!!"
+###echo "set 'media.rdd-process.enabled' back to true when FF updates!!"###
 echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will put it at the start of line"
 echo "vim: :%s/wordhere/newword/g to search and replace all instances of words"
+echo "use the -S flag to sign git commits! 'git commit -S -m "msg"' "
 
 ## Useful aliases
 alias love="cowsay I love you Lauren"
@@ -387,7 +388,7 @@ alias mv="mvg -i -g" #requires advcpmv, adds a progress bar. change mvg to mv & 
 alias matrix="cxxmatrix"
 alias fish="asciiquarium"
 alias snipebot="python3 ~/Desktop/snipe.py "
-alias mpv="mpv --profile=swag"
+alias mpv="mpv --profile=swag "
 #alias aura="sudo aura"
 alias vim="nvim" # lol
 alias vi="vim" # fuck you, brian.
