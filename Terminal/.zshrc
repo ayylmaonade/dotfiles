@@ -128,8 +128,8 @@ if [ -d "$HOME/.local/bin" ] ;
 fi
 
 #list
-alias ls='ls -lh --color=auto' # ls with human-readable enabled. doesn't show hidden files.
-alias la='ls -ah --color=auto' # same as above except this shows hidden files.
+alias ls='exa -lh --color=auto' # ls with human-readable enabled. doesn't show hidden files.
+alias la='exa -ahl --color=auto' # same as above except this shows hidden files.
 alias ll='ls -la' ## No colour output. Here for compatibility and nothing else.
 #alias l='ls'
 #alias l.="ls -A | egrep '^\.'"
@@ -371,12 +371,13 @@ echo "pacman -Rs to remove file & all dependencies!"
 #echo "fuck with ufw settings to try fixing notflix!"
 echo "use 'w3m' to view images in the terminal!"
 #echo "use 'sudoedit' instead of sudo/doas vim!"
-echo "use 'lax' to display directories in human format!"
+#echo "use 'lax' to display directories in human format!"
 echo "use 'ex' to extract any compressed file/folder!"
 ###echo "set 'media.rdd-process.enabled' back to true when FF updates!!"###
 echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will put it at the start of line"
 echo "vim: :%s/wordhere/newword/g to search and replace all instances of words"
 echo "use the -S flag to sign git commits! 'git commit -S -m "msg"' "
+echo "exa is now the ls command. all ls aliases are actually exa commands. keep in mind!"
 
 ## Useful aliases
 alias love="cowsay I love you Lauren"
@@ -392,7 +393,7 @@ alias mpv="mpv --profile=swag "
 #alias aura="sudo aura"
 alias vim="nvim" # lol
 alias vi="vim" # fuck you, brian.
-alias lax="la -x"
+alias lax="exa -x"
 
 # Star Wars ASCII
 alias starwars="telnet towel.blinkenlights.nl"
