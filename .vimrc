@@ -14,7 +14,7 @@ set number
 set relativenumber
 
 " Enables spell-check
-set spell
+"set spell
 
 " Highlights things when searching
 set incsearch
