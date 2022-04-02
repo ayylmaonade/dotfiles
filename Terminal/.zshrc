@@ -15,8 +15,8 @@ export PATH="${PATH}:/home/shaun/.cargo/bin"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # if you installed the package oh-my-zsh-powerline-theme-git then you type here "powerline" as zsh theme
-#ZSH_THEME="duellj"
-ZSH_THEME="half-life"
+ZSH_THEME="duellj"
+#ZSH_THEME="half-life"
 
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -162,12 +162,11 @@ alias userlist="cut -d: -f1 /etc/passwd"
 alias merge="xrdb -merge ~/.Xresources"
 
 # Aliases for software managment
-# pacman or pm
-alias update='doas pacman -Syu'
+alias update='doas pacman -Syyu'
 
 # yay as aur helper - updates everything
-alias pksyua="paru -Syu --noconfirm"
-alias upall="paru -Syu --noconfirm"
+#alias pksyua="paru -Syu --noconfirm"
+#alias upall="paru -Syu --noconfirm"
 
 #greps processes. identical to 'ls' except for PIDs.
 alias psa="ps auxf"
@@ -221,10 +220,11 @@ alias yta-opus="youtube-dl --extract-audio --audio-format opus "
 alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
 alias yta-wav="youtube-dl --extract-audio --audio-format wav "
 alias ytv-best="youtube-dl -f bestvideo+bestaudio "
+alias ytdl="youtube-dl "
 
 #Recent Installed Packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
-alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -5000 | nl"
+alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -4000 | nl"
 
 #iso and version used to install ArcoLinux
 alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
@@ -372,12 +372,15 @@ echo "pacman -Rs to remove file & all dependencies!"
 echo "use 'w3m' to view images in the terminal!"
 #echo "use 'sudoedit' instead of sudo/doas vim!"
 #echo "use 'lax' to display directories in human format!"
-echo "use 'ex' to extract any compressed file/folder!"
+#echo "use 'ex' to extract any compressed file/folder!"
 ###echo "set 'media.rdd-process.enabled' back to true when FF updates!!"###
 echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will put it at the start of line"
 echo "vim: :%s/wordhere/newword/g to search and replace all instances of words"
 echo "use the -S flag to sign git commits! 'git commit -S -m "msg"' "
-echo "exa is now the ls command. all ls aliases are actually exa commands. keep in mind!"
+#echo "exa is now the ls command. all ls aliases are actually exa commands. keep in mind!"
+echo "use 'ls -l' on a file/folder to check permissions"
+#echo "PUT 'local.conf' INTO ~/.config/fontconfig if things get weird!"
+echo "useful cmds: find, locate, whereis, which, file, getfacl"
 
 ## Useful aliases
 alias love="cowsay I love you Lauren"
@@ -394,6 +397,12 @@ alias mpv="mpv --profile=swag "
 alias vim="nvim" # lol
 alias vi="vim" # fuck you, brian.
 alias lax="exa -x"
+alias htop="btop" # better version of htop
+
+# Removes the 10k line limit for zsh history
+export HISTSIZE=1000000000
+export SAVEHIST=$HISTSIZE
+setopt EXTENDED_HISTORY
 
 # Star Wars ASCII
 alias starwars="telnet towel.blinkenlights.nl"
