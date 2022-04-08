@@ -11,7 +11,7 @@ from discord.ext import tasks
 
 prefix = '..' ## prefix setting ##
 owner = 'Shaun#1738' ## defines owner of bot ##
-bot_token = 'bot token goes here' ## required for authorisation ##
+bot_token = 'OTMyNzk4NjE5ODM5NTA0NDI0.YeYOaQ.zl3wg20lRb_-5sLMs0yDPV7e6NM' ## required for authorisation ##
 
 
 intents = discord.Intents.all()
@@ -35,7 +35,7 @@ async def help(ctx):
 
 @client.command()
 async def ping(ctx: commands.Context):
-    await ctx.send(f"Ping Pong! {round(client.latency * 1000)}ms")
+    await ctx.send(f"Ping pong! I'm alive! {round(client.latency * 1000)}ms")
 
 @client.event
 async def on_ready():
