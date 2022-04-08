@@ -42,6 +42,9 @@ Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
+" GitHub CoPilot
+Plug 'github/copilot.vim'
+
 " Using git URL
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
