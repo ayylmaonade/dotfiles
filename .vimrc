@@ -6,12 +6,19 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-" Set indentation to 8
+" Set indentation to 4
 set shiftwidth=4
 
 " Shows the line number
 set number
 set relativenumber
+
+" Shows the cursor position
+"set cursorline
+
+" Enables line wrapping & proper linebreaking
+set wrap
+set linebreak
 
 " Enables spell-check
 "set spell
@@ -45,7 +52,7 @@ Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 " GitHub CoPilot
 Plug 'github/copilot.vim'
 
-" Using git URL
+" GitHub Dashboard
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
 " Plugin options
