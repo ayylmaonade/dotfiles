@@ -376,12 +376,12 @@ echo "use 'w3m' to view images in the terminal!"
 ###echo "set 'media.rdd-process.enabled' back to true when FF updates!!"###
 echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will put it at the start of line"
 echo "vim: :%s/wordhere/newword/g to search and replace all instances of words"
-echo "use the -S flag to sign git commits! 'git commit -S -m "msg"' "
+#echo "use the -S flag to sign git commits! 'git commit -S -m "msg"' "
 #echo "exa is now the ls command. all ls aliases are actually exa commands. keep in mind!"
 #echo "use 'ls -l' on a file/folder to check permissions"
 #echo "PUT 'local.conf' INTO ~/.config/fontconfig if things get weird!"
 echo "useful cmds: find, locate, whereis, which, file, getfacl"
-echo "widget.gtk.overlay-scrollbars.enabled=false to change FF scrollbar back to normal"
+#echo "widget.gtk.overlay-scrollbars.enabled=false to change FF scrollbar back to normal"
 
 ## starship prompt
 eval "$(starship init zsh)"
