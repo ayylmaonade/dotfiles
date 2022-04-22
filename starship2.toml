@@ -1,0 +1,20 @@
+[character]
+success_symbol = "[▶](bold green)" # normal prompt
+error_symbol = "[✗](bold red)" # used if previous command failed
+
+[line_break]
+disabled = true
+
+[username]
+style_user = "red bold"
+style_root = "red bold"
+disabled = false
+show_always = true
+format = "[$user]($style)\n "
+
+[directory]
+format = "[$path]($style) "
+style = "yellow italic bold"
+truncate_to_repo = false
+truncation_length = 3
+truncation_symbol = ".../"
