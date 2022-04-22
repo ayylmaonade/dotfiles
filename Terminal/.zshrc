@@ -378,9 +378,13 @@ echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will p
 echo "vim: :%s/wordhere/newword/g to search and replace all instances of words"
 echo "use the -S flag to sign git commits! 'git commit -S -m "msg"' "
 #echo "exa is now the ls command. all ls aliases are actually exa commands. keep in mind!"
-echo "use 'ls -l' on a file/folder to check permissions"
+#echo "use 'ls -l' on a file/folder to check permissions"
 #echo "PUT 'local.conf' INTO ~/.config/fontconfig if things get weird!"
 echo "useful cmds: find, locate, whereis, which, file, getfacl"
+echo "widget.gtk.overlay-scrollbars.enabled=false to change FF scrollbar back to normal"
+
+## starship prompt
+eval "$(starship init zsh)"
 
 ## Useful aliases
 alias love="cowsay I love you Lauren"
@@ -397,7 +401,7 @@ alias mpv="mpv --profile=swag "
 alias vim="nvim" # lol
 alias vi="vim" # fuck you, brian.
 alias lax="exa -x"
-alias htop="btop" # better version of htop
+#alias htop="btop" # better version of htop
 
 # Removes the 10k line limit for zsh history
 export HISTSIZE=1000000000
