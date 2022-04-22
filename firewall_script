@@ -1,0 +1,34 @@
+#!/bin/sh
+
+echo "Must be run as root!"
+
+echo "This script will automatically set the following ufw settings:
+
+1. Limit SSH connections to the localhost
+
+2. Change default setting to deny all incoming connections
+
+3. Allow incoming connections on localhost port 22
+
+4. Allow qBitorrent connections"
+
+while true; do
+	read -p "Do you wish to continue? (y/n) " yn
+	case $yn in
+		[Yy]* ) break;;
+		[Nn]* ) exit;;
+		* ) echo "Please answer yes or no.";;
+	esac
+done
+
+ufw default deny
+
+ufw allow from 192.168.0.0/24
+
+ufw allow qBittorrent
+
+ufw limit ssh
+
+echo "Done! Script exiting in 5 seconds..."
+
+sleep 5s && exit
