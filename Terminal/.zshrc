@@ -358,7 +358,9 @@ alias personal='cp -Rf /personal/* ~'
 #neofetch
 #ufetch
 pfetch
-colorscript exec pacman
+#colorscript exec pacman
+#colorscript exec tiefighter1row
+colorscript exec crunch
 #fortune
 #echo "remember to use tldr! (e.g. tldr git)"
 #echo "use doas instead of sudo!"
