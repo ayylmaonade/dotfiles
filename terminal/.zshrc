@@ -99,6 +99,10 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# Sets the prompt to Starship
+eval "$(starship init zsh)"
+
+
 
 ####   CUSTOM SETTINGS   ####
 
@@ -384,9 +388,7 @@ echo "vim: :%s/wordhere/newword/g to search and replace all instances of words"
 #echo "PUT 'local.conf' INTO ~/.config/fontconfig if things get weird!"
 echo "useful cmds: find, locate, whereis, which, file, getfacl"
 #echo "widget.gtk.overlay-scrollbars.enabled=false to change FF scrollbar back to normal"
-
-## starship prompt
-eval "$(starship init zsh)"
+echo "disable 'slideback' in system settings to change window animation back"
 
 ## Useful aliases
 alias love="cowsay I love you Lauren"
