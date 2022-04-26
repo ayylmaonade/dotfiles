@@ -388,7 +388,9 @@ echo "vim: :%s/wordhere/newword/g to search and replace all instances of words"
 #echo "PUT 'local.conf' INTO ~/.config/fontconfig if things get weird!"
 echo "useful cmds: find, locate, whereis, which, file, getfacl"
 #echo "widget.gtk.overlay-scrollbars.enabled=false to change FF scrollbar back to normal"
-echo "disable 'slideback' in system settings to change window animation back"
+#echo "disable 'slideback' in system settings to change window animation back"
+echo "use ctrl + f2 to switch between virtual desktops!"
+#echo "revert 10-amdgpu.conf if X11 crashes!"
 
 ## Useful aliases
 alias love="cowsay I love you Lauren"
