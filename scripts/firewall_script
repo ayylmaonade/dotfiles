@@ -1,5 +1,12 @@
 #!/bin/sh
 
+if [ $EUID -ne 0 ]; then
+    zenity --error --text="Please re-run the script with root privileges!"
+    exit
+else
+    break;
+fi
+
 echo "Must be run as root!"
 
 echo "This script will automatically set the following ufw settings:
