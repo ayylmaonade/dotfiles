@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ $EUID -ne 0 ]; then
-    zenity --error --text="Please re-run the script with root privileges!"
+    zenity  --height=140 --width=340 --error --title="Must be run as root!" --text="Please re-run the script with root privileges!"
     exit
 else
     break;
