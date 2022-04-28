@@ -372,7 +372,6 @@ colorscript exec crunch
 #echo "use locate to find files!"
 #echo "ctrl + a goes to the beginning of a line!"
 #echo "revert /etc/lsb-release if pacman breaks!"
-#echo "use notflix to stream torrents! it's dope!"
 echo "pacman -Rs to remove file & all dependencies!"
 #echo "fuck with ufw settings to try fixing notflix!"
 echo "use 'w3m' to view images in the terminal!"
@@ -391,6 +390,9 @@ echo "useful cmds: find, locate, whereis, which, file, getfacl"
 #echo "disable 'slideback' in system settings to change window animation back"
 echo "use ctrl + f2 to switch between virtual desktops!"
 #echo "revert 10-amdgpu.conf if X11 crashes!"
+#echo "aura is no longer installed! use yay instead!"
+#echo "Uninstall 'strangle'/'libstrangle' if you don't need it anymore. repo is in ~/"
+echo "use 'zenity' in scripts to use gui dialogs!"
 
 ## Useful aliases
 alias love="cowsay I love you Lauren"
@@ -401,7 +403,7 @@ alias rm="rm -i"
 alias mv="mvg -i -g" #requires advcpmv, adds a progress bar. change mvg to mv & remove -g otherwise
 alias matrix="cxxmatrix"
 alias fish="asciiquarium"
-alias snipebot="python3 ~/Desktop/snipe.py "
+#alias snipebot="python3 ~/Desktop/snipe.py "
 alias mpv="mpv --profile=swag "
 #alias aura="sudo aura"
 alias vim="nvim" # lol
