@@ -143,12 +143,12 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-#readable output
+#readable output for df
 alias df='df -h'
 
 #pacman unlock - don't use this unless you know what you're doing.
-alias unlock="sudo rm /var/lib/pacman/db.lck"
-alias rmpacmanlock="sudo rm /var/lib/pacman/db.lck"
+#alias unlock="sudo rm /var/lib/pacman/db.lck"
+#alias rmpacmanlock="sudo rm /var/lib/pacman/db.lck"
 
 #arcolinux logout unlock
 alias rmlogoutlock="sudo rm /tmp/arcologout.lock"
@@ -156,21 +156,14 @@ alias rmlogoutlock="sudo rm /tmp/arcologout.lock"
 #shows memory use in readable format & uses MiB.
 alias free="free -mht"
 
-#continue download
-alias wget="wget -c"
-
-#userlist
+# Lists all groups on the system
 alias userlist="cut -d: -f1 /etc/passwd"
 
 #merges new settings for X11
 alias merge="xrdb -merge ~/.Xresources"
 
-# Aliases for software managment
+#alias for software managment
 alias update='doas pacman -Syyu'
-
-# yay as aur helper - updates everything
-#alias pksyua="paru -Syu --noconfirm"
-#alias upall="paru -Syu --noconfirm"
 
 #greps processes. identical to 'ls' except for PIDs.
 alias psa="ps auxf"
@@ -183,22 +176,18 @@ alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias update-fc='doas fc-cache -fv'
 
 #copy/paste all content of /etc/skel over to home folder - backup of config created - beware
-alias skel='cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S) && cp -rf /etc/skel/* ~'
+#alias skel='cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S) && cp -rf /etc/skel/* ~'
 #backup contents of /etc/skel to hidden backup folder in home/user
-alias bupskel='cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)'
+#alias bupskel='cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)'
 
 #copy bashrc-latest over on bashrc - cb= copy bashrc
 #alias cb='sudo cp /etc/skel/.bashrc ~/.bashrc && source ~/.bashrc'
 #copy /etc/skel/.zshrc over on ~/.zshrc - cb= copy zshrc
-alias cz='sudo cp /etc/skel/.zshrc ~/.zshrc && exec zsh'
+#alias cz='sudo cp /etc/skel/.zshrc ~/.zshrc && exec zsh'
 
 #switch between bash and zsh
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
-
-#switch between lightdm and sddm
-alias tolightdm="sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm --needed ; sudo systemctl enable lightdm.service -f ; echo 'Lightm is active - reboot now'"
-alias tosddm="sudo pacman -S sddm --noconfirm --needed ; sudo systemctl enable sddm.service -f ; echo 'Sddm is active - reboot now'"
 
 #quickly kill conkies
 alias kc='killall conky'
@@ -244,7 +233,6 @@ alias jctl="journalctl -p 3 -xb"
 
 #important system config files. don't touch unless you know
 #what you're doing with them.
-alias nlightdm="sudo $EDITOR /etc/lightdm/lightdm.conf"
 alias npacman="sudo $EDITOR /etc/pacman.conf"
 alias ngrub="sudo $EDITOR /etc/default/grub"
 alias nconfgrub="sudo $EDITOR /boot/grub/grub.cfg"
@@ -280,9 +268,6 @@ alias probe="sudo -E hw-probe -all -upload"
 #force shutdown/reboot
 alias ssn="sudo shutdown now"
 alias sr="sudo reboot"
-
-#update betterlockscreen images
-alias bls="betterlockscreen -u /usr/share/backgrounds/arcolinux/"
 
 #give the list of all installed desktops - xsessions desktops
 alias xd="ls /usr/share/xsessions"
@@ -330,7 +315,7 @@ alias awa="arcolinux-welcome-app"
 alias rmgitcache="rm -r ~/.cache/git"
 
 #moving your personal files and folders from /personal to ~
-alias personal='cp -Rf /personal/* ~'
+#alias personal='cp -Rf /personal/* ~'
 
 #create a file called .zshrc-personal and put all your personal aliases
 #in there. They will not be overwritten by skel.
@@ -372,6 +357,7 @@ colorscript exec crunch
 #echo "use locate to find files!"
 #echo "ctrl + a goes to the beginning of a line!"
 #echo "revert /etc/lsb-release if pacman breaks!"
+echo "pacman -Rns to remove pkgs, its dependencies & cfg files!"
 echo "pacman -Rs to remove file & all dependencies!"
 #echo "fuck with ufw settings to try fixing notflix!"
 echo "use 'w3m' to view images in the terminal!"
@@ -393,8 +379,10 @@ echo "use ctrl + f2 to switch between virtual desktops!"
 #echo "aura is no longer installed! use yay instead!"
 #echo "Uninstall 'strangle'/'libstrangle' if you don't need it anymore. repo is in ~/"
 echo "use 'zenity' in scripts to use gui dialogs!"
+#echo "use 'when' for a CLI calculator! remember to configure it in ~/.when!"
+echo "use 'yay -Ps' to see all installed pkgs, including aur!"
 
-## Useful aliases
+# Useful aliases
 alias love="cowsay I love you Lauren"
 alias btop="bashtop"
 alias pacman="doas pacman"
@@ -403,9 +391,8 @@ alias rm="rm -i"
 alias mv="mvg -i -g" #requires advcpmv, adds a progress bar. change mvg to mv & remove -g otherwise
 alias matrix="cxxmatrix"
 alias fish="asciiquarium"
-#alias snipebot="python3 ~/Desktop/snipe.py "
+alias snipebot="python3 ~/Desktop/snipe.py" #go to the directory and run ./snipe.py instead
 alias mpv="mpv --profile=swag "
-#alias aura="sudo aura"
 alias vim="nvim" # lol
 alias vi="vim" # fuck you, brian.
 alias lax="exa -x"
