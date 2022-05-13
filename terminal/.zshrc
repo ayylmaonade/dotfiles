@@ -40,7 +40,7 @@ ZSH_THEME="duellj"
 # DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+ export UPDATE_ZSH_DAYS=14
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS=true
@@ -97,7 +97,7 @@ source $ZSH/oh-my-zsh.sh
 # fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+export ARCHFLAGS="-arch x86_64"
 
 # Sets the prompt to Starship
 eval "$(starship init zsh)"
@@ -134,7 +134,7 @@ fi
 #list
 alias ls='exa -lh --color=auto' # ls with human-readable enabled. doesn't show hidden files.
 alias la='exa -ahl --color=auto' # same as above except this shows hidden files.
-alias ll='ls -la' ## No colour output. Here for compatibility and nothing else.
+alias ll='/usr/bin/ls -hla' ## No colour output. Here for compatibility and nothing else.
 #alias l='ls'
 #alias l.="ls -A | egrep '^\.'"
 
@@ -381,11 +381,13 @@ echo "use ctrl + f2 to switch between virtual desktops!"
 echo "use 'zenity' in scripts to use gui dialogs!"
 #echo "use 'when' for a CLI calculator! remember to configure it in ~/.when!"
 echo "use 'yay -Ps' to see all installed pkgs, including aur!"
+echo "use 'Luapad' in vim for scratchpads! :q to close!"
+echo "vim: 'w' to go forward a word, 'b' to go back a word, 'e' to go to the end of the word"
 
 # Useful aliases
 alias love="cowsay I love you Lauren"
 alias btop="bashtop"
-alias pacman="doas pacman"
+##alias pacman="doas pacman"
 alias cp="cpg -iv -g" #requires advcpmv, adds a progress bar. change cpg to cp & remove -g otherwise
 alias rm="rm -i"
 alias mv="mvg -i -g" #requires advcpmv, adds a progress bar. change mvg to mv & remove -g otherwise
@@ -397,6 +399,7 @@ alias vim="nvim" # lol
 alias vi="vim" # fuck you, brian.
 alias lax="exa -x"
 #alias htop="btop" # better version of htop
+alias gpu="echo this does nothing, dumbass"
 
 # Removes the 10k line limit for zsh history
 export HISTSIZE=1000000000
