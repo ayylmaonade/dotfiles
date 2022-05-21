@@ -360,29 +360,35 @@ colorscript exec crunch
 echo "pacman -Rns to remove pkgs, its dependencies & cfg files!"
 echo "pacman -Rs to remove file & all dependencies!"
 #echo "fuck with ufw settings to try fixing notflix!"
-echo "use 'w3m' to view images in the terminal!"
+#echo "use 'w3m' to view images in the terminal!"
 #echo "use 'sudoedit' instead of sudo/doas vim!"
 #echo "use 'lax' to display directories in human format!"
 #echo "use 'ex' to extract any compressed file/folder!"
 ###echo "set 'media.rdd-process.enabled' back to true when FF updates!!"###
 echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will put it at the start of line"
-echo "vim: :%s/wordhere/newword/g to search and replace all instances of words"
+echo "vim: :%s/wordhere/newword/g to search and replace all instances of words" 
+echo "vim: 'w' to go forward a word, 'b' to go back a word, 'e' to go to the end of the word!"
 #echo "use the -S flag to sign git commits! 'git commit -S -m "msg"' "
 #echo "exa is now the ls command. all ls aliases are actually exa commands. keep in mind!"
 #echo "use 'ls -l' on a file/folder to check permissions"
 #echo "PUT 'local.conf' INTO ~/.config/fontconfig if things get weird!"
-echo "useful cmds: find, locate, whereis, which, file, getfacl"
 #echo "widget.gtk.overlay-scrollbars.enabled=false to change FF scrollbar back to normal"
 #echo "disable 'slideback' in system settings to change window animation back"
-echo "use ctrl + f2 to switch between virtual desktops!"
+echo "use ctrl + F2 to switch between virtual desktops!" | lolcat
 #echo "revert 10-amdgpu.conf if X11 crashes!"
 #echo "aura is no longer installed! use yay instead!"
 #echo "Uninstall 'strangle'/'libstrangle' if you don't need it anymore. repo is in ~/"
-echo "use 'zenity' in scripts to use gui dialogs!"
+#echo "use 'zenity' in scripts to use gui dialogs!"
 #echo "use 'when' for a CLI calculator! remember to configure it in ~/.when!"
 echo "use 'yay -Ps' to see all installed pkgs, including aur!"
 echo "use 'Luapad' in vim for scratchpads! :q to close!"
-echo "vim: 'w' to go forward a word, 'b' to go back a word, 'e' to go to the end of the word"
+#echo "about:config: change 'layers.force-active' to false if firefox gets weird!"
+echo "use 'lynx' to browse the web in the terminal!"
+echo "use 'toot' to run mastodon in the terminal!"
+echo "vim: press 'zz' to center the line/cursor!"
+echo "vim: 'daw' deletes word & space around it. 'dw' deletes word. 'dap' deletes paragraphs!"
+echo "useful cmds: find, locate, whereis, which, file, getfacl" | lolcat
+echo "Develop rfetch/rustfetch! Use neofetch src as help! -- /usr/bin/neofetch"
 
 # Useful aliases
 alias love="cowsay I love you Lauren"
@@ -398,8 +404,10 @@ alias mpv="mpv --profile=swag "
 alias vim="nvim" # lol
 alias vi="vim" # fuck you, brian.
 alias lax="exa -x"
-#alias htop="btop" # better version of htop
+alias btop="bpytop" # better version of top/htop
 alias gpu="echo this does nothing, dumbass"
+alias lynx="lynx -vikeys -force_secure -scrollbar -show_cursor -use_mouse "
+alias lauren="cowsay Lauren "
 
 # Removes the 10k line limit for zsh history
 export HISTSIZE=1000000000
