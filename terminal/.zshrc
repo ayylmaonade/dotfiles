@@ -82,6 +82,11 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+plugins=(
+	# additional plugins
+	zsh-autosuggestions
+)
+source /usr/share/oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -374,7 +379,7 @@ echo "vim: 'w' to go forward a word, 'b' to go back a word, 'e' to go to the end
 #echo "PUT 'local.conf' INTO ~/.config/fontconfig if things get weird!"
 #echo "widget.gtk.overlay-scrollbars.enabled=false to change FF scrollbar back to normal"
 #echo "disable 'slideback' in system settings to change window animation back"
-echo "use ctrl + F2 to switch between virtual desktops!" | lolcat
+echo "use ctrl + F2 to switch between virtual desktops!" 
 #echo "revert 10-amdgpu.conf if X11 crashes!"
 #echo "aura is no longer installed! use yay instead!"
 #echo "Uninstall 'strangle'/'libstrangle' if you don't need it anymore. repo is in ~/"
@@ -383,12 +388,16 @@ echo "use ctrl + F2 to switch between virtual desktops!" | lolcat
 echo "use 'yay -Ps' to see all installed pkgs, including aur!"
 echo "use 'Luapad' in vim for scratchpads! :q to close!"
 #echo "about:config: change 'layers.force-active' to false if firefox gets weird!"
-echo "use 'lynx' to browse the web in the terminal!"
-echo "use 'toot' to run mastodon in the terminal!"
+#echo "use 'lynx' to browse the web in the terminal!"
+#echo "use 'toot' to run mastodon in the terminal!"
 echo "vim: press 'zz' to center the line/cursor!"
 echo "vim: 'daw' deletes word & space around it. 'dw' deletes word. 'dap' deletes paragraphs!"
 echo "useful cmds: find, locate, whereis, which, file, getfacl" | lolcat
-echo "Develop rfetch/rustfetch! Use neofetch src as help! -- /usr/bin/neofetch"
+echo "Develop rfetch/rustfetch!" # Use neofetch & freshfetch src as help! -- /usr/bin/neofetch"
+#echo "RE-WRITE 'GOL' AKA GAME OF LIFE -- GOOD PROJECT TO STREAM FOR LAUREN"
+#echo "SHOW LAUREN THE C++ SCRIPT I WROTE FOR HER ON ~/Desktop!!" # SHE LOVED IT! Saved it. :3
+echo "Start a project to automatically setup my Linux cfgs, a la DTOS"
+#echo "change 'media.rdd-process.enabled' to false if HW accel breaks!"
 
 # Useful aliases
 alias love="cowsay I love you Lauren"
@@ -408,6 +417,7 @@ alias btop="bpytop" # better version of top/htop
 alias gpu="echo this does nothing, dumbass"
 alias lynx="lynx -vikeys -force_secure -scrollbar -show_cursor -use_mouse "
 alias lauren="cowsay Lauren "
+alias systemctl="doas systemctl "
 
 # Removes the 10k line limit for zsh history
 export HISTSIZE=1000000000
