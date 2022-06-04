@@ -1,0 +1,29 @@
+#!/usr/bin/sh
+
+# Name: dm-wiki, arch-wiki-offline-dmenu, (rename the script when moving to /usr/local/bin)
+# Description: Searches an offline version of the Arch wiki
+# Dependencies: dmenu, arch-wiki-docs, zenity
+# License: GPLv3
+# Contributors: Shaun
+
+## Defines the language directory. English is default.
+wikidir="/usr/share/doc/arch-wiki/html/en/"
+
+wikidocs="$(find ${wikidir} -iname "*.html")"
+
+main() {
+    choice=$(printf '%s\n' "${wikidocs[@]}" |
+	cut -d '/' -f8- | 
+	sed -e 's/_/ /g' -e 's/.html//g' |
+	dmenu -i -l 20 -p 'Arch Wiki: ') ||
+    exit 1
+
+    if [ "$choice" ]; then
+	document=$(printf '%s\n' "${wikidir}${choice}.html" | sed 's/ /_/g')
+	firefox "$document" 
+    else
+	zenity --error --text="Exiting..." && exit 0
+    fi
+}
+
+main
