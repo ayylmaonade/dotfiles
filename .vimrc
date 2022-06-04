@@ -12,8 +12,8 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-" Set indentation to 8 (or whatever you prefer)
-set shiftwidth=8
+" Set indentation to 4 (or whatever you prefer)
+set shiftwidth=4
 
 " Shows the line number
 set number

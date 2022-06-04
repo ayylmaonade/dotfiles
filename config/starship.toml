@@ -1,5 +1,5 @@
 [character]
-success_symbol = "[▶](bold green)" # normal prompt
+success_symbol = "[▶](bold blue)" # normal prompt
 error_symbol = "[✗](bold red)" # used if previous command failed
 
 [line_break]
