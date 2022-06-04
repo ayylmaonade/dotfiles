@@ -86,7 +86,8 @@ plugins=(
 	# additional plugins
 	zsh-autosuggestions
 )
-source /usr/share/oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
