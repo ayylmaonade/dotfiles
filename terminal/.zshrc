@@ -327,27 +327,6 @@ alias rmgitcache="rm -r ~/.cache/git"
 #in there. They will not be overwritten by skel.
 
 
-#    _______. __    __       ___      __    __  .__   __.      _______.
-#   /       ||  |  |  |     /   \    |  |  |  | |  \ |  |     /       |
-#   |   (----`|  |__|  |    /  ^  \   |  |  |  | |   \|  |    |   (----`
-#\   \    |   __   |   /  /_\  \  |  |  |  | |  . `  |     \   \
-#.----)   |   |  |  |  |  /  _____  \ |  `--'  | |  |\   | .----)   |
-#|_______/    |__|  |__| /__/     \__\ \______/  |__| \__| |_______/
-
-#  ______  __    __       _______.___________.  ______   .___  ___.
-# /      ||  |  |  |     /       |           | /  __  \  |   \/   |
-#|  ,----'|  |  |  |    |   (----`---|  |----`|  |  |  | |  \  /  |
-#|  |     |  |  |  |     \   \       |  |     |  |  |  | |  |\/|  |
-#|  `----.|  `--'  | .----)   |      |  |     |  `--'  | |  |  |  |
-# \______| \______/  |_______/       |__|      \______/  |__|  |__|
-
-#  ______   ______   .___  ___. .___  ___.      ___      .__   __.  _______       _______.
-# /      | /  __  \  |   \/   | |   \/   |     /   \     |  \ |  | |       \     /       |
-#|  ,----'|  |  |  | |  \  /  | |  \  /  |    /  ^  \    |   \|  | |  .--.  |   |   (----`
-#|  |     |  |  |  | |  |\/|  | |  |\/|  |   /  /_\  \   |  . `  | |  |  |  |    \   \
-#|  `----.|  `--'  | |  |  |  | |  |  |  |  /  _____  \  |  |\   | |  '--'  |.----)   |
-# \______| \______/  |__|  |__| |__|  |__| /__/     \__\ |__| \__| |_______/ |_______/
-
 
 ## Terminal startup exec
 #neofetch
@@ -357,6 +336,7 @@ pfetch
 #colorscript exec tiefighter1row
 colorscript exec crunch
 #fortune
+## Startup Echoes
 #echo "remember to use tldr! (e.g. tldr git)"
 #echo "use doas instead of sudo!"
 #echo "pacman -Ss to search!"
@@ -386,7 +366,7 @@ echo "use ctrl + F2 to switch between virtual desktops!"
 #echo "Uninstall 'strangle'/'libstrangle' if you don't need it anymore. repo is in ~/"
 #echo "use 'zenity' in scripts to use gui dialogs!"
 #echo "use 'when' for a CLI calculator! remember to configure it in ~/.when!"
-echo "use 'yay -Ps' to see all installed pkgs, including aur!"
+##echo "use 'yay -Ps' to see all installed pkgs, including aur!"
 echo "use 'Luapad' in vim for scratchpads! :q to close!"
 #echo "about:config: change 'layers.force-active' to false if firefox gets weird!"
 #echo "use 'lynx' to browse the web in the terminal!"
@@ -397,10 +377,13 @@ echo "useful cmds: find, locate, whereis, which, file, getfacl" | lolcat
 echo "Develop rfetch/rustfetch!" # Use neofetch & freshfetch src as help! -- /usr/bin/neofetch"
 #echo "RE-WRITE 'GOL' AKA GAME OF LIFE -- GOOD PROJECT TO STREAM FOR LAUREN"
 #echo "SHOW LAUREN THE C++ SCRIPT I WROTE FOR HER ON ~/Desktop!!" # SHE LOVED IT! Saved it. :3
-echo "Start a project to automatically setup my Linux cfgs, a la DTOS"
+#echo "Start a project to automatically setup my Linux cfgs, a la DTOS"
 #echo "change 'media.rdd-process.enabled' to false if HW accel breaks!"
+echo "Use 'dmwiki' to search the Arch Wiki offline!"
+echo "Use 'cheat' & 'tldr' to see command info!"
+echo "Use 'shellcheck' to verify shell scripts!"
 
-# Useful aliases
+## Useful aliases
 alias love="cowsay I love you Lauren"
 alias btop="bashtop"
 ##alias pacman="doas pacman"
@@ -409,7 +392,7 @@ alias rm="rm -i"
 alias mv="mvg -i -g" #requires advcpmv, adds a progress bar. change mvg to mv & remove -g otherwise
 alias matrix="cxxmatrix"
 alias fish="asciiquarium"
-alias snipebot="python3 ~/Desktop/snipe.py" #go to the directory and run ./snipe.py instead
+alias snipebot="python3 ~/dotfiles/scripts/snipe.py" #go to the directory and run ./snipe.py instead
 alias mpv="mpv --profile=swag "
 alias vim="nvim" # lol
 alias vi="vim" # fuck you, brian.
@@ -419,8 +402,9 @@ alias gpu="echo this does nothing, dumbass"
 alias lynx="lynx -vikeys -force_secure -scrollbar -show_cursor -use_mouse "
 alias lauren="cowsay Lauren "
 alias systemctl="doas systemctl "
+alias rfetch="freshfetch"
 
-# Removes the 10k line limit for zsh history
+## Removes the 10k line limit for zsh history
 export HISTSIZE=1000000000
 export SAVEHIST=$HISTSIZE
 setopt EXTENDED_HISTORY
@@ -428,7 +412,7 @@ setopt EXTENDED_HISTORY
 # Star Wars ASCII
 alias starwars="telnet towel.blinkenlights.nl"
 
-# Refresh pacman mirrorlist using HTTPS only, scoring 100 servers and choosing the best based on ping.
+## Refresh pacman mirrorlist using HTTPS only, scoring 100 servers and choosing the best based on ping.
 alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 
 #enables fzf, helps more easily look through shell history. ctrl + r
