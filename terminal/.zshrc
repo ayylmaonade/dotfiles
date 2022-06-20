@@ -145,7 +145,7 @@ alias ll='/usr/bin/ls -hla' ## No colour output. Here for compatibility and noth
 #alias l.="ls -A | egrep '^\.'"
 
 ## Colorize the grep command output for ease of use (good for log files)
-alias grep='grep --color=auto'
+alias grep='grep -i --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
@@ -336,6 +336,8 @@ pfetch
 #colorscript exec tiefighter1row
 colorscript exec crunch
 #fortune
+
+
 ## Startup Echoes
 #echo "remember to use tldr! (e.g. tldr git)"
 #echo "use doas instead of sudo!"
@@ -367,21 +369,27 @@ echo "use ctrl + F2 to switch between virtual desktops!"
 #echo "use 'zenity' in scripts to use gui dialogs!"
 #echo "use 'when' for a CLI calculator! remember to configure it in ~/.when!"
 ##echo "use 'yay -Ps' to see all installed pkgs, including aur!"
-echo "use 'Luapad' in vim for scratchpads! :q to close!"
+#echo "use 'Luapad' in vim for scratchpads! :q to close!"
 #echo "about:config: change 'layers.force-active' to false if firefox gets weird!"
 #echo "use 'lynx' to browse the web in the terminal!"
 #echo "use 'toot' to run mastodon in the terminal!"
-echo "vim: press 'zz' to center the line/cursor!"
+#echo "vim: press 'zz' to center the line/cursor!"
 echo "vim: 'daw' deletes word & space around it. 'dw' deletes word. 'dap' deletes paragraphs!"
 echo "useful cmds: find, locate, whereis, which, file, getfacl" | lolcat
-echo "Develop rfetch/rustfetch!" # Use neofetch & freshfetch src as help! -- /usr/bin/neofetch"
+##echo "Develop rfetch/rustfetch!" # Use neofetch & freshfetch src as help! -- /usr/bin/neofetch"
 #echo "RE-WRITE 'GOL' AKA GAME OF LIFE -- GOOD PROJECT TO STREAM FOR LAUREN"
 #echo "SHOW LAUREN THE C++ SCRIPT I WROTE FOR HER ON ~/Desktop!!" # SHE LOVED IT! Saved it. :3
 #echo "Start a project to automatically setup my Linux cfgs, a la DTOS"
 #echo "change 'media.rdd-process.enabled' to false if HW accel breaks!"
 echo "Use 'dmwiki' to search the Arch Wiki offline!"
 echo "Use 'cheat' & 'tldr' to see command info!"
-echo "Use 'shellcheck' to verify shell scripts!"
+#echo "Use 'shellcheck' to verify shell scripts!"
+##echo "Reset 'gfx.webgpu.force-enabled' in firefox if things go weird!"
+##echo "Remember to delete 'general.useragent.override' in about:config!"
+##echo "Re-enable webrender settings. Picture in ~/Documents!"
+echo "Use 'curl getnews.tech/queryhere' to see the news!"
+echo "Remember to change /etc/sysctl.d/swappiness.conf if memory is an issue!"
+#echo "Use 'grep -i' to use case-insensitive search!"
 
 ## Useful aliases
 alias love="cowsay I love you Lauren"
@@ -403,6 +411,7 @@ alias lynx="lynx -vikeys -force_secure -scrollbar -show_cursor -use_mouse "
 alias lauren="cowsay Lauren "
 alias systemctl="doas systemctl "
 alias rfetch="freshfetch"
+##alias grep="grep -in"
 
 ## Removes the 10k line limit for zsh history
 export HISTSIZE=1000000000
