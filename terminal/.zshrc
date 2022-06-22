@@ -88,6 +88,9 @@ plugins=(
 )
 source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# Sets the prompt to Starship
+eval "$(starship init zsh)"
+
 # Adds mangohud to $PATH, prevents pointless .profile file in ~/
 export MANGOHUD=1
 
@@ -97,7 +100,7 @@ export MANGOHUD=1
 # export LANG=en_US.UTF-8
 
 # PREFERRED EDITOR FOR LOCAL AND REMOTE SESSIONS
-IF [[ -N $SSH_CONNECTION ]]; THEN
+if [[ -N $SSH_CONNECTION ]]; then 
   export EDITOR='nvim'
 else
   export EDITOR='/usr/bin/vi'
@@ -107,7 +110,7 @@ fi
 export ARCHFLAGS="-arch x86_64"
 
 # Sets the prompt to Starship
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
 
 ####   CUSTOM SETTINGS   ####
 
