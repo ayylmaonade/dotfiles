@@ -89,7 +89,8 @@ plugins=(
 source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # User configuration
-
+# Adds mangohud to $PATH, prevents pointless .profile file in ~/
+export MANGOHUD=1
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -390,6 +391,7 @@ echo "Use 'cheat' & 'tldr' to see command info!"
 echo "Use 'curl getnews.tech/queryhere' to see the news!"
 echo "Remember to change /etc/sysctl.d/swappiness.conf if memory is an issue!"
 #echo "Use 'grep -i' to use case-insensitive search!"
+echo "Add 'export MANGOHUD=1' to a file called .profile in ~/ if it breaks!"
 
 ## Useful aliases
 alias love="cowsay I love you Lauren"
