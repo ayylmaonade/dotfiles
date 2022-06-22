@@ -88,20 +88,20 @@ plugins=(
 )
 source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# User configuration
 # Adds mangohud to $PATH, prevents pointless .profile file in ~/
 export MANGOHUD=1
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='nvim'
-# fi
+# PREFERRED EDITOR FOR LOCAL AND REMOTE SESSIONS
+IF [[ -N $SSH_CONNECTION ]]; THEN
+  export EDITOR='nvim'
+else
+  export EDITOR='/usr/bin/vi'
+fi
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
@@ -109,10 +109,7 @@ export ARCHFLAGS="-arch x86_64"
 # Sets the prompt to Starship
 eval "$(starship init zsh)"
 
-
-
 ####   CUSTOM SETTINGS   ####
-
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -124,7 +121,6 @@ setopt GLOB_DOTS
 export HISTCONTROL=ignoreboth:erasedups
 
 # Make neovim the default editor
-
 export EDITOR='nvim'
 export VISUAL='nvim'
 
@@ -142,8 +138,6 @@ fi
 alias ls='exa -lh --color=auto' # ls with human-readable enabled. doesn't show hidden files.
 alias la='exa -ahl --color=auto' # same as above except this shows hidden files.
 alias ll='/usr/bin/ls -hla' ## No colour output. Here for compatibility and nothing else.
-#alias l='ls'
-#alias l.="ls -A | egrep '^\.'"
 
 ## Colorize the grep command output for ease of use (good for log files)
 alias grep='grep -i --color=auto'
@@ -202,11 +196,6 @@ alias kc='killall conky'
 #hardware info --short
 alias hw="hwinfo --short"
 
-#skip integrity check
-alias paruskip='paru -S --mflags --skipinteg'
-alias yayskip='yay -S --mflags --skipinteg'
-alias trizenskip='trizen -S --skipinteg'
-
 #check vulnerabilities microcode
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
 
@@ -224,9 +213,9 @@ alias ytdl="youtube-dl "
 
 #Recent Installed Packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
-alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -4000 | nl"
+alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -5000 | nl"
 
-#iso and version used to install ArcoLinux
+#iso and version used to install Linux
 alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
 
 #Cleanup orphaned packages
@@ -306,17 +295,8 @@ ex ()
   fi
 }
 
-#arcolinux applications
-alias att="arcolinux-tweak-tool"
-alias adt="arcolinux-desktop-trasher"
-alias abl="arcolinux-betterlockscreen"
-alias agm="arcolinux-get-mirrors"
-alias amr="arcolinux-mirrorlist-rank-info"
-alias aom="arcolinux-osbeck-as-mirror"
-alias ars="arcolinux-reflector-simple"
+#cool, albeit pointless graphical art & quote generator
 alias atm="arcolinux-tellme"
-alias avs="arcolinux-vbox-share"
-alias awa="arcolinux-welcome-app"
 
 #remove
 alias rmgitcache="rm -r ~/.cache/git"
@@ -413,7 +393,6 @@ alias lynx="lynx -vikeys -force_secure -scrollbar -show_cursor -use_mouse "
 alias lauren="cowsay Lauren "
 alias systemctl="doas systemctl "
 alias rfetch="freshfetch"
-##alias grep="grep -in"
 
 ## Removes the 10k line limit for zsh history
 export HISTSIZE=1000000000
