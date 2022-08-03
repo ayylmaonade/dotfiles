@@ -109,9 +109,6 @@ fi
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
-# Sets the prompt to Starship
-#eval "$(starship init zsh)"
-
 ####   CUSTOM SETTINGS   ####
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -214,7 +211,7 @@ alias yta-wav="youtube-dl --extract-audio --audio-format wav "
 alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 alias ytdl="youtube-dl "
 
-#Recent Installed Packages
+#Recently Installed Packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -5000 | nl"
 
@@ -351,7 +348,6 @@ echo "use ctrl + F2 to switch between virtual desktops!"
 #echo "aura is no longer installed! use yay instead!"
 #echo "Uninstall 'strangle'/'libstrangle' if you don't need it anymore. repo is in ~/"
 #echo "use 'zenity' in scripts to use gui dialogs!"
-#echo "use 'when' for a CLI calculator! remember to configure it in ~/.when!"
 ##echo "use 'yay -Ps' to see all installed pkgs, including aur!"
 #echo "use 'Luapad' in vim for scratchpads! :q to close!"
 #echo "about:config: change 'layers.force-active' to false if firefox gets weird!"
@@ -364,7 +360,6 @@ echo "useful cmds: find, locate, whereis, which, file, getfacl" | lolcat
 #echo "RE-WRITE 'GOL' AKA GAME OF LIFE -- GOOD PROJECT TO STREAM FOR LAUREN"
 #echo "SHOW LAUREN THE C++ SCRIPT I WROTE FOR HER ON ~/Desktop!!" # SHE LOVED IT! Saved it. :3
 #echo "Start a project to automatically setup my Linux cfgs, a la DTOS"
-#echo "change 'media.rdd-process.enabled' to false if HW accel breaks!"
 echo "Use 'dmwiki' to search the Arch Wiki offline!"
 echo "Use 'cheat' & 'tldr' to see command info!"
 #echo "Use 'shellcheck' to verify shell scripts!"
@@ -372,9 +367,11 @@ echo "Use 'cheat' & 'tldr' to see command info!"
 ##echo "Remember to delete 'general.useragent.override' in about:config!"
 ##echo "Re-enable webrender settings. Picture in ~/Documents!"
 echo "Use 'curl getnews.tech/queryhere' to see the news!"
-echo "Remember to change /etc/sysctl.d/swappiness.conf if memory is an issue!"
+##echo "Remember to change /etc/sysctl.d/swappiness.conf if memory is an issue!"
 #echo "Use 'grep -i' to use case-insensitive search!"
-echo "Add 'export MANGOHUD=1' to a file called .profile in ~/ if it breaks!"
+##echo "Add 'export MANGOHUD=1' to a file called .profile in ~/ if it breaks!"
+echo "Use 'sensors' to check all hardware temps!" 
+#echo "change 'media.rdd-process.enabled' to false if firefox breaks!"
 
 ## Useful aliases
 alias love="cowsay I love you Lauren"
