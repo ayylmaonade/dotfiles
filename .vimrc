@@ -5,7 +5,7 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 " Sets the path nvim uses to load important vim settings
- set runtimepath+=/usr/share/vim/vimfiles
+set runtimepath+=/usr/share/vim/vimfiles
 
 " Automatically jump to last position when re-opening a file
 if has("autocmd")
