@@ -1,3 +1,3 @@
-These configuration files are used to tweak existing .confs for software such as kitty, SDDM, PulseAudio & more. 
+A collection of my dotfiles & general configuration files for Linux.
 
-**IMPORTANT: BACK UP YOUR ORIGINAL .conf FILES BEFORE USING MINE. IF YOU DO NOT BACKUP, YOU WILL LOSE YOUR ORIGINAL .conf PERMANENTLY.**
+Remember to backup any of your existing config files if you wish to use mine.
