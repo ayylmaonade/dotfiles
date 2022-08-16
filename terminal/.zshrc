@@ -317,7 +317,8 @@ pfetch
 #colorscript exec tiefighter1row
 colorscript exec crunch
 #fortune
-
+ulimit -c 0 #test
+xset m 3/2 0
 
 ## Startup Echoes
 #echo "remember to use tldr! (e.g. tldr git)"
