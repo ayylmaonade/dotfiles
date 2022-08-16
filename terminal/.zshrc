@@ -33,7 +33,7 @@ ZSH_THEME="duellj"
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
-# Uncomment the following line to disable bi-weekly auto-update checks.
+# Uncomment the following line to disable bi-weekly auto-fpdate checks.
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
@@ -263,7 +263,7 @@ alias probe="sudo -E hw-probe -all -upload"
 
 #force shutdown/reboot
 alias ssn="sudo shutdown now"
-alias sr="sudo reboot"
+alias sr="doas reboot"
 
 #give the list of all installed desktops - xsessions desktops
 alias xd="ls /usr/share/xsessions"
@@ -370,13 +370,22 @@ echo "Use 'curl getnews.tech/queryhere' to see the news!"
 ##echo "Remember to change /etc/sysctl.d/swappiness.conf if memory is an issue!"
 #echo "Use 'grep -i' to use case-insensitive search!"
 ##echo "Add 'export MANGOHUD=1' to a file called .profile in ~/ if it breaks!"
-echo "Use 'sensors' to check all hardware temps!" 
+###echo "Use 'sensors' to check all hardware temps!" 
 #echo "change 'media.rdd-process.enabled' to false if firefox breaks!"
+echo "Use 'shift+ctrl+esc' to kill windows!"
+echo "Use 'super+w' to switch between windows! Fuck alt tab!"
+echo "Remove /etc/sysctl.conf to fix swap, also try changing it to 1!"
+#echo "Change all fonts down 1pt when _not_ using wayland!"
+echo "Change .zshrc 'update' alias back!"
+echo "Reset 'ulimit' to default if core dumps still appear!"
+echo "Remove xset 3/2 from crontab if it doesn't work!"
+echo "Change /usr/lib/discord/buildinfo version back to 0.18 if it breaks!"
 
 ## Useful aliases
-alias love="cowsay I love you Lauren"
+alias love="figlet I love you lauren"
+#alias love="cowsay I love you Lauren && figlet I love you Lauren"
 alias btop="bashtop"
-##alias pacman="doas pacman"
+alias pacman="doas pacman"
 alias cp="cpg -iv -g" #requires advcpmv, adds a progress bar. change cpg to cp & remove -g otherwise
 alias rm="rm -i"
 alias mv="mvg -i -g" #requires advcpmv, adds a progress bar. change mvg to mv & remove -g otherwise
@@ -393,6 +402,38 @@ alias lynx="lynx -vikeys -force_secure -scrollbar -show_cursor -use_mouse "
 alias lauren="cowsay Lauren "
 alias systemctl="doas systemctl "
 alias rfetch="freshfetch"
+
+## Useful system monitorng commands.
+##These do not execute by default.
+#$ cat /sys/class/drm/card0/device/pp_od_clk_voltage
+
+#To monitor your GPU, execute:
+
+#$ watch -n 0.5  cat /sys/kernel/debug/dri/0/amdgpu_pm_info
+
+#To check your GPU utilization, execute:
+
+#$ cat /sys/class/drm/card0/device/gpu_busy_percent
+
+#To check your GPU frequency, execute:
+
+#$ cat /sys/class/drm/card0/device/pp_dpm_sclk
+
+#To check your GPU temperature, execute:
+
+#$ cat /sys/class/drm/card0/device/hwmon/hwmon*/temp1_input
+
+#To check your VRAM frequency, execute:
+
+#$ cat /sys/class/drm/card0/device/pp_dpm_mclk
+
+#To check your VRAM usage, execute:
+
+#$ cat /sys/class/drm/card0/device/mem_info_vram_used
+
+#To check your VRAM size, execute:
+
+#$ cat /sys/class/drm/card0/device/mem_info_vram_total
 
 ## Removes the 10k line limit for zsh history
 export HISTSIZE=1000000000
