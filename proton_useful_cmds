@@ -1,0 +1,14 @@
+*/ This is a list of useful 
+commands to use as launch
+options when running games
+via Steam Compatibility */
+
+taskset -c 0,1,2,3,4
+VKD3D_CONFIG=dxr9/11/12
+DXVK_ASYNC=0/1
+VULKAN_ICD_LOADER=RADV
+PROTON_NO_D3D11=0/1
+PROTON_USE_WINED3D=0/1
+PROTON_NO_ESYNC=0/1
+
+*/ %command% */
