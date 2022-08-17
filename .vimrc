@@ -9,7 +9,7 @@ set runtimepath+=/usr/share/vim/vimfiles
 
 " Automatically jump to last position when re-opening a file
 if has("autocmd")
-  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+  au BufReadPost * if line("'\'") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
 " Set indentation to 4 (or whatever you prefer)
@@ -32,6 +32,15 @@ set linebreak
 " Highlights things when searching
 set incsearch
 set hlsearch
+
+" Makes searching ignore capital(S)
+set ignorecase
+
+" Overrides ignorecase _only_ if searching for capitals
+set smartcase
+
+" Shows matching words when searching
+set showmatch
 
 " Enable mouse
 set mouse=a
