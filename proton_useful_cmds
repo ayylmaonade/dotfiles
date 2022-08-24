@@ -4,11 +4,12 @@ options when running games
 via Steam Compatibility */
 
 taskset -c 0,1,2,3,4
-VKD3D_CONFIG=dxr9/11/12
+VKD3D_CONFIG=dxr9/11/12 // Do not use vulkan_icd_loader=RADV with this!
 DXVK_ASYNC=0/1
-VULKAN_ICD_LOADER=RADV
+VULKAN_ICD_LOADER=RADV // Do not use 'fsync=1' with this, incompatible!
 PROTON_NO_D3D11=0/1
 PROTON_USE_WINED3D=0/1
 PROTON_NO_ESYNC=0/1
+PROTON_NO_FSYNC=0/1 
 
 */ %command% */
