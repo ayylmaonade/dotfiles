@@ -362,7 +362,7 @@ echo "useful cmds: find, locate, whereis, which, file, getfacl" | lolcat
 #echo "SHOW LAUREN THE C++ SCRIPT I WROTE FOR HER ON ~/Desktop!!" # SHE LOVED IT! Saved it. :3
 #echo "Start a project to automatically setup my Linux cfgs, a la DTOS"
 echo "Use 'dmwiki' to search the Arch Wiki offline!"
-echo "Use 'cheat' & 'tldr' to see command info!"
+##echo "Use 'cheat' & 'tldr' to see command info!"
 #echo "Use 'shellcheck' to verify shell scripts!"
 ##echo "Reset 'gfx.webgpu.force-enabled' in firefox if things go weird!"
 ##echo "Remember to delete 'general.useragent.override' in about:config!"
@@ -374,13 +374,17 @@ echo "Use 'curl getnews.tech/queryhere' to see the news!"
 ###echo "Use 'sensors' to check all hardware temps!" 
 #echo "change 'media.rdd-process.enabled' to false if firefox breaks!"
 echo "Use 'shift+ctrl+esc' to kill windows!"
-echo "Use 'super+w' to switch between windows! Fuck alt tab!"
-echo "Remove /etc/sysctl.conf to fix swap, also try changing it to 1!"
+##echo "Use 'super+w' to switch between windows! Fuck alt tab!"
+##echo "Remove /etc/sysctl.conf to fix swap, also try changing it to 1!"
 #echo "Change all fonts down 1pt when _not_ using wayland!"
-echo "Change .zshrc 'update' alias back!"
-echo "Reset 'ulimit' to default if core dumps still appear!"
-echo "Remove xset 3/2 from crontab if it doesn't work!"
-echo "Change /usr/lib/discord/buildinfo version back to 0.18 if it breaks!"
+##echo "Change .zshrc 'update' alias back!"
+##echo "Reset 'ulimit' to default if core dumps still appear!"
+#echo "Remove xset 3/2 from crontab if it doesn't work!"
+#####echo "Change /usr/lib/discord/buildinfo version back to 0.18 if it breaks!"
+##echo "Remove '*hard core 0' & comment out '*soft core* in /etc/security/limits.conf if cores still dump!" //Seems to work. Leaving for now.
+echo "Use 'cat /proc/sys/vm/swappiness' to see if it outputs '10'"
+##echo "Krunner daemon runs at startup! You can edit .xinitrc to remove it"
+echo "Remove '/etc/sysctl.d/99-swappiness.conf' to change swappiness back!"
 
 ## Useful aliases
 alias love="figlet I love you lauren"
@@ -402,39 +406,6 @@ alias gpu="echo this does nothing, dumbass"
 alias lynx="lynx -vikeys -force_secure -scrollbar -show_cursor -use_mouse "
 alias lauren="cowsay Lauren "
 alias systemctl="doas systemctl "
-alias rfetch="freshfetch"
-
-## Useful system monitorng commands.
-##These do not execute by default.
-#$ cat /sys/class/drm/card0/device/pp_od_clk_voltage
-
-#To monitor your GPU, execute:
-
-#$ watch -n 0.5  cat /sys/kernel/debug/dri/0/amdgpu_pm_info
-
-#To check your GPU utilization, execute:
-
-#$ cat /sys/class/drm/card0/device/gpu_busy_percent
-
-#To check your GPU frequency, execute:
-
-#$ cat /sys/class/drm/card0/device/pp_dpm_sclk
-
-#To check your GPU temperature, execute:
-
-#$ cat /sys/class/drm/card0/device/hwmon/hwmon*/temp1_input
-
-#To check your VRAM frequency, execute:
-
-#$ cat /sys/class/drm/card0/device/pp_dpm_mclk
-
-#To check your VRAM usage, execute:
-
-#$ cat /sys/class/drm/card0/device/mem_info_vram_used
-
-#To check your VRAM size, execute:
-
-#$ cat /sys/class/drm/card0/device/mem_info_vram_total
 
 ## Removes the 10k line limit for zsh history
 export HISTSIZE=1000000000
