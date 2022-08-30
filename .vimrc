@@ -9,7 +9,7 @@ set runtimepath+=/usr/share/vim/vimfiles
 
 " Automatically jump to last position when re-opening a file
 if has("autocmd")
-  au BufReadPost * if line("'\'") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+  au BufReadPost * if line("'\'") > 0 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
 " Set indentation to 4 (or whatever you prefer)
