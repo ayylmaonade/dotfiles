@@ -18,7 +18,7 @@ sudo pacman -S mpv yay dmenu &&
     # Installs from AUR
     yay -S webtorrent-cli &&
 	echo "Packages installed!
-	    Now fetching mpv.conf & installing... " &&
+	    Now fetching mpv.conf & installing... " &
 		sleep 3s && echo "Done! Automatically installing notflix... "
 
 # Fetching mpv.conf from my dotfiles repo
