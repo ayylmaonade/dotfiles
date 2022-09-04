@@ -317,7 +317,6 @@ pfetch
 #colorscript exec tiefighter1row
 colorscript exec crunch
 #fortune
-ulimit -c 0 #test
 xset m 3/2 0
 
 ## Startup Echoes
@@ -328,7 +327,7 @@ xset m 3/2 0
 #echo "ctrl + a goes to the beginning of a line!"
 #echo "revert /etc/lsb-release if pacman breaks!"
 echo "pacman -Rns to remove pkgs, its dependencies & cfg files!"
-echo "pacman -Rs to remove file & all dependencies!"
+##echo "pacman -Rs to remove file & all dependencies!"
 #echo "fuck with ufw settings to try fixing notflix!"
 #echo "use 'w3m' to view images in the terminal!"
 #echo "use 'sudoedit' instead of sudo/doas vim!"
@@ -344,47 +343,40 @@ echo "vim: 'w' to go forward a word, 'b' to go back a word, 'e' to go to the end
 #echo "PUT 'local.conf' INTO ~/.config/fontconfig if things get weird!"
 #echo "widget.gtk.overlay-scrollbars.enabled=false to change FF scrollbar back to normal"
 #echo "disable 'slideback' in system settings to change window animation back"
-echo "use ctrl + F2 to switch between virtual desktops!" 
+##echo "use ctrl + F2 to switch between virtual desktops!" 
 #echo "revert 10-amdgpu.conf if X11 crashes!"
 #echo "aura is no longer installed! use yay instead!"
 #echo "Uninstall 'strangle'/'libstrangle' if you don't need it anymore. repo is in ~/"
 #echo "use 'zenity' in scripts to use gui dialogs!"
 ##echo "use 'yay -Ps' to see all installed pkgs, including aur!"
-#echo "use 'Luapad' in vim for scratchpads! :q to close!"
+echo "use 'Luapad' in vim for scratchpads! :q to close!"
 #echo "about:config: change 'layers.force-active' to false if firefox gets weird!"
-#echo "use 'lynx' to browse the web in the terminal!"
 #echo "use 'toot' to run mastodon in the terminal!"
 #echo "vim: press 'zz' to center the line/cursor!"
 echo "vim: 'daw' deletes word & space around it. 'dw' deletes word. 'dap' deletes paragraphs!"
 echo "useful cmds: find, locate, whereis, which, file, getfacl" | lolcat
 ##echo "Develop rfetch/rustfetch!" # Use neofetch & freshfetch src as help! -- /usr/bin/neofetch"
 #echo "RE-WRITE 'GOL' AKA GAME OF LIFE -- GOOD PROJECT TO STREAM FOR LAUREN"
-#echo "SHOW LAUREN THE C++ SCRIPT I WROTE FOR HER ON ~/Desktop!!" # SHE LOVED IT! Saved it. :3
 #echo "Start a project to automatically setup my Linux cfgs, a la DTOS"
 echo "Use 'dmwiki' to search the Arch Wiki offline!"
 ##echo "Use 'cheat' & 'tldr' to see command info!"
 #echo "Use 'shellcheck' to verify shell scripts!"
-##echo "Reset 'gfx.webgpu.force-enabled' in firefox if things go weird!"
-##echo "Remember to delete 'general.useragent.override' in about:config!"
-##echo "Re-enable webrender settings. Picture in ~/Documents!"
-echo "Use 'curl getnews.tech/queryhere' to see the news!"
-##echo "Remember to change /etc/sysctl.d/swappiness.conf if memory is an issue!"
-#echo "Use 'grep -i' to use case-insensitive search!"
-##echo "Add 'export MANGOHUD=1' to a file called .profile in ~/ if it breaks!"
-###echo "Use 'sensors' to check all hardware temps!" 
+#echo "Remember to delete 'general.useragent.override' in about:config!"
+#echo "Re-enable webrender settings. Picture in ~/Documents!"
+#echo "Use 'curl getnews.tech/queryhere' to see the news!"
+#echo "Use 'sensors' to check all hardware temps!" 
 #echo "change 'media.rdd-process.enabled' to false if firefox breaks!"
 echo "Use 'shift+ctrl+esc' to kill windows!"
 ##echo "Use 'super+w' to switch between windows! Fuck alt tab!"
-##echo "Remove /etc/sysctl.conf to fix swap, also try changing it to 1!"
 #echo "Change all fonts down 1pt when _not_ using wayland!"
 ##echo "Change .zshrc 'update' alias back!"
 ##echo "Reset 'ulimit' to default if core dumps still appear!"
-#echo "Remove xset 3/2 from crontab if it doesn't work!"
-#####echo "Change /usr/lib/discord/buildinfo version back to 0.18 if it breaks!"
+echo "Remove xset 3/2 from crontab if it doesn't work!"
 ##echo "Remove '*hard core 0' & comment out '*soft core* in /etc/security/limits.conf if cores still dump!" //Seems to work. Leaving for now.
-echo "Use 'cat /proc/sys/vm/swappiness' to see if it outputs '10'"
-##echo "Krunner daemon runs at startup! You can edit .xinitrc to remove it"
-echo "Remove '/etc/sysctl.d/99-swappiness.conf' to change swappiness back!"
+##echo "Use 'cat /proc/sys/vm/swappiness' to see if it outputs '10'"
+##echo "Remove '/etc/sysctl.d/99-swappiness.conf' to change swappiness back!"
+##echo "Change '.xinitrc' if there's system errors!"
+echo "Use 'WebFlix' to watch any streaming service! ~/.config/Qtwebflix"
 
 ## Useful aliases
 alias love="figlet I love you lauren"
@@ -394,13 +386,13 @@ alias pacman="doas pacman"
 alias cp="cpg -iv -g" #requires advcpmv, adds a progress bar. change cpg to cp & remove -g otherwise
 alias rm="rm -i"
 alias mv="mvg -i -g" #requires advcpmv, adds a progress bar. change mvg to mv & remove -g otherwise
-alias matrix="cxxmatrix"
+alias matrix="cxxmatrix" | alias cmatrix="cxxmatrix"
 alias fish="asciiquarium"
+alias starwars="telnet towel.blinkenlights.nl"
 alias snipebot="python3 ~/dotfiles/scripts/snipe.py" #go to the directory and run ./snipe.py instead
 alias mpv="mpv --profile=swag "
 alias vim="nvim" # lol
 alias vi="vim" # fuck you, brian.
-alias lax="exa -x"
 alias btop="bpytop" # better version of top/htop
 alias gpu="echo this does nothing, dumbass"
 alias lynx="lynx -vikeys -force_secure -scrollbar -show_cursor -use_mouse "
@@ -412,11 +404,8 @@ export HISTSIZE=1000000000
 export SAVEHIST=$HISTSIZE
 setopt EXTENDED_HISTORY
 
-# Star Wars ASCII
-alias starwars="telnet towel.blinkenlights.nl"
-
 ## Refresh pacman mirrorlist using HTTPS only, scoring 100 servers and choosing the best based on ping.
 alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 
-#enables fzf, helps more easily look through shell history. ctrl + r
+## Enables fzf, helps more easily look through shell history. ctrl + r
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
