@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 #installation via script from github
@@ -386,7 +386,7 @@ echo "Use 'rename' instead of 'mv' to change file names!"
 ## Useful aliases
 alias love="figlet I love you lauren"
 alias btop="bashtop"
-##alias pacman="doas pacman"
+alias pacman="doas pacman"
 alias cp="cpg -iv -g" #requires advcpmv, adds a progress bar. change cpg to cp & remove -g otherwise
 alias rm="rm -i"
 alias mv="mvg -i -g" #requires advcpmv, adds a progress bar. change mvg to mv & remove -g otherwise
