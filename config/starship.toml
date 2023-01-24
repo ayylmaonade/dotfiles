@@ -10,7 +10,12 @@ style_user = "red bold"
 style_root = "red bold"
 disabled = false
 show_always = true
-format = "[$user]($style)\n "
+format = "[$user]($style) "
+
+[hostname]
+ssh_only = false
+format = "on [$hostname](red italic bold)\n" 
+disabled = false
 
 [directory]
 format = "[$path]($style) "
