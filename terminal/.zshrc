@@ -105,9 +105,6 @@ export MANGOHUD=1
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
 # PREFERRED EDITOR FOR LOCAL AND REMOTE SESSIONS
 if [[ -N $SSH_CONNECTION ]]; then 
   export EDITOR='nvim'
@@ -158,9 +155,6 @@ alias df='df -h'
 #alias unlock="sudo rm /var/lib/pacman/db.lck"
 #alias rmpacmanlock="sudo rm /var/lib/pacman/db.lck"
 
-#arcolinux logout unlock
-alias rmlogoutlock="sudo rm /tmp/arcologout.lock"
-
 #shows memory use in readable format & uses MiB.
 alias free="free -mht"
 
@@ -170,7 +164,7 @@ alias userlist="cut -d: -f1 /etc/passwd"
 #merges new settings for X11
 alias merge="xrdb -merge ~/.Xresources"
 
-#alias for software managment
+#alias for software management
 alias update='doas pacman -Syyu'
 
 #greps processes. identical to 'ls' except for PIDs.
@@ -183,25 +177,8 @@ alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 #add new fonts/rebuild font cache.
 alias update-fc='doas fc-cache -fv'
 
-#copy/paste all content of /etc/skel over to home folder - backup of config created - beware
-#alias skel='cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S) && cp -rf /etc/skel/* ~'
-#backup contents of /etc/skel to hidden backup folder in home/user
-#alias bupskel='cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)'
-
-#copy bashrc-latest over on bashrc - cb= copy bashrc
-#alias cb='sudo cp /etc/skel/.bashrc ~/.bashrc && source ~/.bashrc'
-#copy /etc/skel/.zshrc over on ~/.zshrc - cb= copy zshrc
-#alias cz='sudo cp /etc/skel/.zshrc ~/.zshrc && exec zsh'
-
-#switch between bash and zsh
-alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
-alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
-
 #quickly kill conkies
 alias kc='killall conky'
-
-#hardware info --short
-alias hw="hwinfo --short"
 
 #check vulnerabilities microcode
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
@@ -222,9 +199,6 @@ alias ytdl="youtube-dl "
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -5000 | nl"
 
-#iso and version used to install Linux
-alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
-
 #Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
@@ -233,20 +207,6 @@ alias rg="rg --sort path"
 
 #get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
-
-#important system config files. don't touch unless you know
-#what you're doing with them.
-alias npacman="sudo $EDITOR /etc/pacman.conf"
-alias ngrub="sudo $EDITOR /etc/default/grub"
-alias nconfgrub="sudo $EDITOR /boot/grub/grub.cfg"
-alias nmkinitcpio="sudo $EDITOR /etc/mkinitcpio.conf"
-alias nmirrorlist="sudo $EDITOR /etc/pacman.d/mirrorlist"
-alias nsddm="sudo $EDITOR /etc/sddm.conf"
-alias nfstab="sudo $EDITOR /etc/fstab"
-alias nnsswitch="sudo $EDITOR /etc/nsswitch.conf"
-alias nsamba="sudo $EDITOR /etc/samba/smb.conf"
-alias nb="$EDITOR ~/.bashrc"
-alias nz="$EDITOR ~/.zshrc"
 
 #gpg
 #verify signature for isos
@@ -302,9 +262,6 @@ ex ()
   fi
 }
 
-#cool, albeit pointless graphical art & quote generator
-alias atm="arcolinux-tellme"
-
 #remove
 alias rmgitcache="rm -r ~/.cache/git"
 
@@ -330,7 +287,7 @@ xset m 3/2 0
 #echo "use doas instead of sudo!"
 #echo "pacman -Ss to search!"
 #echo "ctrl + a goes to the beginning of a line!"
-echo "pacman -Rns to remove pkgs, its dependencies & cfg files!"
+###echo "pacman -Rns to remove pkgs, its dependencies & cfg files!"
 ##echo "pacman -Rs to remove file & all dependencies!"
 #echo "use 'w3m' to view images in the terminal!"
 #echo "use 'sudoedit' instead of sudo/doas vim!"
@@ -348,7 +305,7 @@ echo "vim: type ':Luapad' in vim for scratchpads! :q to close!"
 #echo "vim: press 'zz' to center the line/cursor!"
 echo "vim: 'daw' deletes word & space around it. 'dw' deletes word. 'dap' deletes paragraphs!"
 echo "vim: type ':vsplit ~/optional/filepath' and use ctrl+w to switch between them!"
-echo "useful cmds: find, locate, whereis, which, file, getfacl" | lolcat
+echo "useful cmds: find, locate, whereis, which, file, getfacl, stat" | lolcat
 ##echo "Develop rfetch/rustfetch!" # Use neofetch & freshfetch src as help! -- /usr/bin/neofetch"
 #echo "RE-WRITE 'GOL' AKA GAME OF LIFE -- GOOD PROJECT TO STREAM FOR LAUREN"
 #echo "Start a project to automatically setup my Linux cfgs, a la DTOS"
@@ -359,7 +316,7 @@ echo "useful cmds: find, locate, whereis, which, file, getfacl" | lolcat
 #echo "Use 'curl getnews.tech/queryhere' to see the news!"
 #echo "Use 'sensors' to check all hardware temps!" 
 #echo "change 'media.rdd-process.enabled' to false if firefox breaks!"
-echo "Use 'shift+alt+esc' to kill windows!"
+echo "Use 'shift+super+esc' to kill windows!"
 ##echo "Use 'super+w' to switch between windows! Fuck alt tab!"
 #echo "Change all fonts down 1pt when _not_ using wayland!"
 ##echo "Reset 'ulimit' to default if core dumps still appear!"
@@ -371,7 +328,7 @@ echo "Use 'shift+alt+esc' to kill windows!"
 #echo "Check ~/Desktop/pkgs.txt if anything goes wonky!"
 #echo "Re-install nerd-fonts-config if things go wrong! Check desktop!"
 #echo "SSD trim is enabled! 'systemctl status fstrim.timer' -- check!"
-echo "Use 'feh' instead of 'w3m' to view images in terminal!"
+#echo "Use 'feh' instead of 'w3m' to view images in terminal!"
 #echo "Change '/etc/os-release' back to arcolinux if things fuck up!"
 #echo "Remove 'export XDG_SESSION_TYPE' in '.xinitrc' if things fuck up!"
 #echo "Re-install 'xdg-desktop-portal-gtk' if you use flatpaks!"
@@ -380,12 +337,16 @@ echo "Use 'feh' instead of 'w3m' to view images in terminal!"
 ##echo "Uninstall 'amf-amdgpu-pro' if encoding/decoding breaks!"
 #echo "Re-install the 'amdvlk' & 'lib32-amdvlk' pkgs if testing doesn't work!"
 #echo "Change 'media.hardware-video-decoding.force-enabled' to false if issues in FF occur!"
-echo "Use 'rename' instead of 'mv' to change file names!"
+#echo "Use 'rename' instead of 'mv' to change file names!"
 #echo "Re-install electron17 if discord/electron apps break!"
+##echo "Re-install 'freetype2'"
+##echo "Revert 'gksudo' in conky.autostart if checkupdates still doesn't work."
+#echo "Use 'cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor' to see active governor."
+echo "Sudo is aliased to doas!"
 
 ## Useful aliases
+alias sudo="doas"
 alias love="figlet I love you lauren"
-alias btop="bashtop"
 alias pacman="doas pacman"
 alias cp="cpg -iv -g" #requires advcpmv, adds a progress bar. change cpg to cp & remove -g otherwise
 alias rm="rm -i"
@@ -393,7 +354,7 @@ alias mv="mvg -i -g" #requires advcpmv, adds a progress bar. change mvg to mv & 
 alias matrix="cxxmatrix" | alias cmatrix="cxxmatrix"
 alias fish="asciiquarium"
 alias starwars="telnet towel.blinkenlights.nl"
-alias snipebot="python3 ~/dotfiles/scripts/snipe.py" #go to the directory and run ./snipe.py instead
+alias snipebot="python3 ~/dotfiles/scripts/snipe.py" 
 alias mpv="mpv --profile=swag "
 alias vim="nvim" # lol
 alias vi="vim" # fuck you, brian.
@@ -402,6 +363,7 @@ alias gpu="echo this does nothing, dumbass"
 alias lynx="lynx -vikeys -force_secure -scrollbar -show_cursor -use_mouse "
 alias systemctl="doas systemctl "
 alias yay="yay --sudoloop "
+alias uptime="uptime -p"
 
 ## Refresh pacman mirrorlist using HTTPS only, scoring 100 servers and choosing the best based on ping.
 alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
