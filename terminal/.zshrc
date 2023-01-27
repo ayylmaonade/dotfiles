@@ -14,6 +14,9 @@ plugins=(... zsh-fzf-history-search)
 # Set $PATH for rust CLI support
 export PATH="${PATH}:/home/shaun/.cargo/bin"
 
+# Set $PATH for ruby/gem support
+export PATH="${PATH}:/home/shaun/.local/share/gem/ruby/3.0.0/bin"
+
 ## Removes the 10k line limit for zsh history
 export HISTFILE=$HOME/.zsh_history
 export HISTSIZE=9000000000
@@ -50,7 +53,7 @@ setopt EXTENDED_HISTORY
 # DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
- export UPDATE_ZSH_DAYS=14
+export UPDATE_ZSH_DAYS=14
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS=true
@@ -95,8 +98,11 @@ source $ZSH/oh-my-zsh.sh
 plugins=(
 	# additional plugins
 	zsh-autosuggestions
+	zsh-syntax-highlighting
 )
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Sets the prompt to Starship
 eval "$(starship init zsh)"
 
@@ -114,8 +120,6 @@ fi
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
-
-####   CUSTOM SETTINGS   ####
 
 setopt GLOB_DOTS
 
@@ -219,11 +223,9 @@ alias fix-key="[ -d ~/.gnupg ] || mkdir ~/.gnupg ; cp /etc/pacman.d/gnupg/gpg.co
 
 #fixes
 alias fix-permissions="sudo chown -R $USER:$USER ~/.config ~/.local"
-alias keyfix="/usr/local/bin/arcolinux-fix-pacman-databases-and-keys"
 
 #maintenance
 alias big="expac -H M '%m\t%n' | sort -h | nl"
-alias downgrade="sudo downgrade --ala-url https://bike.seedhost.eu/arcolinux/"
 
 #systeminfo
 alias probe="sudo -E hw-probe -all -upload"
@@ -265,14 +267,6 @@ ex ()
 #remove
 alias rmgitcache="rm -r ~/.cache/git"
 
-#moving your personal files and folders from /personal to ~
-#alias personal='cp -Rf /personal/* ~'
-
-#create a file called .zshrc-personal and put all your personal aliases
-#in there. They will not be overwritten by skel.
-
-
-
 ## Terminal startup exec
 #neofetch
 #ufetch
@@ -284,20 +278,16 @@ colorscript exec crunch
 xset m 3/2 0
 
 ## Startup Echoes
-#echo "use doas instead of sudo!"
 #echo "pacman -Ss to search!"
 #echo "ctrl + a goes to the beginning of a line!"
 ###echo "pacman -Rns to remove pkgs, its dependencies & cfg files!"
 ##echo "pacman -Rs to remove file & all dependencies!"
-#echo "use 'w3m' to view images in the terminal!"
-#echo "use 'sudoedit' instead of sudo/doas vim!"
 #echo "use 'ex' to extract any compressed file/folder!"
 echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will put it at the start of line"
 echo "vim: :%s/wordhere/newword/g to search and replace all instances of words" 
 echo "vim: 'w' to go forward a word, 'b' to go back a word, 'e' to go to the end of the word!"
 #echo "use the -S flag to sign git commits! 'git commit -S -m "msg"' "
 ##echo "use ctrl + F2 to switch between virtual desktops!" 
-#echo "aura is no longer installed! use yay instead!"
 #echo "use 'zenity' in scripts to use gui dialogs!"
 ##echo "use 'yay -Ps' to see all installed pkgs, including aur!"
 echo "vim: type ':Luapad' in vim for scratchpads! :q to close!"
@@ -306,41 +296,15 @@ echo "vim: type ':Luapad' in vim for scratchpads! :q to close!"
 echo "vim: 'daw' deletes word & space around it. 'dw' deletes word. 'dap' deletes paragraphs!"
 echo "vim: type ':vsplit ~/optional/filepath' and use ctrl+w to switch between them!"
 echo "useful cmds: find, locate, whereis, which, file, getfacl, stat" | lolcat
-##echo "Develop rfetch/rustfetch!" # Use neofetch & freshfetch src as help! -- /usr/bin/neofetch"
-#echo "RE-WRITE 'GOL' AKA GAME OF LIFE -- GOOD PROJECT TO STREAM FOR LAUREN"
 #echo "Start a project to automatically setup my Linux cfgs, a la DTOS"
 ##echo "Use 'dmwiki' to search the Arch Wiki offline!"
 ##echo "Use 'cheat' & 'tldr' to see command info!"
 #echo "Use 'shellcheck' to verify shell scripts!"
-#echo "Re-enable webrender settings. Picture in ~/Documents!"
 #echo "Use 'curl getnews.tech/queryhere' to see the news!"
 #echo "Use 'sensors' to check all hardware temps!" 
-#echo "change 'media.rdd-process.enabled' to false if firefox breaks!"
 echo "Use 'shift+super+esc' to kill windows!"
-##echo "Use 'super+w' to switch between windows! Fuck alt tab!"
-#echo "Change all fonts down 1pt when _not_ using wayland!"
-##echo "Reset 'ulimit' to default if core dumps still appear!"
-##echo "Remove xset 3/2 from crontab if it doesn't work!"
-##echo "Remove '*hard core 0' & comment out '*soft core* in /etc/security/limits.conf if cores still dump!" //Seems to work. Leaving for now.
-##echo "Use 'cat /proc/sys/vm/swappiness' to see if it outputs '10'"
 ##echo "Remove '/etc/sysctl.d/99-swappiness.conf' to change swappiness back!"
-#echo "Use 'WebFlix' to watch any streaming service! ~/.config/Qtwebflix"
-#echo "Check ~/Desktop/pkgs.txt if anything goes wonky!"
-#echo "Re-install nerd-fonts-config if things go wrong! Check desktop!"
-#echo "SSD trim is enabled! 'systemctl status fstrim.timer' -- check!"
 #echo "Use 'feh' instead of 'w3m' to view images in terminal!"
-#echo "Change '/etc/os-release' back to arcolinux if things fuck up!"
-#echo "Remove 'export XDG_SESSION_TYPE' in '.xinitrc' if things fuck up!"
-#echo "Re-install 'xdg-desktop-portal-gtk' if you use flatpaks!"
-#echo "Push 3.5mm jack further into oDAC, it fixes headphone audio!"
-#echo "Change 'terminal=' to the opposite value in autostart/mouseaccel if it doesn't work!"
-##echo "Uninstall 'amf-amdgpu-pro' if encoding/decoding breaks!"
-#echo "Re-install the 'amdvlk' & 'lib32-amdvlk' pkgs if testing doesn't work!"
-#echo "Change 'media.hardware-video-decoding.force-enabled' to false if issues in FF occur!"
-#echo "Use 'rename' instead of 'mv' to change file names!"
-#echo "Re-install electron17 if discord/electron apps break!"
-##echo "Re-install 'freetype2'"
-##echo "Revert 'gksudo' in conky.autostart if checkupdates still doesn't work."
 #echo "Use 'cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor' to see active governor."
 echo "Sudo is aliased to doas!"
 
@@ -370,4 +334,3 @@ alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 -
 
 ## Enables fzf, helps more easily look through shell history. ctrl + r
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source /home/shaun/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
