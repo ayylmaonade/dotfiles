@@ -14,7 +14,7 @@ format = "[$user]($style) "
 
 [hostname]
 ssh_only = false
-format = "on [$hostname](red italic bold)\n" 
+format = "on [$hostname](red bold)\n" 
 disabled = false
 
 [directory]
