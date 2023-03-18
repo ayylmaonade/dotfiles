@@ -1,0 +1,17 @@
+#!/bin/sh
+
+## IMPORTANT!: Place in /usr/local/bin to run via CLI.
+
+# Script: Coin_Flip (use 'coinflip' in CLI to run)
+# Description: Simulates a coin flip with a genuine random algorithim
+# Dependencies: None
+# License: GPLv3
+# Contributors: Shaun (ayylmaonde)
+
+## Defines variables to use 'RANDOM' algorithim
+flip=$(($(($RANDOM%10))%2))
+if [ $flip -eq 1 ]; then
+    echo "heads"
+else
+    echo "tails"
+fi
