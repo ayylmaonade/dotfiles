@@ -31,11 +31,13 @@ def randColor():
     return discord.Color.random()
 
 @client.command()
+@has_permissions(ban_members=True)
 async def help(ctx):
     e = discord.Embed(title='Command Help', description=f'Prefix: `{prefix}`\n\n`{str(prefix)}snipe`: See the most recently deleted message in this channel.\n`{str(prefix)}esnipe`: See the most recently edited message in this channel.\n`{str(prefix)}ping`: Displays the bots latency in ms.', color=randColor())
     await ctx.send(embed=e)
 
 @client.command()
+@has_permissions(ban_members=True)
 async def ping(ctx: commands.Context):
     await ctx.send(f"Ping pong! I'm alive! {round(client.latency * 1000)}ms")
 
