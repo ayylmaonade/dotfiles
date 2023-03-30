@@ -1,6 +1,7 @@
 [Desktop Entry]
-Name=DisableMouseAcceleration
-Exec="xset m 3/2 0"
+Name=ColourDepth32
+Exec="startx  -- -depth 32"
 Type=Application
 Terminal=true
 Hidden=false
+
