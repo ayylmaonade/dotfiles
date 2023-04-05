@@ -1,5 +1,5 @@
 [character]
-success_symbol = "[▶](bold blue)" # normal prompt
+success_symbol = "[✓](bold green)" # normal prompt
 error_symbol = "[✗](bold red)" # used if previous command failed
 
 [line_break]
@@ -14,7 +14,7 @@ format = "[$user]($style) "
 
 [hostname]
 ssh_only = false
-format = "on [$hostname](red bold)\n" 
+format = "on [$hostname](blue bold italic)\n" 
 disabled = false
 
 [directory]
