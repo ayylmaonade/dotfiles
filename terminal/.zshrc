@@ -169,7 +169,7 @@ alias userlist="cut -d: -f1 /etc/passwd"
 alias merge="xrdb -merge ~/.Xresources"
 
 #alias for software management
-alias update='doas pacman -Syyu'
+alias update='doas pacman -Syu'
 
 #greps processes. identical to 'ls' except for PIDs.
 alias psa="ps auxf"
