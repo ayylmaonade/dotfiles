@@ -1,0 +1,4 @@
+**What & why**
+
+'set -e' is a shell command that immediately stops a script from executing if any errors are detected/occur during runtime. e.g. a script tries executing a root command without first asking permission, which causes this particular part to error out/fail. However any following commands will still be run, which is likely to cause issues as the script could not execute entirely properly. Using 'set -e' prevents this.
+
