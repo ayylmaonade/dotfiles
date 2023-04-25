@@ -106,6 +106,9 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Sets the prompt to Starship
 eval "$(starship init zsh)"
 
+# Enables "thefuck" which corrects CLI typo's
+eval $(thefuck --alias)
+
 # Adds mangohud to $PATH, prevents pointless .profile file in ~/
 export MANGOHUD=1
 
@@ -143,8 +146,8 @@ if [ -d "$HOME/.local/bin" ] ;
 fi
 
 #list
-alias ls='exa -lh --color=auto' # ls with human-readable enabled. doesn't show hidden files.
-alias la='exa -ahl --color=auto' # same as above except this shows hidden files.
+alias ls='exa -lh --group-directories-first --color=auto' # ls with human-readable enabled. doesn't show hidden files.
+alias la='exa -ahl --group-directories-first --color=auto' # same as above except this shows hidden files.
 alias ll='/usr/bin/ls -hla' ## No colour output. Here for compatibility and nothing else.
 
 ## Colorize the grep command output for ease of use (good for log files)
@@ -187,7 +190,7 @@ alias kc='killall conky'
 #check vulnerabilities microcode
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
 
-#youtube-dl
+#yt-dlp instead of youtube-dl. it works far better (keeping old aliases for compat)
 alias yta-aac="youtube-dl --extract-audio --audio-format aac "
 alias yta-best="youtube-dl --extract-audio --audio-format best "
 alias yta-flac="youtube-dl --extract-audio --audio-format flac "
@@ -197,7 +200,7 @@ alias yta-opus="youtube-dl --extract-audio --audio-format opus "
 alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
 alias yta-wav="youtube-dl --extract-audio --audio-format wav "
 alias ytv-best="youtube-dl -f bestvideo+bestaudio "
-alias ytdl="youtube-dl "
+alias ytdl="yt-dlp"
 
 #Recently Installed Packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
@@ -279,36 +282,34 @@ xset m 3/2 0
 
 ## Startup Echoes
 #echo "ctrl + a goes to the beginning of a line!"
-###echo "pacman -Rns to remove pkgs, its dependencies & cfg files!"
-##echo "pacman -Rs to remove file & all dependencies!"
 #echo "use 'ex' to extract any compressed file/folder!"
 echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will put it at the start of line"
 echo "vim: :%s/wordhere/newword/g to search and replace all instances of words" 
 echo "vim: 'w' to go forward a word, 'b' to go back a word, 'e' to go to the end of the word!"
-#echo "use the -S flag to sign git commits! 'git commit -S -m "msg"' "
 echo "vim: type ':Luapad' in vim for scratchpads! :q to close!"
-#echo "about:config: change 'layers.force-active' to false if firefox gets weird!"
-#echo "vim: press 'zz' to center the line/cursor!"
 echo "vim: 'daw' deletes word & space around it. 'dw' deletes word. 'dap' deletes paragraphs!"
 echo "vim: type ':vsplit ~/optional/filepath' and use ctrl+w to switch between them!"
 echo "useful cmds: find, locate, whereis, which, file, getfacl, stat, du -s" | lolcat
-#echo "Start a project to automatically setup my Linux cfgs, a la DTOS"
 #echo "Use 'shellcheck' to verify shell scripts!"
 #echo "Use 'curl getnews.tech/queryhere' to see the news!"
-#echo "Use 'sensors' to check all hardware temps!" 
 #echo "Use 'ctrl+super+esc' to kill windows!"
 #echo "Use 'cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor' to see active governor."
 #echo "Pipe 'yes' into commands like 'topgrade' to automatically accept Y/n prompts!"
 ###echo "Use 'downgrade' to interactively downgrade pkgs to older versions!"
-echo "Use 'du -s' to see the size of a folder!"
+###echo "Use 'du -s' to see the size of a folder!"
 #echo "Use 'coinflip' to run heads or tails!"
-echo "Use 'iotop' to check current disk r/w speeds & usage"
+#######echo "Use 'iotop' to check current disk r/w speeds & usage"
 ###echo "Hold super & press any of the arrow keys to snap the currently active window!"
-###echo "Use 'set -e' in shell scripts so they stop executing if an error occurs!"
-#######echo "Conky has a memory leak causing Xorg to use excessive RAM, just kill it to fix!"
-echo "Re-install 'amdvlk' & 'lib32-amdvlk' if any performance issues occur!"
+####echo "Conky has a memory leak causing Xorg to use excessive RAM, just kill it to fix!"
+#####echo "Re-install 'amdvlk' & 'lib32-amdvlk' if any performance issues occur!"
 echo "Use 'trans "foreign here"' to translate things in the terminal!"
 ###echo "Use 'vk_pro vk_amdvlk' if things go wonky!"
+##echo "Use 'piptube' to watch local files w/ picture-in-picture!"
+echo "Use 'dym' to figure out the spelling for difficult words!"
+echo "Use 'fuck' after a typo to correct it without re-typing it!"
+####echo "Remove '--group-directories-first' flag from ls/exa alias if it's annoying!"
+echo "Use 'ncdu' to check disk usage across /home w/ an in-terminal ncurses interface!"
+
 
 ## Useful aliases
 alias sudo="doas"
