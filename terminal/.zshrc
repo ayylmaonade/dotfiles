@@ -272,22 +272,21 @@ alias rmgitcache="rm -r ~/.cache/git"
 
 ## Terminal startup exec
 #neofetch
-#ufetch
 pfetch
+please
 #colorscript exec pacman
 #colorscript exec tiefighter1row
-colorscript exec crunch
+#colorscript exec crunch
 #fortune
-xset m 3/2 0
 
 ## Startup Echoes
 #echo "ctrl + a goes to the beginning of a line!"
 #echo "use 'ex' to extract any compressed file/folder!"
 echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will put it at the start of line"
 echo "vim: :%s/wordhere/newword/g to search and replace all instances of words" 
-echo "vim: 'w' to go forward a word, 'b' to go back a word, 'e' to go to the end of the word!"
-echo "vim: type ':Luapad' in vim for scratchpads! :q to close!"
-echo "vim: 'daw' deletes word & space around it. 'dw' deletes word. 'dap' deletes paragraphs!"
+##echo "vim: 'w' to go forward a word, 'b' to go back a word, 'e' to go to the end of the word!"
+####echo "vim: type ':Luapad' in vim for scratchpads! :q to close!"
+#echo "vim: 'daw' deletes word & space around it. 'dw' deletes word. 'dap' deletes paragraphs!"
 echo "vim: type ':vsplit ~/optional/filepath' and use ctrl+w to switch between them!"
 echo "useful cmds: find, locate, whereis, which, file, getfacl, stat, du -s" | lolcat
 #echo "Use 'shellcheck' to verify shell scripts!"
@@ -309,6 +308,7 @@ echo "Use 'dym' to figure out the spelling for difficult words!"
 echo "Use 'fuck' after a typo to correct it without re-typing it!"
 ####echo "Remove '--group-directories-first' flag from ls/exa alias if it's annoying!"
 echo "Use 'ncdu' to check disk usage across /home w/ an in-terminal ncurses interface!"
+echo "Do the detective sidequest in yakuza 3! google it!"
 
 
 ## Useful aliases
