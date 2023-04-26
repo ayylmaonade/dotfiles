@@ -22,4 +22,4 @@ format = "[$path]($style) "
 style = "yellow italic bold"
 truncate_to_repo = false
 truncation_length = 4
-truncation_symbol = ".../"
+truncation_symbol = "..../"
