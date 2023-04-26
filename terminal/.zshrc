@@ -106,9 +106,6 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Sets the prompt to Starship
 eval "$(starship init zsh)"
 
-# Enables "thefuck" which corrects CLI typo's
-eval $(thefuck --alias)
-
 # Adds mangohud to $PATH, prevents pointless .profile file in ~/
 export MANGOHUD=1
 
@@ -282,12 +279,12 @@ please
 ## Startup Echoes
 #echo "ctrl + a goes to the beginning of a line!"
 #echo "use 'ex' to extract any compressed file/folder!"
-echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will put it at the start of line"
+###echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will put it at the start of line"
 echo "vim: :%s/wordhere/newword/g to search and replace all instances of words" 
 ##echo "vim: 'w' to go forward a word, 'b' to go back a word, 'e' to go to the end of the word!"
 ####echo "vim: type ':Luapad' in vim for scratchpads! :q to close!"
 #echo "vim: 'daw' deletes word & space around it. 'dw' deletes word. 'dap' deletes paragraphs!"
-echo "vim: type ':vsplit ~/optional/filepath' and use ctrl+w to switch between them!"
+##echo "vim: type ':vsplit ~/optional/filepath' and use ctrl+w to switch between them!"
 echo "useful cmds: find, locate, whereis, which, file, getfacl, stat, du -s" | lolcat
 #echo "Use 'shellcheck' to verify shell scripts!"
 #echo "Use 'curl getnews.tech/queryhere' to see the news!"
@@ -305,10 +302,10 @@ echo "Use 'trans "foreign here"' to translate things in the terminal!"
 ###echo "Use 'vk_pro vk_amdvlk' if things go wonky!"
 ##echo "Use 'piptube' to watch local files w/ picture-in-picture!"
 echo "Use 'dym' to figure out the spelling for difficult words!"
-echo "Use 'fuck' after a typo to correct it without re-typing it!"
 ####echo "Remove '--group-directories-first' flag from ls/exa alias if it's annoying!"
 echo "Use 'ncdu' to check disk usage across /home w/ an in-terminal ncurses interface!"
-echo "Do the detective sidequest in yakuza 3! google it!"
+#echo "Do the detective sidequest in yakuza 3! google it!"
+###echo "Get a ChatGPT plan and install this! - https://github.com/ekkinox/yai"
 
 
 ## Useful aliases
@@ -320,7 +317,7 @@ alias rm="rm -i"
 alias mv="mvg -i -g" #requires advcpmv, adds a progress bar. change mvg to mv & remove -g otherwise
 alias matrix="cxxmatrix" 
 alias fish="asciiquarium"
-alias starwars="telnet towel.blinkenlights.nl"
+alias starwars="nc towel.blinkenlights.nl"
 alias snipebot="python3 ~/dotfiles/scripts/snipe.py" 
 alias mpv="mpv --profile=swag "
 alias vim="nvim" # lol
@@ -341,3 +338,7 @@ alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 -
 
 ## Enables fzf, helps more easily look through shell history. ctrl + r
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+autoload -Uz compinit
+zstyle ':completion:*' menu select
+fpath+=~/.zfunc
