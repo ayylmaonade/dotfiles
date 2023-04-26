@@ -339,6 +339,4 @@ alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 -
 ## Enables fzf, helps more easily look through shell history. ctrl + r
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-autoload -Uz compinit
-zstyle ':completion:*' menu select
 fpath+=~/.zfunc
