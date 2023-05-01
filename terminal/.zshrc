@@ -2,14 +2,10 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-#installation via script from github
+##installation via script from github
 #export ZSH="/home/$USER/.oh-my-zsh"
-#installation via paru -S oh-my-zsh-git
+##installation via paru -S oh-my-zsh-git
 export ZSH=/usr/share/oh-my-zsh/
-source /usr/share/zinit/zinit.zsh
-zinit ice lucid wait'0'
-zinit light joshskidmore/zsh-fzf-history-search
-plugins=(... zsh-fzf-history-search)
 
 # Set $PATH for rust CLI support
 export PATH="${PATH}:/home/shaun/.cargo/bin"
@@ -91,17 +87,9 @@ export UPDATE_ZSH_DAYS=14
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-fzf-history-search)
 
 source $ZSH/oh-my-zsh.sh
-
-plugins=(
-	# additional plugins
-	zsh-autosuggestions
-	zsh-syntax-highlighting
-)
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Sets the prompt to Starship
 eval "$(starship init zsh)"
@@ -131,6 +119,9 @@ export HISTCONTROL=ignoreboth:erasedups
 # Make neovim the default editor
 export EDITOR='nvim'
 export VISUAL='nvim'
+
+# Make 'bat' the default manpager
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 #PS1='[\u@\h \W]\$ '
 
@@ -205,9 +196,6 @@ alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -5000 | n
 
 #Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
-
-#search content with ripgrep
-alias rg="rg --sort path"
 
 #get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
@@ -300,12 +288,11 @@ echo "useful cmds: find, locate, whereis, which, file, getfacl, stat, du -s" | l
 #####echo "Re-install 'amdvlk' & 'lib32-amdvlk' if any performance issues occur!"
 echo "Use 'trans "foreign here"' to translate things in the terminal!"
 ###echo "Use 'vk_pro vk_amdvlk' if things go wonky!"
-##echo "Use 'piptube' to watch local files w/ picture-in-picture!"
 echo "Use 'dym' to figure out the spelling for difficult words!"
 ####echo "Remove '--group-directories-first' flag from ls/exa alias if it's annoying!"
 echo "Use 'ncdu' to check disk usage across /home w/ an in-terminal ncurses interface!"
-#echo "Do the detective sidequest in yakuza 3! google it!"
-###echo "Get a ChatGPT plan and install this! - https://github.com/ekkinox/yai"
+echo "Change 'vm.max_map_count' /etc/sysctl.d/conf_file back to '65530' if issues occur!"
+echo "Use 'doas nvim' instead of 'doas vim' to prevent errors!"
 
 
 ## Useful aliases
@@ -332,6 +319,7 @@ alias su="doas su"
 alias du="du -h"
 alias rtop="radeontop" 
 alias iotop="doas iotop"
+alias killall="killall -v"
 
 ## Refresh pacman mirrorlist using HTTPS only, scoring 100 servers and choosing the best based on ping.
 alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
