@@ -17,12 +17,12 @@ echo "Disabling read-only file system... " && sleep 1s echo "...Done!"
 
 # Initiate the pacman keyring
 echo "Initialising pacman keyring and appending keys from archlinux.org... "
-    pacman-key --init && pacman-key --populate 
-    sudo pacman -Sy archlinux-keyring
+    pacman-key --init && pacman-key --populate && wait 3s
+    sudo pacman -Sy archlinux-keyring && wait 3s
 
     echo "Keyring initialised & populated! Now installing htop and neofetch..." && sleep 2s
 
 # Grabbing pkgs from arch repos
-    sudo pacman -S htop neofetch
+    sudo pacman -S htop neofetch && wait 3s
 
 echo "Installation complete!"
