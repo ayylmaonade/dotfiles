@@ -7,7 +7,7 @@ while true do
     read -p "Would you like to install htop & neofetch?
       case $yn in
       [Yy]* ) break;;
-      [Nn]* ) break;;
+      [Nn]* ) exit;;
       * ) echo "Please type y or n";;
   esac
 done
