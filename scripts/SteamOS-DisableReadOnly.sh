@@ -13,14 +13,17 @@ echo "Must be run as root!"
 echo "This will disable the read-only file system! I am not responsible for any damage caused by user error."
 echo "Packages to be installed: htop, neofetch, decky-loader"
 
-    read -p "Are you sure you'd like to continue?"
-      case $yn in
-      [Yy]* ) break;;
-      [Nn]* ) exit;;
-      * ) echo "Please type Y/n";;
-  esac
+while true; do
+    read -p "Do you wish to install this program? (Y/n) " yn
+    case $yn in
+        [Yy]* ) break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
 
-echo "Disabling read-only file system..." && sleep 1s "...Done!"
+echo "Disabling read-only file system..." && sleep 1s
+echo "...Done!"
     sudo steamos-readonly disable
 
 # Initiate the pacman keyrings
