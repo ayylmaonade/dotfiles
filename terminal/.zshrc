@@ -286,13 +286,13 @@ echo "useful cmds: find, locate, whereis, which, file, getfacl, stat, du -s" | l
 ###echo "Hold super & press any of the arrow keys to snap the currently active window!"
 ####echo "Conky has a memory leak causing Xorg to use excessive RAM, just kill it to fix!"
 #####echo "Re-install 'amdvlk' & 'lib32-amdvlk' if any performance issues occur!"
-echo "Use 'trans "foreign here"' to translate things in the terminal!"
+echo "Use 'trans foreign here' to translate things in the terminal!"
 ###echo "Use 'vk_pro vk_amdvlk' if things go wonky!"
 echo "Use 'dym' to figure out the spelling for difficult words!"
 ####echo "Remove '--group-directories-first' flag from ls/exa alias if it's annoying!"
-echo "Use 'ncdu' to check disk usage across /home w/ an in-terminal ncurses interface!"
-echo "Change 'vm.max_map_count' /etc/sysctl.d/conf_file back to '65530' if issues occur!"
-echo "Use 'doas nvim' instead of 'doas vim' to prevent errors!"
+echo "Use 'ncdu' to check disk usage w/ an in-terminal ncurses interface!"
+##echo "Change 'vm.max_map_count' /etc/sysctl.d/conf_file back to '65530' if issues occur!"
+##echo "Use 'doas nvim' instead of 'doas vim' to prevent errors!"
 
 
 ## Useful aliases
@@ -320,11 +320,11 @@ alias du="du -h"
 alias rtop="radeontop" 
 alias iotop="doas iotop"
 alias killall="killall -v"
+alias cat="bat -P"
+
 
 ## Refresh pacman mirrorlist using HTTPS only, scoring 100 servers and choosing the best based on ping.
 alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 
 ## Enables fzf, helps more easily look through shell history. ctrl + r
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-fpath+=~/.zfunc
