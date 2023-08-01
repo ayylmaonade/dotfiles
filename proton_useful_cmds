@@ -14,5 +14,6 @@ PROTON_NO_FSYNC=0/1
 DXVK_FRAME_RATE=# // limit FPS to any chosen rate
 RADV_PERFTEST=rt // enables RT
 amdvlk // forces amdvlk driver
+-d3d12/11/10/9/8 // tells proton to translate to a specific API version
 
 */ %command% */
