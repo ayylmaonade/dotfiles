@@ -5,7 +5,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 ##installation via script from github
 #export ZSH="/home/$USER/.oh-my-zsh"
 ##installation via paru -S oh-my-zsh-git
-export ZSH=/usr/share/oh-my-zsh/
+export ZSH=/home/shaun/.oh-my-zsh/
 
 # Set $PATH for rust CLI support
 export PATH="${PATH}:/home/shaun/.cargo/bin"
@@ -46,7 +46,7 @@ setopt EXTENDED_HISTORY
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
+ DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 export UPDATE_ZSH_DAYS=14
@@ -188,6 +188,7 @@ alias yta-opus="youtube-dl --extract-audio --audio-format opus "
 alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
 alias yta-wav="youtube-dl --extract-audio --audio-format wav "
 alias ytv-best="youtube-dl -f bestvideo+bestaudio "
+#USE THIS!
 alias ytdl="yt-dlp"
 
 #Recently Installed Packages
@@ -207,6 +208,7 @@ alias fix-gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
 #receive the key of a developer
 alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 alias fix-gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
+#fixes broken keyring
 alias fix-key="[ -d ~/.gnupg ] || mkdir ~/.gnupg ; cp /etc/pacman.d/gnupg/gpg.conf ~/.gnupg/ ; echo 'done'"
 
 #fixes
@@ -265,7 +267,6 @@ please
 #fortune
 
 ## Startup Echoes
-#echo "ctrl + a goes to the beginning of a line!"
 #echo "use 'ex' to extract any compressed file/folder!"
 ###echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will put it at the start of line"
 echo "vim: :%s/wordhere/newword/g to search and replace all instances of words" 
@@ -274,30 +275,23 @@ echo "vim: :%s/wordhere/newword/g to search and replace all instances of words"
 #echo "vim: 'daw' deletes word & space around it. 'dw' deletes word. 'dap' deletes paragraphs!"
 ##echo "vim: type ':vsplit ~/optional/filepath' and use ctrl+w to switch between them!"
 echo "useful cmds: find, locate, whereis, which, file, getfacl, stat, du -s" | lolcat
-#echo "Use 'shellcheck' to verify shell scripts!"
 #echo "Use 'curl getnews.tech/queryhere' to see the news!"
 #echo "Use 'ctrl+super+esc' to kill windows!"
 #echo "Use 'cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor' to see active governor."
 #echo "Pipe 'yes' into commands like 'topgrade' to automatically accept Y/n prompts!"
 ###echo "Use 'downgrade' to interactively downgrade pkgs to older versions!"
-###echo "Use 'du -s' to see the size of a folder!"
-#echo "Use 'coinflip' to run heads or tails!"
 #######echo "Use 'iotop' to check current disk r/w speeds & usage"
 ###echo "Hold super & press any of the arrow keys to snap the currently active window!"
 ####echo "Conky has a memory leak causing Xorg to use excessive RAM, just kill it to fix!"
-#####echo "Re-install 'amdvlk' & 'lib32-amdvlk' if any performance issues occur!"
-echo "Use 'trans foreign here' to translate things in the terminal!"
-###echo "Use 'vk_pro vk_amdvlk' if things go wonky!"
+##echo "Use 'trans foreign here' to translate things in the terminal!"
 echo "Use 'dym' to figure out the spelling for difficult words!"
-####echo "Remove '--group-directories-first' flag from ls/exa alias if it's annoying!"
 echo "Use 'ncdu' to check disk usage w/ an in-terminal ncurses interface!"
 ##echo "Change 'vm.max_map_count' /etc/sysctl.d/conf_file back to '65530' if issues occur!"
 ##echo "Use 'doas nvim' instead of 'doas vim' to prevent errors!"
-
+echo "Remove ROCm pkgs if you find no use for them!"
 
 ## Useful aliases
 alias sudo="doas"
-alias love="figlet I love you lauren"
 alias pacman="doas pacman"
 alias cp="cpg -iv -g" #requires advcpmv, adds a progress bar. change cpg to cp & remove -g otherwise
 alias rm="rm -i"
@@ -320,7 +314,7 @@ alias du="du -h"
 alias rtop="radeontop" 
 alias iotop="doas iotop"
 alias killall="killall -v"
-alias cat="bat -P"
+alias cat="bat -Pn"
 
 
 ## Refresh pacman mirrorlist using HTTPS only, scoring 100 servers and choosing the best based on ping.
