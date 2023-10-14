@@ -122,6 +122,7 @@ export VISUAL='nvim'
 
 # Make 'bat' the default manpager
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT='-c' # fixes bug with bat & col not displaying manpages properly
 
 #PS1='[\u@\h \W]\$ '
 
@@ -285,10 +286,13 @@ echo "useful cmds: find, locate, whereis, which, file, getfacl, stat, du -s" | l
 ####echo "Conky has a memory leak causing Xorg to use excessive RAM, just kill it to fix!"
 ##echo "Use 'trans foreign here' to translate things in the terminal!"
 echo "Use 'dym' to figure out the spelling for difficult words!"
-echo "Use 'ncdu' to check disk usage w/ an in-terminal ncurses interface!"
+#echo "Use 'ncdu' to check disk usage w/ an in-terminal ncurses interface!"
 ##echo "Change 'vm.max_map_count' /etc/sysctl.d/conf_file back to '65530' if issues occur!"
 ##echo "Use 'doas nvim' instead of 'doas vim' to prevent errors!"
-echo "Remove ROCm pkgs if you find no use for them!"
+#echo "Remove ROCm pkgs if you find no use for them!"
+##echo "exa has been replaced by eza!"
+##echo "Remove the 'passim' group that was added by warp! Investigate!"
+
 
 ## Useful aliases
 alias sudo="doas"
