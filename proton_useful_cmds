@@ -8,10 +8,10 @@ gamemoderun // applies several game-specific kernel optimisations--always use!
 VKD3D_CONFIG=dxr9/11/12 // forces dxvk to use a specific DirectX version (if available) 
 DXVK_ASYNC=0/1 // Enables asynchronous compute
 VULKAN_ICD_LOADER=RADV // forces RADV driver (if using amdvlk)
-PROTON_NO_D3D11=0/1 // helps compatibility with some DX12 games (mostly unused)
-PROTON_USE_WINED3D=0/1
+PROTON_NO_D3D11/10=0/1 // forces games to fallback to DX9
+PROTON_USE_WINED3D=0/1 // uses OpenGL-based proton rather than DXVK
 PROTON_NO_ESYNC=0/1
-PROTON_NO_FSYNC=0/1 
+PROTON_NO_FSYNC=0/1 // enable/disable fsync--setting '1' reverts to esync 
 DXVK_FRAME_RATE=# // limit FPS to any chosen rate
 RADV_PERFTEST=rt // enables RT (sometimes requires VKD3D_CONFIG=dxr11)
 amdvlk // forces amdvlk driver
