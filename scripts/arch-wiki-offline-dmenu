@@ -1,6 +1,6 @@
 #!/usr/bin/sh
 
-# Name: dm-wiki, arch-wiki-offline-dmenu, (rename the script when moving to /usr/local/bin)
+# Name: dm-wiki, arch-wiki-offline-dmenu, (rename to 'dmwiki' when moving to /usr/local/bin)
 # Description: Searches an offline version of the Arch wiki
 # Dependencies: dmenu, arch-wiki-docs, zenity
 # License: GPLv3
@@ -20,7 +20,7 @@ main() {
 
     if [ "$choice" ]; then
 	document=$(printf '%s\n' "${wikidir}${choice}.html" | sed 's/ /_/g')
-	firefox "$document" 
+	xdg-open "$document" 
     else
 	zenity --error --text="Exiting..." && exit 0
     fi
