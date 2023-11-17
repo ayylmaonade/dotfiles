@@ -21,11 +21,11 @@ setopt EXTENDED_HISTORY
 
 ## Cleans up home dir by "forcing" programs to respect XDG standards
 ## use with caution when upgrading already installed programs
-#export XDG_CACHE_HOME="$HOME/.cache"
-#export XDG_CONFIG_HOME="$HOME/.config"
-#export XDG_DATA_HOME="$HOME/.local/share"
-#export XDG_STATE_HOME="$HOME/.local/state"
-#export ZDOTDIR="$XDG_CONFIG_HOME"/zsh
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+export ZDOTDIR="$XDG_CONFIG_HOME"/zsh
 
 
 # Set name of the theme to load --- if set to "random", it will
@@ -177,13 +177,14 @@ alias psa="ps auxf"
 alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
 
 #grub update
-alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias update-grub="doas grub-mkconfig -o /boot/grub/grub.cfg"
 
 #add new fonts/rebuild font cache.
 alias update-fc='doas fc-cache -fv'
 
-#quickly kill conkies
-alias kc='killall conky'
+#conky causes an X11 mem leak,
+#this kills conky & re-opens it
+alias kc='killall conky & sleep 1.5 && conky'
 
 #check vulnerabilities microcode
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
@@ -278,28 +279,35 @@ please
 
 ## Startup Echoes
 #echo "use 'ex' to extract any compressed file/folder!"
-###echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will put it at the start of line"
+#echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will put it at the start of line"
 echo "vim: :%s/wordhere/newword/g to search and replace all instances of words" 
-##echo "vim: 'w' to go forward a word, 'b' to go back a word, 'e' to go to the end of the word!"
-####echo "vim: type ':Luapad' in vim for scratchpads! :q to close!"
+#echo "vim: 'w' to go forward a word, 'b' to go back a word, 'e' to go to the end of the word!"
+#echo "vim: type ':Luapad' in vim for scratchpads! :q to close!"
 #echo "vim: 'daw' deletes word & space around it. 'dw' deletes word. 'dap' deletes paragraphs!"
-##echo "vim: type ':vsplit ~/optional/filepath' and use ctrl+w to switch between them!"
+#echo "vim: type ':vsplit ~/optional/filepath' and use ctrl+w to switch between them!"
 echo "useful cmds: find, locate, whereis, which, file, getfacl, stat, du -s" | lolcat
 #echo "Use 'curl getnews.tech/queryhere' to see the news!"
 #echo "Use 'ctrl+super+esc' to kill windows!"
 #echo "Use 'cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor' to see active governor."
-##echo "Pipe 'yes' into commands like 'topgrade' to automatically accept Y/n prompts!"
-echo "Use 'downgrade' to interactively downgrade pkgs to older versions!"
-#######echo "Use 'iotop' to check current disk r/w speeds & usage"
-###echo "Hold super & press any of the arrow keys to snap the currently active window!"
-####echo "Conky has a memory leak causing Xorg to use excessive RAM, just kill it to fix!"
-##echo "Use 'trans foreign here' to translate things in the terminal!"
+#echo "Pipe 'yes' into commands like 'topgrade' to automatically accept Y/n prompts!"
+#echo "Use 'downgrade' to interactively downgrade pkgs to older versions!"
+#echo "Use 'iotop' to check current disk r/w speeds & usage"
+#echo "Hold super & press any of the arrow keys to snap the currently active window!"
+#echo "Conky has a memory leak causing Xorg to use excessive RAM, just kill it to fix!"
+#echo "Use 'trans foreign here' to translate things in the terminal!"
 echo "Use 'dym' to figure out the spelling for difficult words!"
 #echo "Use 'ncdu' to check disk usage w/ an in-terminal ncurses interface!"
-##echo "Remove the 'passim' group that was added by warp! Investigate!"
+#echo "Remove the 'passim' group that was added by warp! Investigate!"
 #echo "Install 'nethack' - it's a great MUD!"
-echo "Checkupdates is aliased to 'checkup!'"
-echo "Use 'googler' to search the web from terminal!"
+#echo "Checkupdates is aliased to 'checkup!'"
+#echo "Use 'googler' to search the web from terminal!"
+#echo "Use 'onefetch' in a git repo to see stats!"
+echo "Need to calculate a % value? Cat ~/Documents/How!"
+echo "Use 'vinyl' & 'vinyloff' to listen to records!"
+echo "Pipe fzf into programs for interactive search! e.g. ps aux | fzf"
+echo "Remember to use ranger!"
+
+
 
 ## Useful aliases
 alias sudo="doas"
@@ -309,7 +317,6 @@ alias rm="rm -i"
 alias mv="mvg -i -g" #requires advcpmv, adds a progress bar. change mvg to mv & remove -g otherwise
 alias matrix="cxxmatrix" 
 alias fish="asciiquarium"
-alias starwars="nc towel.blinkenlights.nl"
 alias snipebot="python3 ~/dotfiles/scripts/snipe.py" 
 alias mpv="mpv --profile=swag "
 alias vim="nvim" # lol
@@ -327,7 +334,9 @@ alias iotop="doas iotop"
 alias killall="killall -v"
 alias cat="bat -Pn"
 alias checkup="checkupdates"
-
+alias googler="googler --colorize=auto"
+alias vinyl="pactl load-module module-loopback"
+alias vinyloff="pactl unload-module module-loopback"
 
 ## Refresh pacman mirrorlist using HTTPS only, scoring 100 servers and choosing the best based on ping.
 alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
