@@ -25,7 +25,6 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
-export ZDOTDIR="$XDG_CONFIG_HOME"/zsh
 
 
 # Set name of the theme to load --- if set to "random", it will
@@ -285,7 +284,7 @@ echo "vim: :%s/wordhere/newword/g to search and replace all instances of words"
 #echo "vim: type ':Luapad' in vim for scratchpads! :q to close!"
 #echo "vim: 'daw' deletes word & space around it. 'dw' deletes word. 'dap' deletes paragraphs!"
 #echo "vim: type ':vsplit ~/optional/filepath' and use ctrl+w to switch between them!"
-echo "useful cmds: find, locate, whereis, which, file, getfacl, stat, du -s" | lolcat
+echo "useful cmds: find, locate, whereis, type, which, file, getfacl, stat, du -s" | lolcat
 #echo "Use 'curl getnews.tech/queryhere' to see the news!"
 #echo "Use 'ctrl+super+esc' to kill windows!"
 #echo "Use 'cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor' to see active governor."
@@ -295,18 +294,20 @@ echo "useful cmds: find, locate, whereis, which, file, getfacl, stat, du -s" | l
 #echo "Hold super & press any of the arrow keys to snap the currently active window!"
 #echo "Conky has a memory leak causing Xorg to use excessive RAM, just kill it to fix!"
 #echo "Use 'trans foreign here' to translate things in the terminal!"
-echo "Use 'dym' to figure out the spelling for difficult words!"
+##echo "Use 'dym' to figure out the spelling for difficult words!"
 #echo "Use 'ncdu' to check disk usage w/ an in-terminal ncurses interface!"
 #echo "Remove the 'passim' group that was added by warp! Investigate!"
 #echo "Install 'nethack' - it's a great MUD!"
 #echo "Checkupdates is aliased to 'checkup!'"
 #echo "Use 'googler' to search the web from terminal!"
 #echo "Use 'onefetch' in a git repo to see stats!"
-echo "Need to calculate a % value? Cat ~/Documents/How!"
+#echo "Need to calculate a % value? Cat ~/Documents/How!"
 echo "Use 'vinyl' & 'vinyloff' to listen to records!"
 echo "Pipe fzf into programs for interactive search! e.g. ps aux | fzf"
 echo "Remember to use ranger!"
-
+#echo "Try 'perf top'" # a kernel topographer, h/top for kworkers essentially 
+echo "Use 'cs2' or 'csgo' to disable tear-free to reduce latency!"
+#echo "Uninstall 'unicode-emoji' if it doesn't work, use -Rns!"
 
 
 ## Useful aliases
@@ -337,6 +338,8 @@ alias checkup="checkupdates"
 alias googler="googler --colorize=auto"
 alias vinyl="pactl load-module module-loopback"
 alias vinyloff="pactl unload-module module-loopback"
+alias csgo="xrandr --output DisplayPort-0 --set TearFree off" # gets rid of latency
+alias cs2="xrandr --output DisplayPort-0 --set TearFree off" 
 
 ## Refresh pacman mirrorlist using HTTPS only, scoring 100 servers and choosing the best based on ping.
 alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
