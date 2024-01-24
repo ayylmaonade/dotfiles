@@ -280,6 +280,7 @@ please
 #echo "use 'ex' to extract any compressed file/folder!"
 #echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will put it at the start of line"
 echo "vim: :%s/wordhere/newword/g to search and replace all instances of words" 
+echo "vim: :tabnew to open a new tab! :tabfirst, :tablast to switch!"
 #echo "vim: 'w' to go forward a word, 'b' to go back a word, 'e' to go to the end of the word!"
 #echo "vim: type ':Luapad' in vim for scratchpads! :q to close!"
 #echo "vim: 'daw' deletes word & space around it. 'dw' deletes word. 'dap' deletes paragraphs!"
@@ -302,12 +303,14 @@ echo "useful cmds: find, locate, whereis, type, which, file, getfacl, stat, du -
 #echo "Use 'googler' to search the web from terminal!"
 #echo "Use 'onefetch' in a git repo to see stats!"
 #echo "Need to calculate a % value? Cat ~/Documents/How!"
-echo "Use 'vinyl' & 'vinyloff' to listen to records!"
 echo "Pipe fzf into programs for interactive search! e.g. ps aux | fzf"
-echo "Remember to use ranger!"
+echo "Use 'vinyl' & 'vinyloff' to listen to records!"
+##echo "Remember to use ranger!"
 #echo "Try 'perf top'" # a kernel topographer, h/top for kworkers essentially 
 echo "Use 'cs2' or 'csgo' to disable tear-free to reduce latency!"
 #echo "Uninstall 'unicode-emoji' if it doesn't work, use -Rns!"
+##echo "Use OBS to record all the fansly vids!"
+echo "Use ctrl+meta+r to open video links in MPV or Firefox!"
 
 
 ## Useful aliases
@@ -340,6 +343,8 @@ alias vinyl="pactl load-module module-loopback"
 alias vinyloff="pactl unload-module module-loopback"
 alias csgo="xrandr --output DisplayPort-0 --set TearFree off" # gets rid of latency
 alias cs2="xrandr --output DisplayPort-0 --set TearFree off" 
+alias tearfree="xrandr --output DisplayPort-0 --set TearFree on"
+
 
 ## Refresh pacman mirrorlist using HTTPS only, scoring 100 servers and choosing the best based on ping.
 alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
