@@ -11,7 +11,7 @@ export ZSH=/home/shaun/.oh-my-zsh/
 export PATH="${PATH}:/home/shaun/.cargo/bin"
 
 # Set $PATH for ruby/gem support
-export PATH="${PATH}:/home/shaun/.local/share/gem/ruby/3.0.0/bin"
+export PATH="${PATH}:/home/shaun/.local/share/gem/ruby/3.2.0/bin"
 
 ## Removes the 10k line limit for zsh history
 export HISTFILE=$HOME/.zsh_history
@@ -25,6 +25,13 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
+
+## Enables Wayland support for certain programs
+## if a Wayland session is detected
+if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+    export MOZ_ENABLE_WAYLAND=1
+    export KITTY_ENABLE_WAYLAND=1
+fi
 
 
 # Set name of the theme to load --- if set to "random", it will
@@ -72,7 +79,7 @@ export UPDATE_ZSH_DAYS=14
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+ COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -132,8 +139,7 @@ export VISUAL='nvim'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANROFFOPT='-c' # fixes bug with bat & col not displaying manpages properly
 
-#PS1='[\u@\h \W]\$ '
-
+# Adds common required $PATHs
 if [ -d "$HOME/.bin" ] ;
   then PATH="$HOME/.bin:$PATH"
 fi
@@ -143,9 +149,15 @@ if [ -d "$HOME/.local/bin" ] ;
 fi
 
 #list
-alias ls='exa -lh --group-directories-first --color=auto' # ls with human-readable enabled. doesn't show hidden files.
-alias la='exa -ahl --group-directories-first --color=auto' # same as above except this shows hidden files.
+alias ls='eza -lh --group-directories-first --color=auto' # ls with human-readable enabled. doesn't show hidden files.
+alias la='eza -ahl --group-directories-first --color=auto' # same as above except this shows hidden files.
 alias ll='/usr/bin/ls -hla' ## No colour output. Here for compatibility and nothing else.
+
+#turns plocate case in-sensitive
+alias locate='locate -i'
+
+#prints my first arch install birthday(not this _exact_ system install)
+alias birthday='echo "September 23rd, 2022"'
 
 ## Colorize the grep command output for ease of use (good for log files)
 alias grep='grep -i --color=auto'
@@ -230,6 +242,9 @@ alias big="expac -H M '%m\t%n' | sort -h | nl"
 #systeminfo
 alias probe="sudo -E hw-probe -all -upload"
 
+#prints system age
+alias age="stat / | awk '/Birth: /{print $2 " " substr($3,1,5)}'"
+
 #force shutdown/reboot
 alias ssn="sudo shutdown now"
 alias sr="doas reboot"
@@ -303,14 +318,24 @@ echo "useful cmds: find, locate, whereis, type, which, file, getfacl, stat, du -
 #echo "Use 'googler' to search the web from terminal!"
 #echo "Use 'onefetch' in a git repo to see stats!"
 #echo "Need to calculate a % value? Cat ~/Documents/How!"
-echo "Pipe fzf into programs for interactive search! e.g. ps aux | fzf"
-echo "Use 'vinyl' & 'vinyloff' to listen to records!"
+####echo "Pipe fzf into programs for interactive search! e.g. ps aux | fzf"
+#echo "Use 'vinyl' & 'vinyloff' to listen to records!"
 ##echo "Remember to use ranger!"
 #echo "Try 'perf top'" # a kernel topographer, h/top for kworkers essentially 
-echo "Use 'cs2' or 'csgo' to disable tear-free to reduce latency!"
+#echo "Use 'cs2' or 'csgo' to disable tear-free to reduce latency!" (X11)
 #echo "Uninstall 'unicode-emoji' if it doesn't work, use -Rns!"
 ##echo "Use OBS to record all the fansly vids!"
-echo "Use ctrl+meta+r to open video links in MPV or Firefox!"
+#echo "Use ctrl+meta+r to open video links in MPV or Firefox!"
+#echo "Setup 'snapper' - refer to OpenSUSE's wiki - it's the pinned tab!"
+#echo "Tweak /etc/environment to change env variables!"
+#echo "Use ~/.config/environment.d/envvars.conf if above doesn't work. rm it if above does work!"
+###echo "Revert 'decode' options in about:config if FF has issues!"
+echo "Use 'pipx' to install python packages!"
+echo "Use 'steamapps' to cd into steam!"
+echo "Use 'yay -Ps' to check system pkgs!"
+#echo "Use /etc/environment to change env variables!"
+#echo "99x34 cols in kitty!"
+
 
 
 ## Useful aliases
@@ -344,7 +369,10 @@ alias vinyloff="pactl unload-module module-loopback"
 alias csgo="xrandr --output DisplayPort-0 --set TearFree off" # gets rid of latency
 alias cs2="xrandr --output DisplayPort-0 --set TearFree off" 
 alias tearfree="xrandr --output DisplayPort-0 --set TearFree on"
-
+alias themes="kitten themes"
+alias balooctl="balooctl6"
+alias ncdu="ncdu --color dark"
+alias steamapps="/home/shaun/.steam/steam/steamapps/common/"
 
 ## Refresh pacman mirrorlist using HTTPS only, scoring 100 servers and choosing the best based on ping.
 alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
