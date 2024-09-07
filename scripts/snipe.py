@@ -13,7 +13,7 @@ from discord.ext import tasks
 
 prefix = '..' ## prefix setting ##
 owner = 'Shaun#1738' ## defines owner of bot ##
-bot_token = 'OTMyNzk4NjE5ODM5NTA0NDI0.YeYOaQ.zl3wg20lRb_-5sLMs0yDPV7e6NM' ## required for authorisation ##
+bot_token = 'INSERT_YOUR_BOT_TOKEN_HERE' ## required for authorisation ##
 
 
 intents = discord.Intents.all()
