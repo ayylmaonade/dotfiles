@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=ColourDepth32
-Exec="startx  -- -depth 32"
-Type=Application
-Terminal=true
-Hidden=false
-

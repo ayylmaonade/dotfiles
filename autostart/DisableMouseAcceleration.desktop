@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=DisableMouseAcceleration
-Exec="xset m 3/2 0"
-Type=Application
-Terminal=true
-Hidden=false
