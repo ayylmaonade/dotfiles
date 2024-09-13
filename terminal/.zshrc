@@ -31,6 +31,7 @@ export XDG_STATE_HOME="$HOME/.local/state"
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
     export MOZ_ENABLE_WAYLAND=1
     export KITTY_ENABLE_WAYLAND=1
+    export QT_QPA_PLATFORM=wayland # this fixes OBS specifically
 fi
 
 
@@ -161,8 +162,6 @@ alias birthday='echo "September 23rd, 2022"'
 
 ## Colorize the grep command output for ease of use (good for log files)
 alias grep='grep -i --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
 
 #readable output for df
 alias df='df -h'
@@ -201,6 +200,7 @@ alias kc='killall conky & sleep 1.5 && conky'
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
 
 #yt-dlp instead of youtube-dl. it works far better (keeping old aliases for compat)
+alias youtube-dl="yt-dlp"
 alias yta-aac="youtube-dl --extract-audio --audio-format aac "
 alias yta-best="youtube-dl --extract-audio --audio-format best "
 alias yta-flac="youtube-dl --extract-audio --audio-format flac "
@@ -210,12 +210,12 @@ alias yta-opus="youtube-dl --extract-audio --audio-format opus "
 alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
 alias yta-wav="youtube-dl --extract-audio --audio-format wav "
 alias ytv-best="youtube-dl -f bestvideo+bestaudio "
-#USE THIS!
 alias ytdl="yt-dlp"
 
 #Recently Installed Packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -5000 | nl"
+alias big="expac -H M '%m\t%n' | sort -h | nl" # shows pkg size
 
 #Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
@@ -223,7 +223,7 @@ alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 #get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
 
-#gpg
+#GPG related fixes, use with caution!
 #verify signature for isos
 alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
 alias fix-gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
@@ -233,11 +233,8 @@ alias fix-gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-key
 #fixes broken keyring
 alias fix-key="[ -d ~/.gnupg ] || mkdir ~/.gnupg ; cp /etc/pacman.d/gnupg/gpg.conf ~/.gnupg/ ; echo 'done'"
 
-#fixes
+# fixes local permissions
 alias fix-permissions="sudo chown -R $USER:$USER ~/.config ~/.local"
-
-#maintenance
-alias big="expac -H M '%m\t%n' | sort -h | nl"
 
 #systeminfo
 alias probe="sudo -E hw-probe -all -upload"
@@ -292,7 +289,6 @@ please
 #fortune
 
 ## Startup Echoes
-#echo "use 'ex' to extract any compressed file/folder!"
 #echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will put it at the start of line"
 echo "vim: :%s/wordhere/newword/g to search and replace all instances of words" 
 echo "vim: :tabnew to open a new tab! :tabfirst, :tablast to switch!"
@@ -304,38 +300,26 @@ echo "useful cmds: find, locate, whereis, type, which, file, getfacl, stat, du -
 #echo "Use 'curl getnews.tech/queryhere' to see the news!"
 #echo "Use 'ctrl+super+esc' to kill windows!"
 #echo "Use 'cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor' to see active governor."
-#echo "Pipe 'yes' into commands like 'topgrade' to automatically accept Y/n prompts!"
 #echo "Use 'downgrade' to interactively downgrade pkgs to older versions!"
-#echo "Use 'iotop' to check current disk r/w speeds & usage"
-#echo "Hold super & press any of the arrow keys to snap the currently active window!"
-#echo "Conky has a memory leak causing Xorg to use excessive RAM, just kill it to fix!"
+echo "Use 'iotop' to check current disk r/w speeds & usage"
 #echo "Use 'trans foreign here' to translate things in the terminal!"
 ##echo "Use 'dym' to figure out the spelling for difficult words!"
-#echo "Use 'ncdu' to check disk usage w/ an in-terminal ncurses interface!"
-#echo "Remove the 'passim' group that was added by warp! Investigate!"
-#echo "Install 'nethack' - it's a great MUD!"
-#echo "Checkupdates is aliased to 'checkup!'"
 #echo "Use 'googler' to search the web from terminal!"
-#echo "Use 'onefetch' in a git repo to see stats!"
 #echo "Need to calculate a % value? Cat ~/Documents/How!"
-####echo "Pipe fzf into programs for interactive search! e.g. ps aux | fzf"
 #echo "Use 'vinyl' & 'vinyloff' to listen to records!"
-##echo "Remember to use ranger!"
 #echo "Try 'perf top'" # a kernel topographer, h/top for kworkers essentially 
 #echo "Use 'cs2' or 'csgo' to disable tear-free to reduce latency!" (X11)
-#echo "Uninstall 'unicode-emoji' if it doesn't work, use -Rns!"
-##echo "Use OBS to record all the fansly vids!"
 #echo "Use ctrl+meta+r to open video links in MPV or Firefox!"
-#echo "Setup 'snapper' - refer to OpenSUSE's wiki - it's the pinned tab!"
-#echo "Tweak /etc/environment to change env variables!"
-#echo "Use ~/.config/environment.d/envvars.conf if above doesn't work. rm it if above does work!"
+#echo "Tweak /etc/environment to change env variables globally!"
+#echo "Use ~/.config/environment.d/envvars.conf to set them locally only!"
 ###echo "Revert 'decode' options in about:config if FF has issues!"
 echo "Use 'pipx' to install python packages!"
 echo "Use 'steamapps' to cd into steam!"
-echo "Use 'yay -Ps' to check system pkgs!"
-#echo "Use /etc/environment to change env variables!"
+#echo "Use 'yay -Ps' to check system pkgs!"
 #echo "99x34 cols in kitty!"
-
+#echo "Install 'sherlock-git' to search a username across the internet!"
+echo "Set kitty.conf 'sync-to-monitor' back to 'yes' if there's any lag, etc!"
+echo "Remove 'QT_QPA_PLATFORM=wayland' from .zshrc & env vars if issues occur!"
 
 
 ## Useful aliases
@@ -373,6 +357,9 @@ alias themes="kitten themes"
 alias balooctl="balooctl6"
 alias ncdu="ncdu --color dark"
 alias steamapps="/home/shaun/.steam/steam/steamapps/common/"
+alias ffetch="fastfetch"
+
+
 
 ## Refresh pacman mirrorlist using HTTPS only, scoring 100 servers and choosing the best based on ping.
 alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
