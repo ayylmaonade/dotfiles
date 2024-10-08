@@ -31,7 +31,7 @@ export XDG_STATE_HOME="$HOME/.local/state"
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
     export MOZ_ENABLE_WAYLAND=1
     export KITTY_ENABLE_WAYLAND=1
-    export QT_QPA_PLATFORM=wayland # this fixes OBS specifically
+#    export QT_QPA_PLATFORM=wayland # this fixes OBS specifically
 fi
 
 
@@ -52,7 +52,7 @@ fi
 # ZSH_THEME_RANDOM_IGNORED=(pygmalion tjkirch_mod)
 
 # Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+# CASE_SENSITIVE="true" 
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -80,7 +80,7 @@ export UPDATE_ZSH_DAYS=14
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
- COMPLETION_WAITING_DOTS="true"
+# COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -158,7 +158,7 @@ alias ll='/usr/bin/ls -hla' ## No colour output. Here for compatibility and noth
 alias locate='locate -i'
 
 #prints my first arch install birthday(not this _exact_ system install)
-alias birthday='echo "September 23rd, 2022"'
+alias birthday='echo "September 23rd, 2021"'
 
 ## Colorize the grep command output for ease of use (good for log files)
 alias grep='grep -i --color=auto'
@@ -291,7 +291,7 @@ please
 ## Startup Echoes
 #echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will put it at the start of line"
 echo "vim: :%s/wordhere/newword/g to search and replace all instances of words" 
-echo "vim: :tabnew to open a new tab! :tabfirst, :tablast to switch!"
+###echo "vim: :tabnew to open a new tab! :tabfirst, :tablast to switch!"
 #echo "vim: 'w' to go forward a word, 'b' to go back a word, 'e' to go to the end of the word!"
 #echo "vim: type ':Luapad' in vim for scratchpads! :q to close!"
 #echo "vim: 'daw' deletes word & space around it. 'dw' deletes word. 'dap' deletes paragraphs!"
@@ -301,7 +301,7 @@ echo "useful cmds: find, locate, whereis, type, which, file, getfacl, stat, du -
 #echo "Use 'ctrl+super+esc' to kill windows!"
 #echo "Use 'cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor' to see active governor."
 #echo "Use 'downgrade' to interactively downgrade pkgs to older versions!"
-echo "Use 'iotop' to check current disk r/w speeds & usage"
+#echo "Use 'iotop' to check current disk r/w speeds & usage"
 #echo "Use 'trans foreign here' to translate things in the terminal!"
 ##echo "Use 'dym' to figure out the spelling for difficult words!"
 #echo "Use 'googler' to search the web from terminal!"
@@ -312,14 +312,24 @@ echo "Use 'iotop' to check current disk r/w speeds & usage"
 #echo "Use ctrl+meta+r to open video links in MPV or Firefox!"
 #echo "Tweak /etc/environment to change env variables globally!"
 #echo "Use ~/.config/environment.d/envvars.conf to set them locally only!"
-###echo "Revert 'decode' options in about:config if FF has issues!"
-echo "Use 'pipx' to install python packages!"
-echo "Use 'steamapps' to cd into steam!"
+#echo "Use 'pipx' to install python packages!"
+#echo "Use 'steamapps' to cd into steam!"
 #echo "Use 'yay -Ps' to check system pkgs!"
 #echo "99x34 cols in kitty!"
 #echo "Install 'sherlock-git' to search a username across the internet!"
-echo "Set kitty.conf 'sync-to-monitor' back to 'yes' if there's any lag, etc!"
-echo "Remove 'QT_QPA_PLATFORM=wayland' from .zshrc & env vars if issues occur!"
+#####echo "Set kitty.conf 'sync-to-monitor' back to 'yes' if there's any lag, etc!"
+#####echo "Remove 'QT_QPA_PLATFORM=wayland' from .zshrc & env vars if issues occur!"
+echo "Use 'icat filename' to display images natively in kitty!"
+#echo "Change makepkg.conf 'PKGEXT' back to .pkg.tar.zst if lz4 causes isuses!"
+#####echo "Uncomment 'QT_QPA_PLATFORM' in .zshrc (Wayland) if OBS issues occur!"
+#echo "Try out 'Ollama' & 'Vesktop'"
+##echo "delete '/etc/conf.d/lm_sensors.conf' if top programs fuck up!"
+#echo "Use 'watch' as a way to periodically update graph programs such as top! (use tldr)"
+echo "Use 'binsider programname' to analyze binaries!"
+#echo "Don't have coolercontrol running in systray, it uses 1GiB of RAM, rely on daemon!"
+echo "Use 'ls -R' to easily search dirs recursively without having to cd!"
+echo "zswap is disabled! use 'grep -r . /sys/module/zswap/parameters/' to check stats!"
+echo "Change '/etc/default/grub' to remove 'LINUX_DEFAULT=zswap.enabled=0' if it doesn't work!"
 
 
 ## Useful aliases
@@ -350,14 +360,16 @@ alias checkup="checkupdates"
 alias googler="googler --colorize=auto"
 alias vinyl="pactl load-module module-loopback"
 alias vinyloff="pactl unload-module module-loopback"
-alias csgo="xrandr --output DisplayPort-0 --set TearFree off" # gets rid of latency
-alias cs2="xrandr --output DisplayPort-0 --set TearFree off" 
-alias tearfree="xrandr --output DisplayPort-0 --set TearFree on"
+alias csgo="xrandr --output DisplayPort-0 --set TearFree off" # gets rid of latency (X11)
+alias cs2="xrandr --output DisplayPort-0 --set TearFree off"  # X11 only
+alias tearfree="xrandr --output DisplayPort-0 --set TearFree on" # X11 only
 alias themes="kitten themes"
 alias balooctl="balooctl6"
 alias ncdu="ncdu --color dark"
 alias steamapps="/home/shaun/.steam/steam/steamapps/common/"
 alias ffetch="fastfetch"
+alias fetch="fastfetch"
+alias icat="kitten icat"
 
 
 
