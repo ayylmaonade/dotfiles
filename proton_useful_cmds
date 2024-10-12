@@ -3,6 +3,7 @@ commands to use as launch
 options when running games
 via Steam Compatibility */
 
+env -u WAYLAND_DISPLAY // Disables Wayland env variable for games with issues on Wayland!
 taskset -c 0,1,2,3,4
 gamemoderun // applies several game-specific kernel optimisations--always use!
 VKD3D_CONFIG=dxr9/11/12 // forces dxvk to use a specific DirectX version (if available) 
