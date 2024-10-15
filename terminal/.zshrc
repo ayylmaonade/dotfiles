@@ -31,15 +31,13 @@ export XDG_STATE_HOME="$HOME/.local/state"
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
     export MOZ_ENABLE_WAYLAND=1
     export KITTY_ENABLE_WAYLAND=1
-#    export QT_QPA_PLATFORM=wayland # this fixes OBS specifically
+    export QT_QPA_PLATFORM=wayland # this fixes OBS specifically
 fi
 
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# if you installed the package oh-my-zsh-powerline-theme-git then you type here "powerline" as zsh theme
 #ZSH_THEME="duellj"
 #ZSH_THEME="half-life"
 
@@ -62,7 +60,7 @@ fi
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
- DISABLE_UPDATE_PROMPT="true"
+DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 export UPDATE_ZSH_DAYS=14
@@ -161,13 +159,15 @@ alias locate='locate -i'
 alias birthday='echo "September 23rd, 2021"'
 
 ## Colorize the grep command output for ease of use (good for log files)
-alias grep='grep -i --color=auto'
+alias grep='grep --color=auto'
 
-#readable output for df
-alias df='df -h'
+#human-readable output for df
+#alias df='df -h'
+
+#removes systemd tmp filesystems in df output
+alias df='df -h -x tmpfs'
 
 #pacman unlock - don't use this unless you know what you're doing.
-#alias unlock="sudo rm /var/lib/pacman/db.lck"
 #alias rmpacmanlock="sudo rm /var/lib/pacman/db.lck"
 
 #shows memory use in readable format & uses MiB.
@@ -177,7 +177,7 @@ alias free="free -mht"
 alias userlist="cut -d: -f1 /etc/passwd"
 
 #merges new settings for X11
-alias merge="xrdb -merge ~/.Xresources"
+#alias merge="xrdb -merge ~/.Xresources"
 
 #alias for software management
 alias update='doas pacman -Syu'
@@ -194,7 +194,7 @@ alias update-fc='doas fc-cache -fv'
 
 #conky causes an X11 mem leak,
 #this kills conky & re-opens it
-alias kc='killall conky & sleep 1.5 && conky'
+#alias kc='killall conky & sleep 1.5 && conky'
 
 #check vulnerabilities microcode
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
@@ -215,6 +215,8 @@ alias ytdl="yt-dlp"
 #Recently Installed Packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -5000 | nl"
+
+#Displays all packages along with their disk usage
 alias big="expac -H M '%m\t%n' | sort -h | nl" # shows pkg size
 
 #Cleanup orphaned packages
@@ -234,16 +236,16 @@ alias fix-gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-key
 alias fix-key="[ -d ~/.gnupg ] || mkdir ~/.gnupg ; cp /etc/pacman.d/gnupg/gpg.conf ~/.gnupg/ ; echo 'done'"
 
 # fixes local permissions
-alias fix-permissions="sudo chown -R $USER:$USER ~/.config ~/.local"
+alias fix-permissions="doas chown -R $USER:$USER ~/.config ~/.local"
 
 #systeminfo
-alias probe="sudo -E hw-probe -all -upload"
+alias probe="doas -E hw-probe -all -upload"
 
 #prints system age
 alias age="stat / | awk '/Birth: /{print $2 " " substr($3,1,5)}'"
 
 #force shutdown/reboot
-alias ssn="sudo shutdown now"
+alias ssn="doas shutdown now"
 alias sr="doas reboot"
 
 #give the list of all installed desktops - xsessions desktops
@@ -294,7 +296,7 @@ echo "vim: :%s/wordhere/newword/g to search and replace all instances of words"
 ###echo "vim: :tabnew to open a new tab! :tabfirst, :tablast to switch!"
 #echo "vim: 'w' to go forward a word, 'b' to go back a word, 'e' to go to the end of the word!"
 #echo "vim: type ':Luapad' in vim for scratchpads! :q to close!"
-#echo "vim: 'daw' deletes word & space around it. 'dw' deletes word. 'dap' deletes paragraphs!"
+echo "vim: 'daw' deletes word & space around it. 'dw' deletes word. 'dap' deletes paragraphs!"
 #echo "vim: type ':vsplit ~/optional/filepath' and use ctrl+w to switch between them!"
 echo "useful cmds: find, locate, whereis, type, which, file, getfacl, stat, du -s" | lolcat
 #echo "Use 'curl getnews.tech/queryhere' to see the news!"
@@ -317,19 +319,20 @@ echo "useful cmds: find, locate, whereis, type, which, file, getfacl, stat, du -
 #echo "Use 'yay -Ps' to check system pkgs!"
 #echo "99x34 cols in kitty!"
 #echo "Install 'sherlock-git' to search a username across the internet!"
-#####echo "Set kitty.conf 'sync-to-monitor' back to 'yes' if there's any lag, etc!"
-#####echo "Remove 'QT_QPA_PLATFORM=wayland' from .zshrc & env vars if issues occur!"
-echo "Use 'icat filename' to display images natively in kitty!"
+####echo "Use 'icat filename' to display images natively in kitty!"
 #echo "Change makepkg.conf 'PKGEXT' back to .pkg.tar.zst if lz4 causes isuses!"
-#####echo "Uncomment 'QT_QPA_PLATFORM' in .zshrc (Wayland) if OBS issues occur!"
 #echo "Try out 'Ollama' & 'Vesktop'"
 ##echo "delete '/etc/conf.d/lm_sensors.conf' if top programs fuck up!"
 #echo "Use 'watch' as a way to periodically update graph programs such as top! (use tldr)"
 echo "Use 'binsider programname' to analyze binaries!"
 #echo "Don't have coolercontrol running in systray, it uses 1GiB of RAM, rely on daemon!"
 echo "Use 'ls -R' to easily search dirs recursively without having to cd!"
-echo "zswap is disabled! use 'grep -r . /sys/module/zswap/parameters/' to check stats!"
-echo "Change '/etc/default/grub' to remove 'LINUX_DEFAULT=zswap.enabled=0' if it doesn't work!"
+#echo "zswap is disabled! use 'grep -r . /sys/module/zswap/parameters/' to check stats!"
+echo "Use 'lsmod' to list kernel modules!"
+echo "Remember to use '-i' with grep! It's case sensitive!"
+#echo "Add 'swap-priority=20' to zram-generator.conf if you wanna fuck around!"
+echo "Remember to use trash! and don't forget aliases, tlist, trestore, tempty!"
+
 
 
 ## Useful aliases
@@ -372,6 +375,11 @@ alias fetch="fastfetch"
 alias icat="kitten icat"
 
 
+## Alias relating specifically to the 'trash-cli' package
+alias trash="trash -v"
+alias tlist="trash-list"
+alias trestore="trash-restore"
+alias tempty="trash-empty"
 
 ## Refresh pacman mirrorlist using HTTPS only, scoring 100 servers and choosing the best based on ping.
 alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
