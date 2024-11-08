@@ -101,15 +101,15 @@ export UPDATE_ZSH_DAYS=14
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-fzf-history-search)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-fzf-history-search copyfile web-search z)
 
 source $ZSH/oh-my-zsh.sh
 
 # Sets the prompt to Starship
 eval "$(starship init zsh)"
 
-# Adds mangohud to $PATH, prevents pointless .profile file in ~/
-export MANGOHUD=1
+# Adds mangohud to $PATH, auto-enables for all Vulkan games 
+#export MANGOHUD=1
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -158,8 +158,9 @@ alias locate='locate -i'
 #prints my first arch install birthday(not this _exact_ system install)
 alias birthday='echo "September 23rd, 2021"'
 
-## Colorize the grep command output for ease of use (good for log files)
+## Colorize the grep & ripgrep command output for ease of use (good for log files)
 alias grep='grep --color=auto'
+alias rg='rg --color=auto'
 
 #human-readable output for df
 #alias df='df -h'
@@ -326,13 +327,17 @@ echo "useful cmds: find, locate, whereis, type, which, file, getfacl, stat, du -
 #echo "Use 'watch' as a way to periodically update graph programs such as top! (use tldr)"
 ########echo "Use 'binsider programname' to analyze binaries!"
 #echo "Don't have coolercontrol running in systray, it uses 1GiB of RAM, rely on daemon!"
-echo "Use 'ls -R' to easily search dirs recursively without having to cd!"
+#echo "Use 'ls -R' to easily search dirs recursively without having to cd!"
 #echo "zswap is disabled! use 'grep -r . /sys/module/zswap/parameters/' to check stats!"
 ##echo "Use 'lsmod' to list kernel modules!"
-echo "Remember to use '-i' with grep! It's case sensitive!"
+#echo "Remember to use '-i' with grep! It's case sensitive!"
 echo "Remember to use trash! and don't forget aliases, tlist, trestore, tempty!"
-echo "Slothrop is at an asylum, he had a map of all his sexual encounters! He's being investigated for\nthis because V-2 rockets land at these locations!"
-
+###echo "Slothrop is at an asylum, he had a map of all his sexual encounters! He's being investigated for\nthis because V-2 rockets land at these locations!"
+echo "Use 'ctrl + e' to auto-fill zsh-suggestions instead of arrow keys!"
+echo "Use ripgrep - 'rg' instead of grep! it's faster!"
+echo "Use 'copyfile filename' to copy files to clipboard from terminal!"
+echo "Type 'z' and press tab to jump between recent directories!"
+#echo "Revert 'dom.webgpu.enabled' + enable gpu layers in FF if issues occur!"
 
 
 ## Useful aliases
@@ -374,7 +379,6 @@ alias ffetch="fastfetch"
 alias fetch="fastfetch"
 alias icat="kitten icat"
 alias ofetch="onefetch"
-
 
 ## Alias relating specifically to the 'trash-cli' package
 alias trash="trash -v"
