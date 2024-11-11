@@ -3,22 +3,22 @@ commands to use as launch
 options when running games
 via Steam Compatibility */
 
-env -u WAYLAND_DISPLAY // Disables Wayland - env variable for games with issues on Wayland!
-taskset -c 0,1,2,3,4 // set niceness of PID per CPU core
+env -u WAYLAND_DISPLAY // Disables Wayland presentation - env variable for games with issues on Wayland!
+taskset -c 0,1,2,3,4 // Specifies which CPU cores to run game/software on
 WINE_CPU_TOPOLOGY=4:0,1,2,3 // Specifies CPU core layout, older games sometimes require this. Example is with 4 cores. Change values to whatever your core layout is.
 gamemoderun // applies several game-specific kernel optimisations -- always use!
-VKD3D_CONFIG=dxr9/11/12 // forces dxvk to use a specific DirectX version (if available) 
+VKD3D_CONFIG=dxr9/11/12 // forces DXVK to use a specific DirectX version & provides DXR flags (if available) 
 DXVK_ASYNC=0/1 // Enables asynchronous compute
 VULKAN_ICD_LOADER=RADV // forces RADV driver (if using amdvlk)
 PROTON_NO_D3D11/10=0/1 // forces games to fallback to DX9 loader
 PROTON_USE_D9VK=0/1 // forces use of D3D9-based DXVK - may help older titles
-PROTON_USE_WINED3D=0/1 // uses OpenGL-based proton rather than DXVK
+PROTON_USE_WINED3D=0/1 // uses OpenGL-based Wine/Proton rather than DXVK
 PROTON_NO_ESYNC=0/1 // reduces translation overhead, enabled by default
-PROTON_NO_FSYNC=0/1 // further reduces overhead -- setting '1' reverts to esync 
+PROTON_NO_FSYNC=0/1 // further reduces overhead -- setting '1' reverts to esync (enabled by default on most kernels) 
 PROTON_FORCE_LARGE_ADDRESS_AWARE=0/1 // Forces Proton to recognise large memory heaps. May help older games run and/or be required.
 DXVK_FRAME_RATE=# // limit FPS to any chosen rate
 RADV_PERFTEST=rt // enables RT (sometimes requires VKD3D_CONFIG=dxr11)
 amdvlk // forces amdvlk driver
--d3d12/11/10/9/8 // tells proton to translate to a specific API version
+-d3d12/11/10/9/8 // generic Steam flag to specify which API to use (if available)
 
 */ %command% */
