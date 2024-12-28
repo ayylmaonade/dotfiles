@@ -221,7 +221,7 @@ alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -5000 | n
 alias big="expac -H M '%m\t%n' | sort -h | nl" # shows pkg size
 
 #Cleanup orphaned packages
-alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+alias cleanup='doas pacman -Rns $(pacman -Qtdq)'
 
 #get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
@@ -317,32 +317,31 @@ echo "useful cmds: find, locate, whereis, type, which, file, getfacl, stat, du -
 #echo "Use ~/.config/environment.d/envvars.conf to set them locally only!"
 #echo "Use 'pipx' to install python packages!"
 #echo "Use 'steamapps' to cd into steam!"
-#echo "Use 'yay -Ps' to check system pkgs!"
 #echo "99x34 cols in kitty!"
 #echo "Install 'sherlock-git' to search a username across the internet!"
 ####echo "Use 'icat filename' to display images natively in kitty!"
 #echo "Change makepkg.conf 'PKGEXT' back to .pkg.tar.zst if lz4 causes isuses!"
-#echo "Try out 'Ollama' & 'Vesktop'"
-##echo "delete '/etc/conf.d/lm_sensors.conf' if top programs fuck up!"
 #echo "Use 'watch' as a way to periodically update graph programs such as top! (use tldr)"
 ########echo "Use 'binsider programname' to analyze binaries!"
-#echo "Don't have coolercontrol running in systray, it uses 1GiB of RAM, rely on daemon!"
 #echo "Use 'ls -R' to easily search dirs recursively without having to cd!"
 #echo "zswap is disabled! use 'grep -r . /sys/module/zswap/parameters/' to check stats!"
 ##echo "Use 'lsmod' to list kernel modules!"
 #echo "Remember to use '-i' with grep! It's case sensitive!"
 echo "Remember to use trash! and don't forget aliases, tlist, trestore, tempty!"
 ###echo "Slothrop is at an asylum, he had a map of all his sexual encounters! He's being investigated for\nthis because V-2 rockets land at these locations!"
-echo "Use 'ctrl + e' to auto-fill zsh-suggestions instead of arrow keys!"
-echo "Use ripgrep - 'rg' instead of grep! it's faster!"
+#echo "Use 'ctrl + e' to auto-fill zsh-suggestions instead of arrow keys!"
+#echo "Use ripgrep - 'rg' instead of grep! it's faster!"
 echo "Use 'copyfile filename' to copy files to clipboard from terminal!"
 echo "Type 'z' and press tab to jump between recent directories!"
 #echo "Revert 'dom.webgpu.enabled' + enable gpu layers in FF if issues occur!"
+######echo "Reconfigure lm_sensors! Delete '/etc/conf.d/lm_sensors!'"
+#echo "I changed media.gpu-process-decoder to on in firefox!"
+##echo "Disable EEE using 'ethtool --set-eee networkname eee off" // I removed ethtool pkg
 
 
 ## Useful aliases
 alias sudo="doas"
-alias pacman="doas pacman"
+#alias pacman="doas pacman"
 alias cp="cpg -iv -g" #requires advcpmv, adds a progress bar. change cpg to cp & remove -g otherwise
 alias rm="rm -i"
 alias mv="mvg -i -g" #requires advcpmv, adds a progress bar. change mvg to mv & remove -g otherwise
