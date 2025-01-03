@@ -1,0 +1,31 @@
+#!/bin/sh
+
+# Script: dm-wiki **(Please make sure to store this script in /usr/local/bin/ - whatever you name the file is what will call the script. I use "dmwiki" so when I run that, the script runs. Use any name you wish!)
+# Description: Searches an offline version of the Arch wiki
+# Dependencies: dmenu, arch-wiki-docs, zenity (optional)
+# License: GPLv3
+# Contributors: Shaun
+#
+# IMPORTANT: This script may sometimes launch the incorrect browser/app even when defaults are set. To fix this, change 'xdg-open' on line 24 to your browser or app of choice. (e.g. firefox)
+
+## Defines the language directory. English is default.
+wikidir="/usr/share/doc/arch-wiki/html/en/"
+
+wikidocs="$(find ${wikidir} -iname "*.html")"
+
+main() {
+    choice=$(printf '%s\n' "${wikidocs[@]}" |
+	cut -d '/' -f8- | 
+	sed -e 's/_/ /g' -e 's/.html//g' |
+	wofi -dmenu -i -l 20 -p 'Arch Wiki: ') ||
+    exit 1
+
+    if [ "$choice" ]; then
+	document=$(printf '%s\n' "${wikidir}${choice}.html" | sed 's/ /_/g')
+	xdg-open "$document"  
+    else
+	zenity --error --text="Exiting..." && exit 0
+    fi
+}
+
+main
