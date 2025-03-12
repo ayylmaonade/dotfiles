@@ -293,7 +293,7 @@ please
 
 ## Startup Echoes
 #echo "vim: ctrl+v for visual block, shift+I, type letter, then esc and it will put it at the start of line"
-echo "vim: :%s/wordhere/newword/g to search and replace all instances of words" 
+#echo "vim: :%s/wordhere/newword/g to search and replace all instances of words" 
 ###echo "vim: :tabnew to open a new tab! :tabfirst, :tablast to switch!"
 #echo "vim: 'w' to go forward a word, 'b' to go back a word, 'e' to go to the end of the word!"
 #echo "vim: type ':Luapad' in vim for scratchpads! :q to close!"
@@ -332,16 +332,18 @@ echo "Remember to use trash! and don't forget aliases, tlist, trestore, tempty!"
 #echo "Use 'ctrl + e' to auto-fill zsh-suggestions instead of arrow keys!"
 #echo "Use ripgrep - 'rg' instead of grep! it's faster!"
 echo "Use 'copyfile filename' to copy files to clipboard from terminal!"
-echo "Type 'z' and press tab to jump between recent directories!"
+echo "Type 'z' & press tab to jump between recent dirs or type a dir! (e.g. z steam)"
 #echo "Revert 'dom.webgpu.enabled' + enable gpu layers in FF if issues occur!"
 ######echo "Reconfigure lm_sensors! Delete '/etc/conf.d/lm_sensors!'"
-#echo "I changed media.gpu-process-decoder to on in firefox!"
 ##echo "Disable EEE using 'ethtool --set-eee networkname eee off" // I removed ethtool pkg
+echo "dmwiki is fixed! remember to use it! the wiki is fantastic."
+####echo "OLED brightness bug! Change it back to 75% after wake from sleep!"
+echo "Use 'ddcutil -d 1 getvcp ALL' to see displays' hours used!"
 
 
 ## Useful aliases
 alias sudo="doas"
-#alias pacman="doas pacman"
+alias pacman="doas pacman"
 alias cp="cpg -iv -g" #requires advcpmv, adds a progress bar. change cpg to cp & remove -g otherwise
 alias rm="rm -i"
 alias mv="mvg -i -g" #requires advcpmv, adds a progress bar. change mvg to mv & remove -g otherwise
@@ -359,7 +361,8 @@ alias yay="yay --sudoloop "
 alias uptime="uptime -p"
 alias su="doas su"
 alias du="du -h"
-alias rtop="radeontop" 
+alias rtop="radeontop"
+alias radeontop="amdgpu_top"
 alias iotop="doas iotop"
 alias killall="killall -v"
 alias cat="bat -Pn"
