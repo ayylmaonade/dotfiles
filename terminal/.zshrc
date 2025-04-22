@@ -78,7 +78,7 @@ export UPDATE_ZSH_DAYS=14
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+ COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -243,7 +243,9 @@ alias fix-permissions="doas chown -R $USER:$USER ~/.config ~/.local"
 alias probe="doas -E hw-probe -all -upload"
 
 #prints system age
-alias age="stat / | awk '/Birth: /{print $2 " " substr($3,1,5)}'"
+#alias age="stat / | awk '/Birth: /{print $2 " " substr($3,1,5)}'"
+alias age='now=$(date +%s); stat -c '\''%W %Z'\'' / | awk -v now="$now" '\''{ if ($1 > 0) { age = now - $1; printf "Root directory age (since creation): %.0f days\n", age / 86400 } else { age = now - $2; printf "Root directory age (since last metadata change): %.0f days\n", age / 86400 } }'\' # better implementation
+
 
 #force shutdown/reboot
 alias ssn="doas shutdown now"
@@ -303,10 +305,9 @@ echo "useful cmds: find, locate, whereis, type, which, file, getfacl, stat, du -
 #echo "Use 'curl getnews.tech/queryhere' to see the news!"
 #echo "Use 'ctrl+super+esc' to kill windows!"
 #echo "Use 'cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor' to see active governor."
-#echo "Use 'downgrade' to interactively downgrade pkgs to older versions!"
 #echo "Use 'iotop' to check current disk r/w speeds & usage"
-#echo "Use 'trans foreign here' to translate things in the terminal!"
-##echo "Use 'dym' to figure out the spelling for difficult words!"
+echo "Use 'trans foreign here' to translate things in the terminal!"
+echo "Use 'dym' to figure out the spelling for difficult words!"
 #echo "Use 'googler' to search the web from terminal!"
 #echo "Need to calculate a % value? Cat ~/Documents/How!"
 #echo "Use 'vinyl' & 'vinyloff' to listen to records!"
@@ -332,21 +333,22 @@ echo "Remember to use trash! and don't forget aliases, tlist, trestore, tempty!"
 #echo "Use 'ctrl + e' to auto-fill zsh-suggestions instead of arrow keys!"
 #echo "Use ripgrep - 'rg' instead of grep! it's faster!"
 echo "Use 'copyfile filename' to copy files to clipboard from terminal!"
-echo "Type 'z' & press tab to jump between recent dirs or type a dir! (e.g. z steam)"
-#echo "Revert 'dom.webgpu.enabled' + enable gpu layers in FF if issues occur!"
-######echo "Reconfigure lm_sensors! Delete '/etc/conf.d/lm_sensors!'"
+echo "Type 'z' & press tab to jump between recent dirs or type a dir! (e.g. z steam)" | lolcat
 ##echo "Disable EEE using 'ethtool --set-eee networkname eee off" // I removed ethtool pkg
-echo "dmwiki is fixed! remember to use it! the wiki is fantastic."
-####echo "OLED brightness bug! Change it back to 75% after wake from sleep!"
+#echo "dmwiki is fixed! remember to use it! the wiki is fantastic."
 echo "Use 'ddcutil -d 1 getvcp ALL' to see displays' hours used!"
+####echo "Changed ulimit to unlimited in '/etc/security/limits.conf!"
+###echo "Added 'amdgpu.dc=1' to grub.cfg! Might help issues with system not resuming from sleep!"
+####echo "Added k10temp as service to '/etc/systemd/system! check if it runs!"
+echo "Removed 'normal' gemma3, only using QAT for now!"
 
 
 ## Useful aliases
 alias sudo="doas"
 alias pacman="doas pacman"
 alias cp="cpg -iv -g" #requires advcpmv, adds a progress bar. change cpg to cp & remove -g otherwise
-alias rm="rm -i"
-alias mv="mvg -i -g" #requires advcpmv, adds a progress bar. change mvg to mv & remove -g otherwise
+alias rm="rm -iv"
+alias mv="mvg -iv -g" #requires advcpmv, adds a progress bar. change mvg to mv & remove -g otherwise
 alias matrix="cxxmatrix" 
 alias fish="asciiquarium"
 alias snipebot="python3 ~/dotfiles/scripts/snipe.py" 
@@ -381,6 +383,8 @@ alias ffetch="fastfetch"
 alias fetch="fastfetch"
 alias icat="kitten icat"
 alias ofetch="onefetch"
+alias ssh="kitten ssh " #change back to kitty +kitten ssh if this doesn't work
+
 
 ## Alias relating specifically to the 'trash-cli' package
 alias trash="trash -v"
