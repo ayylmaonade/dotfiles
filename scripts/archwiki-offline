@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 # Script: dm-wiki **(Please make sure to store this script in /usr/local/bin/ - whatever you name the file is what will call the script. I use "dmwiki" so when I run that, the script runs. Use any name you wish!)
 # Description: Searches an offline version of the Arch wiki
