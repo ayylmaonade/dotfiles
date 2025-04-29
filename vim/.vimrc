@@ -93,7 +93,24 @@ Plug 'rafcamlet/nvim-luapad'
 " Install _every_ colorscheme from vimawesome
 Plug 'flazz/vim-colorschemes'
 
+" Installs friendly-snippets
+Plug 'rafamadriz/friendly-snippets'
+
+" Code autocompletion using ultisnips & nvim-cmp 
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+
 call plug#end()
+
+" Sources the lua file for nvim-cmp
+if has('nvim')
+    lua require('nvim-cmp')
+endif
 
 " Loads colorscheme(s)
 " colorscheme peachpuff
