@@ -72,8 +72,8 @@ Plug 'junegunn/vim-easy-align'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 " On-demand loading
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } "TODO: Upgrade to telescope
+"Plug 'tpope/vim-fireplace', { 'for': 'clojure' } " outdated.
 
 " GitHub Dashboard
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
