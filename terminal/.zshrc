@@ -34,6 +34,9 @@ if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
     export QT_QPA_PLATFORM=wayland # this fixes OBS specifically
 fi
 
+## Fixes an error with Xwayland acceleration (probably specific to my system)
+#export EGL_PLATFORM=gbm
+export EGL_PLATFORM=wayland # testing this
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -226,6 +229,9 @@ alias cleanup='doas pacman -Rns $(pacman -Qtdq)'
 #get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
 
+#run dmesg as root by default
+alias dmesg="doas dmesg"
+
 #GPG related fixes, use with caution!
 #verify signature for isos
 alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
@@ -301,13 +307,13 @@ please
 #echo "vim: type ':Luapad' in vim for scratchpads! :q to close!"
 echo "vim: 'daw' deletes word & space around it. 'dw' deletes word. 'dap' deletes paragraphs!"
 #echo "vim: type ':vsplit ~/optional/filepath' and use ctrl+w to switch between them!"
-echo "useful cmds: find, locate, whereis, type, which, file, getfacl, stat, du -s" | lolcat
+echo "useful cmds: find, locate, whereis, type, which, file, getfacl, stat, du -s, trans, dym" | lolcat
 #echo "Use 'curl getnews.tech/queryhere' to see the news!"
 #echo "Use 'ctrl+super+esc' to kill windows!"
 #echo "Use 'cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor' to see active governor."
 #echo "Use 'iotop' to check current disk r/w speeds & usage"
-echo "Use 'trans foreign here' to translate things in the terminal!"
-echo "Use 'dym' to figure out the spelling for difficult words!"
+#echo "Use 'trans foreign here' to translate things in the terminal!"
+#echo "Use 'dym' to figure out the spelling for difficult words!"
 #echo "Use 'googler' to search the web from terminal!"
 #echo "Need to calculate a % value? Cat ~/Documents/How!"
 #echo "Use 'vinyl' & 'vinyloff' to listen to records!"
@@ -328,20 +334,27 @@ echo "Use 'dym' to figure out the spelling for difficult words!"
 #echo "zswap is disabled! use 'grep -r . /sys/module/zswap/parameters/' to check stats!"
 ##echo "Use 'lsmod' to list kernel modules!"
 #echo "Remember to use '-i' with grep! It's case sensitive!"
-echo "Remember to use trash! and don't forget aliases, tlist, trestore, tempty!"
+####echo "Remember to use trash! and don't forget aliases, tlist, trestore, tempty!"
 ###echo "Slothrop is at an asylum, he had a map of all his sexual encounters! He's being investigated for\nthis because V-2 rockets land at these locations!"
 #echo "Use 'ctrl + e' to auto-fill zsh-suggestions instead of arrow keys!"
 #echo "Use ripgrep - 'rg' instead of grep! it's faster!"
 echo "Use 'copyfile filename' to copy files to clipboard from terminal!"
-echo "Type 'z' & press tab to jump between recent dirs or type a dir! (e.g. z steam)" | lolcat
-##echo "Disable EEE using 'ethtool --set-eee networkname eee off" // I removed ethtool pkg
+#echo "Type 'z' & press tab to jump between recent dirs or type a dir! (e.g. z steam)" | lolcat
 #echo "dmwiki is fixed! remember to use it! the wiki is fantastic."
-echo "Use 'ddcutil -d 1 getvcp ALL' to see displays' hours used!"
-####echo "Changed ulimit to unlimited in '/etc/security/limits.conf!"
-###echo "Added 'amdgpu.dc=1' to grub.cfg! Might help issues with system not resuming from sleep!"
-####echo "Added k10temp as service to '/etc/systemd/system! check if it runs!"
-echo "Removed 'normal' gemma3, only using QAT for now!"
-
+##echo "Use 'ddcutil -d 1 getvcp ALL' to see displays' hours used!"
+##echo "Changed ulimit to unlimited in '/etc/security/limits.conf!"
+##echo "Added k10temp as service to '/etc/systemd/system! check if it runs!"
+#####echo "Changed Dolphin so that it can open archives now! Change back if you don't like it!"
+####echo "Added flags to Spotify enable Wayland! '~/.var/app/com.spotify.Client/config/spotify-flags.conf'!" # doesn't work now
+#####echo "Changed coredump variables in /etc/systemd/coredump.conf.d/override.conf!"
+echo "Use 'cleanupcores/coredumpcleanup' to delete coredumps one by one!"
+###echo "changed root perms to 750 for /root"
+#####echo "added 'kernel.core_pattern=|/bin/false' to /etc/sysctl.d/sysctl.conf to disable coredumps!"
+echo "Use 'pacman -Rnc' to remove config files!"
+#####echo "Added '/etc/profile.d/mesa-env.sh' to try fixing HW accel (EGL)!"
+####echo "Uncomment EGL_PLATFORM in .zshrc if display issues occur!"
+####echo "Re-install egl-wayland if display issues occur!"
+echo "I set ollama kv cache to q8_0 in /etc/environment!"
 
 ## Useful aliases
 alias sudo="doas"
@@ -384,7 +397,8 @@ alias fetch="fastfetch"
 alias icat="kitten icat"
 alias ofetch="onefetch"
 alias ssh="kitten ssh " #change back to kitty +kitten ssh if this doesn't work
-
+#alias openwebui="doas docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main" #installs open-webui, using localhost to ensure ollama connectivity 
+alias openwebui="docker start open-webui" # starts open-webui via docker
 
 ## Alias relating specifically to the 'trash-cli' package
 alias trash="trash -v"
@@ -397,3 +411,6 @@ alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 -
 
 ## Enables fzf, helps more easily look through shell history. ctrl + r
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Added by ProtonUp-Qt on 07-05-2025 16:52:58
+if [ -d "/home/shaun/stl/prefix" ]; then export PATH="$PATH:/home/shaun/stl/prefix"; fi
