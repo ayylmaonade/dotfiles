@@ -252,7 +252,6 @@ alias probe="doas -E hw-probe -all -upload"
 #alias age="stat / | awk '/Birth: /{print $2 " " substr($3,1,5)}'"
 alias age='now=$(date +%s); stat -c '\''%W %Z'\'' / | awk -v now="$now" '\''{ if ($1 > 0) { age = now - $1; printf "Root directory age (since creation): %.0f days\n", age / 86400 } else { age = now - $2; printf "Root directory age (since last metadata change): %.0f days\n", age / 86400 } }'\' # better implementation
 
-
 #force shutdown/reboot
 alias ssn="doas shutdown now"
 alias sr="doas reboot"
@@ -347,14 +346,16 @@ echo "Use 'copyfile filename' to copy files to clipboard from terminal!"
 #####echo "Changed Dolphin so that it can open archives now! Change back if you don't like it!"
 ####echo "Added flags to Spotify enable Wayland! '~/.var/app/com.spotify.Client/config/spotify-flags.conf'!" # doesn't work now
 #####echo "Changed coredump variables in /etc/systemd/coredump.conf.d/override.conf!"
-echo "Use 'cleanupcores/coredumpcleanup' to delete coredumps one by one!"
+#####echo "Use 'cleanupcores/coredumpcleanup' to delete coredumps one by one!"
 ###echo "changed root perms to 750 for /root"
 #####echo "added 'kernel.core_pattern=|/bin/false' to /etc/sysctl.d/sysctl.conf to disable coredumps!"
 echo "Use 'pacman -Rnc' to remove config files!"
 #####echo "Added '/etc/profile.d/mesa-env.sh' to try fixing HW accel (EGL)!"
 ####echo "Uncomment EGL_PLATFORM in .zshrc if display issues occur!"
 ####echo "Re-install egl-wayland if display issues occur!"
-echo "I set ollama kv cache to q8_0 in /etc/environment!"
+##echo "I set ollama kv cache to q8_0 in /etc/environment!"
+##echo "If Gemma3 is slow, it's due to KV cache!"
+echo "Use archive.is to access paywalled content!"
 
 ## Useful aliases
 alias sudo="doas"
@@ -411,6 +412,3 @@ alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 -
 
 ## Enables fzf, helps more easily look through shell history. ctrl + r
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# Added by ProtonUp-Qt on 07-05-2025 16:52:58
-if [ -d "/home/shaun/stl/prefix" ]; then export PATH="$PATH:/home/shaun/stl/prefix"; fi
