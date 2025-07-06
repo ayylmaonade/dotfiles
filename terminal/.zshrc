@@ -104,12 +104,16 @@ export UPDATE_ZSH_DAYS=14
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-fzf-history-search copyfile web-search z)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-fzf-history-search copyfile copypath web-search z ssh) 
 
 source $ZSH/oh-my-zsh.sh
 
 # Sets the prompt to Starship
 eval "$(starship init zsh)"
+
+# Enables oh-my-zsh plugin (installed via pacman)
+source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
+export YSU_MESSAGE_POSITION="after"
 
 # Adds mangohud to $PATH, auto-enables for all Vulkan games 
 #export MANGOHUD=1
@@ -343,8 +347,6 @@ echo "Use 'copyfile filename' to copy files to clipboard from terminal!"
 ##echo "Use 'ddcutil -d 1 getvcp ALL' to see displays' hours used!"
 ##echo "Changed ulimit to unlimited in '/etc/security/limits.conf!"
 ##echo "Added k10temp as service to '/etc/systemd/system! check if it runs!"
-#####echo "Changed Dolphin so that it can open archives now! Change back if you don't like it!"
-####echo "Added flags to Spotify enable Wayland! '~/.var/app/com.spotify.Client/config/spotify-flags.conf'!" # doesn't work now
 #####echo "Changed coredump variables in /etc/systemd/coredump.conf.d/override.conf!"
 #####echo "Use 'cleanupcores/coredumpcleanup' to delete coredumps one by one!"
 ###echo "changed root perms to 750 for /root"
@@ -352,10 +354,14 @@ echo "Use 'copyfile filename' to copy files to clipboard from terminal!"
 echo "Use 'pacman -Rnc' to remove config files!"
 #####echo "Added '/etc/profile.d/mesa-env.sh' to try fixing HW accel (EGL)!"
 ####echo "Uncomment EGL_PLATFORM in .zshrc if display issues occur!"
-####echo "Re-install egl-wayland if display issues occur!"
 ##echo "I set ollama kv cache to q8_0 in /etc/environment!"
 ##echo "If Gemma3 is slow, it's due to KV cache!"
 echo "Use archive.is to access paywalled content!"
+##echo "Uninstall 'rocm-hip-runtime' with -Rncs if no perf improvements!"
+##echo "Added 'ssh' plugin to zsh, remove if it causes issues!"
+#echo "Installed phoronix-test-suite packages! Remove if you don't want to use!"
+#echo "^Installed silly depends for it - Rncs it."
+
 
 ## Useful aliases
 alias sudo="doas"
@@ -368,7 +374,6 @@ alias fish="asciiquarium"
 alias snipebot="python3 ~/dotfiles/scripts/snipe.py" 
 alias mpv="mpv --profile=swag "
 alias vim="nvim" # lol
-alias vi="vim" # fuck you, brian.
 alias btop="bpytop" # better version of top/htop
 alias gpu="echo this does nothing, dumbass"
 alias lynx="lynx -vikeys -force_secure -scrollbar -show_cursor -use_mouse "

@@ -39,7 +39,12 @@
 
         {
             "type": "wm",
-            "key": " DE/WM",
+            "key": " WM",
+            "keyColor": "blue"
+        },
+        {
+            "type": "de",
+            "key": "├",
             "keyColor": "blue"
         },
         {
@@ -48,27 +53,17 @@
             "keyColor": "blue"
         },
         {
-            "type": "wmtheme",
+            "type": "theme",
             "key": "├󰉼",
             "keyColor": "blue"
         },
         {
-            "type": "icons",
-            "key": "├󰀻",
-            "keyColor": "blue"
-        },
-        {
             "type": "terminal",
-            "key": "├",
+            "key": "└",
             "keyColor": "blue"
         },
-        {
-            "type": "wallpaper",
-            "key": "└󰸉",
-            "keyColor": "blue"
-        },
-
         "break",
+
         {
             "type": "host",
             "key": "󰌢 PC",
@@ -106,9 +101,13 @@
         },
         {
             "type": "uptime",
-            "key": "└󰅐",
+            "key": "├󰅐",
             "keyColor": "green"
         },
+	{   "type": "localip",
+	    "key": "└󰩟",
+	    "keyColor": "green"
+	},
 
         "break",
         {
