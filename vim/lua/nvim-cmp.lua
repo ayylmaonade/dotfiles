@@ -73,6 +73,8 @@
   -- Set up lspconfig.
   local capabilities = require('cmp_nvim_lsp').default_capabilities()
   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+  -- These are separated via parenthesis, which is not required, but it's more readable.
+  -- If you want to use one line, modify the line below like so; ['pyright','rust_analyzer',etc
   require('lspconfig')['pyright'].setup {
     capabilities = capabilities
   }
@@ -86,5 +88,13 @@
   }
 
   require('lspconfig')['clangd'].setup {
+      capabilities = capabilities
+  }
+
+  require('lspconfig')['marksman'].setup {
+      capabilities = capabilities
+  }
+
+  require('lspconfig')['yamlls'].setup {
       capabilities = capabilities
   }
