@@ -104,7 +104,7 @@ export UPDATE_ZSH_DAYS=14
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-fzf-history-search copyfile copypath web-search z ssh) 
+plugins=(zsh-autosuggestions zsh-syntax-highlighting zsh-fzf-history-search copyfile copypath web-search z ssh) 
 
 source $ZSH/oh-my-zsh.sh
 
@@ -297,6 +297,8 @@ alias rmgitcache="rm -r ~/.cache/git"
 #neofetch
 pfetch
 please
+task list
+##python ~/Documents/breathing_tip.py
 #colorscript exec pacman
 #colorscript exec tiefighter1row
 #colorscript exec crunch
@@ -341,7 +343,7 @@ echo "useful cmds: find, locate, whereis, type, which, file, getfacl, stat, du -
 ###echo "Slothrop is at an asylum, he had a map of all his sexual encounters! He's being investigated for\nthis because V-2 rockets land at these locations!"
 #echo "Use 'ctrl + e' to auto-fill zsh-suggestions instead of arrow keys!"
 #echo "Use ripgrep - 'rg' instead of grep! it's faster!"
-echo "Use 'copyfile filename' to copy files to clipboard from terminal!"
+##echo "Use 'copyfile filename' to copy files to clipboard from terminal!"
 #echo "Type 'z' & press tab to jump between recent dirs or type a dir! (e.g. z steam)" | lolcat
 #echo "dmwiki is fixed! remember to use it! the wiki is fantastic."
 ##echo "Use 'ddcutil -d 1 getvcp ALL' to see displays' hours used!"
@@ -351,16 +353,31 @@ echo "Use 'copyfile filename' to copy files to clipboard from terminal!"
 #####echo "Use 'cleanupcores/coredumpcleanup' to delete coredumps one by one!"
 ###echo "changed root perms to 750 for /root"
 #####echo "added 'kernel.core_pattern=|/bin/false' to /etc/sysctl.d/sysctl.conf to disable coredumps!"
-echo "Use 'pacman -Rnc' to remove config files!"
+#####echo "Use 'pacman -Rnc' to remove config files!"
 #####echo "Added '/etc/profile.d/mesa-env.sh' to try fixing HW accel (EGL)!"
 ####echo "Uncomment EGL_PLATFORM in .zshrc if display issues occur!"
 ##echo "I set ollama kv cache to q8_0 in /etc/environment!"
 ##echo "If Gemma3 is slow, it's due to KV cache!"
-echo "Use archive.is to access paywalled content!"
+##echo "Use archive.is to access paywalled content!" # doesn't work that well
 ##echo "Uninstall 'rocm-hip-runtime' with -Rncs if no perf improvements!"
 ##echo "Added 'ssh' plugin to zsh, remove if it causes issues!"
 #echo "Installed phoronix-test-suite packages! Remove if you don't want to use!"
 #echo "^Installed silly depends for it - Rncs it."
+###echo "Hold shift or hold click over a link in FF for preview!"
+##echo "Use ctrl + k to use address bar search in Zen!"
+#####echo ""Use awk -F "stringhere"  '{print $n}' filepath""
+##echo "USE WEB SCRAPER IN WEBUI!"
+##echo "Use 'task' for better to-do than please! Remember tldr!"
+echo "USE 'vit' FOR TASK WARRIOR!"
+##echo "use alacritty to launch ollama"
+#echo "Don't upgrade Zen-browser! new rev's are unstable!"
+###echo "Remember 'pdftotext' command!"
+######echo "systemd-sleep sends a command to kill ollama before sleep now!\nYou have to restart the server on wake."
+echo "Run 'calm' or 'breathe' if you are anxious!"
+##echo "You can link links for RAG in webui using #URLHERE"
+echo "Run 'qwen-code' to see setup."
+echo "Use 'gt', 'gT' & '1gt', '2gt', etc in vim to switch tabs easily!"
+##echo "Remove 'python-lsp-server' w/ -Rncs if you don't need it!"
 
 
 ## Useful aliases
@@ -405,8 +422,14 @@ alias ofetch="onefetch"
 alias ssh="kitten ssh " #change back to kitty +kitten ssh if this doesn't work
 #alias openwebui="doas docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main" #installs open-webui, using localhost to ensure ollama connectivity 
 alias openwebui="docker start open-webui" # starts open-webui via docker
+alias benzos="zen-browser /home/shaun/Documents/Pharmacology_Database.html"
 
-## Alias relating specifically to the 'trash-cli' package
+## I miss you, Tieg
+alias "tieg"='echo I love you so much, little princess.'
+alias "tiegan"='echo I love you so much, little princess.'
+
+
+## Alias' relating specifically to the 'trash-cli' package
 alias trash="trash -v"
 alias tlist="trash-list"
 alias trestore="trash-restore"
