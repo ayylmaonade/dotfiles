@@ -72,29 +72,25 @@
 
   -- Set up lspconfig.
   local capabilities = require('cmp_nvim_lsp').default_capabilities()
-  -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-  -- These are separated via parenthesis, which is not required, but it's more readable.
-  -- If you want to use one line, modify the line below like so; ['pyright','rust_analyzer',etc
-  require('lspconfig')['pyright'].setup {
-    capabilities = capabilities
-  }
+  local ok_cmp_lsp, cmp_nvim_lsp = pcall(require, 'cmp_nvim_lsp')
+  local capabilities = ok_cmp_lsp and cmp_nvim_lsp.default_capabilities()
+                    or vim.lsp.protocol.make_client_capabilities()
 
-  require('lspconfig')['rust_analyzer'].setup {
-      capabilities = capabilities
-  }
-  
-  require('lspconfig')['bashls'].setup {
-      capabilities = capabilities
-  }
+local servers = { 'pyright', 'rust_analyzer', 'bashls', 'clangd', 'marksman', 'yamlls', 'typescript-language-server' }
 
-  require('lspconfig')['clangd'].setup {
-      capabilities = capabilities
-  }
-
-  require('lspconfig')['marksman'].setup {
-      capabilities = capabilities
-  }
-
-  require('lspconfig')['yamlls'].setup {
-      capabilities = capabilities
-  }
+  if vim.lsp and vim.lsp.config then
+    -- set default capabilities for all servers and enable them (Neovim 0.11+)
+    vim.lsp.config('*', { capabilities = capabilities })
+    vim.lsp.enable(servers) -- auto-start when matching buffers open
+  else
+    -- fallback for older Neovim using nvim-lspconfig
+  local ok, lspconfig = pcall(require, 'lspconfig')
+  if ok then
+    for _, name in ipairs(servers) do
+      if lspconfig[name] then
+        lspconfig[name].setup { capabilities = capabilities }
+      end
+    end
+  end
+end
+ 
