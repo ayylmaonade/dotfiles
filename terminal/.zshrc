@@ -115,6 +115,9 @@ eval "$(starship init zsh)"
 source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
 export YSU_MESSAGE_POSITION="after"
 
+# Source Jina API Key for Jina MCP server
+source $HOME/jina_key.txt
+
 # Adds mangohud to $PATH, auto-enables for all Vulkan games 
 #export MANGOHUD=1
 
@@ -297,7 +300,7 @@ alias rmgitcache="rm -r ~/.cache/git"
 #neofetch
 pfetch
 please
-task list
+##task list
 ##python ~/Documents/breathing_tip.py
 #colorscript exec pacman
 #colorscript exec tiefighter1row
@@ -332,7 +335,6 @@ echo "useful cmds: find, locate, whereis, type, which, file, getfacl, stat, du -
 #echo "99x34 cols in kitty!"
 #echo "Install 'sherlock-git' to search a username across the internet!"
 ####echo "Use 'icat filename' to display images natively in kitty!"
-#echo "Change makepkg.conf 'PKGEXT' back to .pkg.tar.zst if lz4 causes isuses!"
 #echo "Use 'watch' as a way to periodically update graph programs such as top! (use tldr)"
 ########echo "Use 'binsider programname' to analyze binaries!"
 #echo "Use 'ls -R' to easily search dirs recursively without having to cd!"
@@ -373,11 +375,20 @@ echo "USE 'vit' FOR TASK WARRIOR!"
 #echo "Don't upgrade Zen-browser! new rev's are unstable!"
 ###echo "Remember 'pdftotext' command!"
 ######echo "systemd-sleep sends a command to kill ollama before sleep now!\nYou have to restart the server on wake."
-echo "Run 'calm' or 'breathe' if you are anxious!"
+#echo "Run 'calm' or 'breathe' if you are anxious!"
 ##echo "You can link links for RAG in webui using #URLHERE"
-echo "Run 'qwen-code' to see setup."
+#####echo "Run 'qwen-code' to see setup."
 echo "Use 'gt', 'gT' & '1gt', '2gt', etc in vim to switch tabs easily!"
 ##echo "Remove 'python-lsp-server' w/ -Rncs if you don't need it!"
+##echo "Use 'uvx' to run Jina MCP server for OWI!"
+echo "Use 'cp -a' - -a keeps all file attributes!"
+echo "Use 'stats' to show most used shell cmds! (custom script, supports flags!)"
+echo "Added 'llm' via pipx! Use it and check the github if you get lost!"
+echo "RUN 'pacman -Rncs on python-datasets!!"
+#echo "Use LocalSend for transferring files locally on all systems!"
+echo "Remove 'exif' if you don't need it! It only works for jpeg metadata."
+##echo "Add 'ENABLE_QUERIES_CACHE=true' ENV VAR back to OWI if tokens are too much from web search!"
+echo "Use 'cache' to see all pacman cache pkgs!"
 
 
 ## Useful aliases
@@ -420,14 +431,19 @@ alias fetch="fastfetch"
 alias icat="kitten icat"
 alias ofetch="onefetch"
 alias ssh="kitten ssh " #change back to kitty +kitten ssh if this doesn't work
-#alias openwebui="doas docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main" #installs open-webui, using localhost to ensure ollama connectivity 
+#alias openwebui="doas docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -e ENABLE_QUERIES_CACHE=true --name open-webui --restart always ghcr.io/open-webui/open-webui:main" #installs open-webui, using localhost to ensure ollama connectivity 
 alias openwebui="docker start open-webui" # starts open-webui via docker
 alias benzos="zen-browser /home/shaun/Documents/Pharmacology_Database.html"
+alias compsize="compsize -x "
+alias cache="ls /var/cache/pacman/pkg/"
+
+## Local python scripts
+alias stats="python ~/Documents/Python_Scripts/stats" #lists top cmds in shell history
+alias smoke="python ~/Documents/Python_Scripts/smoke.py" #decides if you should smoke weed
 
 ## I miss you, Tieg
 alias "tieg"='echo I love you so much, little princess.'
 alias "tiegan"='echo I love you so much, little princess.'
-
 
 ## Alias' relating specifically to the 'trash-cli' package
 alias trash="trash -v"
@@ -440,3 +456,8 @@ alias mirrors="reflector --score 100 --protocol https --fastest 10 --number 10 -
 
 ## Enables fzf, helps more easily look through shell history. ctrl + r
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/shaun/.lmstudio/bin"
+# End of LM Studio CLI section
+
