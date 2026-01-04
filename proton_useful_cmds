@@ -4,6 +4,7 @@ options when running games
 via Steam Compatibility */
 
 env -u WAYLAND_DISPLAY // Disables Wayland presentation - env variable for games with issues on Wayland!
+PROTON_ENABLE_WAYLAND=1 // Force the new, native Wayland runtime.
 taskset -c 0,1,2,3,4 // Specifies which CPU cores to run game/software on
 WINE_CPU_TOPOLOGY=4:0,1,2,3 // Specifies CPU core layout, older games sometimes require this. Example is with 4 cores. Change values to whatever your core layout is.
 gamemoderun // applies several game-specific kernel optimisations -- always use!
