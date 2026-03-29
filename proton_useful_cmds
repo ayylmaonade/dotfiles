@@ -23,5 +23,6 @@ RADV_PERFTEST=rt // enables RT (sometimes requires VKD3D_CONFIG=dxr11)
 amdvlk // forces amdvlk driver
 VULKAN_GAMMA=0.x/1.x, etc. // force a certain gamma value, e.g. 1.5
 -d3d12/11/10/9/8 // generic Steam flag to specify which API to use (if available)
+PROTON_USE_NTSYNC=1 %command% (The new replacement for Esync/Fsync - significant perf improvements.)
 
 */ %command% */
