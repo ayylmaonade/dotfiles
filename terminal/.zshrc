@@ -115,8 +115,8 @@ eval "$(starship init zsh)"
 source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
 export YSU_MESSAGE_POSITION="after"
 
-# Source Jina API Key for Jina MCP server
-source $HOME/jina_key.txt
+# Enables the 'direnv' package
+eval "$(direnv hook zsh)"
 
 # Adds mangohud to $PATH, auto-enables for all Vulkan games 
 #export MANGOHUD=1
@@ -138,7 +138,7 @@ setopt GLOB_DOTS
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export HISTCONTROL=ignoreboth:erasedups
+#export HISTCONTROL=ignoreboth:erasedups:ignoredups
 
 # Make neovim the default editor
 export EDITOR='nvim'
@@ -330,7 +330,6 @@ echo "useful cmds: find, locate, whereis, type, which, file, getfacl, stat, du -
 #echo "Use ctrl+meta+r to open video links in MPV or Firefox!"
 #echo "Tweak /etc/environment to change env variables globally!"
 #echo "Use ~/.config/environment.d/envvars.conf to set them locally only!"
-#echo "Use 'pipx' to install python packages!"
 #echo "Use 'steamapps' to cd into steam!"
 #echo "99x34 cols in kitty!"
 #echo "Install 'sherlock-git' to search a username across the internet!"
@@ -342,7 +341,6 @@ echo "useful cmds: find, locate, whereis, type, which, file, getfacl, stat, du -
 ##echo "Use 'lsmod' to list kernel modules!"
 #echo "Remember to use '-i' with grep! It's case sensitive!"
 ####echo "Remember to use trash! and don't forget aliases, tlist, trestore, tempty!"
-###echo "Slothrop is at an asylum, he had a map of all his sexual encounters! He's being investigated for\nthis because V-2 rockets land at these locations!"
 #echo "Use 'ctrl + e' to auto-fill zsh-suggestions instead of arrow keys!"
 #echo "Use ripgrep - 'rg' instead of grep! it's faster!"
 ##echo "Use 'copyfile filename' to copy files to clipboard from terminal!"
@@ -356,10 +354,8 @@ echo "useful cmds: find, locate, whereis, type, which, file, getfacl, stat, du -
 ###echo "changed root perms to 750 for /root"
 #####echo "added 'kernel.core_pattern=|/bin/false' to /etc/sysctl.d/sysctl.conf to disable coredumps!"
 #####echo "Use 'pacman -Rnc' to remove config files!"
-#####echo "Added '/etc/profile.d/mesa-env.sh' to try fixing HW accel (EGL)!"
 ####echo "Uncomment EGL_PLATFORM in .zshrc if display issues occur!"
 ##echo "I set ollama kv cache to q8_0 in /etc/environment!"
-##echo "If Gemma3 is slow, it's due to KV cache!"
 ##echo "Use archive.is to access paywalled content!" # doesn't work that well
 ##echo "Uninstall 'rocm-hip-runtime' with -Rncs if no perf improvements!"
 ##echo "Added 'ssh' plugin to zsh, remove if it causes issues!"
@@ -368,27 +364,33 @@ echo "useful cmds: find, locate, whereis, type, which, file, getfacl, stat, du -
 ###echo "Hold shift or hold click over a link in FF for preview!"
 ##echo "Use ctrl + k to use address bar search in Zen!"
 #####echo ""Use awk -F "stringhere"  '{print $n}' filepath""
-##echo "USE WEB SCRAPER IN WEBUI!"
 ##echo "Use 'task' for better to-do than please! Remember tldr!"
-echo "USE 'vit' FOR TASK WARRIOR!"
-##echo "use alacritty to launch ollama"
-#echo "Don't upgrade Zen-browser! new rev's are unstable!"
+#####echo "USE 'vit' FOR TASK WARRIOR!"
 ###echo "Remember 'pdftotext' command!"
 ######echo "systemd-sleep sends a command to kill ollama before sleep now!\nYou have to restart the server on wake."
 #echo "Run 'calm' or 'breathe' if you are anxious!"
-##echo "You can link links for RAG in webui using #URLHERE"
 #####echo "Run 'qwen-code' to see setup."
-echo "Use 'gt', 'gT' & '1gt', '2gt', etc in vim to switch tabs easily!"
+############echo "Use 'gt', 'gT' & '1gt', '2gt', etc in vim to switch tabs easily!"
 ##echo "Remove 'python-lsp-server' w/ -Rncs if you don't need it!"
-##echo "Use 'uvx' to run Jina MCP server for OWI!"
 echo "Use 'cp -a' - -a keeps all file attributes!"
 echo "Use 'stats' to show most used shell cmds! (custom script, supports flags!)"
-echo "Added 'llm' via pipx! Use it and check the github if you get lost!"
-echo "RUN 'pacman -Rncs on python-datasets!!"
-#echo "Use LocalSend for transferring files locally on all systems!"
-echo "Remove 'exif' if you don't need it! It only works for jpeg metadata."
-##echo "Add 'ENABLE_QUERIES_CACHE=true' ENV VAR back to OWI if tokens are too much from web search!"
-echo "Use 'cache' to see all pacman cache pkgs!"
+######echo "Added 'llm' via pipx! Use it and check the github if you get lost!"
+###echo "RUN 'pacman -Rncs on python-datasets!!" # Use if you need to benchmark LLMs
+##echo "Remove 'exif' if you don't need it! It only works for jpeg metadata."
+########echo "Use 'cache' to see all pacman cache pkgs!"
+###echo "Use 'drugs' to track usage!!"
+echo "Installed direnv so you can set per-dir env vars. It's awesome!"
+#####echo "Changed /etc/conf.d/pacman-contrib flags from nothing to -rk1!"
+echo "Use 'Mission Center!' - it's a great resource monitor!"
+echo "Use the 'swag' command to see how long you've been using LLMs."
+echo "Use the 'status' command to check Arch/AUR repos status!"
+###echo "Pipe 'llm' into 'mdfried'! it's a terminal md viewer."
+##echo "Edited sshd_config to use key auth!"
+##echo "Set zenpower3.conf to on! Disable if issues occur."
+##echo "Use update-docker script to easily update images."
+###echo "Installed texlive-basic texlive-latex texlive-latexrecommended texlive-bin for Manim!"
+echo "USE 'llama-tui' to quickly configure llama.cpp cmds!"
+echo "Added 'letterboxd:', 'lbox' to search Letterbox'd for movies!"
 
 
 ## Useful aliases
@@ -435,8 +437,146 @@ alias ssh="kitten ssh " #change back to kitty +kitten ssh if this doesn't work
 alias openwebui="docker start open-webui" # starts open-webui via docker
 alias benzos="zen-browser /home/shaun/Documents/Pharmacology_Database.html"
 alias compsize="compsize -x "
-alias cache="ls /var/cache/pacman/pkg/"
+##alias glow="glow --tui"
+alias watchlist="cd /home/shaun/.hermes/code/cine/ && python3 server.py && xdg-open http://127.0.0.1:8789"
+alias wlist="cd /home/shaun/.hermes/code/cine/ && python3 server.py &"
 
+
+## Set RADV GTT fix for llama-server
+export RADV_PERFTEST=nogttspill
+
+## LLM/AI related stuff, most of which is unused and here for archive purposes.
+alias glm="llama-server \
+  --model /home/shaun/.lmstudio/models/unsloth/GLM-4.7-Flash-GGUF/GLM-4.7-Flash-MXFP4_MOE.gguf \
+  --jinja \
+  --threads -1 \
+  --ctx-size 65536 \
+  --temp 1 \
+  --top-k 50 \
+  --top-p 0.95 \
+  --min-p 0.00 \
+  --port 8420 \
+  --batch-size 2048 \
+  -ngl 99 \
+  --parallel 1 \
+  --flash-attn on \
+  --no-mmap \
+  --cont-batching \
+  --tensor-split 1.0 \
+  --threads-batch 8 \
+  -ub 1024"
+
+alias glmnothink="llama-server \
+  --model /home/shaun/.lmstudio/models/unsloth/GLM-4.7-Flash-GGUF/GLM-4.7-Flash-UD-Q4_K_XL.gguf \
+  --jinja \
+  --threads -1 \
+  --ctx-size 65536 \
+  --temp 1 \
+  --top-k 50 \
+  --top-p 0.95 \
+  --min-p 0.00 \
+  --port 8420 \
+  --batch-size 2048 \
+  -ngl 99 \
+  --parallel 1 \
+  --flash-attn on \
+  --no-mmap \
+  -kvu \
+  --cont-batching \
+  --tensor-split 1.0 \
+  --threads-batch 8 \
+  --reasoning-budget 0 \
+  -ub 1024"
+
+alias nemotron="llama-server \
+    --model /home/shaun/.lmstudio/models/unsloth/Nemotron-3-Nano-30B-A3B-GGUF/Nemotron-3-Nano-30B-A3B-IQ4_XS.gguf \
+    --n-gpu-layers 99 \
+    --jinja \
+    --top-p 0.95 \
+    --top-k 40 \
+    --temp 1 \
+    --min-p 0.00 \
+    --flash-attn on \
+    --repeat-penalty 1 \
+    --ctx-size 262144 \
+    --mlock \
+    --batch-size 1024 \
+    --n-predict 65536 \
+    --no-mmap \
+    --port 8420 \
+    --cont-batching \
+    -ub 1024 \
+    --chat-template-file /home/shaun/Nemotron3.jinja"
+
+alias qwen35="llama-server \
+    --model /home/shaun/.lmstudio/models/unsloth/Qwen3.5-35B-A3B-GGUF/Qwen3.5-35B-A3B-UD-MXFP4_MOE.gguf \
+    --mmproj /home/shaun/.lmstudio/models/unsloth/Qwen3.5-35B-A3B-GGUF/mmproj-F16.gguf \
+    --n-gpu-layers 999 \
+    --temp 1 \
+    --top-k 20 \
+    --top-p 0.95 \
+    --min-p 0.00 \
+    --flash-attn on \
+    --repeat-penalty 1.0 \
+    --presence-penalty 0.0 \
+    --ctx-size 67584 \
+    --mlock \
+    --batch-size 1024 \
+    --no-mmap \
+    --port 8420 \
+    -ub 512 \
+    --threads 12 \
+    --threads-batch 12 \
+    --direct-io"
+
+alias qwen35code="llama-server \
+    --model /home/shaun/.lmstudio/models/unsloth/Qwen3.5-35B-A3B-GGUF/Qwen3.5-35B-A3B-UD-MXFP4_MOE.gguf \
+    --mmproj /home/shaun/.lmstudio/models/unsloth/Qwen3.5-35B-A3B-GGUF/mmproj-F16.gguf \
+    --n-gpu-layers 999 \
+    --temp 0.6 \
+    --top-k 20 \
+    --top-p 0.95 \
+    --min-p 0.00 \
+    --flash-attn on \
+    --repeat-penalty 1.0 \
+    --presence-penalty 0.0 \
+    --ctx-size 69632 \
+    --mlock \
+    --batch-size 1024 \
+    --no-mmap \
+    --port 8420 \
+    -ub 512 \
+    --threads 12 \
+    --threads-batch 12 \
+    --direct-io"
+
+alias qwen35nt="llama-server \
+    --model /home/shaun/.lmstudio/models/unsloth/Qwen3.5-35B-A3B-GGUF/Qwen3.5-35B-A3B-UD-MXFP4_MOE.gguf \
+    --mmproj /home/shaun/.lmstudio/models/unsloth/Qwen3.5-35B-A3B-GGUF/mmproj-F16.gguf \
+    --n-gpu-layers 99 \
+    --threads 12 \
+    --temp 0.7 \
+    --top-k 20 \
+    --top-p 0.8 \
+    --min-p 0.00 \
+    --flash-attn on \
+    --repeat-penalty 1 \
+    --presence-penalty 1.5 \
+    --ctx-size 69632 \
+    --mlock \
+    --batch-size 1024 \
+    --no-mmap \
+    --port 8420 \
+    --threads-batch 12 \
+    -ub 512 \
+    --reasoning-budget 0"
+
+## Sets the proper Qwen-Code ENVIRONMENT VARIABLES
+export OPENAI_API_KEY="123"
+export OPENAI_BASE_URL="http://localhost:8420/v1"
+export OPENAI_MODEL="qwen3.5-35b-a3b"
+
+## Run llama-server for Qwen3-VL-Thinking
 ## Local python scripts
 alias stats="python ~/Documents/Python_Scripts/stats" #lists top cmds in shell history
 alias smoke="python ~/Documents/Python_Scripts/smoke.py" #decides if you should smoke weed
